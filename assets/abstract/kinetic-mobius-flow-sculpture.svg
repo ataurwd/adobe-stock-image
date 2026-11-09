@@ -1,0 +1,659 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <radialGradient id="kmfsGlow" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#93C5FD" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14213D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="kmfs-0-g" gradientUnits="userSpaceOnUse" x1="1141.4" y1="404.8" x2="1307.2" y2="474.9">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="65%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#9db9f6"/>
+    </linearGradient>
+    <linearGradient id="kmfs-1-g" gradientUnits="userSpaceOnUse" x1="1142.1" y1="436" x2="1303.4" y2="513.8">
+      <stop offset="0%" stop-color="#152342"/>
+      <stop offset="65%" stop-color="#2866ec"/>
+      <stop offset="100%" stop-color="#9ebaf6"/>
+    </linearGradient>
+    <linearGradient id="kmfs-2-g" gradientUnits="userSpaceOnUse" x1="1139.6" y1="466.5" x2="1294.7" y2="550.8">
+      <stop offset="0%" stop-color="#152548"/>
+      <stop offset="65%" stop-color="#2c69ec"/>
+      <stop offset="100%" stop-color="#a0bcf6"/>
+    </linearGradient>
+    <linearGradient id="kmfs-3-g" gradientUnits="userSpaceOnUse" x1="1134" y1="494.9" x2="1281.3" y2="584.6">
+      <stop offset="0%" stop-color="#16274d"/>
+      <stop offset="65%" stop-color="#2f6ced"/>
+      <stop offset="100%" stop-color="#a1bdf7"/>
+    </linearGradient>
+    <linearGradient id="kmfs-4-g" gradientUnits="userSpaceOnUse" x1="1125.2" y1="520.3" x2="1263.2" y2="614">
+      <stop offset="0%" stop-color="#162953"/>
+      <stop offset="65%" stop-color="#336fed"/>
+      <stop offset="100%" stop-color="#a3bef7"/>
+    </linearGradient>
+    <linearGradient id="kmfs-5-g" gradientUnits="userSpaceOnUse" x1="1113.1" y1="541.5" x2="1240.9" y2="637.8">
+      <stop offset="0%" stop-color="#172b58"/>
+      <stop offset="65%" stop-color="#3672ee"/>
+      <stop offset="100%" stop-color="#a5c0f7"/>
+    </linearGradient>
+    <linearGradient id="kmfs-6-g" gradientUnits="userSpaceOnUse" x1="1097.8" y1="557.7" x2="1214.7" y2="655.2">
+      <stop offset="0%" stop-color="#172d5e"/>
+      <stop offset="65%" stop-color="#3a75ee"/>
+      <stop offset="100%" stop-color="#a6c1f7"/>
+    </linearGradient>
+    <linearGradient id="kmfs-7-g" gradientUnits="userSpaceOnUse" x1="1079.2" y1="568.3" x2="1185" y2="665.6">
+      <stop offset="0%" stop-color="#182f63"/>
+      <stop offset="65%" stop-color="#3d78ef"/>
+      <stop offset="100%" stop-color="#a8c2f8"/>
+    </linearGradient>
+    <linearGradient id="kmfs-8-g" gradientUnits="userSpaceOnUse" x1="1057.4" y1="572.7" x2="1152.2" y2="668.9">
+      <stop offset="0%" stop-color="#183269"/>
+      <stop offset="65%" stop-color="#417cf0"/>
+      <stop offset="100%" stop-color="#aac4f8"/>
+    </linearGradient>
+    <linearGradient id="kmfs-9-g" gradientUnits="userSpaceOnUse" x1="1032.6" y1="570.7" x2="1116.7" y2="664.8">
+      <stop offset="0%" stop-color="#19346e"/>
+      <stop offset="65%" stop-color="#447ff0"/>
+      <stop offset="100%" stop-color="#abc5f8"/>
+    </linearGradient>
+    <linearGradient id="kmfs-10-g" gradientUnits="userSpaceOnUse" x1="1004.9" y1="562.2" x2="1078.9" y2="653.8">
+      <stop offset="0%" stop-color="#193673"/>
+      <stop offset="65%" stop-color="#4782f1"/>
+      <stop offset="100%" stop-color="#acc7f9"/>
+    </linearGradient>
+    <linearGradient id="kmfs-11-g" gradientUnits="userSpaceOnUse" x1="974.4" y1="547.5" x2="1039.3" y2="636.3">
+      <stop offset="0%" stop-color="#1a3879"/>
+      <stop offset="65%" stop-color="#4b85f1"/>
+      <stop offset="100%" stop-color="#aec8f9"/>
+    </linearGradient>
+    <linearGradient id="kmfs-12-g" gradientUnits="userSpaceOnUse" x1="941.6" y1="527.1" x2="998.3" y2="613.3">
+      <stop offset="0%" stop-color="#1a3a7e"/>
+      <stop offset="65%" stop-color="#4e88f2"/>
+      <stop offset="100%" stop-color="#afc9f9"/>
+    </linearGradient>
+    <linearGradient id="kmfs-13-g" gradientUnits="userSpaceOnUse" x1="906.6" y1="501.6" x2="956.2" y2="585.6">
+      <stop offset="0%" stop-color="#1b3c84"/>
+      <stop offset="65%" stop-color="#528bf2"/>
+      <stop offset="100%" stop-color="#b1cbf9"/>
+    </linearGradient>
+    <linearGradient id="kmfs-14-g" gradientUnits="userSpaceOnUse" x1="870" y1="471.8" x2="913.4" y2="554.6">
+      <stop offset="0%" stop-color="#1b3e89"/>
+      <stop offset="65%" stop-color="#558ef3"/>
+      <stop offset="100%" stop-color="#b3ccfa"/>
+    </linearGradient>
+    <linearGradient id="kmfs-15-g" gradientUnits="userSpaceOnUse" x1="832" y1="439" x2="870.3" y2="521.4">
+      <stop offset="0%" stop-color="#1c408f"/>
+      <stop offset="65%" stop-color="#5991f3"/>
+      <stop offset="100%" stop-color="#b4cefa"/>
+    </linearGradient>
+    <linearGradient id="kmfs-16-g" gradientUnits="userSpaceOnUse" x1="793.3" y1="404.2" x2="827.1" y2="487.6">
+      <stop offset="0%" stop-color="#1d4294"/>
+      <stop offset="65%" stop-color="#5c94f4"/>
+      <stop offset="100%" stop-color="#b6cffa"/>
+    </linearGradient>
+    <linearGradient id="kmfs-17-g" gradientUnits="userSpaceOnUse" x1="754.2" y1="368.7" x2="784.2" y2="454.4">
+      <stop offset="0%" stop-color="#1d4499"/>
+      <stop offset="65%" stop-color="#5f97f5"/>
+      <stop offset="100%" stop-color="#b7d0fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-18-g" gradientUnits="userSpaceOnUse" x1="715.4" y1="333.8" x2="741.8" y2="423.4">
+      <stop offset="0%" stop-color="#1e469f"/>
+      <stop offset="65%" stop-color="#639af5"/>
+      <stop offset="100%" stop-color="#b9d2fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-19-g" gradientUnits="userSpaceOnUse" x1="677.3" y1="300.8" x2="700.3" y2="395.7">
+      <stop offset="0%" stop-color="#1e48a4"/>
+      <stop offset="65%" stop-color="#669df6"/>
+      <stop offset="100%" stop-color="#bad3fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-20-g" gradientUnits="userSpaceOnUse" x1="640.4" y1="271" x2="659.8" y2="372.4">
+      <stop offset="0%" stop-color="#1f4aaa"/>
+      <stop offset="65%" stop-color="#6aa0f6"/>
+      <stop offset="100%" stop-color="#bcd4fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-21-g" gradientUnits="userSpaceOnUse" x1="605.2" y1="245.6" x2="620.6" y2="354.5">
+      <stop offset="0%" stop-color="#1f4caf"/>
+      <stop offset="65%" stop-color="#6da3f7"/>
+      <stop offset="100%" stop-color="#bdd6fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-22-g" gradientUnits="userSpaceOnUse" x1="572.3" y1="225.4" x2="583" y2="342.7">
+      <stop offset="0%" stop-color="#204eb5"/>
+      <stop offset="65%" stop-color="#71a6f7"/>
+      <stop offset="100%" stop-color="#bfd7fb"/>
+    </linearGradient>
+    <linearGradient id="kmfs-23-g" gradientUnits="userSpaceOnUse" x1="541.9" y1="211.4" x2="547.2" y2="337.5">
+      <stop offset="0%" stop-color="#2050ba"/>
+      <stop offset="65%" stop-color="#74a9f8"/>
+      <stop offset="100%" stop-color="#c0d8fc"/>
+    </linearGradient>
+    <linearGradient id="kmfs-24-g" gradientUnits="userSpaceOnUse" x1="514.5" y1="204.1" x2="513.5" y2="339.1">
+      <stop offset="0%" stop-color="#2153c0"/>
+      <stop offset="65%" stop-color="#78adf9"/>
+      <stop offset="100%" stop-color="#c2dafc"/>
+    </linearGradient>
+    <linearGradient id="kmfs-25-g" gradientUnits="userSpaceOnUse" x1="490.4" y1="203.8" x2="482.3" y2="347.3">
+      <stop offset="0%" stop-color="#2155c5"/>
+      <stop offset="65%" stop-color="#7bb0f9"/>
+      <stop offset="100%" stop-color="#c4dbfc"/>
+    </linearGradient>
+    <linearGradient id="kmfs-26-g" gradientUnits="userSpaceOnUse" x1="469.7" y1="210.6" x2="453.7" y2="361.9">
+      <stop offset="0%" stop-color="#2257ca"/>
+      <stop offset="65%" stop-color="#7eb3fa"/>
+      <stop offset="100%" stop-color="#c5ddfd"/>
+    </linearGradient>
+    <linearGradient id="kmfs-27-g" gradientUnits="userSpaceOnUse" x1="452.8" y1="224.2" x2="428.1" y2="382.3">
+      <stop offset="0%" stop-color="#2259d0"/>
+      <stop offset="65%" stop-color="#82b6fa"/>
+      <stop offset="100%" stop-color="#c7defd"/>
+    </linearGradient>
+    <linearGradient id="kmfs-28-g" gradientUnits="userSpaceOnUse" x1="439.6" y1="244.3" x2="405.9" y2="407.7">
+      <stop offset="0%" stop-color="#235bd5"/>
+      <stop offset="65%" stop-color="#85b9fb"/>
+      <stop offset="100%" stop-color="#c8e0fd"/>
+    </linearGradient>
+    <linearGradient id="kmfs-29-g" gradientUnits="userSpaceOnUse" x1="430.3" y1="270.1" x2="387.2" y2="437.1">
+      <stop offset="0%" stop-color="#235ddb"/>
+      <stop offset="65%" stop-color="#89bcfb"/>
+      <stop offset="100%" stop-color="#cae1fd"/>
+    </linearGradient>
+    <linearGradient id="kmfs-30-g" gradientUnits="userSpaceOnUse" x1="424.8" y1="300.7" x2="372.3" y2="469.3">
+      <stop offset="0%" stop-color="#245fe0"/>
+      <stop offset="65%" stop-color="#8cbffc"/>
+      <stop offset="100%" stop-color="#cbe2fe"/>
+    </linearGradient>
+    <linearGradient id="kmfs-31-g" gradientUnits="userSpaceOnUse" x1="423.1" y1="334.8" x2="361.6" y2="503.1">
+      <stop offset="0%" stop-color="#2461e6"/>
+      <stop offset="65%" stop-color="#90c2fc"/>
+      <stop offset="100%" stop-color="#cde4fe"/>
+    </linearGradient>
+    <linearGradient id="kmfs-32-g" gradientUnits="userSpaceOnUse" x1="425.2" y1="371.4" x2="355.1" y2="537.2">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="65%" stop-color="#ff735c"/>
+      <stop offset="100%" stop-color="#ffc0b6"/>
+    </linearGradient>
+    <linearGradient id="kmfs-33-g" gradientUnits="userSpaceOnUse" x1="430.8" y1="408.9" x2="353" y2="570.3">
+      <stop offset="0%" stop-color="#2c64e7"/>
+      <stop offset="65%" stop-color="#ff765a"/>
+      <stop offset="100%" stop-color="#ffc1b5"/>
+    </linearGradient>
+    <linearGradient id="kmfs-34-g" gradientUnits="userSpaceOnUse" x1="439.9" y1="446" x2="355.5" y2="601.1">
+      <stop offset="0%" stop-color="#3364e2"/>
+      <stop offset="65%" stop-color="#ff7958"/>
+      <stop offset="100%" stop-color="#ffc3b4"/>
+    </linearGradient>
+    <linearGradient id="kmfs-35-g" gradientUnits="userSpaceOnUse" x1="452.3" y1="481.3" x2="362.6" y2="628.5">
+      <stop offset="0%" stop-color="#3965de"/>
+      <stop offset="65%" stop-color="#ff7b55"/>
+      <stop offset="100%" stop-color="#ffc4b3"/>
+    </linearGradient>
+    <linearGradient id="kmfs-36-g" gradientUnits="userSpaceOnUse" x1="467.9" y1="513.4" x2="374.2" y2="651.4">
+      <stop offset="0%" stop-color="#4065d9"/>
+      <stop offset="65%" stop-color="#fe7e53"/>
+      <stop offset="100%" stop-color="#ffc5b2"/>
+    </linearGradient>
+    <linearGradient id="kmfs-37-g" gradientUnits="userSpaceOnUse" x1="486.5" y1="541.1" x2="390.3" y2="668.9">
+      <stop offset="0%" stop-color="#4766d5"/>
+      <stop offset="65%" stop-color="#fe8151"/>
+      <stop offset="100%" stop-color="#ffc6b1"/>
+    </linearGradient>
+    <linearGradient id="kmfs-38-g" gradientUnits="userSpaceOnUse" x1="507.9" y1="563.5" x2="410.5" y2="680.4">
+      <stop offset="0%" stop-color="#4e66d0"/>
+      <stop offset="65%" stop-color="#fe844f"/>
+      <stop offset="100%" stop-color="#ffc8b0"/>
+    </linearGradient>
+    <linearGradient id="kmfs-39-g" gradientUnits="userSpaceOnUse" x1="532.1" y1="579.6" x2="434.8" y2="685.4">
+      <stop offset="0%" stop-color="#5567cc"/>
+      <stop offset="65%" stop-color="#fe864c"/>
+      <stop offset="100%" stop-color="#ffc9ae"/>
+    </linearGradient>
+    <linearGradient id="kmfs-40-g" gradientUnits="userSpaceOnUse" x1="558.8" y1="589" x2="462.7" y2="683.7">
+      <stop offset="0%" stop-color="#5c67c7"/>
+      <stop offset="65%" stop-color="#fe894a"/>
+      <stop offset="100%" stop-color="#ffcaae"/>
+    </linearGradient>
+    <linearGradient id="kmfs-41-g" gradientUnits="userSpaceOnUse" x1="588" y1="591.2" x2="493.8" y2="675.3">
+      <stop offset="0%" stop-color="#6268c3"/>
+      <stop offset="65%" stop-color="#fe8c48"/>
+      <stop offset="100%" stop-color="#ffcbad"/>
+    </linearGradient>
+    <linearGradient id="kmfs-42-g" gradientUnits="userSpaceOnUse" x1="619.4" y1="586.4" x2="527.8" y2="660.5">
+      <stop offset="0%" stop-color="#6968be"/>
+      <stop offset="65%" stop-color="#fd8f46"/>
+      <stop offset="100%" stop-color="#fecdac"/>
+    </linearGradient>
+    <linearGradient id="kmfs-43-g" gradientUnits="userSpaceOnUse" x1="652.9" y1="574.9" x2="564.1" y2="639.7">
+      <stop offset="0%" stop-color="#7069ba"/>
+      <stop offset="65%" stop-color="#fd9244"/>
+      <stop offset="100%" stop-color="#feceab"/>
+    </linearGradient>
+    <linearGradient id="kmfs-44-g" gradientUnits="userSpaceOnUse" x1="688.4" y1="557.1" x2="602.2" y2="613.8">
+      <stop offset="0%" stop-color="#7769b5"/>
+      <stop offset="65%" stop-color="#fd9441"/>
+      <stop offset="100%" stop-color="#fecfaa"/>
+    </linearGradient>
+    <linearGradient id="kmfs-45-g" gradientUnits="userSpaceOnUse" x1="725.7" y1="533.9" x2="641.6" y2="583.4">
+      <stop offset="0%" stop-color="#7e6ab1"/>
+      <stop offset="65%" stop-color="#fd973f"/>
+      <stop offset="100%" stop-color="#fed0a9"/>
+    </linearGradient>
+    <linearGradient id="kmfs-46-g" gradientUnits="userSpaceOnUse" x1="764.5" y1="506.3" x2="681.8" y2="549.8">
+      <stop offset="0%" stop-color="#846aac"/>
+      <stop offset="65%" stop-color="#fd9a3d"/>
+      <stop offset="100%" stop-color="#fed2a8"/>
+    </linearGradient>
+    <linearGradient id="kmfs-47-g" gradientUnits="userSpaceOnUse" x1="804.7" y1="475.7" x2="722.3" y2="513.9">
+      <stop offset="0%" stop-color="#8b6ba8"/>
+      <stop offset="65%" stop-color="#fd9d3b"/>
+      <stop offset="100%" stop-color="#fed3a7"/>
+    </linearGradient>
+    <linearGradient id="kmfs-48-g" gradientUnits="userSpaceOnUse" x1="845.8" y1="443.3" x2="762.4" y2="477.1">
+      <stop offset="0%" stop-color="#926ba4"/>
+      <stop offset="65%" stop-color="#fda039"/>
+      <stop offset="100%" stop-color="#fed4a6"/>
+    </linearGradient>
+    <linearGradient id="kmfs-49-g" gradientUnits="userSpaceOnUse" x1="887.7" y1="410.6" x2="801.9" y2="440.6">
+      <stop offset="0%" stop-color="#996c9f"/>
+      <stop offset="65%" stop-color="#fca236"/>
+      <stop offset="100%" stop-color="#fed5a5"/>
+    </linearGradient>
+    <linearGradient id="kmfs-50-g" gradientUnits="userSpaceOnUse" x1="929.9" y1="379" x2="840.3" y2="405.5">
+      <stop offset="0%" stop-color="#a06c9b"/>
+      <stop offset="65%" stop-color="#fca534"/>
+      <stop offset="100%" stop-color="#fed7a4"/>
+    </linearGradient>
+    <linearGradient id="kmfs-51-g" gradientUnits="userSpaceOnUse" x1="971.9" y1="350" x2="877.1" y2="373">
+      <stop offset="0%" stop-color="#a66d96"/>
+      <stop offset="65%" stop-color="#fca832"/>
+      <stop offset="100%" stop-color="#fed8a3"/>
+    </linearGradient>
+    <linearGradient id="kmfs-52-g" gradientUnits="userSpaceOnUse" x1="1013.5" y1="324.9" x2="912.1" y2="344.3">
+      <stop offset="0%" stop-color="#ad6d92"/>
+      <stop offset="65%" stop-color="#fcab30"/>
+      <stop offset="100%" stop-color="#fed9a2"/>
+    </linearGradient>
+    <linearGradient id="kmfs-53-g" gradientUnits="userSpaceOnUse" x1="1054" y1="304.8" x2="945.1" y2="320.1">
+      <stop offset="0%" stop-color="#b46e8d"/>
+      <stop offset="65%" stop-color="#fcad2d"/>
+      <stop offset="100%" stop-color="#fedaa1"/>
+    </linearGradient>
+    <linearGradient id="kmfs-54-g" gradientUnits="userSpaceOnUse" x1="1093" y1="290.7" x2="975.7" y2="301.4">
+      <stop offset="0%" stop-color="#bb6e89"/>
+      <stop offset="65%" stop-color="#fcb02b"/>
+      <stop offset="100%" stop-color="#fedba0"/>
+    </linearGradient>
+    <linearGradient id="kmfs-55-g" gradientUnits="userSpaceOnUse" x1="1130" y1="283.3" x2="1003.8" y2="288.6">
+      <stop offset="0%" stop-color="#c26f84"/>
+      <stop offset="65%" stop-color="#fbb329"/>
+      <stop offset="100%" stop-color="#fddd9f"/>
+    </linearGradient>
+    <linearGradient id="kmfs-56-g" gradientUnits="userSpaceOnUse" x1="1164.4" y1="283" x2="1029.4" y2="282">
+      <stop offset="0%" stop-color="#c96f80"/>
+      <stop offset="65%" stop-color="#fbb627"/>
+      <stop offset="100%" stop-color="#fdde9e"/>
+    </linearGradient>
+    <linearGradient id="kmfs-57-g" gradientUnits="userSpaceOnUse" x1="1195.8" y1="290" x2="1052.3" y2="281.9">
+      <stop offset="0%" stop-color="#cf707b"/>
+      <stop offset="65%" stop-color="#fbb925"/>
+      <stop offset="100%" stop-color="#fde09d"/>
+    </linearGradient>
+    <linearGradient id="kmfs-58-g" gradientUnits="userSpaceOnUse" x1="1223.7" y1="304" x2="1072.4" y2="288">
+      <stop offset="0%" stop-color="#d67077"/>
+      <stop offset="65%" stop-color="#fbbb22"/>
+      <stop offset="100%" stop-color="#fde09c"/>
+    </linearGradient>
+    <linearGradient id="kmfs-59-g" gradientUnits="userSpaceOnUse" x1="1247.8" y1="324.8" x2="1089.7" y2="300.1">
+      <stop offset="0%" stop-color="#dd7172"/>
+      <stop offset="65%" stop-color="#fbbe20"/>
+      <stop offset="100%" stop-color="#fde29b"/>
+    </linearGradient>
+    <linearGradient id="kmfs-60-g" gradientUnits="userSpaceOnUse" x1="1267.5" y1="351.4" x2="1104.1" y2="317.7">
+      <stop offset="0%" stop-color="#e4716e"/>
+      <stop offset="65%" stop-color="#fbc11e"/>
+      <stop offset="100%" stop-color="#fde39a"/>
+    </linearGradient>
+    <linearGradient id="kmfs-61-g" gradientUnits="userSpaceOnUse" x1="1282.6" y1="383" x2="1115.7" y2="339.9">
+      <stop offset="0%" stop-color="#eb7269"/>
+      <stop offset="65%" stop-color="#fac41c"/>
+      <stop offset="100%" stop-color="#fde499"/>
+    </linearGradient>
+    <linearGradient id="kmfs-62-g" gradientUnits="userSpaceOnUse" x1="1293" y1="418.4" x2="1124.4" y2="365.9">
+      <stop offset="0%" stop-color="#f17265"/>
+      <stop offset="65%" stop-color="#fac619"/>
+      <stop offset="100%" stop-color="#fde598"/>
+    </linearGradient>
+    <linearGradient id="kmfs-63-g" gradientUnits="userSpaceOnUse" x1="1298.3" y1="456.3" x2="1130.1" y2="394.7">
+      <stop offset="0%" stop-color="#f87360"/>
+      <stop offset="65%" stop-color="#fac917"/>
+      <stop offset="100%" stop-color="#fde797"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="800" cy="450" rx="650" ry="330" fill="url(#kmfsGlow)"/>
+  <g id="kinetic-mobius-sculpture" filter="url(#softDropShadow)">
+    <g>
+        <polygon points="837.6,422.9 754.2,456.7 762.2,467.7 845.6,433.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="762.4,477.1 754.2,456.7 762.2,467.7 770.4,488.1" fill="#926ba4"/>
+        <polygon points="845.8,443.3 762.4,477.1 754.2,456.7 837.6,422.9" fill="url(#kmfs-48-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="795.4,455.7 713,494 721,505 803.4,466.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="722.3,513.9 713,494 721,505 730.3,524.9" fill="#8b6ba8"/>
+        <polygon points="804.7,475.7 722.3,513.9 713,494 795.4,455.7" fill="url(#kmfs-47-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="880.4,389.8 794.6,419.8 802.6,430.8 888.4,400.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="801.9,440.6 794.6,419.8 802.6,430.8 809.9,451.6" fill="#996c9f"/>
+        <polygon points="887.7,410.6 801.9,440.6 794.6,419.8 880.4,389.8" fill="url(#kmfs-49-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="923.6,357.9 834,384.4 842,395.4 931.6,368.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="840.3,405.5 834,384.4 842,395.4 848.3,416.5" fill="#a06c9b"/>
+        <polygon points="929.9,379 840.3,405.5 834,384.4 923.6,357.9" fill="url(#kmfs-50-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="754.3,486.9 671.6,530.3 679.6,541.3 762.3,497.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="681.8,549.8 671.6,530.3 679.6,541.3 689.8,560.8" fill="#846aac"/>
+        <polygon points="764.5,506.3 681.8,549.8 671.6,530.3 754.3,486.9" fill="url(#kmfs-46-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="966.7,328.6 871.9,351.7 879.9,362.7 974.7,339.6" fill="#14213D" opacity="0.88"/>
+        <polygon points="877.1,373 871.9,351.7 879.9,362.7 885.1,384" fill="#a66d96"/>
+        <polygon points="971.9,350 877.1,373 871.9,351.7 966.7,328.6" fill="url(#kmfs-51-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="714.5,514.9 630.5,564.5 638.5,575.5 722.5,525.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="641.6,583.4 630.5,564.5 638.5,575.5 649.6,594.4" fill="#7e6ab1"/>
+        <polygon points="725.7,533.9 641.6,583.4 630.5,564.5 714.5,514.9" fill="url(#kmfs-45-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1009.3,303.3 908,322.7 916,333.7 1017.3,314.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="912.1,344.3 908,322.7 916,333.7 920.1,355.3" fill="#ad6d92"/>
+        <polygon points="1013.5,324.9 912.1,344.3 908,322.7 1009.3,303.3" fill="url(#kmfs-52-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="676.3,538.7 590.1,595.4 598.1,606.4 684.3,549.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="602.2,613.8 590.1,595.4 598.1,606.4 610.2,624.8" fill="#7769b5"/>
+        <polygon points="688.4,557.1 602.2,613.8 590.1,595.4 676.3,538.7" fill="url(#kmfs-44-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1050.9,283 942,298.4 950,309.4 1058.9,294" fill="#14213D" opacity="0.88"/>
+        <polygon points="945.1,320.1 942,298.4 950,309.4 953.1,331.1" fill="#b46e8d"/>
+        <polygon points="1054,304.8 945.1,320.1 942,298.4 1050.9,283" fill="url(#kmfs-53-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="639.9,557.1 551.1,622 559.1,633 647.9,568.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="564.1,639.7 551.1,622 559.1,633 572.1,650.7" fill="#7069ba"/>
+        <polygon points="652.9,574.9 564.1,639.7 551.1,622 639.9,557.1" fill="url(#kmfs-43-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1091,268.8 973.7,279.5 981.7,290.5 1099,279.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="975.7,301.4 973.7,279.5 981.7,290.5 983.7,312.4" fill="#bb6e89"/>
+        <polygon points="1093,290.7 975.7,301.4 973.7,279.5 1091,268.8" fill="url(#kmfs-54-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="605.5,569.3 514,643.4 522,654.4 613.5,580.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="527.8,660.5 514,643.4 522,654.4 535.8,671.5" fill="#6968be"/>
+        <polygon points="619.4,586.4 527.8,660.5 514,643.4 605.5,569.3" fill="url(#kmfs-42-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1129,261.3 1002.9,266.6 1010.9,277.6 1137,272.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="1003.8,288.6 1002.9,266.6 1010.9,277.6 1011.8,299.6" fill="#c26f84"/>
+        <polygon points="1130,283.3 1003.8,288.6 1002.9,266.6 1129,261.3" fill="url(#kmfs-55-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="573.3,574.8 479.2,658.9 487.2,669.9 581.3,585.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="493.8,675.3 479.2,658.9 487.2,669.9 501.8,686.3" fill="#6268c3"/>
+        <polygon points="588,591.2 493.8,675.3 479.2,658.9 573.3,574.8" fill="url(#kmfs-41-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1164.6,261 1029.6,260 1037.6,271 1172.6,272" fill="#14213D" opacity="0.88"/>
+        <polygon points="1029.4,282 1029.6,260 1037.6,271 1037.4,293" fill="#c96f80"/>
+        <polygon points="1164.4,283 1029.4,282 1029.6,260 1164.6,261" fill="url(#kmfs-56-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="543.4,573.3 447.2,668 455.2,679 551.4,584.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="462.7,683.7 447.2,668 455.2,679 470.7,694.7" fill="#5c67c7"/>
+        <polygon points="558.8,589 462.7,683.7 447.2,668 543.4,573.3" fill="url(#kmfs-40-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1197.1,268 1053.5,259.9 1061.5,270.9 1205.1,279" fill="#14213D" opacity="0.88"/>
+        <polygon points="1052.3,281.9 1053.5,259.9 1061.5,270.9 1060.3,292.9" fill="#cf707b"/>
+        <polygon points="1195.8,290 1052.3,281.9 1053.5,259.9 1197.1,268" fill="url(#kmfs-57-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="515.9,564.7 418.6,670.5 426.6,681.5 523.9,575.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="434.8,685.4 418.6,670.5 426.6,681.5 442.8,696.4" fill="#5567cc"/>
+        <polygon points="532.1,579.6 434.8,685.4 418.6,670.5 515.9,564.7" fill="url(#kmfs-39-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1226.1,282.2 1074.7,266.1 1082.7,277.1 1234.1,293.2" fill="#14213D" opacity="0.88"/>
+        <polygon points="1072.4,288 1074.7,266.1 1082.7,277.1 1080.4,299" fill="#d67077"/>
+        <polygon points="1223.7,304 1072.4,288 1074.7,266.1 1226.1,282.2" fill="url(#kmfs-58-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="491,549.4 393.6,666.4 401.6,677.4 499,560.4" fill="#14213D" opacity="0.88"/>
+        <polygon points="410.5,680.4 393.6,666.4 401.6,677.4 418.5,691.4" fill="#4e66d0"/>
+        <polygon points="507.9,563.5 410.5,680.4 393.6,666.4 491,549.4" fill="url(#kmfs-38-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1251.1,303 1093.1,278.4 1101.1,289.4 1259.1,314" fill="#14213D" opacity="0.88"/>
+        <polygon points="1089.7,300.1 1093.1,278.4 1101.1,289.4 1097.7,311.1" fill="#dd7172"/>
+        <polygon points="1247.8,324.8 1089.7,300.1 1093.1,278.4 1251.1,303" fill="url(#kmfs-59-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="468.9,527.9 372.7,655.7 380.7,666.7 476.9,538.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="390.3,668.9 372.7,655.7 380.7,666.7 398.3,679.9" fill="#4766d5"/>
+        <polygon points="486.5,541.1 390.3,668.9 372.7,655.7 468.9,527.9" fill="url(#kmfs-37-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1271.9,329.9 1108.6,296.1 1116.6,307.1 1279.9,340.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="1104.1,317.7 1108.6,296.1 1116.6,307.1 1112.1,328.7" fill="#e4716e"/>
+        <polygon points="1267.5,351.4 1104.1,317.7 1108.6,296.1 1271.9,329.9" fill="url(#kmfs-60-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="449.7,501 356,639.1 364,650.1 457.7,512" fill="#14213D" opacity="0.88"/>
+        <polygon points="374.2,651.4 356,639.1 364,650.1 382.2,662.4" fill="#4065d9"/>
+        <polygon points="467.9,513.4 374.2,651.4 356,639.1 449.7,501" fill="url(#kmfs-36-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1288.1,361.7 1121.2,318.6 1129.2,329.6 1296.1,372.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="1115.7,339.9 1121.2,318.6 1129.2,329.6 1123.7,350.9" fill="#eb7269"/>
+        <polygon points="1282.6,383 1115.7,339.9 1121.2,318.6 1288.1,361.7" fill="url(#kmfs-61-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="433.6,469.8 343.8,617.1 351.8,628.1 441.6,480.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="362.6,628.5 343.8,617.1 351.8,628.1 370.6,639.5" fill="#3965de"/>
+        <polygon points="452.3,481.3 362.6,628.5 343.8,617.1 433.6,469.8" fill="url(#kmfs-35-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1299.5,397.4 1130.9,344.9 1138.9,355.9 1307.5,408.4" fill="#14213D" opacity="0.88"/>
+        <polygon points="1124.4,365.9 1130.9,344.9 1138.9,355.9 1132.4,376.9" fill="#f17265"/>
+        <polygon points="1293,418.4 1124.4,365.9 1130.9,344.9 1299.5,397.4" fill="url(#kmfs-62-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="420.6,435.5 336.2,590.6 344.2,601.6 428.6,446.5" fill="#14213D" opacity="0.88"/>
+        <polygon points="355.5,601.1 336.2,590.6 344.2,601.6 363.5,612.1" fill="#3364e2"/>
+        <polygon points="439.9,446 355.5,601.1 336.2,590.6 420.6,435.5" fill="url(#kmfs-34-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="411,399.4 333.2,560.7 341.2,571.7 419,410.4" fill="#14213D" opacity="0.88"/>
+        <polygon points="353,570.3 333.2,560.7 341.2,571.7 361,581.3" fill="#2c64e7"/>
+        <polygon points="430.8,408.9 353,570.3 333.2,560.7 411,399.4" fill="url(#kmfs-33-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1305.9,435.6 1137.6,374.1 1145.6,385.1 1313.9,446.6" fill="#14213D" opacity="0.88"/>
+        <polygon points="1130.1,394.7 1137.6,374.1 1145.6,385.1 1138.1,405.7" fill="#f87360"/>
+        <polygon points="1298.3,456.3 1130.1,394.7 1137.6,374.1 1305.9,435.6" fill="url(#kmfs-63-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1132.8,425.1 1298.6,495.2 1306.6,506.2 1140.8,436.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="1307.2,474.9 1298.6,495.2 1306.6,506.2 1315.2,485.9" fill="#14213d"/>
+        <polygon points="1141.4,404.8 1307.2,474.9 1298.6,495.2 1132.8,425.1" fill="url(#kmfs-0-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="404.9,362.8 334.8,528.6 342.8,539.6 412.9,373.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="355.1,537.2 334.8,528.6 342.8,539.6 363.1,548.2" fill="#2563eb"/>
+        <polygon points="425.2,371.4 355.1,537.2 334.8,528.6 404.9,362.8" fill="url(#kmfs-32-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1132.5,455.8 1293.9,533.6 1301.9,544.6 1140.5,466.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="1303.4,513.8 1293.9,533.6 1301.9,544.6 1311.4,524.8" fill="#152342"/>
+        <polygon points="1142.1,436 1303.4,513.8 1293.9,533.6 1132.5,455.8" fill="url(#kmfs-1-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="402.5,327.3 340.9,495.5 348.9,506.5 410.5,338.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="361.6,503.1 340.9,495.5 348.9,506.5 369.6,514.1" fill="#2461e6"/>
+        <polygon points="423.1,334.8 361.6,503.1 340.9,495.5 402.5,327.3" fill="url(#kmfs-31-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1129.1,485.8 1284.2,570.2 1292.2,581.2 1137.1,496.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="1294.7,550.8 1284.2,570.2 1292.2,581.2 1302.7,561.8" fill="#152548"/>
+        <polygon points="1139.6,466.5 1294.7,550.8 1284.2,570.2 1129.1,485.8" fill="url(#kmfs-2-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="403.8,294.1 351.3,462.7 359.3,473.7 411.8,305.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="372.3,469.3 351.3,462.7 359.3,473.7 380.3,480.3" fill="#245fe0"/>
+        <polygon points="424.8,300.7 372.3,469.3 351.3,462.7 403.8,294.1" fill="url(#kmfs-30-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1122.6,513.7 1269.8,603.4 1277.8,614.4 1130.6,524.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="1281.3,584.6 1269.8,603.4 1277.8,614.4 1289.3,595.6" fill="#16274d"/>
+        <polygon points="1134,494.9 1281.3,584.6 1269.8,603.4 1122.6,513.7" fill="url(#kmfs-3-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="409,264.6 365.9,431.5 373.9,442.5 417,275.6" fill="#14213D" opacity="0.88"/>
+        <polygon points="387.2,437.1 365.9,431.5 373.9,442.5 395.2,448.1" fill="#235ddb"/>
+        <polygon points="430.3,270.1 387.2,437.1 365.9,431.5 409,264.6" fill="url(#kmfs-29-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1112.8,538.5 1250.9,632.2 1258.9,643.2 1120.8,549.5" fill="#14213D" opacity="0.88"/>
+        <polygon points="1263.2,614 1250.9,632.2 1258.9,643.2 1271.2,625" fill="#162953"/>
+        <polygon points="1125.2,520.3 1263.2,614 1250.9,632.2 1112.8,538.5" fill="url(#kmfs-4-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="418.1,239.9 384.3,403.2 392.3,414.2 426.1,250.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="405.9,407.7 384.3,403.2 392.3,414.2 413.9,418.7" fill="#235bd5"/>
+        <polygon points="439.6,244.3 405.9,407.7 384.3,403.2 418.1,239.9" fill="url(#kmfs-28-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1099.9,559.1 1227.7,655.3 1235.7,666.3 1107.9,570.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="1240.9,637.8 1227.7,655.3 1235.7,666.3 1248.9,648.8" fill="#172b58"/>
+        <polygon points="1113.1,541.5 1240.9,637.8 1227.7,655.3 1099.9,559.1" fill="url(#kmfs-5-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="431,220.8 406.4,378.9 414.4,389.9 439,231.8" fill="#14213D" opacity="0.88"/>
+        <polygon points="428.1,382.3 406.4,378.9 414.4,389.9 436.1,393.3" fill="#2259d0"/>
+        <polygon points="452.8,224.2 428.1,382.3 406.4,378.9 431,220.8" fill="url(#kmfs-27-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1083.7,574.7 1200.7,672.1 1208.7,683.1 1091.7,585.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="1214.7,655.2 1200.7,672.1 1208.7,683.1 1222.7,666.2" fill="#172d5e"/>
+        <polygon points="1097.8,557.7 1214.7,655.2 1200.7,672.1 1083.7,574.7" fill="url(#kmfs-6-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="447.9,208.2 431.8,359.6 439.8,370.6 455.9,219.2" fill="#14213D" opacity="0.88"/>
+        <polygon points="453.7,361.9 431.8,359.6 439.8,370.6 461.7,372.9" fill="#2257ca"/>
+        <polygon points="469.7,210.6 453.7,361.9 431.8,359.6 447.9,208.2" fill="url(#kmfs-26-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1064.3,584.5 1170.1,681.8 1178.1,692.8 1072.3,595.5" fill="#14213D" opacity="0.88"/>
+        <polygon points="1185,665.6 1170.1,681.8 1178.1,692.8 1193,676.6" fill="#182f63"/>
+        <polygon points="1079.2,568.3 1185,665.6 1170.1,681.8 1064.3,584.5" fill="url(#kmfs-7-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="468.4,202.5 460.3,346.1 468.3,357.1 476.4,213.5" fill="#14213D" opacity="0.88"/>
+        <polygon points="482.3,347.3 460.3,346.1 468.3,357.1 490.3,358.3" fill="#2155c5"/>
+        <polygon points="490.4,203.8 482.3,347.3 460.3,346.1 468.4,202.5" fill="url(#kmfs-25-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1041.8,588.1 1136.5,684.3 1144.5,695.3 1049.8,599.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="1152.2,668.9 1136.5,684.3 1144.5,695.3 1160.2,679.9" fill="#183269"/>
+        <polygon points="1057.4,572.7 1152.2,668.9 1136.5,684.3 1041.8,588.1" fill="url(#kmfs-8-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="492.5,203.9 491.5,338.9 499.5,349.9 500.5,214.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="513.5,339.1 491.5,338.9 499.5,349.9 521.5,350.1" fill="#2153c0"/>
+        <polygon points="514.5,204.1 513.5,339.1 491.5,338.9 492.5,203.9" fill="url(#kmfs-24-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="1016.2,585.3 1100.3,679.5 1108.3,690.5 1024.2,596.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="1116.7,664.8 1100.3,679.5 1108.3,690.5 1124.7,675.8" fill="#19346e"/>
+        <polygon points="1032.6,570.7 1116.7,664.8 1100.3,679.5 1016.2,585.3" fill="url(#kmfs-9-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="519.9,212.3 525.2,338.4 533.2,349.4 527.9,223.3" fill="#14213D" opacity="0.88"/>
+        <polygon points="547.2,337.5 525.2,338.4 533.2,349.4 555.2,348.5" fill="#2050ba"/>
+        <polygon points="541.9,211.4 547.2,337.5 525.2,338.4 519.9,212.3" fill="url(#kmfs-23-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="987.8,576 1061.8,667.6 1069.8,678.6 995.8,587" fill="#14213D" opacity="0.88"/>
+        <polygon points="1078.9,653.8 1061.8,667.6 1069.8,678.6 1086.9,664.8" fill="#193673"/>
+        <polygon points="1004.9,562.2 1078.9,653.8 1061.8,667.6 987.8,576" fill="url(#kmfs-10-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="550.4,227.4 561.1,344.7 569.1,355.7 558.4,238.4" fill="#14213D" opacity="0.88"/>
+        <polygon points="583,342.7 561.1,344.7 569.1,355.7 591,353.7" fill="#204eb5"/>
+        <polygon points="572.3,225.4 583,342.7 561.1,344.7 550.4,227.4" fill="url(#kmfs-22-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="956.7,560.5 1021.5,649.3 1029.5,660.3 964.7,571.5" fill="#14213D" opacity="0.88"/>
+        <polygon points="1039.3,636.3 1021.5,649.3 1029.5,660.3 1047.3,647.3" fill="#1a3879"/>
+        <polygon points="974.4,547.5 1039.3,636.3 1021.5,649.3 956.7,560.5" fill="url(#kmfs-11-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="583.4,248.7 598.8,357.6 606.8,368.6 591.4,259.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="620.6,354.5 598.8,357.6 606.8,368.6 628.6,365.5" fill="#1f4caf"/>
+        <polygon points="605.2,245.6 620.6,354.5 598.8,357.6 583.4,248.7" fill="url(#kmfs-21-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="923.2,539.2 979.9,625.4 987.9,636.4 931.2,550.2" fill="#14213D" opacity="0.88"/>
+        <polygon points="998.3,613.3 979.9,625.4 987.9,636.4 1006.3,624.3" fill="#1a3a7e"/>
+        <polygon points="941.6,527.1 998.3,613.3 979.9,625.4 923.2,539.2" fill="url(#kmfs-12-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="618.8,275.2 638.2,376.5 646.2,387.5 626.8,286.2" fill="#14213D" opacity="0.88"/>
+        <polygon points="659.8,372.4 638.2,376.5 646.2,387.5 667.8,383.4" fill="#1f4aaa"/>
+        <polygon points="640.4,271 659.8,372.4 638.2,376.5 618.8,275.2" fill="url(#kmfs-20-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="887.7,512.7 937.2,596.8 945.2,607.8 895.7,523.7" fill="#14213D" opacity="0.88"/>
+        <polygon points="956.2,585.6 937.2,596.8 945.2,607.8 964.2,596.6" fill="#1b3c84"/>
+        <polygon points="906.6,501.6 956.2,585.6 937.2,596.8 887.7,512.7" fill="url(#kmfs-13-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="655.9,306 678.9,400.8 686.9,411.8 663.9,317" fill="#14213D" opacity="0.88"/>
+        <polygon points="700.3,395.7 678.9,400.8 686.9,411.8 708.3,406.7" fill="#1e48a4"/>
+        <polygon points="677.3,300.8 700.3,395.7 678.9,400.8 655.9,306" fill="url(#kmfs-19-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="850.5,482.1 893.9,564.8 901.9,575.8 858.5,493.1" fill="#14213D" opacity="0.88"/>
+        <polygon points="913.4,554.6 893.9,564.8 901.9,575.8 921.4,565.6" fill="#1b3e89"/>
+        <polygon points="870,471.8 913.4,554.6 893.9,564.8 850.5,482.1" fill="url(#kmfs-14-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="694.3,340 720.7,429.6 728.7,440.6 702.3,351" fill="#14213D" opacity="0.88"/>
+        <polygon points="741.8,423.4 720.7,429.6 728.7,440.6 749.8,434.4" fill="#1e469f"/>
+        <polygon points="715.4,333.8 741.8,423.4 720.7,429.6 694.3,340" fill="url(#kmfs-18-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="812.1,448.2 850.3,530.7 858.3,541.7 820.1,459.2" fill="#14213D" opacity="0.88"/>
+        <polygon points="870.3,521.4 850.3,530.7 858.3,541.7 878.3,532.4" fill="#1c408f"/>
+        <polygon points="832,439 870.3,521.4 850.3,530.7 812.1,448.2" fill="url(#kmfs-15-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="733.5,375.9 763.4,461.7 771.4,472.7 741.5,386.9" fill="#14213D" opacity="0.88"/>
+        <polygon points="784.2,454.4 763.4,461.7 771.4,472.7 792.2,465.4" fill="#1d4499"/>
+        <polygon points="754.2,368.7 784.2,454.4 763.4,461.7 733.5,375.9" fill="url(#kmfs-17-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+    <g>
+        <polygon points="772.9,412.4 806.7,495.8 814.7,506.8 780.9,423.4" fill="#14213D" opacity="0.88"/>
+        <polygon points="827.1,487.6 806.7,495.8 814.7,506.8 835.1,498.6" fill="#1d4294"/>
+        <polygon points="793.3,404.2 827.1,487.6 806.7,495.8 772.9,412.4" fill="url(#kmfs-16-g)" stroke="#FFFFFF" stroke-width="0.65" stroke-linejoin="round"/>
+      </g>
+  </g>
+</svg>

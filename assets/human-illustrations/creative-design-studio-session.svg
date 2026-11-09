@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter></defs>
+  <ellipse cx="600" cy="465" rx="495" ry="315" fill="#DBEAFE" opacity="0.48"/>
+
+  <!-- Floating Vector Bezier & Color Swatch Artboard -->
+  <g filter="url(#softDropShadow)">
+    <rect x="260" y="135" width="680" height="410" rx="26" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <!-- Left Color System Swatches -->
+    <rect x="295" y="175" width="140" height="330" rx="16" fill="#F8FAFC" stroke="#DBEAFE" stroke-width="2"/>
+    <rect x="315" y="195" width="100" height="52" rx="10" fill="#14213D"/>
+    <rect x="315" y="260" width="100" height="52" rx="10" fill="#2563EB"/>
+    <rect x="315" y="325" width="100" height="52" rx="10" fill="#FF735C"/>
+    <rect x="315" y="390" width="100" height="52" rx="10" fill="#10B981"/>
+    <rect x="315" y="455" width="100" height="32" rx="8" fill="#FACC15"/>
+
+    <!-- Central Interactive Bezier Pen Tool Canvas -->
+    <rect x="460" y="175" width="445" height="330" rx="18" fill="#14213D"/>
+    <!-- Bezier Curve & Control Handles -->
+    <line x1="535" y1="415" x2="610" y2="235" stroke="#93C5FD" stroke-width="2" stroke-dasharray="5 5"/>
+    <line x1="825" y1="265" x2="745" y2="435" stroke="#93C5FD" stroke-width="2" stroke-dasharray="5 5"/>
+    <circle cx="610" cy="235" r="7" fill="#FACC15"/>
+    <circle cx="745" cy="435" r="7" fill="#FACC15"/>
+    <path d="M 535 415 C 610 235, 745 435, 825 265" fill="none" stroke="#FF735C" stroke-width="6" stroke-linecap="round"/>
+    <rect x="525" y="405" width="20" height="20" rx="4" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+    <rect x="815" y="255" width="20" height="20" rx="4" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+    <circle cx="680" cy="338" r="10" fill="#10B981" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Creative Director & Visual Designer -->
+  <g transform="translate(240, 545) scale(1.38, 1.38)">
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#FF735C"/>
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#FACC15"/>
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#F4B89A"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#F4B89A"/>
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#14213D"/>
+    <circle cx="-18" cy="-8" r="10" fill="#14213D"/>
+    <path d="M 28 58 C 56 64, 78 44, 102 22" fill="none" stroke="#FF735C" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="106" cy="18" r="9" fill="#F4B89A"/>
+    <path d="M -32 60 C -52 84, -44 114, -18 118" fill="none" stroke="#FF735C" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-14" cy="118" r="8.5" fill="#F4B89A"/>
+  </g>
+  <g transform="translate(960, 545) scale(-1.38, 1.38)">
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#2563EB"/>
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#10B981"/>
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#C87E5B"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#C87E5B"/>
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#1F2937"/>
+    <circle cx="-18" cy="-8" r="10" fill="#1F2937"/>
+    <path d="M 28 58 C 56 64, 78 44, 102 22" fill="none" stroke="#2563EB" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="106" cy="18" r="9" fill="#C87E5B"/>
+    <path d="M -32 60 C -52 84, -44 114, -18 118" fill="none" stroke="#2563EB" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-14" cy="118" r="8.5" fill="#C87E5B"/>
+  </g>
+  <rect x="140" y="725" width="920" height="16" rx="8" fill="#14213D"/>
+</svg>

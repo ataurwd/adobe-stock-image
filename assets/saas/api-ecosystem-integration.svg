@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter></defs>
+  <circle cx="600" cy="450" r="375" fill="#DBEAFE" opacity="0.42"/>
+
+  <!-- Isometric / Orthogonal Circuit Conduits -->
+  <g fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="260,230 430,230 520,370" stroke="#2563EB"/>
+    <polyline points="940,230 770,230 680,370" stroke="#10B981"/>
+    <polyline points="260,670 430,670 520,530" stroke="#FF735C"/>
+    <polyline points="940,670 770,670 680,530" stroke="#A78BFA"/>
+  </g>
+
+  <!-- Central 3D Hexagonal API Gateway Hub -->
+  <g filter="url(#softDropShadow)">
+    <polygon points="600,285 745,368 745,532 600,615 455,532 455,368" fill="#14213D" stroke="#93C5FD" stroke-width="4"/>
+    <polygon points="600,320 715,385 715,515 600,580 485,515 485,385" fill="#2563EB"/>
+    <rect x="530" y="420" width="140" height="60" rx="14" fill="#FFFFFF"/>
+    <text x="600" y="458" text-anchor="middle" fill="#14213D" font-family="ui-monospace, monospace" font-size="24" font-weight="800">{ API }</text>
+  </g>
+
+  <!-- 4 Corner SDK / Webhook Endpoint Cards -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="170" width="220" height="120" rx="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <text x="220" y="222" text-anchor="middle" fill="#2563EB" font-family="ui-monospace, monospace" font-size="16" font-weight="800">REST / GraphQL</text>
+    <rect x="150" y="242" width="140" height="12" rx="6" fill="#14213D"/>
+
+    <rect x="870" y="170" width="220" height="120" rx="20" fill="#FFFFFF" stroke="#10B981" stroke-width="3"/>
+    <text x="980" y="222" text-anchor="middle" fill="#10B981" font-family="ui-monospace, monospace" font-size="16" font-weight="800">Webhooks 200 OK</text>
+    <rect x="910" y="242" width="140" height="12" rx="6" fill="#14213D"/>
+
+    <rect x="110" y="610" width="220" height="120" rx="20" fill="#FFFFFF" stroke="#FF735C" stroke-width="3"/>
+    <text x="220" y="662" text-anchor="middle" fill="#FF735C" font-family="ui-monospace, monospace" font-size="16" font-weight="800">OAuth 2.0 / SSO</text>
+    <rect x="150" y="682" width="140" height="12" rx="6" fill="#14213D"/>
+
+    <rect x="870" y="610" width="220" height="120" rx="20" fill="#FFFFFF" stroke="#A78BFA" stroke-width="3"/>
+    <text x="980" y="662" text-anchor="middle" fill="#6D28D9" font-family="ui-monospace, monospace" font-size="16" font-weight="800">Edge SDKs</text>
+    <rect x="910" y="682" width="140" height="12" rx="6" fill="#14213D"/>
+  </g>
+</svg>

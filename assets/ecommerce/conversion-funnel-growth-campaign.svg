@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter></defs>
+  <ellipse cx="600" cy="460" rx="480" ry="310" fill="#DBEAFE" opacity="0.45"/>
+
+  <!-- 3D Layered Conversion Funnel Rings -->
+  <g filter="url(#softDropShadow)">
+    <polygon points="260,210 940,210 850,350 350,350" fill="#2563EB" stroke="#FFFFFF" stroke-width="3"/>
+    <ellipse cx="600" cy="210" rx="340" ry="45" fill="#93C5FD" stroke="#FFFFFF" stroke-width="3"/>
+
+    <polygon points="365,375 835,375 755,515 445,515" fill="#A78BFA" stroke="#FFFFFF" stroke-width="3"/>
+    <ellipse cx="600" cy="375" rx="235" ry="34" fill="#DDD6FE" stroke="#FFFFFF" stroke-width="2.5"/>
+
+    <polygon points="460,540 740,540 675,675 525,675" fill="#FF735C" stroke="#FFFFFF" stroke-width="3"/>
+    <ellipse cx="600" cy="540" rx="140" ry="24" fill="#FECDD3" stroke="#FFFFFF" stroke-width="2.5"/>
+
+    <!-- Bottom Revenue Conversion Medallion -->
+    <circle cx="600" cy="745" r="56" fill="#10B981" stroke="#FFFFFF" stroke-width="5"/>
+    <text x="600" y="756" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="32" font-weight="800">$</text>
+  </g>
+</svg>

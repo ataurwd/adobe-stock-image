@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter></defs>
+  <ellipse cx="600" cy="470" rx="480" ry="310" fill="#DBEAFE" opacity="0.45"/>
+
+  <!-- 3D Stacked Isometric Data Lake Cylinders / Layers -->
+  <g filter="url(#softDropShadow)">
+    <!-- Bottom Storage Tier -->
+    <path d="M 340 560 C 340 620, 860 620, 860 560 L 860 650 C 860 710, 340 710, 340 650 Z" fill="#14213D"/>
+    <ellipse cx="600" cy="560" rx="260" ry="60" fill="#2563EB" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Middle Compute Tier -->
+    <path d="M 370 430 C 370 485, 830 485, 830 430 L 830 510 C 830 565, 370 565, 370 510 Z" fill="#2563EB"/>
+    <ellipse cx="600" cy="430" rx="230" ry="52" fill="#93C5FD" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Top Real-Time Analytics Stream Tier -->
+    <path d="M 410 300 C 410 348, 790 348, 790 300 L 790 370 C 790 418, 410 418, 410 370 Z" fill="#10B981"/>
+    <ellipse cx="600" cy="300" rx="190" ry="44" fill="#A7F3D0" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Ascending Data Stream Particles & Telemetry Pillars -->
+  <g stroke="#FF735C" stroke-width="4" stroke-dasharray="6 8">
+    <line x1="480" y1="290" x2="480" y2="150"/>
+    <line x1="600" y1="280" x2="600" y2="120"/>
+    <line x1="720" y1="290" x2="720" y2="150"/>
+  </g>
+  <circle cx="480" cy="145" r="14" fill="#FF735C"/>
+  <circle cx="600" cy="115" r="18" fill="#FACC15" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="720" cy="145" r="14" fill="#10B981"/>
+</svg>

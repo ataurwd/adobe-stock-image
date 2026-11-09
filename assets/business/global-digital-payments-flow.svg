@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="cardNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213D"/>
+      <stop offset="55%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Orbital Liquidity Rings -->
+  <ellipse cx="600" cy="450" rx="470" ry="210" fill="none" stroke="#93C5FD" stroke-width="3" stroke-dasharray="10 10" transform="rotate(-14 600 450)"/>
+  <ellipse cx="600" cy="450" rx="390" ry="260" fill="#DBEAFE" opacity="0.45"/>
+
+  <!-- 3D Floating Executive Smart Card -->
+  <g filter="url(#softDropShadow)" transform="rotate(-8 600 440)">
+    <rect x="330" y="275" width="540" height="330" rx="28" fill="url(#cardNavyGrad)" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- EMV Gold Chip -->
+    <rect x="385" y="345" width="76" height="58" rx="10" fill="#FACC15"/>
+    <line x1="385" y1="374" x2="461" y2="374" stroke="#14213D" stroke-width="2"/>
+    <line x1="423" y1="345" x2="423" y2="403" stroke="#14213D" stroke-width="2"/>
+    <!-- Contactless Wave Symbol -->
+    <path d="M 790 360 Q 805 375 790 390 M 802 350 Q 822 375 802 400" fill="none" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cardholder & Balance -->
+    <text x="385" y="485" fill="#DBEAFE" font-family="ui-monospace, monospace" font-size="22" font-weight="700">••••  ••••  ••••  4829</text>
+    <text x="385" y="545" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">$84,250.00</text>
+    <circle cx="780" cy="535" r="26" fill="#FF735C" opacity="0.9"/>
+    <circle cx="812" cy="535" r="26" fill="#FACC15" opacity="0.9"/>
+  </g>
+
+  <!-- Instant Settlement Badge -->
+  <g filter="url(#cardShadow)">
+    <rect x="690" y="160" width="290" height="84" rx="42" fill="#FFFFFF" stroke="#10B981" stroke-width="3"/>
+    <circle cx="736" cy="202" r="24" fill="#10B981"/>
+    <path d="M 726 202 L 734 210 L 748 194" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="855" y="208" text-anchor="middle" fill="#14213D" font-family="system-ui, sans-serif" font-size="17" font-weight="800">Instant Settlement</text>
+  </g>
+</svg>

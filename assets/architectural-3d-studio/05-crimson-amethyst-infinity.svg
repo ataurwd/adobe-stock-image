@@ -1,0 +1,1525 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="twilightStudioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf1eb"/>
+      <stop offset="45%" stop-color="#f2e4f0"/>
+      <stop offset="100%" stop-color="#dce0f7"/>
+    </linearGradient>
+    <radialGradient id="oculusPortalGlow" cx="50%" cy="49%" r="36%">
+      <stop offset="0%" stop-color="#fffdf9" stop-opacity="0.98"/>
+      <stop offset="45%" stop-color="#ffeae2" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#f2e4f0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="twilightFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2ddf2" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#cfc9e8" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#b8b0db" stop-opacity="0.95"/>
+    </linearGradient>
+    
+    <filter id="plankAoBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="floorShadowBlur" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="contactShadowBlur" x="-25%" y="-35%" width="150%" height="170%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="ambientGlowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+    <filter id="studioGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="17" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.5   0 0 0 0 0.48   0 0 0 0 0.52  0 0 0 0.032 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="overlay" in="SourceGraphic" in2="coloredNoise" result="blended"/>
+      <feComposite in="blended" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <linearGradient id="cai-rib-50-top" gradientUnits="userSpaceOnUse" x1="838.5" y1="318" x2="1005.4" y2="212.1">
+      <stop offset="0%" stop-color="#3f4496"/>
+      <stop offset="35%" stop-color="#626dc7"/>
+      <stop offset="75%" stop-color="#8b99e6"/>
+      <stop offset="100%" stop-color="#d1dafb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-50-sideL" gradientUnits="userSpaceOnUse" x1="826.7" y1="301.7" x2="993" y2="196.3">
+      <stop offset="0%" stop-color="#252662"/>
+      <stop offset="100%" stop-color="#404891"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-50-sideR" gradientUnits="userSpaceOnUse" x1="838.2" y1="322.8" x2="1003.5" y2="217.9">
+      <stop offset="0%" stop-color="#201f53"/>
+      <stop offset="100%" stop-color="#252662"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-50-chamL" gradientUnits="userSpaceOnUse" x1="831.2" y1="306" x2="998.4" y2="200">
+      <stop offset="0%" stop-color="#bfc7f1"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-50-chamR" gradientUnits="userSpaceOnUse" x1="842.8" y1="327.2" x2="1008.9" y2="221.7">
+      <stop offset="0%" stop-color="#404891"/>
+      <stop offset="100%" stop-color="#8991c6"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-51-top" gradientUnits="userSpaceOnUse" x1="855.3" y1="321.3" x2="1036.1" y2="227.5">
+      <stop offset="0%" stop-color="#474590"/>
+      <stop offset="35%" stop-color="#6c6fc0"/>
+      <stop offset="75%" stop-color="#939be0"/>
+      <stop offset="100%" stop-color="#d4dbf8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-51-sideL" gradientUnits="userSpaceOnUse" x1="845.2" y1="303.8" x2="1025.4" y2="210.5">
+      <stop offset="0%" stop-color="#2b265d"/>
+      <stop offset="100%" stop-color="#47478b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-51-sideR" gradientUnits="userSpaceOnUse" x1="855.1" y1="325.7" x2="1034.2" y2="232.8">
+      <stop offset="0%" stop-color="#251f4f"/>
+      <stop offset="100%" stop-color="#2b265d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-51-chamL" gradientUnits="userSpaceOnUse" x1="849" y1="308.7" x2="1030.2" y2="214.8">
+      <stop offset="0%" stop-color="#c4c8ee"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-51-chamR" gradientUnits="userSpaceOnUse" x1="859" y1="330.7" x2="1039" y2="237.3">
+      <stop offset="0%" stop-color="#47478b"/>
+      <stop offset="100%" stop-color="#8e91c2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-49-top" gradientUnits="userSpaceOnUse" x1="821.3" y1="315.6" x2="974.6" y2="197.5">
+      <stop offset="0%" stop-color="#36439d"/>
+      <stop offset="35%" stop-color="#596ccd"/>
+      <stop offset="75%" stop-color="#8397eb"/>
+      <stop offset="100%" stop-color="#cdd9fd"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-49-sideL" gradientUnits="userSpaceOnUse" x1="807.8" y1="300.6" x2="960.6" y2="183.1">
+      <stop offset="0%" stop-color="#202666"/>
+      <stop offset="100%" stop-color="#3a4898"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-49-sideR" gradientUnits="userSpaceOnUse" x1="821" y1="320.9" x2="972.7" y2="203.9">
+      <stop offset="0%" stop-color="#1d1f56"/>
+      <stop offset="100%" stop-color="#202666"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-49-chamL" gradientUnits="userSpaceOnUse" x1="813.1" y1="304.2" x2="966.6" y2="186">
+      <stop offset="0%" stop-color="#bbc6f4"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-49-chamR" gradientUnits="userSpaceOnUse" x1="826.2" y1="324.7" x2="978.7" y2="206.9">
+      <stop offset="0%" stop-color="#3a4898"/>
+      <stop offset="100%" stop-color="#8491cb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-52-top" gradientUnits="userSpaceOnUse" x1="871.5" y1="325.4" x2="1066.8" y2="244">
+      <stop offset="0%" stop-color="#50468a"/>
+      <stop offset="35%" stop-color="#7571ba"/>
+      <stop offset="75%" stop-color="#9b9ddb"/>
+      <stop offset="100%" stop-color="#d7dcf6"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-52-sideL" gradientUnits="userSpaceOnUse" x1="863.2" y1="307.1" x2="1057.7" y2="226.1">
+      <stop offset="0%" stop-color="#302759"/>
+      <stop offset="100%" stop-color="#4e4785"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-52-sideR" gradientUnits="userSpaceOnUse" x1="871.6" y1="329.6" x2="1064.9" y2="249">
+      <stop offset="0%" stop-color="#29204c"/>
+      <stop offset="100%" stop-color="#302759"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-52-chamL" gradientUnits="userSpaceOnUse" x1="866.3" y1="312.4" x2="1061.9" y2="230.9">
+      <stop offset="0%" stop-color="#c8c9eb"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-52-chamR" gradientUnits="userSpaceOnUse" x1="874.7" y1="335" x2="1069.1" y2="253.9">
+      <stop offset="0%" stop-color="#4e4785"/>
+      <stop offset="100%" stop-color="#9392be"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-48-top" gradientUnits="userSpaceOnUse" x1="803.9" y1="314.2" x2="943.5" y2="183.4">
+      <stop offset="0%" stop-color="#2e42a3"/>
+      <stop offset="35%" stop-color="#506ad4"/>
+      <stop offset="75%" stop-color="#7b95f0"/>
+      <stop offset="100%" stop-color="#cad8ff"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-48-sideL" gradientUnits="userSpaceOnUse" x1="788.7" y1="300.7" x2="928" y2="170.6">
+      <stop offset="0%" stop-color="#1b266b"/>
+      <stop offset="100%" stop-color="#33489e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-48-sideR" gradientUnits="userSpaceOnUse" x1="803.5" y1="320" x2="941.7" y2="190.5">
+      <stop offset="0%" stop-color="#191f59"/>
+      <stop offset="100%" stop-color="#1b266b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-48-chamL" gradientUnits="userSpaceOnUse" x1="794.6" y1="303.6" x2="934.5" y2="172.8">
+      <stop offset="0%" stop-color="#b6c5f7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-48-chamR" gradientUnits="userSpaceOnUse" x1="809.4" y1="323" x2="948.3" y2="192.7">
+      <stop offset="0%" stop-color="#33489e"/>
+      <stop offset="100%" stop-color="#7f90cf"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-53-top" gradientUnits="userSpaceOnUse" x1="887.1" y1="330.4" x2="1097.2" y2="262.1">
+      <stop offset="0%" stop-color="#584783"/>
+      <stop offset="35%" stop-color="#7e72b3"/>
+      <stop offset="75%" stop-color="#a29fd6"/>
+      <stop offset="100%" stop-color="#dbddf4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-53-sideL" gradientUnits="userSpaceOnUse" x1="880.5" y1="311.4" x2="1089.9" y2="243.3">
+      <stop offset="0%" stop-color="#352754"/>
+      <stop offset="100%" stop-color="#54477e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-53-sideR" gradientUnits="userSpaceOnUse" x1="887.4" y1="334.3" x2="1095.5" y2="266.7">
+      <stop offset="0%" stop-color="#2c2048"/>
+      <stop offset="100%" stop-color="#352754"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-53-chamL" gradientUnits="userSpaceOnUse" x1="882.9" y1="317.1" x2="1093.3" y2="248.6">
+      <stop offset="0%" stop-color="#cccae8"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-53-chamR" gradientUnits="userSpaceOnUse" x1="889.8" y1="340.1" x2="1098.9" y2="272.1">
+      <stop offset="0%" stop-color="#54477e"/>
+      <stop offset="100%" stop-color="#9892b9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-47-top" gradientUnits="userSpaceOnUse" x1="786.3" y1="313.7" x2="911.7" y2="169.7">
+      <stop offset="0%" stop-color="#3240a1"/>
+      <stop offset="35%" stop-color="#5568d2"/>
+      <stop offset="75%" stop-color="#8093ee"/>
+      <stop offset="100%" stop-color="#cdd7fe"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-47-sideL" gradientUnits="userSpaceOnUse" x1="769.6" y1="302" x2="894.8" y2="158.8">
+      <stop offset="0%" stop-color="#1d256a"/>
+      <stop offset="100%" stop-color="#36469d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-47-sideR" gradientUnits="userSpaceOnUse" x1="786" y1="320.1" x2="910.3" y2="177.4">
+      <stop offset="0%" stop-color="#1a1e59"/>
+      <stop offset="100%" stop-color="#1d256a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-47-chamL" gradientUnits="userSpaceOnUse" x1="776" y1="304" x2="901.8" y2="160">
+      <stop offset="0%" stop-color="#b9c4f6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-47-chamR" gradientUnits="userSpaceOnUse" x1="792.5" y1="322.1" x2="917.2" y2="178.7">
+      <stop offset="0%" stop-color="#36469d"/>
+      <stop offset="100%" stop-color="#828fce"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-54-top" gradientUnits="userSpaceOnUse" x1="901.9" y1="336.3" x2="1127.2" y2="282">
+      <stop offset="0%" stop-color="#61487d"/>
+      <stop offset="35%" stop-color="#8774ad"/>
+      <stop offset="75%" stop-color="#aaa1d1"/>
+      <stop offset="100%" stop-color="#dedef2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-54-sideL" gradientUnits="userSpaceOnUse" x1="897.1" y1="316.7" x2="1121.5" y2="262.6">
+      <stop offset="0%" stop-color="#3a2750"/>
+      <stop offset="100%" stop-color="#5b4778"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-54-sideR" gradientUnits="userSpaceOnUse" x1="902.5" y1="340" x2="1125.6" y2="286.3">
+      <stop offset="0%" stop-color="#302045"/>
+      <stop offset="100%" stop-color="#3a2750"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-54-chamL" gradientUnits="userSpaceOnUse" x1="898.7" y1="322.6" x2="1124.3" y2="268.2">
+      <stop offset="0%" stop-color="#d0cbe6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-54-chamR" gradientUnits="userSpaceOnUse" x1="904.1" y1="346" x2="1128.4" y2="292.1">
+      <stop offset="0%" stop-color="#5b4778"/>
+      <stop offset="100%" stop-color="#9d93b5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-46-top" gradientUnits="userSpaceOnUse" x1="768.6" y1="314.2" x2="879" y2="156.4">
+      <stop offset="0%" stop-color="#363fa0"/>
+      <stop offset="35%" stop-color="#5a67d0"/>
+      <stop offset="75%" stop-color="#8592ec"/>
+      <stop offset="100%" stop-color="#cfd5fd"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-46-sideL" gradientUnits="userSpaceOnUse" x1="750.5" y1="304.5" x2="860.8" y2="147.6">
+      <stop offset="0%" stop-color="#1f2469"/>
+      <stop offset="100%" stop-color="#39449b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-46-sideR" gradientUnits="userSpaceOnUse" x1="768.6" y1="321.1" x2="877.9" y2="164.8">
+      <stop offset="0%" stop-color="#1c1d58"/>
+      <stop offset="100%" stop-color="#1f2469"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-46-chamL" gradientUnits="userSpaceOnUse" x1="757.3" y1="305.5" x2="868.1" y2="147.7">
+      <stop offset="0%" stop-color="#bcc3f5"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-46-chamR" gradientUnits="userSpaceOnUse" x1="775.5" y1="322.2" x2="885.2" y2="165">
+      <stop offset="0%" stop-color="#39449b"/>
+      <stop offset="100%" stop-color="#848dcc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-55-top" gradientUnits="userSpaceOnUse" x1="915.8" y1="342.9" x2="1156.3" y2="304">
+      <stop offset="0%" stop-color="#694977"/>
+      <stop offset="35%" stop-color="#9075a6"/>
+      <stop offset="75%" stop-color="#b2a3cb"/>
+      <stop offset="100%" stop-color="#e1dff0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-55-sideL" gradientUnits="userSpaceOnUse" x1="912.8" y1="322.9" x2="1152.3" y2="284.1">
+      <stop offset="0%" stop-color="#3f274b"/>
+      <stop offset="100%" stop-color="#624671"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-55-sideR" gradientUnits="userSpaceOnUse" x1="916.7" y1="346.5" x2="1154.8" y2="308.1">
+      <stop offset="0%" stop-color="#342041"/>
+      <stop offset="100%" stop-color="#3f274b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-55-chamL" gradientUnits="userSpaceOnUse" x1="913.6" y1="329" x2="1154.4" y2="290">
+      <stop offset="0%" stop-color="#d5cce2"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-55-chamR" gradientUnits="userSpaceOnUse" x1="917.5" y1="352.7" x2="1156.9" y2="314.2">
+      <stop offset="0%" stop-color="#624671"/>
+      <stop offset="100%" stop-color="#a293b1"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-45-top" gradientUnits="userSpaceOnUse" x1="751.1" y1="315.6" x2="844.7" y2="143.7">
+      <stop offset="0%" stop-color="#393d9e"/>
+      <stop offset="35%" stop-color="#5e65ce"/>
+      <stop offset="75%" stop-color="#8990ea"/>
+      <stop offset="100%" stop-color="#d2d4fb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-45-sideL" gradientUnits="userSpaceOnUse" x1="731.8" y1="308.3" x2="825.5" y2="137.1">
+      <stop offset="0%" stop-color="#212368"/>
+      <stop offset="100%" stop-color="#3c429a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-45-sideR" gradientUnits="userSpaceOnUse" x1="751.5" y1="323.1" x2="844.2" y2="152.7">
+      <stop offset="0%" stop-color="#1d1d57"/>
+      <stop offset="100%" stop-color="#212368"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-45-chamL" gradientUnits="userSpaceOnUse" x1="738.9" y1="308.1" x2="832.9" y2="136.1">
+      <stop offset="0%" stop-color="#bec2f3"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-45-chamR" gradientUnits="userSpaceOnUse" x1="758.7" y1="323.1" x2="851.7" y2="151.8">
+      <stop offset="0%" stop-color="#3c429a"/>
+      <stop offset="100%" stop-color="#878bcb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-44-top" gradientUnits="userSpaceOnUse" x1="733.7" y1="318" x2="808.5" y2="131.8">
+      <stop offset="0%" stop-color="#3d3c9c"/>
+      <stop offset="35%" stop-color="#6363cc"/>
+      <stop offset="75%" stop-color="#8e8ee8"/>
+      <stop offset="100%" stop-color="#d4d3fa"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-44-sideL" gradientUnits="userSpaceOnUse" x1="713.5" y1="313.2" x2="788.5" y2="127.8">
+      <stop offset="0%" stop-color="#242267"/>
+      <stop offset="100%" stop-color="#3f4098"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-44-sideR" gradientUnits="userSpaceOnUse" x1="734.7" y1="326.1" x2="808.7" y2="141.5">
+      <stop offset="0%" stop-color="#201c56"/>
+      <stop offset="100%" stop-color="#242267"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-44-chamL" gradientUnits="userSpaceOnUse" x1="720.7" y1="311.9" x2="795.9" y2="125.6">
+      <stop offset="0%" stop-color="#c1c1f2"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-44-chamR" gradientUnits="userSpaceOnUse" x1="742.1" y1="324.9" x2="816.2" y2="139.4">
+      <stop offset="0%" stop-color="#3f4098"/>
+      <stop offset="100%" stop-color="#8a8ac9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-56-top" gradientUnits="userSpaceOnUse" x1="928.8" y1="350.2" x2="1184" y2="328.5">
+      <stop offset="0%" stop-color="#724a71"/>
+      <stop offset="35%" stop-color="#9a77a0"/>
+      <stop offset="75%" stop-color="#baa5c6"/>
+      <stop offset="100%" stop-color="#e5e0ee"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-56-sideL" gradientUnits="userSpaceOnUse" x1="927.5" y1="330" x2="1181.6" y2="308.1">
+      <stop offset="0%" stop-color="#452747"/>
+      <stop offset="100%" stop-color="#69466b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-56-sideR" gradientUnits="userSpaceOnUse" x1="929.9" y1="353.9" x2="1182.6" y2="332.4">
+      <stop offset="0%" stop-color="#38203e"/>
+      <stop offset="100%" stop-color="#452747"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-56-chamL" gradientUnits="userSpaceOnUse" x1="927.6" y1="336.2" x2="1183.1" y2="314.3">
+      <stop offset="0%" stop-color="#d9cee0"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-56-chamR" gradientUnits="userSpaceOnUse" x1="930" y1="360.2" x2="1184" y2="338.6">
+      <stop offset="0%" stop-color="#69466b"/>
+      <stop offset="100%" stop-color="#a793ad"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-43-top" gradientUnits="userSpaceOnUse" x1="716.8" y1="321.4" x2="770.1" y2="121.5">
+      <stop offset="0%" stop-color="#413a9a"/>
+      <stop offset="35%" stop-color="#6861ca"/>
+      <stop offset="75%" stop-color="#938de6"/>
+      <stop offset="100%" stop-color="#d7d1f9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-43-sideL" gradientUnits="userSpaceOnUse" x1="695.9" y1="319.3" x2="749.6" y2="120.2">
+      <stop offset="0%" stop-color="#262065"/>
+      <stop offset="100%" stop-color="#423e97"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-43-sideR" gradientUnits="userSpaceOnUse" x1="718.5" y1="329.9" x2="771.2" y2="131.7">
+      <stop offset="0%" stop-color="#211a55"/>
+      <stop offset="100%" stop-color="#262065"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-43-chamL" gradientUnits="userSpaceOnUse" x1="703.1" y1="316.8" x2="756.8" y2="116.8">
+      <stop offset="0%" stop-color="#c4c0f1"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-43-chamR" gradientUnits="userSpaceOnUse" x1="725.8" y1="327.5" x2="778.6" y2="128.4">
+      <stop offset="0%" stop-color="#423e97"/>
+      <stop offset="100%" stop-color="#8d88c8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-57-top" gradientUnits="userSpaceOnUse" x1="940.7" y1="358.3" x2="1209.6" y2="355.4">
+      <stop offset="0%" stop-color="#7a4b6a"/>
+      <stop offset="35%" stop-color="#a37999"/>
+      <stop offset="75%" stop-color="#c2a6c1"/>
+      <stop offset="100%" stop-color="#e8e1eb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-57-sideL" gradientUnits="userSpaceOnUse" x1="941.1" y1="338" x2="1209" y2="334.8">
+      <stop offset="0%" stop-color="#4a2742"/>
+      <stop offset="100%" stop-color="#6f4665"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-57-sideR" gradientUnits="userSpaceOnUse" x1="942.1" y1="362" x2="1208.3" y2="359.2">
+      <stop offset="0%" stop-color="#3c203b"/>
+      <stop offset="100%" stop-color="#4a2742"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-57-chamL" gradientUnits="userSpaceOnUse" x1="940.4" y1="344.2" x2="1209.7" y2="341">
+      <stop offset="0%" stop-color="#ddcedd"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-57-chamR" gradientUnits="userSpaceOnUse" x1="941.4" y1="368.3" x2="1209.1" y2="365.6">
+      <stop offset="0%" stop-color="#6f4665"/>
+      <stop offset="100%" stop-color="#ac94a8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-42-top" gradientUnits="userSpaceOnUse" x1="700.3" y1="325.8" x2="729.4" y2="113.4">
+      <stop offset="0%" stop-color="#453899"/>
+      <stop offset="35%" stop-color="#6d60c8"/>
+      <stop offset="75%" stop-color="#988be4"/>
+      <stop offset="100%" stop-color="#d9d0f8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-42-sideL" gradientUnits="userSpaceOnUse" x1="679.1" y1="326.5" x2="708.8" y2="114.8">
+      <stop offset="0%" stop-color="#281f64"/>
+      <stop offset="100%" stop-color="#453c95"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-42-sideR" gradientUnits="userSpaceOnUse" x1="702.9" y1="334.6" x2="731.6" y2="123.9">
+      <stop offset="0%" stop-color="#231a54"/>
+      <stop offset="100%" stop-color="#281f64"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-42-chamL" gradientUnits="userSpaceOnUse" x1="686" y1="322.9" x2="715.7" y2="110.2">
+      <stop offset="0%" stop-color="#c6bff0"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-42-chamR" gradientUnits="userSpaceOnUse" x1="710" y1="331" x2="738.6" y2="119.4">
+      <stop offset="0%" stop-color="#453c95"/>
+      <stop offset="100%" stop-color="#8f86c7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-58-top" gradientUnits="userSpaceOnUse" x1="951.3" y1="366.9" x2="1232.6" y2="384.8">
+      <stop offset="0%" stop-color="#824c64"/>
+      <stop offset="35%" stop-color="#ac7a92"/>
+      <stop offset="75%" stop-color="#caa8bc"/>
+      <stop offset="100%" stop-color="#ebe2e9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-58-sideL" gradientUnits="userSpaceOnUse" x1="953.5" y1="346.7" x2="1233.7" y2="364.1">
+      <stop offset="0%" stop-color="#4f273d"/>
+      <stop offset="100%" stop-color="#76465e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-58-sideR" gradientUnits="userSpaceOnUse" x1="953" y1="370.8" x2="1231.4" y2="388.6">
+      <stop offset="0%" stop-color="#402037"/>
+      <stop offset="100%" stop-color="#4f273d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-58-chamL" gradientUnits="userSpaceOnUse" x1="952" y1="352.8" x2="1233.7" y2="370.4">
+      <stop offset="0%" stop-color="#e2cfda"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-58-chamR" gradientUnits="userSpaceOnUse" x1="951.5" y1="377.1" x2="1231.4" y2="395">
+      <stop offset="0%" stop-color="#76465e"/>
+      <stop offset="100%" stop-color="#b194a4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-41-top" gradientUnits="userSpaceOnUse" x1="684.4" y1="331.2" x2="686.6" y2="108.2">
+      <stop offset="0%" stop-color="#493797"/>
+      <stop offset="35%" stop-color="#715ec6"/>
+      <stop offset="75%" stop-color="#9c89e2"/>
+      <stop offset="100%" stop-color="#dccef6"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-41-sideL" gradientUnits="userSpaceOnUse" x1="663.3" y1="334.7" x2="666.2" y2="112.4">
+      <stop offset="0%" stop-color="#2a1e63"/>
+      <stop offset="100%" stop-color="#483a94"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-41-sideR" gradientUnits="userSpaceOnUse" x1="688.1" y1="340.1" x2="690.1" y2="118.9">
+      <stop offset="0%" stop-color="#241953"/>
+      <stop offset="100%" stop-color="#2a1e63"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-41-chamL" gradientUnits="userSpaceOnUse" x1="669.9" y1="330" x2="672.6" y2="106.7">
+      <stop offset="0%" stop-color="#c9beef"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-41-chamR" gradientUnits="userSpaceOnUse" x1="694.7" y1="335.4" x2="696.5" y2="113.3">
+      <stop offset="0%" stop-color="#483a94"/>
+      <stop offset="100%" stop-color="#9284c5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-59-top" gradientUnits="userSpaceOnUse" x1="960.7" y1="376.2" x2="1252.1" y2="416.7">
+      <stop offset="0%" stop-color="#8b4d5e"/>
+      <stop offset="35%" stop-color="#b57c8c"/>
+      <stop offset="75%" stop-color="#d2aab6"/>
+      <stop offset="100%" stop-color="#eee3e7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-59-sideL" gradientUnits="userSpaceOnUse" x1="964.6" y1="356.1" x2="1254.9" y2="396">
+      <stop offset="0%" stop-color="#542739"/>
+      <stop offset="100%" stop-color="#7d4558"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-59-sideR" gradientUnits="userSpaceOnUse" x1="962.6" y1="380.3" x2="1251" y2="420.5">
+      <stop offset="0%" stop-color="#442034"/>
+      <stop offset="100%" stop-color="#542739"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-59-chamL" gradientUnits="userSpaceOnUse" x1="962.4" y1="362.1" x2="1254.3" y2="402.3">
+      <stop offset="0%" stop-color="#e6d0d7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-59-chamR" gradientUnits="userSpaceOnUse" x1="960.4" y1="386.4" x2="1250.3" y2="426.9">
+      <stop offset="0%" stop-color="#7d4558"/>
+      <stop offset="100%" stop-color="#b694a0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-40-top" gradientUnits="userSpaceOnUse" x1="669.4" y1="337.6" x2="642.2" y2="106.7">
+      <stop offset="0%" stop-color="#4d3595"/>
+      <stop offset="35%" stop-color="#765cc4"/>
+      <stop offset="75%" stop-color="#a188e1"/>
+      <stop offset="100%" stop-color="#decdf5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-40-sideL" gradientUnits="userSpaceOnUse" x1="648.7" y1="343.9" x2="622.5" y2="113.5">
+      <stop offset="0%" stop-color="#2c1d62"/>
+      <stop offset="100%" stop-color="#4b3893"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-40-sideR" gradientUnits="userSpaceOnUse" x1="674.1" y1="346.4" x2="647" y2="117.3">
+      <stop offset="0%" stop-color="#261853"/>
+      <stop offset="100%" stop-color="#2c1d62"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-40-chamL" gradientUnits="userSpaceOnUse" x1="654.7" y1="338.2" x2="628.1" y2="106.9">
+      <stop offset="0%" stop-color="#cbbeef"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-40-chamR" gradientUnits="userSpaceOnUse" x1="680.2" y1="340.7" x2="652.7" y2="110.7">
+      <stop offset="0%" stop-color="#4b3893"/>
+      <stop offset="100%" stop-color="#9583c4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-39-top" gradientUnits="userSpaceOnUse" x1="655.4" y1="345" x2="597" y2="109.3">
+      <stop offset="0%" stop-color="#503393"/>
+      <stop offset="35%" stop-color="#7b5ac1"/>
+      <stop offset="75%" stop-color="#a686df"/>
+      <stop offset="100%" stop-color="#e1ccf4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-39-sideL" gradientUnits="userSpaceOnUse" x1="635.5" y1="354" x2="578.2" y2="118.7">
+      <stop offset="0%" stop-color="#2e1c61"/>
+      <stop offset="100%" stop-color="#4e3691"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-39-sideR" gradientUnits="userSpaceOnUse" x1="661.2" y1="353.4" x2="603.1" y2="119.5">
+      <stop offset="0%" stop-color="#271752"/>
+      <stop offset="100%" stop-color="#2e1c61"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-39-chamL" gradientUnits="userSpaceOnUse" x1="640.8" y1="347.4" x2="582.9" y2="111.2">
+      <stop offset="0%" stop-color="#cebced"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-39-chamR" gradientUnits="userSpaceOnUse" x1="666.5" y1="346.9" x2="607.9" y2="112.1">
+      <stop offset="0%" stop-color="#4e3691"/>
+      <stop offset="100%" stop-color="#9881c3"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-60-top" gradientUnits="userSpaceOnUse" x1="968.7" y1="385.9" x2="1267.5" y2="450.8">
+      <stop offset="0%" stop-color="#934e57"/>
+      <stop offset="35%" stop-color="#be7e85"/>
+      <stop offset="75%" stop-color="#daacb1"/>
+      <stop offset="100%" stop-color="#f2e4e5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-60-sideL" gradientUnits="userSpaceOnUse" x1="974.3" y1="366.2" x2="1272.1" y2="430.3">
+      <stop offset="0%" stop-color="#592834"/>
+      <stop offset="100%" stop-color="#834552"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-60-sideR" gradientUnits="userSpaceOnUse" x1="970.7" y1="390.4" x2="1266.5" y2="454.7">
+      <stop offset="0%" stop-color="#472030"/>
+      <stop offset="100%" stop-color="#592834"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-60-chamL" gradientUnits="userSpaceOnUse" x1="971.4" y1="371.9" x2="1270.7" y2="436.5">
+      <stop offset="0%" stop-color="#ebd1d4"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-60-chamR" gradientUnits="userSpaceOnUse" x1="967.8" y1="396.2" x2="1265.1" y2="461.1">
+      <stop offset="0%" stop-color="#834552"/>
+      <stop offset="100%" stop-color="#bb959c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-38-top" gradientUnits="userSpaceOnUse" x1="642.5" y1="353.4" x2="551.8" y2="116.4">
+      <stop offset="0%" stop-color="#543292"/>
+      <stop offset="35%" stop-color="#8059bf"/>
+      <stop offset="75%" stop-color="#ab84dd"/>
+      <stop offset="100%" stop-color="#e3caf3"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-38-sideL" gradientUnits="userSpaceOnUse" x1="623.7" y1="364.8" x2="534.1" y2="128.1">
+      <stop offset="0%" stop-color="#301b60"/>
+      <stop offset="100%" stop-color="#513490"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-38-sideR" gradientUnits="userSpaceOnUse" x1="649.3" y1="361.2" x2="559.1" y2="126.1">
+      <stop offset="0%" stop-color="#291751"/>
+      <stop offset="100%" stop-color="#301b60"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-38-chamL" gradientUnits="userSpaceOnUse" x1="628.2" y1="357.5" x2="538" y2="120">
+      <stop offset="0%" stop-color="#d1bbec"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-38-chamR" gradientUnits="userSpaceOnUse" x1="653.9" y1="353.9" x2="563.1" y2="118">
+      <stop offset="0%" stop-color="#513490"/>
+      <stop offset="100%" stop-color="#9a7fc2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-61-top" gradientUnits="userSpaceOnUse" x1="975.2" y1="396.1" x2="1278" y2="486.9">
+      <stop offset="0%" stop-color="#9c4f51"/>
+      <stop offset="35%" stop-color="#c77f7f"/>
+      <stop offset="75%" stop-color="#e1aeac"/>
+      <stop offset="100%" stop-color="#f5e5e3"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-61-sideL" gradientUnits="userSpaceOnUse" x1="982.6" y1="376.9" x2="1284.5" y2="466.7">
+      <stop offset="0%" stop-color="#5e2830"/>
+      <stop offset="100%" stop-color="#8a454b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-61-sideR" gradientUnits="userSpaceOnUse" x1="977.4" y1="400.9" x2="1277.2" y2="491">
+      <stop offset="0%" stop-color="#4b202d"/>
+      <stop offset="100%" stop-color="#5e2830"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-61-chamL" gradientUnits="userSpaceOnUse" x1="979" y1="382.3" x2="1282.4" y2="472.8">
+      <stop offset="0%" stop-color="#efd2d1"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-61-chamR" gradientUnits="userSpaceOnUse" x1="973.7" y1="406.4" x2="1275" y2="497.1">
+      <stop offset="0%" stop-color="#8a454b"/>
+      <stop offset="100%" stop-color="#c09597"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-37-top" gradientUnits="userSpaceOnUse" x1="631" y1="362.6" x2="507.6" y2="128.1">
+      <stop offset="0%" stop-color="#583090"/>
+      <stop offset="35%" stop-color="#8457bd"/>
+      <stop offset="75%" stop-color="#af82db"/>
+      <stop offset="100%" stop-color="#e6c9f1"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-37-sideL" gradientUnits="userSpaceOnUse" x1="613.5" y1="376.2" x2="491.3" y2="142">
+      <stop offset="0%" stop-color="#321a5f"/>
+      <stop offset="100%" stop-color="#54328e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-37-sideR" gradientUnits="userSpaceOnUse" x1="638.7" y1="369.6" x2="516.1" y2="137.1">
+      <stop offset="0%" stop-color="#2a1650"/>
+      <stop offset="100%" stop-color="#321a5f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-37-chamL" gradientUnits="userSpaceOnUse" x1="617.1" y1="368.4" x2="494.2" y2="133.3">
+      <stop offset="0%" stop-color="#d3baeb"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-37-chamR" gradientUnits="userSpaceOnUse" x1="642.4" y1="361.8" x2="519" y2="128.5">
+      <stop offset="0%" stop-color="#54328e"/>
+      <stop offset="100%" stop-color="#9d7ec0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-62-top" gradientUnits="userSpaceOnUse" x1="980.1" y1="406.7" x2="1283.1" y2="524.6">
+      <stop offset="0%" stop-color="#a4504b"/>
+      <stop offset="35%" stop-color="#d18178"/>
+      <stop offset="75%" stop-color="#e9b0a7"/>
+      <stop offset="100%" stop-color="#f8e6e0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-62-sideL" gradientUnits="userSpaceOnUse" x1="989.3" y1="388.1" x2="1291.4" y2="504.8">
+      <stop offset="0%" stop-color="#64282b"/>
+      <stop offset="100%" stop-color="#914545"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-62-sideR" gradientUnits="userSpaceOnUse" x1="982.4" y1="411.8" x2="1282.3" y2="528.7">
+      <stop offset="0%" stop-color="#502029"/>
+      <stop offset="100%" stop-color="#64282b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-62-chamL" gradientUnits="userSpaceOnUse" x1="985" y1="393.1" x2="1288.5" y2="510.7">
+      <stop offset="0%" stop-color="#f3d4cf"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-62-chamR" gradientUnits="userSpaceOnUse" x1="978" y1="416.9" x2="1279.4" y2="534.7">
+      <stop offset="0%" stop-color="#914545"/>
+      <stop offset="100%" stop-color="#c59693"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-36-top" gradientUnits="userSpaceOnUse" x1="620.9" y1="372.6" x2="465.3" y2="144.5">
+      <stop offset="0%" stop-color="#5c2f8e"/>
+      <stop offset="35%" stop-color="#8955bb"/>
+      <stop offset="75%" stop-color="#b481d9"/>
+      <stop offset="100%" stop-color="#e8c8f0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-36-sideL" gradientUnits="userSpaceOnUse" x1="605" y1="388.2" x2="450.6" y2="160.2">
+      <stop offset="0%" stop-color="#35195e"/>
+      <stop offset="100%" stop-color="#57308d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-36-sideR" gradientUnits="userSpaceOnUse" x1="629.4" y1="378.7" x2="474.8" y2="152.5">
+      <stop offset="0%" stop-color="#2c1550"/>
+      <stop offset="100%" stop-color="#35195e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-36-chamL" gradientUnits="userSpaceOnUse" x1="607.8" y1="380" x2="452.5" y2="151.2">
+      <stop offset="0%" stop-color="#d6baea"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-36-chamR" gradientUnits="userSpaceOnUse" x1="632.2" y1="370.4" x2="476.8" y2="143.5">
+      <stop offset="0%" stop-color="#57308d"/>
+      <stop offset="100%" stop-color="#a07cbf"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-63-top" gradientUnits="userSpaceOnUse" x1="983.4" y1="417.5" x2="1282" y2="563.1">
+      <stop offset="0%" stop-color="#ad5144"/>
+      <stop offset="35%" stop-color="#da8272"/>
+      <stop offset="75%" stop-color="#f1b2a1"/>
+      <stop offset="100%" stop-color="#fce7de"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-63-sideL" gradientUnits="userSpaceOnUse" x1="994.4" y1="399.7" x2="1292.2" y2="544.1">
+      <stop offset="0%" stop-color="#692827"/>
+      <stop offset="100%" stop-color="#97443e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-63-sideR" gradientUnits="userSpaceOnUse" x1="985.7" y1="423.1" x2="1281.3" y2="567.5">
+      <stop offset="0%" stop-color="#532026"/>
+      <stop offset="100%" stop-color="#692827"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-63-chamL" gradientUnits="userSpaceOnUse" x1="989.4" y1="404.2" x2="1288.7" y2="549.6">
+      <stop offset="0%" stop-color="#f7d5cb"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-63-chamR" gradientUnits="userSpaceOnUse" x1="980.7" y1="427.7" x2="1277.7" y2="573.1">
+      <stop offset="0%" stop-color="#97443e"/>
+      <stop offset="100%" stop-color="#ca968e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-35-top" gradientUnits="userSpaceOnUse" x1="612.5" y1="383.3" x2="425.8" y2="165.2">
+      <stop offset="0%" stop-color="#602d8c"/>
+      <stop offset="35%" stop-color="#8e53b9"/>
+      <stop offset="75%" stop-color="#b97fd7"/>
+      <stop offset="100%" stop-color="#ebc6ef"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-35-sideL" gradientUnits="userSpaceOnUse" x1="598.2" y1="400.6" x2="412.9" y2="182.5">
+      <stop offset="0%" stop-color="#37175c"/>
+      <stop offset="100%" stop-color="#5a2e8b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-35-sideR" gradientUnits="userSpaceOnUse" x1="621.5" y1="388.3" x2="436.2" y2="172.1">
+      <stop offset="0%" stop-color="#2e144e"/>
+      <stop offset="100%" stop-color="#37175c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-35-chamL" gradientUnits="userSpaceOnUse" x1="600.2" y1="392.1" x2="413.8" y2="173.3">
+      <stop offset="0%" stop-color="#d9b9e9"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-35-chamR" gradientUnits="userSpaceOnUse" x1="623.5" y1="379.8" x2="437.2" y2="162.9">
+      <stop offset="0%" stop-color="#5a2e8b"/>
+      <stop offset="100%" stop-color="#a37abd"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-0-top" gradientUnits="userSpaceOnUse" x1="985.1" y1="428.4" x2="1274.5" y2="602">
+      <stop offset="0%" stop-color="#b5523e"/>
+      <stop offset="35%" stop-color="#e3846b"/>
+      <stop offset="75%" stop-color="#f9b49c"/>
+      <stop offset="100%" stop-color="#ffe8dc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-0-sideL" gradientUnits="userSpaceOnUse" x1="997.8" y1="411.7" x2="1286.6" y2="583.8">
+      <stop offset="0%" stop-color="#6e2822"/>
+      <stop offset="100%" stop-color="#9e4438"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-0-sideR" gradientUnits="userSpaceOnUse" x1="987.3" y1="434.6" x2="1273.7" y2="606.6">
+      <stop offset="0%" stop-color="#572023"/>
+      <stop offset="100%" stop-color="#6e2822"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-0-chamL" gradientUnits="userSpaceOnUse" x1="992.2" y1="415.7" x2="1282.3" y2="588.9">
+      <stop offset="0%" stop-color="#fcd6c9"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-0-chamR" gradientUnits="userSpaceOnUse" x1="981.6" y1="438.6" x2="1269.4" y2="611.7">
+      <stop offset="0%" stop-color="#9e4438"/>
+      <stop offset="100%" stop-color="#cf968a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-34-top" gradientUnits="userSpaceOnUse" x1="605.9" y1="394.6" x2="390.1" y2="189.9">
+      <stop offset="0%" stop-color="#632b8b"/>
+      <stop offset="35%" stop-color="#9352b7"/>
+      <stop offset="75%" stop-color="#be7dd5"/>
+      <stop offset="100%" stop-color="#edc5ee"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-34-sideL" gradientUnits="userSpaceOnUse" x1="593.3" y1="413.4" x2="378.9" y2="208.5">
+      <stop offset="0%" stop-color="#39165b"/>
+      <stop offset="100%" stop-color="#5d2c8a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-34-sideR" gradientUnits="userSpaceOnUse" x1="615.2" y1="398.5" x2="401.2" y2="195.7">
+      <stop offset="0%" stop-color="#2f134d"/>
+      <stop offset="100%" stop-color="#39165b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-34-chamL" gradientUnits="userSpaceOnUse" x1="594.4" y1="404.7" x2="378.9" y2="199.2">
+      <stop offset="0%" stop-color="#dbb8e8"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-34-chamR" gradientUnits="userSpaceOnUse" x1="616.5" y1="389.9" x2="401.3" y2="186.4">
+      <stop offset="0%" stop-color="#5d2c8a"/>
+      <stop offset="100%" stop-color="#a579bc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-1-top" gradientUnits="userSpaceOnUse" x1="985.1" y1="439.5" x2="1260" y2="640.3">
+      <stop offset="0%" stop-color="#b4503f"/>
+      <stop offset="35%" stop-color="#e2816b"/>
+      <stop offset="75%" stop-color="#f8b19c"/>
+      <stop offset="100%" stop-color="#ffe7db"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-1-sideL" gradientUnits="userSpaceOnUse" x1="999.5" y1="424" x2="1274" y2="623.3">
+      <stop offset="0%" stop-color="#6d2723"/>
+      <stop offset="100%" stop-color="#9d423a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-1-sideR" gradientUnits="userSpaceOnUse" x1="987" y1="446.1" x2="1259.2" y2="645.2">
+      <stop offset="0%" stop-color="#562023"/>
+      <stop offset="100%" stop-color="#6d2723"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-1-chamL" gradientUnits="userSpaceOnUse" x1="993.3" y1="427.3" x2="1269.1" y2="627.8">
+      <stop offset="0%" stop-color="#fbd4c9"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-1-chamR" gradientUnits="userSpaceOnUse" x1="980.8" y1="449.5" x2="1254.2" y2="649.8">
+      <stop offset="0%" stop-color="#9d423a"/>
+      <stop offset="100%" stop-color="#ce958b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-33-top" gradientUnits="userSpaceOnUse" x1="601.1" y1="406.3" x2="358.9" y2="218.1">
+      <stop offset="0%" stop-color="#672a89"/>
+      <stop offset="35%" stop-color="#9750b5"/>
+      <stop offset="75%" stop-color="#c27cd3"/>
+      <stop offset="100%" stop-color="#f0c3ec"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-33-sideL" gradientUnits="userSpaceOnUse" x1="590.3" y1="426.4" x2="349.4" y2="237.9">
+      <stop offset="0%" stop-color="#3b155a"/>
+      <stop offset="100%" stop-color="#602a88"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-33-sideR" gradientUnits="userSpaceOnUse" x1="610.6" y1="409.2" x2="370.4" y2="222.7">
+      <stop offset="0%" stop-color="#31124d"/>
+      <stop offset="100%" stop-color="#3b155a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-33-chamL" gradientUnits="userSpaceOnUse" x1="590.7" y1="417.7" x2="348.5" y2="228.7">
+      <stop offset="0%" stop-color="#ddb7e7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-33-chamR" gradientUnits="userSpaceOnUse" x1="611.2" y1="400.5" x2="369.6" y2="213.5">
+      <stop offset="0%" stop-color="#602a88"/>
+      <stop offset="100%" stop-color="#a877ba"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-2-top" gradientUnits="userSpaceOnUse" x1="983.3" y1="450.5" x2="1238.6" y2="677.3">
+      <stop offset="0%" stop-color="#b24e41"/>
+      <stop offset="35%" stop-color="#e17e6c"/>
+      <stop offset="75%" stop-color="#f8af9b"/>
+      <stop offset="100%" stop-color="#ffe5da"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-2-sideL" gradientUnits="userSpaceOnUse" x1="999.4" y1="436.5" x2="1254.4" y2="661.6">
+      <stop offset="0%" stop-color="#6c2625"/>
+      <stop offset="100%" stop-color="#9c413c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-2-sideR" gradientUnits="userSpaceOnUse" x1="984.9" y1="457.7" x2="1237.6" y2="682.4">
+      <stop offset="0%" stop-color="#561f25"/>
+      <stop offset="100%" stop-color="#6c2625"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-2-chamL" gradientUnits="userSpaceOnUse" x1="992.7" y1="439.1" x2="1248.8" y2="665.5">
+      <stop offset="0%" stop-color="#fbd3c8"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-2-chamR" gradientUnits="userSpaceOnUse" x1="978.2" y1="460.3" x2="1232" y2="686.4">
+      <stop offset="0%" stop-color="#9c413c"/>
+      <stop offset="100%" stop-color="#ce938b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-32-top" gradientUnits="userSpaceOnUse" x1="598.3" y1="418.5" x2="332.6" y2="249.4">
+      <stop offset="0%" stop-color="#6b2887"/>
+      <stop offset="35%" stop-color="#9c4eb3"/>
+      <stop offset="75%" stop-color="#c77ad1"/>
+      <stop offset="100%" stop-color="#f2c2eb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-32-sideL" gradientUnits="userSpaceOnUse" x1="589.2" y1="439.5" x2="324.9" y2="270.1">
+      <stop offset="0%" stop-color="#3d1459"/>
+      <stop offset="100%" stop-color="#632887"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-32-sideR" gradientUnits="userSpaceOnUse" x1="607.8" y1="420.2" x2="344.4" y2="252.8">
+      <stop offset="0%" stop-color="#32114c"/>
+      <stop offset="100%" stop-color="#3d1459"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-32-chamL" gradientUnits="userSpaceOnUse" x1="589" y1="430.9" x2="323.3" y2="261">
+      <stop offset="0%" stop-color="#e0b6e6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-32-chamR" gradientUnits="userSpaceOnUse" x1="607.7" y1="411.6" x2="342.9" y2="243.6">
+      <stop offset="0%" stop-color="#632887"/>
+      <stop offset="100%" stop-color="#ab75b9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-3-top" gradientUnits="userSpaceOnUse" x1="979.7" y1="461.5" x2="1210.2" y2="711.9">
+      <stop offset="0%" stop-color="#b14b42"/>
+      <stop offset="35%" stop-color="#e07b6c"/>
+      <stop offset="75%" stop-color="#f7ac9b"/>
+      <stop offset="100%" stop-color="#ffe4d8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-3-sideL" gradientUnits="userSpaceOnUse" x1="997.4" y1="449.2" x2="1227.9" y2="698">
+      <stop offset="0%" stop-color="#6b2526"/>
+      <stop offset="100%" stop-color="#9b3f3e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-3-sideR" gradientUnits="userSpaceOnUse" x1="981" y1="469" x2="1209.1" y2="717.3">
+      <stop offset="0%" stop-color="#551e26"/>
+      <stop offset="100%" stop-color="#6b2526"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-3-chamL" gradientUnits="userSpaceOnUse" x1="990.3" y1="450.9" x2="1221.7" y2="701.2">
+      <stop offset="0%" stop-color="#fbd1c8"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-3-chamR" gradientUnits="userSpaceOnUse" x1="973.8" y1="470.9" x2="1202.8" y2="720.6">
+      <stop offset="0%" stop-color="#9b3f3e"/>
+      <stop offset="100%" stop-color="#cd928b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-31-top" gradientUnits="userSpaceOnUse" x1="597.6" y1="430.8" x2="311.9" y2="283.1">
+      <stop offset="0%" stop-color="#6e2884"/>
+      <stop offset="35%" stop-color="#9f4faf"/>
+      <stop offset="75%" stop-color="#c97bcd"/>
+      <stop offset="100%" stop-color="#f3c3e9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-31-sideL" gradientUnits="userSpaceOnUse" x1="590.2" y1="452.6" x2="305.9" y2="304.5">
+      <stop offset="0%" stop-color="#3f1457"/>
+      <stop offset="100%" stop-color="#662884"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-31-sideR" gradientUnits="userSpaceOnUse" x1="606.8" y1="431.5" x2="323.7" y2="285.3">
+      <stop offset="0%" stop-color="#34114a"/>
+      <stop offset="100%" stop-color="#3f1457"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-31-chamL" gradientUnits="userSpaceOnUse" x1="589.4" y1="444.1" x2="303.6" y2="295.6">
+      <stop offset="0%" stop-color="#e1b6e4"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-31-chamR" gradientUnits="userSpaceOnUse" x1="606.2" y1="423" x2="321.5" y2="276.3">
+      <stop offset="0%" stop-color="#662884"/>
+      <stop offset="100%" stop-color="#ad76b7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-4-top" gradientUnits="userSpaceOnUse" x1="974.4" y1="472.2" x2="1175.3" y2="743.3">
+      <stop offset="0%" stop-color="#af4943"/>
+      <stop offset="35%" stop-color="#df796d"/>
+      <stop offset="75%" stop-color="#f6a99b"/>
+      <stop offset="100%" stop-color="#ffe3d7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-4-sideL" gradientUnits="userSpaceOnUse" x1="993.6" y1="461.9" x2="1194.6" y2="731.4">
+      <stop offset="0%" stop-color="#6a2428"/>
+      <stop offset="100%" stop-color="#9a3e40"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-4-sideR" gradientUnits="userSpaceOnUse" x1="975.1" y1="480.2" x2="1173.8" y2="748.9">
+      <stop offset="0%" stop-color="#541d27"/>
+      <stop offset="100%" stop-color="#6a2428"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-4-chamL" gradientUnits="userSpaceOnUse" x1="986.1" y1="462.7" x2="1187.9" y2="733.7">
+      <stop offset="0%" stop-color="#fad0c8"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-4-chamR" gradientUnits="userSpaceOnUse" x1="967.6" y1="481.1" x2="1167" y2="751.3">
+      <stop offset="0%" stop-color="#9a3e40"/>
+      <stop offset="100%" stop-color="#cd918c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-30-top" gradientUnits="userSpaceOnUse" x1="598.9" y1="443.2" x2="296.9" y2="318.6">
+      <stop offset="0%" stop-color="#712980"/>
+      <stop offset="35%" stop-color="#a34fab"/>
+      <stop offset="75%" stop-color="#cc7cca"/>
+      <stop offset="100%" stop-color="#f4c4e7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-30-sideL" gradientUnits="userSpaceOnUse" x1="593.2" y1="465.6" x2="292.6" y2="340.6">
+      <stop offset="0%" stop-color="#411455"/>
+      <stop offset="100%" stop-color="#682881"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-30-sideR" gradientUnits="userSpaceOnUse" x1="607.8" y1="442.9" x2="308.6" y2="319.6">
+      <stop offset="0%" stop-color="#351149"/>
+      <stop offset="100%" stop-color="#411455"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-30-chamL" gradientUnits="userSpaceOnUse" x1="591.9" y1="457.3" x2="289.7" y2="331.9">
+      <stop offset="0%" stop-color="#e3b7e2"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-30-chamR" gradientUnits="userSpaceOnUse" x1="606.6" y1="434.5" x2="305.9" y2="310.8">
+      <stop offset="0%" stop-color="#682881"/>
+      <stop offset="100%" stop-color="#ae76b4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-5-top" gradientUnits="userSpaceOnUse" x1="967.4" y1="482.5" x2="1134.4" y2="770.6">
+      <stop offset="0%" stop-color="#ae4744"/>
+      <stop offset="35%" stop-color="#dd766d"/>
+      <stop offset="75%" stop-color="#f6a69a"/>
+      <stop offset="100%" stop-color="#ffe1d6"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-5-sideL" gradientUnits="userSpaceOnUse" x1="987.8" y1="474.5" x2="1155.2" y2="760.9">
+      <stop offset="0%" stop-color="#692229"/>
+      <stop offset="100%" stop-color="#983c41"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-5-sideR" gradientUnits="userSpaceOnUse" x1="967.3" y1="490.8" x2="1132.5" y2="776.3">
+      <stop offset="0%" stop-color="#531c28"/>
+      <stop offset="100%" stop-color="#692229"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-5-chamL" gradientUnits="userSpaceOnUse" x1="980.2" y1="474.3" x2="1148.1" y2="762.4">
+      <stop offset="0%" stop-color="#facec7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-5-chamR" gradientUnits="userSpaceOnUse" x1="959.7" y1="490.8" x2="1125.3" y2="777.8">
+      <stop offset="0%" stop-color="#983c41"/>
+      <stop offset="100%" stop-color="#cc8f8c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-29-top" gradientUnits="userSpaceOnUse" x1="602.3" y1="455.6" x2="288" y2="355.3">
+      <stop offset="0%" stop-color="#75297d"/>
+      <stop offset="35%" stop-color="#a650a7"/>
+      <stop offset="75%" stop-color="#ce7dc6"/>
+      <stop offset="100%" stop-color="#f4c5e5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-29-sideL" gradientUnits="userSpaceOnUse" x1="598.2" y1="478.4" x2="285.3" y2="377.7">
+      <stop offset="0%" stop-color="#431453"/>
+      <stop offset="100%" stop-color="#6b297e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-29-sideR" gradientUnits="userSpaceOnUse" x1="610.7" y1="454.3" x2="299.4" y2="355.1">
+      <stop offset="0%" stop-color="#371147"/>
+      <stop offset="100%" stop-color="#431453"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-29-chamL" gradientUnits="userSpaceOnUse" x1="596.6" y1="470.3" x2="281.9" y2="369.3">
+      <stop offset="0%" stop-color="#e4b8e0"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-29-chamR" gradientUnits="userSpaceOnUse" x1="609.1" y1="446.1" x2="296.1" y2="346.7">
+      <stop offset="0%" stop-color="#6b297e"/>
+      <stop offset="100%" stop-color="#b077b2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-6-top" gradientUnits="userSpaceOnUse" x1="958.7" y1="492.5" x2="1088.4" y2="793">
+      <stop offset="0%" stop-color="#ac4546"/>
+      <stop offset="35%" stop-color="#dc736e"/>
+      <stop offset="75%" stop-color="#f5a49a"/>
+      <stop offset="100%" stop-color="#ffe0d5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-6-sideL" gradientUnits="userSpaceOnUse" x1="980.1" y1="486.9" x2="1110.4" y2="785.8">
+      <stop offset="0%" stop-color="#68212a"/>
+      <stop offset="100%" stop-color="#973b43"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-6-sideR" gradientUnits="userSpaceOnUse" x1="957.8" y1="500.9" x2="1086" y2="798.7">
+      <stop offset="0%" stop-color="#531b29"/>
+      <stop offset="100%" stop-color="#68212a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-6-chamL" gradientUnits="userSpaceOnUse" x1="972.4" y1="485.8" x2="1103" y2="786.3">
+      <stop offset="0%" stop-color="#facdc7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-6-chamR" gradientUnits="userSpaceOnUse" x1="950" y1="499.9" x2="1078.5" y2="799.2">
+      <stop offset="0%" stop-color="#973b43"/>
+      <stop offset="100%" stop-color="#cb8e8c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-28-top" gradientUnits="userSpaceOnUse" x1="607.8" y1="467.7" x2="285.1" y2="392.5">
+      <stop offset="0%" stop-color="#782a7a"/>
+      <stop offset="35%" stop-color="#a950a3"/>
+      <stop offset="75%" stop-color="#d17ec2"/>
+      <stop offset="100%" stop-color="#f5c6e3"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-28-sideL" gradientUnits="userSpaceOnUse" x1="605.4" y1="490.9" x2="284" y2="415.3">
+      <stop offset="0%" stop-color="#451551"/>
+      <stop offset="100%" stop-color="#6d297b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-28-sideR" gradientUnits="userSpaceOnUse" x1="615.5" y1="465.6" x2="296" y2="391.4">
+      <stop offset="0%" stop-color="#381246"/>
+      <stop offset="100%" stop-color="#451551"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-28-chamL" gradientUnits="userSpaceOnUse" x1="603.3" y1="482.9" x2="280.2" y2="407.2">
+      <stop offset="0%" stop-color="#e6b8dd"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-28-chamR" gradientUnits="userSpaceOnUse" x1="613.6" y1="457.6" x2="292.3" y2="383.2">
+      <stop offset="0%" stop-color="#6d297b"/>
+      <stop offset="100%" stop-color="#b178af"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-7-top" gradientUnits="userSpaceOnUse" x1="948.4" y1="502" x2="1038.5" y2="809.8">
+      <stop offset="0%" stop-color="#ab4247"/>
+      <stop offset="35%" stop-color="#db706e"/>
+      <stop offset="75%" stop-color="#f4a199"/>
+      <stop offset="100%" stop-color="#ffded4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-7-sideL" gradientUnits="userSpaceOnUse" x1="970.5" y1="499" x2="1061.4" y2="805.4">
+      <stop offset="0%" stop-color="#67202c"/>
+      <stop offset="100%" stop-color="#963945"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-7-sideR" gradientUnits="userSpaceOnUse" x1="946.5" y1="510.4" x2="1035.5" y2="815.4">
+      <stop offset="0%" stop-color="#521a2a"/>
+      <stop offset="100%" stop-color="#67202c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-7-chamL" gradientUnits="userSpaceOnUse" x1="962.9" y1="496.9" x2="1053.9" y2="805">
+      <stop offset="0%" stop-color="#f9cbc7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-7-chamR" gradientUnits="userSpaceOnUse" x1="938.8" y1="508.3" x2="1027.9" y2="815">
+      <stop offset="0%" stop-color="#963945"/>
+      <stop offset="100%" stop-color="#cb8c8d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-27-top" gradientUnits="userSpaceOnUse" x1="615.4" y1="479.5" x2="288.1" y2="429.8">
+      <stop offset="0%" stop-color="#7b2a76"/>
+      <stop offset="35%" stop-color="#ad519f"/>
+      <stop offset="75%" stop-color="#d37ebf"/>
+      <stop offset="100%" stop-color="#f6c7e0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-27-sideL" gradientUnits="userSpaceOnUse" x1="614.5" y1="502.8" x2="288.6" y2="452.7">
+      <stop offset="0%" stop-color="#47154f"/>
+      <stop offset="100%" stop-color="#702978"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-27-sideR" gradientUnits="userSpaceOnUse" x1="622.3" y1="476.7" x2="298.4" y2="427.6">
+      <stop offset="0%" stop-color="#3a1244"/>
+      <stop offset="100%" stop-color="#47154f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-27-chamL" gradientUnits="userSpaceOnUse" x1="612.2" y1="495.1" x2="284.5" y2="444.9">
+      <stop offset="0%" stop-color="#e7b8dc"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-27-chamR" gradientUnits="userSpaceOnUse" x1="620.1" y1="468.8" x2="294.4" y2="419.7">
+      <stop offset="0%" stop-color="#702978"/>
+      <stop offset="100%" stop-color="#b378ac"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-8-top" gradientUnits="userSpaceOnUse" x1="936.5" y1="510.8" x2="985.9" y2="820.9">
+      <stop offset="0%" stop-color="#aa4048"/>
+      <stop offset="35%" stop-color="#da6d6f"/>
+      <stop offset="75%" stop-color="#f49e99"/>
+      <stop offset="100%" stop-color="#ffddd3"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-8-sideL" gradientUnits="userSpaceOnUse" x1="959" y1="510.6" x2="1009.4" y2="819.4">
+      <stop offset="0%" stop-color="#661f2d"/>
+      <stop offset="100%" stop-color="#953847"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-8-sideR" gradientUnits="userSpaceOnUse" x1="933.6" y1="518.9" x2="982.4" y2="826">
+      <stop offset="0%" stop-color="#511a2b"/>
+      <stop offset="100%" stop-color="#661f2d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-8-chamL" gradientUnits="userSpaceOnUse" x1="951.6" y1="507.6" x2="1001.9" y2="817.9">
+      <stop offset="0%" stop-color="#f9cac7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-8-chamR" gradientUnits="userSpaceOnUse" x1="926.2" y1="516" x2="974.8" y2="824.6">
+      <stop offset="0%" stop-color="#953847"/>
+      <stop offset="100%" stop-color="#ca8b8d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-26-top" gradientUnits="userSpaceOnUse" x1="625" y1="490.7" x2="296.8" y2="466.5">
+      <stop offset="0%" stop-color="#7e2a73"/>
+      <stop offset="35%" stop-color="#b0519b"/>
+      <stop offset="75%" stop-color="#d67fbb"/>
+      <stop offset="100%" stop-color="#f7c8de"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-26-sideL" gradientUnits="userSpaceOnUse" x1="625.6" y1="514.2" x2="298.8" y2="489.5">
+      <stop offset="0%" stop-color="#49154d"/>
+      <stop offset="100%" stop-color="#722975"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-26-sideR" gradientUnits="userSpaceOnUse" x1="631" y1="487.3" x2="306.3" y2="463.5">
+      <stop offset="0%" stop-color="#3b1243"/>
+      <stop offset="100%" stop-color="#49154d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-26-chamL" gradientUnits="userSpaceOnUse" x1="623" y1="506.7" x2="294.4" y2="482">
+      <stop offset="0%" stop-color="#e8b9da"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-26-chamR" gradientUnits="userSpaceOnUse" x1="628.5" y1="479.7" x2="302" y2="455.9">
+      <stop offset="0%" stop-color="#722975"/>
+      <stop offset="100%" stop-color="#b579aa"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-9-top" gradientUnits="userSpaceOnUse" x1="923.1" y1="519" x2="932" y2="826">
+      <stop offset="0%" stop-color="#a83e49"/>
+      <stop offset="35%" stop-color="#d96a6f"/>
+      <stop offset="75%" stop-color="#f39b99"/>
+      <stop offset="100%" stop-color="#ffdcd1"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-9-sideL" gradientUnits="userSpaceOnUse" x1="945.6" y1="521.6" x2="955.6" y2="827.5">
+      <stop offset="0%" stop-color="#651e2e"/>
+      <stop offset="100%" stop-color="#943649"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-9-sideR" gradientUnits="userSpaceOnUse" x1="919.2" y1="526.6" x2="927.9" y2="830.6">
+      <stop offset="0%" stop-color="#50192c"/>
+      <stop offset="100%" stop-color="#651e2e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-9-chamL" gradientUnits="userSpaceOnUse" x1="938.6" y1="517.7" x2="948.3" y2="825.2">
+      <stop offset="0%" stop-color="#f8c8c7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-9-chamR" gradientUnits="userSpaceOnUse" x1="912.1" y1="522.8" x2="920.5" y2="828.3">
+      <stop offset="0%" stop-color="#943649"/>
+      <stop offset="100%" stop-color="#ca898d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-25-top" gradientUnits="userSpaceOnUse" x1="636.5" y1="501.3" x2="310.8" y2="502.2">
+      <stop offset="0%" stop-color="#812b70"/>
+      <stop offset="35%" stop-color="#b35297"/>
+      <stop offset="75%" stop-color="#d880b7"/>
+      <stop offset="100%" stop-color="#f8c9dc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-25-sideL" gradientUnits="userSpaceOnUse" x1="638.6" y1="524.8" x2="314.3" y2="525.2">
+      <stop offset="0%" stop-color="#4b154b"/>
+      <stop offset="100%" stop-color="#752972"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-25-sideR" gradientUnits="userSpaceOnUse" x1="641.5" y1="497.5" x2="319.4" y2="498.4">
+      <stop offset="0%" stop-color="#3d1241"/>
+      <stop offset="100%" stop-color="#4b154b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-25-chamL" gradientUnits="userSpaceOnUse" x1="635.8" y1="517.4" x2="309.7" y2="518">
+      <stop offset="0%" stop-color="#eab9d7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-25-chamR" gradientUnits="userSpaceOnUse" x1="638.8" y1="490" x2="314.9" y2="491.1">
+      <stop offset="0%" stop-color="#752972"/>
+      <stop offset="100%" stop-color="#b779a7"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-10-top" gradientUnits="userSpaceOnUse" x1="908.2" y1="526.4" x2="878.1" y2="825.7">
+      <stop offset="0%" stop-color="#a73c4b"/>
+      <stop offset="35%" stop-color="#d8676f"/>
+      <stop offset="75%" stop-color="#f29998"/>
+      <stop offset="100%" stop-color="#ffdad0"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-10-sideL" gradientUnits="userSpaceOnUse" x1="930.4" y1="531.8" x2="901.4" y2="830">
+      <stop offset="0%" stop-color="#641d30"/>
+      <stop offset="100%" stop-color="#93344b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-10-sideR" gradientUnits="userSpaceOnUse" x1="903.6" y1="533.2" x2="873.5" y2="829.4">
+      <stop offset="0%" stop-color="#50182d"/>
+      <stop offset="100%" stop-color="#641d30"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-10-chamL" gradientUnits="userSpaceOnUse" x1="923.9" y1="527.2" x2="894.4" y2="826.9">
+      <stop offset="0%" stop-color="#f8c7c6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-10-chamR" gradientUnits="userSpaceOnUse" x1="896.9" y1="528.6" x2="866.4" y2="826.3">
+      <stop offset="0%" stop-color="#93344b"/>
+      <stop offset="100%" stop-color="#c9878e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-24-top" gradientUnits="userSpaceOnUse" x1="649.7" y1="511.2" x2="329.7" y2="536.5">
+      <stop offset="0%" stop-color="#852b6d"/>
+      <stop offset="35%" stop-color="#b75293"/>
+      <stop offset="75%" stop-color="#db81b4"/>
+      <stop offset="100%" stop-color="#f9cada"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-24-sideL" gradientUnits="userSpaceOnUse" x1="653.3" y1="534.4" x2="334.6" y2="559.3">
+      <stop offset="0%" stop-color="#4e1549"/>
+      <stop offset="100%" stop-color="#782a6f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-24-sideR" gradientUnits="userSpaceOnUse" x1="653.7" y1="506.9" x2="337.2" y2="532">
+      <stop offset="0%" stop-color="#3f1240"/>
+      <stop offset="100%" stop-color="#4e1549"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-24-chamL" gradientUnits="userSpaceOnUse" x1="650.4" y1="527.3" x2="329.9" y2="552.4">
+      <stop offset="0%" stop-color="#ebbad6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-24-chamR" gradientUnits="userSpaceOnUse" x1="650.8" y1="499.7" x2="332.5" y2="525">
+      <stop offset="0%" stop-color="#782a6f"/>
+      <stop offset="100%" stop-color="#b97aa5"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-11-top" gradientUnits="userSpaceOnUse" x1="892.1" y1="533" x2="825.2" y2="820.3">
+      <stop offset="0%" stop-color="#a5394c"/>
+      <stop offset="35%" stop-color="#d76470"/>
+      <stop offset="75%" stop-color="#f19698"/>
+      <stop offset="100%" stop-color="#ffd9cf"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-11-sideL" gradientUnits="userSpaceOnUse" x1="913.7" y1="541" x2="848" y2="827.5">
+      <stop offset="0%" stop-color="#631c31"/>
+      <stop offset="100%" stop-color="#92334d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-11-sideR" gradientUnits="userSpaceOnUse" x1="886.8" y1="538.7" x2="820.4" y2="823">
+      <stop offset="0%" stop-color="#4f172e"/>
+      <stop offset="100%" stop-color="#631c31"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-11-chamL" gradientUnits="userSpaceOnUse" x1="907.6" y1="535.8" x2="841.3" y2="823.7">
+      <stop offset="0%" stop-color="#f7c5c6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-11-chamR" gradientUnits="userSpaceOnUse" x1="880.6" y1="533.5" x2="813.6" y2="819.3">
+      <stop offset="0%" stop-color="#92334d"/>
+      <stop offset="100%" stop-color="#c9868e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-12-top" gradientUnits="userSpaceOnUse" x1="874.9" y1="538.6" x2="774.2" y2="810.8">
+      <stop offset="0%" stop-color="#a4374d"/>
+      <stop offset="35%" stop-color="#d66270"/>
+      <stop offset="75%" stop-color="#f19398"/>
+      <stop offset="100%" stop-color="#ffd8ce"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-12-sideL" gradientUnits="userSpaceOnUse" x1="895.5" y1="549" x2="796" y2="820.5">
+      <stop offset="0%" stop-color="#621b33"/>
+      <stop offset="100%" stop-color="#91314f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-12-sideR" gradientUnits="userSpaceOnUse" x1="869" y1="543" x2="769.3" y2="812.4">
+      <stop offset="0%" stop-color="#4e172f"/>
+      <stop offset="100%" stop-color="#621b33"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-12-chamL" gradientUnits="userSpaceOnUse" x1="890" y1="543.4" x2="789.7" y2="816.3">
+      <stop offset="0%" stop-color="#f7c4c6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-12-chamR" gradientUnits="userSpaceOnUse" x1="863.4" y1="537.4" x2="762.9" y2="808.1">
+      <stop offset="0%" stop-color="#91314f"/>
+      <stop offset="100%" stop-color="#c8858f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-23-top" gradientUnits="userSpaceOnUse" x1="664.6" y1="520.1" x2="352.9" y2="569">
+      <stop offset="0%" stop-color="#882b69"/>
+      <stop offset="35%" stop-color="#ba538e"/>
+      <stop offset="75%" stop-color="#dd82b0"/>
+      <stop offset="100%" stop-color="#f9cbd8"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-23-sideL" gradientUnits="userSpaceOnUse" x1="669.6" y1="543.1" x2="359.3" y2="591.6">
+      <stop offset="0%" stop-color="#501546"/>
+      <stop offset="100%" stop-color="#7a2a6b"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-23-sideR" gradientUnits="userSpaceOnUse" x1="667.4" y1="515.7" x2="359.2" y2="564.1">
+      <stop offset="0%" stop-color="#41123e"/>
+      <stop offset="100%" stop-color="#501546"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-23-chamL" gradientUnits="userSpaceOnUse" x1="666.7" y1="536.2" x2="354.4" y2="585">
+      <stop offset="0%" stop-color="#ecbad4"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-23-chamR" gradientUnits="userSpaceOnUse" x1="664.4" y1="508.6" x2="354.4" y2="557.4">
+      <stop offset="0%" stop-color="#7a2a6b"/>
+      <stop offset="100%" stop-color="#ba7ba2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-13-top" gradientUnits="userSpaceOnUse" x1="856.6" y1="543.2" x2="725.4" y2="798">
+      <stop offset="0%" stop-color="#a2354e"/>
+      <stop offset="35%" stop-color="#d45f71"/>
+      <stop offset="75%" stop-color="#f09097"/>
+      <stop offset="100%" stop-color="#ffd6cd"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-13-sideL" gradientUnits="userSpaceOnUse" x1="876" y1="555.8" x2="746" y2="810">
+      <stop offset="0%" stop-color="#611934"/>
+      <stop offset="100%" stop-color="#8f3050"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-13-sideR" gradientUnits="userSpaceOnUse" x1="850.5" y1="546.3" x2="720.6" y2="798.3">
+      <stop offset="0%" stop-color="#4d1530"/>
+      <stop offset="100%" stop-color="#611934"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-13-chamL" gradientUnits="userSpaceOnUse" x1="871" y1="549.9" x2="740.1" y2="805.3">
+      <stop offset="0%" stop-color="#f7c2c6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-13-chamR" gradientUnits="userSpaceOnUse" x1="845.4" y1="540.3" x2="714.6" y2="793.6">
+      <stop offset="0%" stop-color="#8f3050"/>
+      <stop offset="100%" stop-color="#c7838f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-22-top" gradientUnits="userSpaceOnUse" x1="680.9" y1="528" x2="379.7" y2="599.7">
+      <stop offset="0%" stop-color="#8b2c66"/>
+      <stop offset="35%" stop-color="#bd538a"/>
+      <stop offset="75%" stop-color="#df83ac"/>
+      <stop offset="100%" stop-color="#faccd6"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-22-sideL" gradientUnits="userSpaceOnUse" x1="687.4" y1="550.7" x2="387.6" y2="621.9">
+      <stop offset="0%" stop-color="#521544"/>
+      <stop offset="100%" stop-color="#7d2a68"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-22-sideR" gradientUnits="userSpaceOnUse" x1="682.6" y1="523.6" x2="384.8" y2="594.4">
+      <stop offset="0%" stop-color="#42123c"/>
+      <stop offset="100%" stop-color="#521544"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-22-chamL" gradientUnits="userSpaceOnUse" x1="684.4" y1="543.9" x2="382.7" y2="615.6">
+      <stop offset="0%" stop-color="#edbbd1"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-22-chamR" gradientUnits="userSpaceOnUse" x1="679.5" y1="516.6" x2="379.9" y2="588">
+      <stop offset="0%" stop-color="#7d2a68"/>
+      <stop offset="100%" stop-color="#bc7b9f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-14-top" gradientUnits="userSpaceOnUse" x1="837.4" y1="546.6" x2="679" y2="782.5">
+      <stop offset="0%" stop-color="#a13350"/>
+      <stop offset="35%" stop-color="#d35c71"/>
+      <stop offset="75%" stop-color="#ef8e97"/>
+      <stop offset="100%" stop-color="#ffd5cb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-14-sideL" gradientUnits="userSpaceOnUse" x1="855.5" y1="561.2" x2="698.3" y2="796.5">
+      <stop offset="0%" stop-color="#601835"/>
+      <stop offset="100%" stop-color="#8e2e52"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-14-sideR" gradientUnits="userSpaceOnUse" x1="831.5" y1="548.3" x2="674.7" y2="781.6">
+      <stop offset="0%" stop-color="#4d1431"/>
+      <stop offset="100%" stop-color="#601835"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-14-chamL" gradientUnits="userSpaceOnUse" x1="851" y1="555" x2="692.7" y2="791.6">
+      <stop offset="0%" stop-color="#f6c1c6"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-14-chamR" gradientUnits="userSpaceOnUse" x1="826.9" y1="542.1" x2="669" y2="776.7">
+      <stop offset="0%" stop-color="#8e2e52"/>
+      <stop offset="100%" stop-color="#c7828f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-21-top" gradientUnits="userSpaceOnUse" x1="698.5" y1="534.8" x2="409.8" y2="628.5">
+      <stop offset="0%" stop-color="#8e2c63"/>
+      <stop offset="35%" stop-color="#c05486"/>
+      <stop offset="75%" stop-color="#e284a8"/>
+      <stop offset="100%" stop-color="#fbcdd4"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-21-sideL" gradientUnits="userSpaceOnUse" x1="706.5" y1="557" x2="419" y2="650.2">
+      <stop offset="0%" stop-color="#541542"/>
+      <stop offset="100%" stop-color="#7f2a65"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-21-sideR" gradientUnits="userSpaceOnUse" x1="699" y1="530.5" x2="413.5" y2="623">
+      <stop offset="0%" stop-color="#44123b"/>
+      <stop offset="100%" stop-color="#541542"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-21-chamL" gradientUnits="userSpaceOnUse" x1="703.3" y1="550.3" x2="414.1" y2="644.1">
+      <stop offset="0%" stop-color="#efbbcf"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-21-chamR" gradientUnits="userSpaceOnUse" x1="695.8" y1="523.7" x2="408.6" y2="616.8">
+      <stop offset="0%" stop-color="#7f2a65"/>
+      <stop offset="100%" stop-color="#bd7c9d"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-15-top" gradientUnits="userSpaceOnUse" x1="817.6" y1="548.8" x2="634.8" y2="765.1">
+      <stop offset="0%" stop-color="#9f3051"/>
+      <stop offset="35%" stop-color="#d25972"/>
+      <stop offset="75%" stop-color="#ef8b96"/>
+      <stop offset="100%" stop-color="#ffd3ca"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-15-sideL" gradientUnits="userSpaceOnUse" x1="834.3" y1="565.1" x2="652.7" y2="780.8">
+      <stop offset="0%" stop-color="#5f1737"/>
+      <stop offset="100%" stop-color="#8d2d54"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-15-sideR" gradientUnits="userSpaceOnUse" x1="812.1" y1="549.2" x2="631.2" y2="763">
+      <stop offset="0%" stop-color="#4c1432"/>
+      <stop offset="100%" stop-color="#5f1737"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-15-chamL" gradientUnits="userSpaceOnUse" x1="830.2" y1="558.8" x2="647.4" y2="775.7">
+      <stop offset="0%" stop-color="#f6bfc5"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-15-chamR" gradientUnits="userSpaceOnUse" x1="807.8" y1="542.9" x2="625.8" y2="757.8">
+      <stop offset="0%" stop-color="#8d2d54"/>
+      <stop offset="100%" stop-color="#c6808f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-20-top" gradientUnits="userSpaceOnUse" x1="717.2" y1="540.4" x2="442.5" y2="655.3">
+      <stop offset="0%" stop-color="#912d5f"/>
+      <stop offset="35%" stop-color="#c45482"/>
+      <stop offset="75%" stop-color="#e485a5"/>
+      <stop offset="100%" stop-color="#fcced2"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-20-sideL" gradientUnits="userSpaceOnUse" x1="726.6" y1="562" x2="453.1" y2="676.4">
+      <stop offset="0%" stop-color="#561640"/>
+      <stop offset="100%" stop-color="#822a62"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-20-sideR" gradientUnits="userSpaceOnUse" x1="716.4" y1="536.4" x2="444.9" y2="649.9">
+      <stop offset="0%" stop-color="#451339"/>
+      <stop offset="100%" stop-color="#561640"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-20-chamL" gradientUnits="userSpaceOnUse" x1="723.3" y1="555.5" x2="448.2" y2="670.5">
+      <stop offset="0%" stop-color="#f0bcce"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-20-chamR" gradientUnits="userSpaceOnUse" x1="713.1" y1="529.7" x2="439.9" y2="643.9">
+      <stop offset="0%" stop-color="#822a62"/>
+      <stop offset="100%" stop-color="#bf7c9a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-16-top" gradientUnits="userSpaceOnUse" x1="797.4" y1="549.8" x2="592.8" y2="746">
+      <stop offset="0%" stop-color="#9e2e52"/>
+      <stop offset="35%" stop-color="#d15672"/>
+      <stop offset="75%" stop-color="#ee8896"/>
+      <stop offset="100%" stop-color="#ffd2c9"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-16-sideL" gradientUnits="userSpaceOnUse" x1="812.7" y1="567.5" x2="609.2" y2="763.2">
+      <stop offset="0%" stop-color="#5e1638"/>
+      <stop offset="100%" stop-color="#8c2b56"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-16-sideR" gradientUnits="userSpaceOnUse" x1="792.5" y1="549" x2="590.1" y2="742.9">
+      <stop offset="0%" stop-color="#4b1333"/>
+      <stop offset="100%" stop-color="#5e1638"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-16-chamL" gradientUnits="userSpaceOnUse" x1="808.8" y1="561.2" x2="604.1" y2="758">
+      <stop offset="0%" stop-color="#f6bec5"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-16-chamR" gradientUnits="userSpaceOnUse" x1="788.6" y1="542.5" x2="584.9" y2="737.6">
+      <stop offset="0%" stop-color="#8c2b56"/>
+      <stop offset="100%" stop-color="#c67f90"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-19-top" gradientUnits="userSpaceOnUse" x1="736.7" y1="544.8" x2="477.3" y2="680.3">
+      <stop offset="0%" stop-color="#942d5c"/>
+      <stop offset="35%" stop-color="#c7557e"/>
+      <stop offset="75%" stop-color="#e785a1"/>
+      <stop offset="100%" stop-color="#fdcfcf"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-19-sideL" gradientUnits="userSpaceOnUse" x1="747.5" y1="565.6" x2="489.4" y2="700.7">
+      <stop offset="0%" stop-color="#58163e"/>
+      <stop offset="100%" stop-color="#842a5f"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-19-sideR" gradientUnits="userSpaceOnUse" x1="734.7" y1="541.2" x2="478.3" y2="675.2">
+      <stop offset="0%" stop-color="#471338"/>
+      <stop offset="100%" stop-color="#58163e"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-19-chamL" gradientUnits="userSpaceOnUse" x1="744.2" y1="559.1" x2="484.5" y2="695">
+      <stop offset="0%" stop-color="#f2bccb"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-19-chamR" gradientUnits="userSpaceOnUse" x1="731.3" y1="534.6" x2="473.4" y2="669.4">
+      <stop offset="0%" stop-color="#842a5f"/>
+      <stop offset="100%" stop-color="#c17d97"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-17-top" gradientUnits="userSpaceOnUse" x1="777" y1="549.5" x2="552.6" y2="725.6">
+      <stop offset="0%" stop-color="#9b2e55"/>
+      <stop offset="35%" stop-color="#ce5676"/>
+      <stop offset="75%" stop-color="#ec879a"/>
+      <stop offset="100%" stop-color="#fed1cb"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-17-sideL" gradientUnits="userSpaceOnUse" x1="790.8" y1="568.4" x2="567.6" y2="744">
+      <stop offset="0%" stop-color="#5c163a"/>
+      <stop offset="100%" stop-color="#892b59"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-17-sideR" gradientUnits="userSpaceOnUse" x1="772.9" y1="547.5" x2="551" y2="721.6">
+      <stop offset="0%" stop-color="#4a1335"/>
+      <stop offset="100%" stop-color="#5c163a"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-17-chamL" gradientUnits="userSpaceOnUse" x1="787.2" y1="562" x2="562.5" y2="738.6">
+      <stop offset="0%" stop-color="#f5bdc7"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-17-chamR" gradientUnits="userSpaceOnUse" x1="769.3" y1="541.1" x2="545.9" y2="716.1">
+      <stop offset="0%" stop-color="#892b59"/>
+      <stop offset="100%" stop-color="#c47e92"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-18-top" gradientUnits="userSpaceOnUse" x1="756.7" y1="547.8" x2="514.1" y2="703.7">
+      <stop offset="0%" stop-color="#982d59"/>
+      <stop offset="35%" stop-color="#ca557a"/>
+      <stop offset="75%" stop-color="#e9869d"/>
+      <stop offset="100%" stop-color="#fdd0cd"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-18-sideL" gradientUnits="userSpaceOnUse" x1="769" y1="567.8" x2="527.6" y2="723.2">
+      <stop offset="0%" stop-color="#5a163c"/>
+      <stop offset="100%" stop-color="#872b5c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-18-sideR" gradientUnits="userSpaceOnUse" x1="753.6" y1="545" x2="513.8" y2="699">
+      <stop offset="0%" stop-color="#481336"/>
+      <stop offset="100%" stop-color="#5a163c"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-18-chamL" gradientUnits="userSpaceOnUse" x1="765.5" y1="561.3" x2="522.6" y2="717.6">
+      <stop offset="0%" stop-color="#f3bcc9"/>
+      <stop offset="100%" stop-color="#fff9fc"/>
+    </linearGradient>
+    <linearGradient id="cai-rib-18-chamR" gradientUnits="userSpaceOnUse" x1="750.1" y1="538.4" x2="508.8" y2="693.4">
+      <stop offset="0%" stop-color="#872b5c"/>
+      <stop offset="100%" stop-color="#c27e95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Luminous Twilight Studio Backdrop & Cyclorama Floor -->
+  <rect width="1600" height="900" fill="url(#twilightStudioBg)"/>
+  <rect width="1600" height="900" fill="url(#oculusPortalGlow)"/>
+  <rect x="0" y="680" width="1600" height="220" fill="url(#twilightFloor)"/>
+
+  <!-- Soft Studio Floor Shadow Beneath the Vortex -->
+  <g id="vortex-floor-shadows">
+    <ellipse cx="800" cy="805" rx="480" ry="32" fill="#331c4f" opacity="0.28" filter="url(#floorShadowBlur)"/>
+    <ellipse cx="785" cy="802" rx="260" ry="15" fill="#221038" opacity="0.34" filter="url(#contactShadowBlur)"/>
+  </g>
+
+  <!-- Main 3D Toroidal Helical Vortex Oculus Sculpture -->
+  <g id="sculpture-sovereign-vortex" filter="url(#studioGrain)">
+    <g id="cai-rib-50"><polygon points="830.4,307.6 841.8,328.7 1006.7,223.9 996.3,202.4" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="838.2,322.8 1003.5,217.9 1008.9,221.7 842.8,327.2" fill="url(#cai-rib-50-sideR)" stroke="url(#cai-rib-50-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="993,196.3 1003.5,217.9 1008.9,221.7 998.4,200" fill="#626cb7" stroke="#626cb7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="998.4,200 1008.9,221.7 1005.9,222.8 997.7,205.8" fill="#eaeefd" stroke="#eaeefd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="842.8,327.2 1008.9,221.7 1005.9,222.8 843,326.3" fill="url(#cai-rib-50-chamR)" stroke="url(#cai-rib-50-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="826.7,301.7 993,196.3 998.4,200 831.2,306" fill="url(#cai-rib-50-sideL)" stroke="url(#cai-rib-50-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="831.2,306 998.4,200 997.7,205.8 834,309.7" fill="url(#cai-rib-50-chamL)" stroke="url(#cai-rib-50-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="834,309.7 843,326.3 1005.9,222.8 997.7,205.8" fill="url(#cai-rib-50-top)" stroke="#e3e9fd" stroke-width="0.55" stroke-linejoin="round"/><polyline points="834,309.7 997.7,205.8 1005.9,222.8" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-51"><polygon points="848.8,309.7 858.7,331.5 1037.4,238.8 1028.6,216.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="855.1,325.7 1034.2,232.8 1039,237.3 859,330.7" fill="url(#cai-rib-51-sideR)" stroke="url(#cai-rib-51-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1025.4,210.5 1034.2,232.8 1039,237.3 1030.2,214.8" fill="#696db1" stroke="#696db1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="859,330.7 1039,237.3 1035.8,238.2 859.1,329.8" fill="url(#cai-rib-51-chamR)" stroke="url(#cai-rib-51-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="845.2,303.8 1025.4,210.5 1030.2,214.8 849,308.7" fill="url(#cai-rib-51-sideL)" stroke="url(#cai-rib-51-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1030.2,214.8 1039,237.3 1035.8,238.2 1028.9,220.7" fill="#eceffc" stroke="#eceffc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="849,308.7 1030.2,214.8 1028.9,220.7 851.4,312.7" fill="url(#cai-rib-51-chamL)" stroke="url(#cai-rib-51-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="851.4,312.7 859.1,329.8 1035.8,238.2 1028.9,220.7" fill="url(#cai-rib-51-top)" stroke="#e5e9fb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="851.4,312.7 1028.9,220.7 1035.8,238.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-49"><polygon points="811.5,306.5 824.6,326.8 976,209.9 964,189.2" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="960.6,183.1 972.7,203.9 978.7,206.9 966.6,186" fill="#5b6cbd" stroke="#5b6cbd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="821,320.9 972.7,203.9 978.7,206.9 826.2,324.7" fill="url(#cai-rib-49-sideR)" stroke="url(#cai-rib-49-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="966.6,186 978.7,206.9 976,208.2 966.5,191.9" fill="#e9eefe" stroke="#e9eefe" stroke-width="0.35" stroke-linejoin="round"/><polygon points="826.2,324.7 978.7,206.9 976,208.2 826.5,323.6" fill="url(#cai-rib-49-chamR)" stroke="url(#cai-rib-49-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="807.8,300.6 960.6,183.1 966.6,186 813.1,304.2" fill="url(#cai-rib-49-sideL)" stroke="url(#cai-rib-49-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="813.1,304.2 966.6,186 966.5,191.9 816.2,307.7" fill="url(#cai-rib-49-chamL)" stroke="url(#cai-rib-49-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="816.2,307.7 826.5,323.6 976,208.2 966.5,191.9" fill="url(#cai-rib-49-top)" stroke="#e1e8fe" stroke-width="0.55" stroke-linejoin="round"/><polyline points="816.2,307.7 966.5,191.9 976,208.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-52"><polygon points="866.8,313 875.1,335.3 1068,254.9 1060.9,232.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="871.6,329.6 1064.9,249 1069.1,253.9 874.7,335" fill="url(#cai-rib-52-sideR)" stroke="url(#cai-rib-52-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1057.7,226.1 1064.9,249 1069.1,253.9 1061.9,230.9" fill="#716eac" stroke="#716eac" stroke-width="0.35" stroke-linejoin="round"/><polygon points="874.7,335 1069.1,253.9 1065.6,254.6 874.8,334.2" fill="url(#cai-rib-52-chamR)" stroke="url(#cai-rib-52-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="863.2,307.1 1057.7,226.1 1061.9,230.9 866.3,312.4" fill="url(#cai-rib-52-sideL)" stroke="url(#cai-rib-52-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1061.9,230.9 1069.1,253.9 1065.6,254.6 1060,236.7" fill="#edeffb" stroke="#edeffb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="866.3,312.4 1061.9,230.9 1060,236.7 868.2,316.6" fill="url(#cai-rib-52-chamL)" stroke="url(#cai-rib-52-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="868.2,316.6 874.8,334.2 1065.6,254.6 1060,236.7" fill="url(#cai-rib-52-top)" stroke="#e7eafa" stroke-width="0.55" stroke-linejoin="round"/><polyline points="868.2,316.6 1060,236.7 1065.6,254.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-48"><polygon points="792.5,306.7 807.2,325.9 945.1,196.5 931.4,176.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="928,170.6 941.7,190.5 948.3,192.7 934.5,172.8" fill="#536bc3" stroke="#536bc3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="803.5,320 941.7,190.5 948.3,192.7 809.4,323" fill="url(#cai-rib-48-sideR)" stroke="url(#cai-rib-48-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="934.5,172.8 948.3,192.7 945.8,194 935,178.5" fill="#e7edff" stroke="#e7edff" stroke-width="0.35" stroke-linejoin="round"/><polygon points="809.4,323 948.3,192.7 945.8,194 809.7,321.8" fill="url(#cai-rib-48-chamR)" stroke="url(#cai-rib-48-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="788.7,300.7 928,170.6 934.5,172.8 794.6,303.6" fill="url(#cai-rib-48-sideL)" stroke="url(#cai-rib-48-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="794.6,303.6 934.5,172.8 935,178.5 798.1,306.6" fill="url(#cai-rib-48-chamL)" stroke="url(#cai-rib-48-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="798.1,306.6 809.7,321.8 945.8,194 935,178.5" fill="url(#cai-rib-48-top)" stroke="#dfe8ff" stroke-width="0.55" stroke-linejoin="round"/><polyline points="798.1,306.6 935,178.5 945.8,194" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-53"><polygon points="884.1,317.3 890.9,340.1 1098.5,272.6 1093,249.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="887.4,334.3 1095.5,266.7 1098.9,272.1 889.8,340.1" fill="url(#cai-rib-53-sideR)" stroke="url(#cai-rib-53-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1089.9,243.3 1095.5,266.7 1098.9,272.1 1093.3,248.6" fill="#776fa6" stroke="#776fa6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="889.8,340.1 1098.9,272.1 1095.3,272.6 889.8,339.4" fill="url(#cai-rib-53-chamR)" stroke="url(#cai-rib-53-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="880.5,311.4 1089.9,243.3 1093.3,248.6 882.9,317.1" fill="url(#cai-rib-53-sideL)" stroke="url(#cai-rib-53-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1093.3,248.6 1098.9,272.1 1095.3,272.6 1090.9,254.3" fill="#eff0fa" stroke="#eff0fa" stroke-width="0.35" stroke-linejoin="round"/><polygon points="882.9,317.1 1093.3,248.6 1090.9,254.3 884.4,321.4" fill="url(#cai-rib-53-chamL)" stroke="url(#cai-rib-53-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="884.4,321.4 889.8,339.4 1095.3,272.6 1090.9,254.3" fill="url(#cai-rib-53-top)" stroke="#e9ebf8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="884.4,321.4 1090.9,254.3 1095.3,272.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-47"><polygon points="773.4,308 789.8,326 913.7,183.5 898.3,165" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="894.8,158.8 910.3,177.4 917.2,178.7 901.8,160" fill="#5769c1" stroke="#5769c1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="786,320.1 910.3,177.4 917.2,178.7 792.5,322.1" fill="url(#cai-rib-47-sideR)" stroke="url(#cai-rib-47-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="901.8,160 917.2,178.7 915.1,180.1 903,165.5" fill="#e9edff" stroke="#e9edff" stroke-width="0.35" stroke-linejoin="round"/><polygon points="792.5,322.1 917.2,178.7 915.1,180.1 792.7,320.8" fill="url(#cai-rib-47-chamR)" stroke="url(#cai-rib-47-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="769.6,302 894.8,158.8 901.8,160 776,304" fill="url(#cai-rib-47-sideL)" stroke="url(#cai-rib-47-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="776,304 901.8,160 903,165.5 779.8,306.6" fill="url(#cai-rib-47-chamL)" stroke="url(#cai-rib-47-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="779.8,306.6 792.7,320.8 915.1,180.1 903,165.5" fill="url(#cai-rib-47-top)" stroke="#e1e7fe" stroke-width="0.55" stroke-linejoin="round"/><polyline points="779.8,306.6 903,165.5 915.1,180.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-54"><polygon points="900.6,322.5 906,345.8 1128.6,292.2 1124.6,268.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="902.5,340 1125.6,286.3 1128.4,292.1 904.1,346" fill="url(#cai-rib-54-sideR)" stroke="url(#cai-rib-54-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="904.1,346 1128.4,292.1 1124.6,292.3 904,345.4" fill="url(#cai-rib-54-chamR)" stroke="url(#cai-rib-54-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="897.1,316.7 1121.5,262.6 1124.3,268.2 898.7,322.6" fill="url(#cai-rib-54-sideL)" stroke="url(#cai-rib-54-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1121.5,262.6 1125.6,286.3 1128.4,292.1 1124.3,268.2" fill="#7f70a0" stroke="#7f70a0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="898.7,322.6 1124.3,268.2 1121.4,273.7 899.8,327.1" fill="url(#cai-rib-54-chamL)" stroke="url(#cai-rib-54-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1124.3,268.2 1128.4,292.1 1124.6,292.3 1121.4,273.7" fill="#f0f0f9" stroke="#f0f0f9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="899.8,327.1 904,345.4 1124.6,292.3 1121.4,273.7" fill="url(#cai-rib-54-top)" stroke="#ebebf7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="899.8,327.1 1121.4,273.7 1124.6,292.3" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-46"><polygon points="754.4,310.5 772.5,327 881.4,170.9 864.4,153.7" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="860.8,147.6 877.9,164.8 885.2,165 868.1,147.7" fill="#5b67bf" stroke="#5b67bf" stroke-width="0.35" stroke-linejoin="round"/><polygon points="868.1,147.7 885.2,165 883.3,166.5 869.9,153" fill="#e9ecfe" stroke="#e9ecfe" stroke-width="0.35" stroke-linejoin="round"/><polygon points="768.6,321.1 877.9,164.8 885.2,165 775.5,322.2" fill="url(#cai-rib-46-sideR)" stroke="url(#cai-rib-46-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="775.5,322.2 885.2,165 883.3,166.5 775.7,320.7" fill="url(#cai-rib-46-chamR)" stroke="url(#cai-rib-46-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="750.5,304.5 860.8,147.6 868.1,147.7 757.3,305.5" fill="url(#cai-rib-46-sideL)" stroke="url(#cai-rib-46-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="757.3,305.5 868.1,147.7 869.9,153 761.5,307.6" fill="url(#cai-rib-46-chamL)" stroke="url(#cai-rib-46-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="761.5,307.6 775.7,320.7 883.3,166.5 869.9,153" fill="url(#cai-rib-46-top)" stroke="#e2e6fe" stroke-width="0.55" stroke-linejoin="round"/><polyline points="761.5,307.6 869.9,153 883.3,166.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-55"><polygon points="916.3,328.8 920.2,352.3 1157.7,314 1155.3,290.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="916.7,346.5 1154.8,308.1 1156.9,314.2 917.5,352.7" fill="url(#cai-rib-55-sideR)" stroke="url(#cai-rib-55-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="917.5,352.7 1156.9,314.2 1152.9,314.1 917.4,352.1" fill="url(#cai-rib-55-chamR)" stroke="url(#cai-rib-55-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="912.8,322.9 1152.3,284.1 1154.4,290 913.6,329" fill="url(#cai-rib-55-sideL)" stroke="url(#cai-rib-55-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1152.3,284.1 1154.8,308.1 1156.9,314.2 1154.4,290" fill="#86709a" stroke="#86709a" stroke-width="0.35" stroke-linejoin="round"/><polygon points="913.6,329 1154.4,290 1151,295.3 914.3,333.6" fill="url(#cai-rib-55-chamL)" stroke="url(#cai-rib-55-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1154.4,290 1156.9,314.2 1152.9,314.1 1151,295.3" fill="#f2f1f8" stroke="#f2f1f8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="914.3,333.6 917.4,352.1 1152.9,314.1 1151,295.3" fill="url(#cai-rib-55-top)" stroke="#edecf6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="914.3,333.6 1151,295.3 1152.9,314.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-45"><polygon points="735.7,314.2 755.4,329.1 847.8,158.8 829.1,143.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="825.5,137.1 844.2,152.7 851.7,151.8 832.9,136.1" fill="#5f65be" stroke="#5f65be" stroke-width="0.35" stroke-linejoin="round"/><polygon points="832.9,136.1 851.7,151.8 850.1,153.3 835.4,141.1" fill="#ebecfd" stroke="#ebecfd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="751.5,323.1 844.2,152.7 851.7,151.8 758.7,323.1" fill="url(#cai-rib-45-sideR)" stroke="url(#cai-rib-45-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="758.7,323.1 851.7,151.8 850.1,153.3 758.8,321.4" fill="url(#cai-rib-45-chamR)" stroke="url(#cai-rib-45-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="731.8,308.3 825.5,137.1 832.9,136.1 738.9,308.1" fill="url(#cai-rib-45-sideL)" stroke="url(#cai-rib-45-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="738.9,308.1 832.9,136.1 835.4,141.1 743.3,309.7" fill="url(#cai-rib-45-chamL)" stroke="url(#cai-rib-45-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="743.3,309.7 758.8,321.4 850.1,153.3 835.4,141.1" fill="url(#cai-rib-45-top)" stroke="#e4e5fd" stroke-width="0.55" stroke-linejoin="round"/><polyline points="743.3,309.7 835.4,141.1 850.1,153.3" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-44"><polygon points="717.5,319.2 738.7,332 812.4,147.6 792.2,134" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="788.5,127.8 808.7,141.5 816.2,139.4 795.9,125.6" fill="#6363bc" stroke="#6363bc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="795.9,125.6 816.2,139.4 814.9,140.9 799,130.2" fill="#ecebfd" stroke="#ecebfd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="734.7,326.1 808.7,141.5 816.2,139.4 742.1,324.9" fill="url(#cai-rib-44-sideR)" stroke="url(#cai-rib-44-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="742.1,324.9 816.2,139.4 814.9,140.9 742,323.1" fill="url(#cai-rib-44-chamR)" stroke="url(#cai-rib-44-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="713.5,313.2 788.5,127.8 795.9,125.6 720.7,311.9" fill="url(#cai-rib-44-sideL)" stroke="url(#cai-rib-44-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="720.7,311.9 795.9,125.6 799,130.2 725.4,312.9" fill="url(#cai-rib-44-chamL)" stroke="url(#cai-rib-44-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="725.4,312.9 742,323.1 814.9,140.9 799,130.2" fill="url(#cai-rib-44-top)" stroke="#e5e5fc" stroke-width="0.55" stroke-linejoin="round"/><polyline points="725.4,312.9 799,130.2 814.9,140.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-56"><polygon points="931,335.9 933.4,359.7 1185.5,338.3 1184.6,314.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="929.9,353.9 1182.6,332.4 1184,338.6 930,360.2" fill="url(#cai-rib-56-sideR)" stroke="url(#cai-rib-56-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="930,360.2 1184,338.6 1179.9,338.3 929.8,359.5" fill="url(#cai-rib-56-chamR)" stroke="url(#cai-rib-56-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="927.5,330 1181.6,308.1 1183.1,314.3 927.6,336.2" fill="url(#cai-rib-56-sideL)" stroke="url(#cai-rib-56-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1181.6,308.1 1182.6,332.4 1184,338.6 1183.1,314.3" fill="#8d7194" stroke="#8d7194" stroke-width="0.35" stroke-linejoin="round"/><polygon points="927.6,336.2 1183.1,314.3 1179.2,319.3 927.8,340.8" fill="url(#cai-rib-56-chamL)" stroke="url(#cai-rib-56-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1183.1,314.3 1184,338.6 1179.9,338.3 1179.2,319.3" fill="#f3f1f7" stroke="#f3f1f7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="927.8,340.8 929.8,359.5 1179.9,338.3 1179.2,319.3" fill="url(#cai-rib-56-top)" stroke="#efecf5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="927.8,340.8 1179.2,319.3 1179.9,338.3" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-43"><polygon points="699.9,325.3 722.5,335.9 775,137.9 753.4,126.4" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="749.6,120.2 771.2,131.7 778.6,128.4 756.8,116.8" fill="#6662bb" stroke="#6662bb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="756.8,116.8 778.6,128.4 777.5,129.8 760.5,120.8" fill="#edeafc" stroke="#edeafc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="718.5,329.9 771.2,131.7 778.6,128.4 725.8,327.5" fill="url(#cai-rib-43-sideR)" stroke="url(#cai-rib-43-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="725.8,327.5 778.6,128.4 777.5,129.8 725.6,325.6" fill="url(#cai-rib-43-chamR)" stroke="url(#cai-rib-43-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="695.9,319.3 749.6,120.2 756.8,116.8 703.1,316.8" fill="url(#cai-rib-43-sideL)" stroke="url(#cai-rib-43-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="703.1,316.8 756.8,116.8 760.5,120.8 707.9,317.2" fill="url(#cai-rib-43-chamL)" stroke="url(#cai-rib-43-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="707.9,317.2 725.6,325.6 777.5,129.8 760.5,120.8" fill="url(#cai-rib-43-top)" stroke="#e7e3fb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="707.9,317.2 760.5,120.8 777.5,129.8" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-57"><polygon points="944.5,343.8 945.5,367.8 1211.2,365.1 1211.9,340.7" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="942.1,362 1208.3,359.2 1209.1,365.6 941.4,368.3" fill="url(#cai-rib-57-sideR)" stroke="url(#cai-rib-57-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="941.4,368.3 1209.1,365.6 1204.9,365 941.1,367.7" fill="url(#cai-rib-57-chamR)" stroke="url(#cai-rib-57-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="941.1,338 1209,334.8 1209.7,341 940.4,344.2" fill="url(#cai-rib-57-sideL)" stroke="url(#cai-rib-57-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="940.4,344.2 1209.7,341 1205.4,345.8 940.3,348.8" fill="url(#cai-rib-57-chamL)" stroke="url(#cai-rib-57-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1209,334.8 1208.3,359.2 1209.1,365.6 1209.7,341" fill="#94718e" stroke="#94718e" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1209.7,341 1209.1,365.6 1204.9,365 1205.4,345.8" fill="#f5f2f6" stroke="#f5f2f6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="940.3,348.8 941.1,367.7 1204.9,365 1205.4,345.8" fill="url(#cai-rib-57-top)" stroke="#f1edf3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="940.3,348.8 1205.4,345.8 1204.9,365" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-42"><polygon points="683.2,332.5 706.9,340.6 735.5,130.1 712.7,121.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="708.8,114.8 731.6,123.9 738.6,119.4 715.7,110.2" fill="#6a60b9" stroke="#6a60b9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="715.7,110.2 738.6,119.4 737.8,120.9 719.8,113.7" fill="#eeeafc" stroke="#eeeafc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="702.9,334.6 731.6,123.9 738.6,119.4 710,331" fill="url(#cai-rib-42-sideR)" stroke="url(#cai-rib-42-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="710,331 738.6,119.4 737.8,120.9 709.6,329" fill="url(#cai-rib-42-chamR)" stroke="url(#cai-rib-42-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="679.1,326.5 708.8,114.8 715.7,110.2 686,322.9" fill="url(#cai-rib-42-sideL)" stroke="url(#cai-rib-42-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="686,322.9 715.7,110.2 719.8,113.7 690.9,322.6" fill="url(#cai-rib-42-chamL)" stroke="url(#cai-rib-42-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="690.9,322.6 709.6,329 737.8,120.9 719.8,113.7" fill="url(#cai-rib-42-top)" stroke="#e8e3fb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="690.9,322.6 719.8,113.7 737.8,120.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-58"><polygon points="956.9,352.5 956.4,376.6 1234.3,394.4 1236.5,370" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="953,370.8 1231.4,388.6 1231.4,395 951.5,377.1" fill="url(#cai-rib-58-sideR)" stroke="url(#cai-rib-58-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="951.5,377.1 1231.4,395 1227.2,394.1 951.1,376.4" fill="url(#cai-rib-58-chamR)" stroke="url(#cai-rib-58-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="953.5,346.7 1233.7,364.1 1233.7,370.4 952,352.8" fill="url(#cai-rib-58-sideL)" stroke="url(#cai-rib-58-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="952,352.8 1233.7,370.4 1228.9,374.9 951.5,357.4" fill="url(#cai-rib-58-chamL)" stroke="url(#cai-rib-58-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1233.7,364.1 1231.4,388.6 1231.4,395 1233.7,370.4" fill="#9c7288" stroke="#9c7288" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1233.7,370.4 1231.4,395 1227.2,394.1 1228.9,374.9" fill="#f6f2f5" stroke="#f6f2f5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="951.5,357.4 951.1,376.4 1227.2,394.1 1228.9,374.9" fill="url(#cai-rib-58-top)" stroke="#f3eef2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="951.5,357.4 1228.9,374.9 1227.2,394.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-41"><polygon points="667.5,340.8 692.2,346.1 694,125.1 670.2,118.7" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="666.2,112.4 690.1,118.9 696.5,113.3 672.6,106.7" fill="#6e5eb7" stroke="#6e5eb7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="672.6,106.7 696.5,113.3 695.9,114.7 677.2,109.5" fill="#efe9fb" stroke="#efe9fb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="688.1,340.1 690.1,118.9 696.5,113.3 694.7,335.4" fill="url(#cai-rib-41-sideR)" stroke="url(#cai-rib-41-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="694.7,335.4 696.5,113.3 695.9,114.7 694.1,333.4" fill="url(#cai-rib-41-chamR)" stroke="url(#cai-rib-41-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="663.3,334.7 666.2,112.4 672.6,106.7 669.9,330" fill="url(#cai-rib-41-sideL)" stroke="url(#cai-rib-41-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="669.9,330 672.6,106.7 677.2,109.5 674.7,329.1" fill="url(#cai-rib-41-chamL)" stroke="url(#cai-rib-41-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="674.7,329.1 694.1,333.4 695.9,114.7 677.2,109.5" fill="url(#cai-rib-41-top)" stroke="#eae2fa" stroke-width="0.55" stroke-linejoin="round"/><polyline points="674.7,329.1 677.2,109.5 695.9,114.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-59"><polygon points="968,362 966,386.1 1253.9,426.3 1257.8,401.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="962.6,380.3 1251,420.5 1250.3,426.9 960.4,386.4" fill="url(#cai-rib-59-sideR)" stroke="url(#cai-rib-59-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="960.4,386.4 1250.3,426.9 1246,425.6 959.9,385.6" fill="url(#cai-rib-59-chamR)" stroke="url(#cai-rib-59-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="964.6,356.1 1254.9,396 1254.3,402.3 962.4,362.1" fill="url(#cai-rib-59-sideL)" stroke="url(#cai-rib-59-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="962.4,362.1 1254.3,402.3 1249.1,406.4 961.5,366.7" fill="url(#cai-rib-59-chamL)" stroke="url(#cai-rib-59-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1254.9,396 1251,420.5 1250.3,426.9 1254.3,402.3" fill="#a37282" stroke="#a37282" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1254.3,402.3 1250.3,426.9 1246,425.6 1249.1,406.4" fill="#f7f2f4" stroke="#f7f2f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="961.5,366.7 959.9,385.6 1246,425.6 1249.1,406.4" fill="url(#cai-rib-59-top)" stroke="#f5eef1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="961.5,366.7 1249.1,406.4 1246,425.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-40"><polygon points="653,350 678.3,352.4 651,123.5 626.6,119.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="622.5,113.5 647,117.3 652.7,110.7 628.1,106.9" fill="#725cb6" stroke="#725cb6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="628.1,106.9 652.7,110.7 652.3,112 633,109" fill="#f0e9fb" stroke="#f0e9fb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="674.1,346.4 647,117.3 652.7,110.7 680.2,340.7" fill="url(#cai-rib-40-sideR)" stroke="url(#cai-rib-40-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="680.2,340.7 652.7,110.7 652.3,112 679.3,338.6" fill="url(#cai-rib-40-chamR)" stroke="url(#cai-rib-40-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="648.7,343.9 622.5,113.5 628.1,106.9 654.7,338.2" fill="url(#cai-rib-40-sideL)" stroke="url(#cai-rib-40-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="654.7,338.2 628.1,106.9 633,109 659.4,336.7" fill="url(#cai-rib-40-chamL)" stroke="url(#cai-rib-40-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="659.4,336.7 679.3,338.6 652.3,112 633,109" fill="url(#cai-rib-40-top)" stroke="#ebe1f9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="659.4,336.7 633,109 652.3,112" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-39"><polygon points="639.8,360.1 665.4,359.5 607.2,125.8 582.4,125" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="578.2,118.7 603.1,119.5 607.9,112.1 582.9,111.2" fill="#765ab4" stroke="#765ab4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="582.9,111.2 607.9,112.1 607.7,113.4 588.1,112.6" fill="#f2e8fa" stroke="#f2e8fa" stroke-width="0.35" stroke-linejoin="round"/><polygon points="661.2,353.4 603.1,119.5 607.9,112.1 666.5,346.9" fill="url(#cai-rib-39-sideR)" stroke="url(#cai-rib-39-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="666.5,346.9 607.9,112.1 607.7,113.4 665.4,344.8" fill="url(#cai-rib-39-chamR)" stroke="url(#cai-rib-39-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="635.5,354 578.2,118.7 582.9,111.2 640.8,347.4" fill="url(#cai-rib-39-sideL)" stroke="url(#cai-rib-39-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="640.8,347.4 582.9,111.2 588.1,112.6 645.3,345.2" fill="url(#cai-rib-39-chamL)" stroke="url(#cai-rib-39-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="645.3,345.2 665.4,344.8 607.7,113.4 588.1,112.6" fill="url(#cai-rib-39-top)" stroke="#ede0f8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="645.3,345.2 588.1,112.6 607.7,113.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-60"><polygon points="977.7,372.1 974.1,396.1 1269.4,460.5 1275,436.2" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="970.7,390.4 1266.5,454.7 1265.1,461.1 967.8,396.2" fill="url(#cai-rib-60-sideR)" stroke="url(#cai-rib-60-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="967.8,396.2 1265.1,461.1 1260.8,459.4 967.3,395.4" fill="url(#cai-rib-60-chamR)" stroke="url(#cai-rib-60-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="974.3,366.2 1272.1,430.3 1270.7,436.5 971.4,371.9" fill="url(#cai-rib-60-sideL)" stroke="url(#cai-rib-60-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="971.4,371.9 1270.7,436.5 1265.1,440.3 970.1,376.4" fill="url(#cai-rib-60-chamL)" stroke="url(#cai-rib-60-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1270.7,436.5 1265.1,461.1 1260.8,459.4 1265.1,440.3" fill="#f9f3f3" stroke="#f9f3f3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="970.1,376.4 967.3,395.4 1260.8,459.4 1265.1,440.3" fill="url(#cai-rib-60-top)" stroke="#f7efef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="970.1,376.4 1265.1,440.3 1260.8,459.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-38"><polygon points="628.1,370.9 653.6,367.2 563.4,132.4 538.5,134.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="534.1,128.1 559.1,126.1 563.1,118 538,120" fill="#7a58b3" stroke="#7a58b3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="538,120 563.1,118 562.9,119.2 543.3,120.7" fill="#f2e7fa" stroke="#f2e7fa" stroke-width="0.35" stroke-linejoin="round"/><polygon points="649.3,361.2 559.1,126.1 563.1,118 653.9,353.9" fill="url(#cai-rib-38-sideR)" stroke="url(#cai-rib-38-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="653.9,353.9 563.1,118 562.9,119.2 652.5,352" fill="url(#cai-rib-38-chamR)" stroke="url(#cai-rib-38-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="623.7,364.8 534.1,128.1 538,120 628.2,357.5" fill="url(#cai-rib-38-sideL)" stroke="url(#cai-rib-38-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="628.2,357.5 538,120 543.3,120.7 632.5,354.8" fill="url(#cai-rib-38-chamL)" stroke="url(#cai-rib-38-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="632.5,354.8 652.5,352 562.9,119.2 543.3,120.7" fill="url(#cai-rib-38-top)" stroke="#eedff8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="632.5,354.8 543.3,120.7 562.9,119.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-61"><polygon points="986,382.7 980.8,406.7 1280,496.7 1287.3,472.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="977.4,400.9 1277.2,491 1275,497.1 973.7,406.4" fill="url(#cai-rib-61-sideR)" stroke="url(#cai-rib-61-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="973.7,406.4 1275,497.1 1270.7,495.1 973.1,405.5" fill="url(#cai-rib-61-chamR)" stroke="url(#cai-rib-61-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="982.6,376.9 1284.5,466.7 1282.4,472.8 979,382.3" fill="url(#cai-rib-61-sideL)" stroke="url(#cai-rib-61-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="979,382.3 1282.4,472.8 1276.4,476.1 977.2,386.7" fill="url(#cai-rib-61-chamL)" stroke="url(#cai-rib-61-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1284.5,466.7 1277.2,491 1275,497.1 1282.4,472.8" fill="#b17477" stroke="#b17477" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1282.4,472.8 1275,497.1 1270.7,495.1 1276.4,476.1" fill="#fbf3f2" stroke="#fbf3f2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="977.2,386.7 973.1,405.5 1270.7,495.1 1276.4,476.1" fill="url(#cai-rib-61-top)" stroke="#f9efee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="977.2,386.7 1276.4,476.1 1270.7,495.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-37"><polygon points="617.9,382.4 643,375.7 520.4,143.4 495.8,148.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="491.3,142 516.1,137.1 519,128.5 494.2,133.3" fill="#7d56b1" stroke="#7d56b1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="494.2,133.3 519,128.5 519,129.6 499.6,133.4" fill="#f4e7f9" stroke="#f4e7f9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="638.7,369.6 516.1,137.1 519,128.5 642.4,361.8" fill="url(#cai-rib-37-sideR)" stroke="url(#cai-rib-37-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="642.4,361.8 519,128.5 519,129.6 640.8,360" fill="url(#cai-rib-37-chamR)" stroke="url(#cai-rib-37-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="613.5,376.2 491.3,142 494.2,133.3 617.1,368.4" fill="url(#cai-rib-37-sideL)" stroke="url(#cai-rib-37-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="617.1,368.4 494.2,133.3 499.6,133.4 621.1,365.1" fill="url(#cai-rib-37-chamL)" stroke="url(#cai-rib-37-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="621.1,365.1 640.8,360 519,129.6 499.6,133.4" fill="url(#cai-rib-37-top)" stroke="#f0dff7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="621.1,365.1 499.6,133.4 519,129.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-62"><polygon points="992.7,393.9 985.8,417.6 1285.2,534.4 1294.2,510.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="982.4,411.8 1282.3,528.7 1279.4,534.7 978,416.9" fill="url(#cai-rib-62-sideR)" stroke="url(#cai-rib-62-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="978,416.9 1279.4,534.7 1275.1,532.2 977.4,416" fill="url(#cai-rib-62-chamR)" stroke="url(#cai-rib-62-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="989.3,388.1 1291.4,504.8 1288.5,510.7 985,393.1" fill="url(#cai-rib-62-sideL)" stroke="url(#cai-rib-62-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="985,393.1 1288.5,510.7 1282.2,513.5 982.8,397.3" fill="url(#cai-rib-62-chamL)" stroke="url(#cai-rib-62-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1291.4,504.8 1282.3,528.7 1279.4,534.7 1288.5,510.7" fill="#b97571" stroke="#b97571" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1288.5,510.7 1279.4,534.7 1275.1,532.2 1282.2,513.5" fill="#fcf4f1" stroke="#fcf4f1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="982.8,397.3 977.4,416 1275.1,532.2 1282.2,513.5" fill="url(#cai-rib-62-top)" stroke="#fbf0ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="982.8,397.3 1282.2,513.5 1275.1,532.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-36"><polygon points="609.4,394.3 633.7,384.8 479.3,158.8 455.2,166.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="450.6,160.2 474.8,152.5 476.8,143.5 452.5,151.2" fill="#8154af" stroke="#8154af" stroke-width="0.35" stroke-linejoin="round"/><polygon points="452.5,151.2 476.8,143.5 476.9,144.7 457.9,150.7" fill="#f5e6f8" stroke="#f5e6f8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="629.4,378.7 474.8,152.5 476.8,143.5 632.2,370.4" fill="url(#cai-rib-36-sideR)" stroke="url(#cai-rib-36-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="632.2,370.4 476.8,143.5 476.9,144.7 630.5,368.8" fill="url(#cai-rib-36-chamR)" stroke="url(#cai-rib-36-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="605,388.2 450.6,160.2 452.5,151.2 607.8,380" fill="url(#cai-rib-36-sideL)" stroke="url(#cai-rib-36-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.8,380 452.5,151.2 457.9,150.7 611.3,376.3" fill="url(#cai-rib-36-chamL)" stroke="url(#cai-rib-36-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="611.3,376.3 630.5,368.8 476.9,144.7 457.9,150.7" fill="url(#cai-rib-36-top)" stroke="#f1def6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="611.3,376.3 457.9,150.7 476.9,144.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-63"><polygon points="997.8,405.6 989.1,428.9 1284.2,573.2 1295.1,549.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="985.7,423.1 1281.3,567.5 1277.7,573.1 980.7,427.7" fill="url(#cai-rib-63-sideR)" stroke="url(#cai-rib-63-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="980.7,427.7 1277.7,573.1 1273.5,570.2 980.1,426.6" fill="url(#cai-rib-63-chamR)" stroke="url(#cai-rib-63-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="994.4,399.7 1292.2,544.1 1288.7,549.6 989.4,404.2" fill="url(#cai-rib-63-sideL)" stroke="url(#cai-rib-63-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="989.4,404.2 1288.7,549.6 1282,551.8 986.9,408.3" fill="url(#cai-rib-63-chamL)" stroke="url(#cai-rib-63-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1292.2,544.1 1281.3,567.5 1277.7,573.1 1288.7,549.6" fill="#c0766b" stroke="#c0766b" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1288.7,549.6 1277.7,573.1 1273.5,570.2 1282,551.8" fill="#fef4f0" stroke="#fef4f0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="986.9,408.3 980.1,426.6 1273.5,570.2 1282,551.8" fill="url(#cai-rib-63-top)" stroke="#fdf1eb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="986.9,408.3 1282,551.8 1273.5,570.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-35"><polygon points="602.7,406.8 625.9,394.5 440.8,178.5 417.6,188.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="412.9,182.5 436.2,172.1 437.2,162.9 413.8,173.3" fill="#8552ad" stroke="#8552ad" stroke-width="0.35" stroke-linejoin="round"/><polygon points="413.8,173.3 437.2,162.9 437.5,164.1 419.2,172.2" fill="#f6e5f8" stroke="#f6e5f8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="621.5,388.3 436.2,172.1 437.2,162.9 623.5,379.8" fill="url(#cai-rib-35-sideR)" stroke="url(#cai-rib-35-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="623.5,379.8 437.2,162.9 437.5,164.1 621.6,378.5" fill="url(#cai-rib-35-chamR)" stroke="url(#cai-rib-35-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="598.2,400.6 412.9,182.5 413.8,173.3 600.2,392.1" fill="url(#cai-rib-35-sideL)" stroke="url(#cai-rib-35-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="600.2,392.1 413.8,173.3 419.2,172.2 603.4,388.1" fill="url(#cai-rib-35-chamL)" stroke="url(#cai-rib-35-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.4,388.1 621.6,378.5 437.5,164.1 419.2,172.2" fill="url(#cai-rib-35-top)" stroke="#f3ddf5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="603.4,388.1 419.2,172.2 437.5,164.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-0"><polygon points="1001.3,417.6 990.7,440.4 1276.7,612.2 1289.5,589.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="987.3,434.6 1273.7,606.6 1269.4,611.7 981.6,438.6" fill="url(#cai-rib-0-sideR)" stroke="url(#cai-rib-0-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="981.6,438.6 1269.4,611.7 1265.3,608.4 981,437.4" fill="url(#cai-rib-0-chamR)" stroke="url(#cai-rib-0-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="997.8,411.7 1286.6,583.8 1282.3,588.9 992.2,415.7" fill="url(#cai-rib-0-sideL)" stroke="url(#cai-rib-0-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="992.2,415.7 1282.3,588.9 1275.4,590.5 989.2,419.4" fill="url(#cai-rib-0-chamL)" stroke="url(#cai-rib-0-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1286.6,583.8 1273.7,606.6 1269.4,611.7 1282.3,588.9" fill="#c77665" stroke="#c77665" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1282.3,588.9 1269.4,611.7 1265.3,608.4 1275.4,590.5" fill="#fff5ef" stroke="#fff5ef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="989.2,419.4 981,437.4 1265.3,608.4 1275.4,590.5" fill="url(#cai-rib-0-top)" stroke="#fff1ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="989.2,419.4 1275.4,590.5 1265.3,608.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-34"><polygon points="597.8,419.6 619.7,404.7 405.9,202 383.7,214.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="378.9,208.5 401.2,195.7 401.3,186.4 378.9,199.2" fill="#8950ac" stroke="#8950ac" stroke-width="0.35" stroke-linejoin="round"/><polygon points="378.9,199.2 401.3,186.4 401.7,187.6 384.3,197.6" fill="#f7e5f7" stroke="#f7e5f7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="615.2,398.5 401.2,195.7 401.3,186.4 616.5,389.9" fill="url(#cai-rib-34-sideR)" stroke="url(#cai-rib-34-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="616.5,389.9 401.3,186.4 401.7,187.6 614.5,388.8" fill="url(#cai-rib-34-chamR)" stroke="url(#cai-rib-34-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="593.3,413.4 378.9,208.5 378.9,199.2 594.4,404.7" fill="url(#cai-rib-34-sideL)" stroke="url(#cai-rib-34-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="594.4,404.7 378.9,199.2 384.3,197.6 597.2,400.4" fill="url(#cai-rib-34-chamL)" stroke="url(#cai-rib-34-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="597.2,400.4 614.5,388.8 401.7,187.6 384.3,197.6" fill="url(#cai-rib-34-top)" stroke="#f4dcf5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="597.2,400.4 384.3,197.6 401.7,187.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-1"><polygon points="1002.9,429.9 990.5,451.9 1262.2,650.8 1277,629" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="987,446.1 1259.2,645.2 1254.2,649.8 980.8,449.5" fill="url(#cai-rib-1-sideR)" stroke="url(#cai-rib-1-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="980.8,449.5 1254.2,649.8 1250.3,646 980.2,448.1" fill="url(#cai-rib-1-chamR)" stroke="url(#cai-rib-1-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="999.5,424 1274,623.3 1269.1,627.8 993.3,427.3" fill="url(#cai-rib-1-sideL)" stroke="url(#cai-rib-1-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="993.3,427.3 1269.1,627.8 1261.9,628.8 989.9,430.8" fill="url(#cai-rib-1-chamL)" stroke="url(#cai-rib-1-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1274,623.3 1259.2,645.2 1254.2,649.8 1269.1,627.8" fill="#c67466" stroke="#c67466" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1269.1,627.8 1254.2,649.8 1250.3,646 1261.9,628.8" fill="#fff4ef" stroke="#fff4ef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="989.9,430.8 980.2,448.1 1250.3,646 1261.9,628.8" fill="url(#cai-rib-1-top)" stroke="#fff1e9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="989.9,430.8 1261.9,628.8 1250.3,646" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-33"><polygon points="594.8,432.6 615.1,415.4 375.2,229.1 354.3,244.2" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="349.4,237.9 370.4,222.7 369.6,213.5 348.5,228.7" fill="#8c4faa" stroke="#8c4faa" stroke-width="0.35" stroke-linejoin="round"/><polygon points="348.5,228.7 369.6,213.5 370.3,214.7 353.8,226.5" fill="#f8e4f6" stroke="#f8e4f6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="610.6,409.2 370.4,222.7 369.6,213.5 611.2,400.5" fill="url(#cai-rib-33-sideR)" stroke="url(#cai-rib-33-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="611.2,400.5 369.6,213.5 370.3,214.7 609.1,399.6" fill="url(#cai-rib-33-chamR)" stroke="url(#cai-rib-33-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="590.3,426.4 349.4,237.9 348.5,228.7 590.7,417.7" fill="url(#cai-rib-33-sideL)" stroke="url(#cai-rib-33-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="590.7,417.7 348.5,228.7 353.8,226.5 593.1,413.1" fill="url(#cai-rib-33-chamL)" stroke="url(#cai-rib-33-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="593.1,413.1 609.1,399.6 370.3,214.7 353.8,226.5" fill="url(#cai-rib-33-top)" stroke="#f6dbf4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="593.1,413.1 353.8,226.5 370.3,214.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-2"><polygon points="1002.8,442.4 988.4,463.5 1240.7,688 1257.5,667.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="984.9,457.7 1237.6,682.4 1232,686.4 978.2,460.3" fill="url(#cai-rib-2-sideR)" stroke="url(#cai-rib-2-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="978.2,460.3 1232,686.4 1228.4,682.1 977.6,458.8" fill="url(#cai-rib-2-chamR)" stroke="url(#cai-rib-2-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="999.4,436.5 1254.4,661.6 1248.8,665.5 992.7,439.1" fill="url(#cai-rib-2-sideL)" stroke="url(#cai-rib-2-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="992.7,439.1 1248.8,665.5 1241.5,665.8 988.9,442.2" fill="url(#cai-rib-2-chamL)" stroke="url(#cai-rib-2-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1254.4,661.6 1237.6,682.4 1232,686.4 1248.8,665.5" fill="#c57367" stroke="#c57367" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1248.8,665.5 1232,686.4 1228.4,682.1 1241.5,665.8" fill="#fff3ee" stroke="#fff3ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="988.9,442.2 977.6,458.8 1228.4,682.1 1241.5,665.8" fill="url(#cai-rib-2-top)" stroke="#ffefe9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="988.9,442.2 1241.5,665.8 1228.4,682.1" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-32"><polygon points="593.8,445.7 612.3,426.4 349.3,259.1 329.9,276.4" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="324.9,270.1 344.4,252.8 342.9,243.6 323.3,261" fill="#904da8" stroke="#904da8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="323.3,261 342.9,243.6 343.7,244.8 328.4,258.4" fill="#f9e4f6" stroke="#f9e4f6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.8,420.2 344.4,252.8 342.9,243.6 607.7,411.6" fill="url(#cai-rib-32-sideR)" stroke="url(#cai-rib-32-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.7,411.6 342.9,243.6 343.7,244.8 605.6,410.9" fill="url(#cai-rib-32-chamR)" stroke="url(#cai-rib-32-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="589.2,439.5 324.9,270.1 323.3,261 589,430.9" fill="url(#cai-rib-32-sideL)" stroke="url(#cai-rib-32-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="589,430.9 323.3,261 328.4,258.4 591,426" fill="url(#cai-rib-32-chamL)" stroke="url(#cai-rib-32-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="591,426 605.6,410.9 343.7,244.8 328.4,258.4" fill="url(#cai-rib-32-top)" stroke="#f7daf3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="591,426 328.4,258.4 343.7,244.8" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-3"><polygon points="1000.9,455.1 984.5,474.9 1212.2,722.8 1231,703.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="981,469 1209.1,717.3 1202.8,720.6 973.8,470.9" fill="url(#cai-rib-3-sideR)" stroke="url(#cai-rib-3-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="973.8,470.9 1202.8,720.6 1199.5,715.9 973.3,469.2" fill="url(#cai-rib-3-chamR)" stroke="url(#cai-rib-3-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="997.4,449.2 1227.9,698 1221.7,701.2 990.3,450.9" fill="url(#cai-rib-3-sideL)" stroke="url(#cai-rib-3-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="990.3,450.9 1221.7,701.2 1214.2,700.7 986.2,453.6" fill="url(#cai-rib-3-chamL)" stroke="url(#cai-rib-3-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1227.9,698 1209.1,717.3 1202.8,720.6 1221.7,701.2" fill="#c47068" stroke="#c47068" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1221.7,701.2 1202.8,720.6 1199.5,715.9 1214.2,700.7" fill="#fff3ed" stroke="#fff3ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="986.2,453.6 973.3,469.2 1199.5,715.9 1214.2,700.7" fill="url(#cai-rib-3-top)" stroke="#ffefe8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="986.2,453.6 1214.2,700.7 1199.5,715.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-31"><polygon points="594.8,458.8 611.4,437.7 328.7,291.6 311,310.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="305.9,304.5 323.7,285.3 321.5,276.3 303.6,295.6" fill="#934da5" stroke="#934da5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="303.6,295.6 321.5,276.3 322.6,277.4 308.6,292.5" fill="#fae4f5" stroke="#fae4f5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.8,431.5 323.7,285.3 321.5,276.3 606.2,423" fill="url(#cai-rib-31-sideR)" stroke="url(#cai-rib-31-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.2,423 321.5,276.3 322.6,277.4 604.1,422.6" fill="url(#cai-rib-31-chamR)" stroke="url(#cai-rib-31-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="590.2,452.6 305.9,304.5 303.6,295.6 589.4,444.1" fill="url(#cai-rib-31-sideL)" stroke="url(#cai-rib-31-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="589.4,444.1 303.6,295.6 308.6,292.5 591,439.1" fill="url(#cai-rib-31-chamL)" stroke="url(#cai-rib-31-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="591,439.1 604.1,422.6 322.6,277.4 308.6,292.5" fill="url(#cai-rib-31-top)" stroke="#f8dbf2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="591,439.1 308.6,292.5 322.6,277.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-4"><polygon points="997.1,467.8 978.6,486 1177.1,754.4 1197.8,737" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="975.1,480.2 1173.8,748.9 1167,751.3 967.6,481.1" fill="url(#cai-rib-4-sideR)" stroke="url(#cai-rib-4-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="967.6,481.1 1167,751.3 1164.2,746.2 967.2,479.3" fill="url(#cai-rib-4-chamR)" stroke="url(#cai-rib-4-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="993.6,461.9 1194.6,731.4 1187.9,733.7 986.1,462.7" fill="url(#cai-rib-4-sideL)" stroke="url(#cai-rib-4-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="986.1,462.7 1187.9,733.7 1180.5,732.5 981.7,465" fill="url(#cai-rib-4-chamL)" stroke="url(#cai-rib-4-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1194.6,731.4 1173.8,748.9 1167,751.3 1187.9,733.7" fill="#c36e69" stroke="#c36e69" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1187.9,733.7 1167,751.3 1164.2,746.2 1180.5,732.5" fill="#fff2ed" stroke="#fff2ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="981.7,465 967.2,479.3 1164.2,746.2 1180.5,732.5" fill="url(#cai-rib-4-top)" stroke="#ffeee7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="981.7,465 1180.5,732.5 1164.2,746.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-30"><polygon points="597.8,471.9 612.4,449.2 313.7,325.9 297.8,346.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="292.6,340.6 308.6,319.6 305.9,310.8 289.7,331.9" fill="#954ea2" stroke="#954ea2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="289.7,331.9 305.9,310.8 307.2,312 294.6,328.5" fill="#fae4f4" stroke="#fae4f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.8,442.9 308.6,319.6 305.9,310.8 606.6,434.5" fill="url(#cai-rib-30-sideR)" stroke="url(#cai-rib-30-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.6,434.5 305.9,310.8 307.2,312 604.6,434.3" fill="url(#cai-rib-30-chamR)" stroke="url(#cai-rib-30-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="593.2,465.6 292.6,340.6 289.7,331.9 591.9,457.3" fill="url(#cai-rib-30-sideL)" stroke="url(#cai-rib-30-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="591.9,457.3 289.7,331.9 294.6,328.5 593.1,452.1" fill="url(#cai-rib-30-chamL)" stroke="url(#cai-rib-30-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="593.1,452.1 604.6,434.3 307.2,312 294.6,328.5" fill="url(#cai-rib-30-top)" stroke="#f8dcf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="593.1,452.1 294.6,328.5 307.2,312" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-5"><polygon points="991.4,480.4 970.9,496.7 1135.9,781.8 1158.5,766.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="967.3,490.8 1132.5,776.3 1125.3,777.8 959.7,490.8" fill="url(#cai-rib-5-sideR)" stroke="url(#cai-rib-5-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="959.7,490.8 1125.3,777.8 1123,772.4 959.5,489" fill="url(#cai-rib-5-chamR)" stroke="url(#cai-rib-5-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="987.8,474.5 1155.2,760.9 1148.1,762.4 980.2,474.3" fill="url(#cai-rib-5-sideL)" stroke="url(#cai-rib-5-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="980.2,474.3 1148.1,762.4 1140.8,760.3 975.5,476.1" fill="url(#cai-rib-5-chamL)" stroke="url(#cai-rib-5-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1155.2,760.9 1132.5,776.3 1125.3,777.8 1148.1,762.4" fill="#c26c69" stroke="#c26c69" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1148.1,762.4 1125.3,777.8 1123,772.4 1140.8,760.3" fill="#fff2ed" stroke="#fff2ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="975.5,476.1 959.5,489 1123,772.4 1140.8,760.3" fill="url(#cai-rib-5-top)" stroke="#ffede6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="975.5,476.1 1140.8,760.3 1123,772.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-29"><polygon points="602.9,484.7 615.3,460.6 304.6,361.4 290.6,384" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="285.3,377.7 299.4,355.1 296.1,346.7 281.9,369.3" fill="#984f9e" stroke="#984f9e" stroke-width="0.35" stroke-linejoin="round"/><polygon points="281.9,369.3 296.1,346.7 297.7,347.8 286.6,365.5" fill="#fae5f3" stroke="#fae5f3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="610.7,454.3 299.4,355.1 296.1,346.7 609.1,446.1" fill="url(#cai-rib-29-sideR)" stroke="url(#cai-rib-29-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="609.1,446.1 296.1,346.7 297.7,347.8 607.2,446.1" fill="url(#cai-rib-29-chamR)" stroke="url(#cai-rib-29-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="598.2,478.4 285.3,377.7 281.9,369.3 596.6,470.3" fill="url(#cai-rib-29-sideL)" stroke="url(#cai-rib-29-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="596.6,470.3 281.9,369.3 286.6,365.5 597.4,465" fill="url(#cai-rib-29-chamL)" stroke="url(#cai-rib-29-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="597.4,465 607.2,446.1 297.7,347.8 286.6,365.5" fill="url(#cai-rib-29-top)" stroke="#f8dcef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="597.4,465 286.6,365.5 297.7,347.8" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-6"><polygon points="983.7,492.8 961.4,506.8 1089.6,804.2 1113.9,791.4" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="957.8,500.9 1086,798.7 1078.5,799.2 950,499.9" fill="url(#cai-rib-6-sideR)" stroke="url(#cai-rib-6-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="950,499.9 1078.5,799.2 1076.9,793.5 950,498" fill="url(#cai-rib-6-chamR)" stroke="url(#cai-rib-6-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="980.1,486.9 1110.4,785.8 1103,786.3 972.4,485.8" fill="url(#cai-rib-6-sideL)" stroke="url(#cai-rib-6-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="972.4,485.8 1103,786.3 1096,783.3 967.5,487" fill="url(#cai-rib-6-chamL)" stroke="url(#cai-rib-6-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1110.4,785.8 1086,798.7 1078.5,799.2 1103,786.3" fill="#c16a6a" stroke="#c16a6a" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1103,786.3 1078.5,799.2 1076.9,793.5 1096,783.3" fill="#fff1ec" stroke="#fff1ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="967.5,487 950,498 1076.9,793.5 1096,783.3" fill="url(#cai-rib-6-top)" stroke="#ffece6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="967.5,487 1096,783.3 1076.9,793.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-28"><polygon points="610.1,497.1 620.2,471.9 301.3,397.6 289.3,421.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="284,415.3 296,391.4 292.3,383.2 280.2,407.2" fill="#9a4f9b" stroke="#9a4f9b" stroke-width="0.35" stroke-linejoin="round"/><polygon points="280.2,407.2 292.3,383.2 294.1,384.2 284.7,403" fill="#fbe5f2" stroke="#fbe5f2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="615.5,465.6 296,391.4 292.3,383.2 613.6,457.6" fill="url(#cai-rib-28-sideR)" stroke="url(#cai-rib-28-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="613.6,457.6 292.3,383.2 294.1,384.2 611.8,457.8" fill="url(#cai-rib-28-chamR)" stroke="url(#cai-rib-28-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="605.4,490.9 284,415.3 280.2,407.2 603.3,482.9" fill="url(#cai-rib-28-sideL)" stroke="url(#cai-rib-28-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.3,482.9 280.2,407.2 284.7,403 603.8,477.6" fill="url(#cai-rib-28-chamL)" stroke="url(#cai-rib-28-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.8,477.6 611.8,457.8 294.1,384.2 284.7,403" fill="url(#cai-rib-28-top)" stroke="#f9ddee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="603.8,477.6 284.7,403 294.1,384.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-7"><polygon points="974.2,505 950.2,516.3 1039.2,820.9 1065,811" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="946.5,510.4 1035.5,815.4 1027.9,815 938.8,508.3" fill="url(#cai-rib-7-sideR)" stroke="url(#cai-rib-7-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="938.8,508.3 1027.9,815 1027,808.9 939,506.4" fill="url(#cai-rib-7-chamR)" stroke="url(#cai-rib-7-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="970.5,499 1061.4,805.4 1053.9,805 962.9,496.9" fill="url(#cai-rib-7-sideL)" stroke="url(#cai-rib-7-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="962.9,496.9 1053.9,805 1047.2,801.1 957.8,497.5" fill="url(#cai-rib-7-chamL)" stroke="url(#cai-rib-7-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1061.4,805.4 1035.5,815.4 1027.9,815 1053.9,805" fill="#c0686b" stroke="#c0686b" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1053.9,805 1027.9,815 1027,808.9 1047.2,801.1" fill="#fff0ec" stroke="#fff0ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="957.8,497.5 939,506.4 1027,808.9 1047.2,801.1" fill="url(#cai-rib-7-top)" stroke="#ffebe5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="957.8,497.5 1047.2,801.1 1027,808.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-27"><polygon points="619.2,509.1 627,482.9 303.7,433.8 293.9,458.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="288.6,452.7 298.4,427.6 294.4,419.7 284.5,444.9" fill="#9d4f98" stroke="#9d4f98" stroke-width="0.35" stroke-linejoin="round"/><polygon points="284.5,444.9 294.4,419.7 296.5,420.7 288.7,440.4" fill="#fbe6f1" stroke="#fbe6f1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="622.3,476.7 298.4,427.6 294.4,419.7 620.1,468.8" fill="url(#cai-rib-27-sideR)" stroke="url(#cai-rib-27-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="620.1,468.8 294.4,419.7 296.5,420.7 618.5,469.2" fill="url(#cai-rib-27-chamR)" stroke="url(#cai-rib-27-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="614.5,502.8 288.6,452.7 284.5,444.9 612.2,495.1" fill="url(#cai-rib-27-sideL)" stroke="url(#cai-rib-27-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="612.2,495.1 284.5,444.9 288.7,440.4 612.3,489.7" fill="url(#cai-rib-27-chamL)" stroke="url(#cai-rib-27-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="612.3,489.7 618.5,469.2 296.5,420.7 288.7,440.4" fill="url(#cai-rib-27-top)" stroke="#faddec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="612.3,489.7 288.7,440.4 296.5,420.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-8"><polygon points="962.7,516.6 937.4,524.9 986.2,831.5 1013.1,824.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="933.6,518.9 982.4,826 974.8,824.6 926.2,516" fill="url(#cai-rib-8-sideR)" stroke="url(#cai-rib-8-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="926.2,516 974.8,824.6 974.6,818.5 926.6,514.1" fill="url(#cai-rib-8-chamR)" stroke="url(#cai-rib-8-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="959,510.6 1009.4,819.4 1001.9,817.9 951.6,507.6" fill="url(#cai-rib-8-sideL)" stroke="url(#cai-rib-8-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="951.6,507.6 1001.9,817.9 995.7,813.3 946.4,507.6" fill="url(#cai-rib-8-chamL)" stroke="url(#cai-rib-8-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1009.4,819.4 982.4,826 974.8,824.6 1001.9,817.9" fill="#c0666c" stroke="#c0666c" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1001.9,817.9 974.8,824.6 974.6,818.5 995.7,813.3" fill="#fff0eb" stroke="#fff0eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="946.4,507.6 926.6,514.1 974.6,818.5 995.7,813.3" fill="url(#cai-rib-8-top)" stroke="#ffebe5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="946.4,507.6 995.7,813.3 974.6,818.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-26"><polygon points="630.3,520.4 635.7,493.6 311.6,469.6 304.2,495.7" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="298.8,489.5 306.3,463.5 302,455.9 294.4,482" fill="#9f5095" stroke="#9f5095" stroke-width="0.35" stroke-linejoin="round"/><polygon points="294.4,482 302,455.9 304.4,456.7 298.5,477.1" fill="#fbe6f0" stroke="#fbe6f0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="631,487.3 306.3,463.5 302,455.9 628.5,479.7" fill="url(#cai-rib-26-sideR)" stroke="url(#cai-rib-26-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="628.5,479.7 302,455.9 304.4,456.7 627.1,480.2" fill="url(#cai-rib-26-chamR)" stroke="url(#cai-rib-26-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="625.6,514.2 298.8,489.5 294.4,482 623,506.7" fill="url(#cai-rib-26-sideL)" stroke="url(#cai-rib-26-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="623,506.7 294.4,482 298.5,477.1 622.8,501.3" fill="url(#cai-rib-26-chamL)" stroke="url(#cai-rib-26-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="622.8,501.3 627.1,480.2 304.4,456.7 298.5,477.1" fill="url(#cai-rib-26-top)" stroke="#fadeeb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="622.8,501.3 298.5,477.1 304.4,456.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-9"><polygon points="949.4,527.6 923.1,532.5 931.9,836.1 959.5,833" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="919.2,526.6 927.9,830.6 920.5,828.3 912.1,522.8" fill="url(#cai-rib-9-sideR)" stroke="url(#cai-rib-9-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="912.1,522.8 920.5,828.3 921,822.2 912.8,521" fill="url(#cai-rib-9-chamR)" stroke="url(#cai-rib-9-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="945.6,521.6 955.6,827.5 948.3,825.2 938.6,517.7" fill="url(#cai-rib-9-sideL)" stroke="url(#cai-rib-9-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="938.6,517.7 948.3,825.2 942.7,819.8 933.4,517.1" fill="url(#cai-rib-9-chamL)" stroke="url(#cai-rib-9-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="955.6,827.5 927.9,830.6 920.5,828.3 948.3,825.2" fill="#bf636d" stroke="#bf636d" stroke-width="0.35" stroke-linejoin="round"/><polygon points="948.3,825.2 920.5,828.3 921,822.2 942.7,819.8" fill="#ffefea" stroke="#ffefea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="933.4,517.1 912.8,521 921,822.2 942.7,819.8" fill="url(#cai-rib-9-top)" stroke="#ffeae3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="933.4,517.1 942.7,819.8 921,822.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-25"><polygon points="643.2,531 646.1,503.7 324.7,504.5 319.7,531.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="314.3,525.2 319.4,498.4 314.9,491.1 309.7,518" fill="#a25091" stroke="#a25091" stroke-width="0.35" stroke-linejoin="round"/><polygon points="641.5,497.5 319.4,498.4 314.9,491.1 638.8,490" fill="url(#cai-rib-25-sideR)" stroke="url(#cai-rib-25-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="309.7,518 314.9,491.1 317.6,491.7 313.6,512.7" fill="#fce7ef" stroke="#fce7ef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="638.8,490 314.9,491.1 317.6,491.7 637.6,490.7" fill="url(#cai-rib-25-chamR)" stroke="url(#cai-rib-25-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="638.6,524.8 314.3,525.2 309.7,518 635.8,517.4" fill="url(#cai-rib-25-sideL)" stroke="url(#cai-rib-25-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="635.8,517.4 309.7,518 313.6,512.7 635.3,512.1" fill="url(#cai-rib-25-chamL)" stroke="url(#cai-rib-25-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="635.3,512.1 637.6,490.7 317.6,491.7 313.6,512.7" fill="url(#cai-rib-25-top)" stroke="#fbdfea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="635.3,512.1 313.6,512.7 317.6,491.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-10"><polygon points="934.3,537.8 907.4,539.1 877.7,834.9 905.5,835.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="903.6,533.2 873.5,829.4 866.4,826.3 896.9,528.6" fill="url(#cai-rib-10-sideR)" stroke="url(#cai-rib-10-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="896.9,528.6 866.4,826.3 867.7,820.4 897.7,527" fill="url(#cai-rib-10-chamR)" stroke="url(#cai-rib-10-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="930.4,531.8 901.4,830 894.4,826.9 923.9,527.2" fill="url(#cai-rib-10-sideL)" stroke="url(#cai-rib-10-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="923.9,527.2 894.4,826.9 889.6,820.8 918.8,525.9" fill="url(#cai-rib-10-chamL)" stroke="url(#cai-rib-10-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="901.4,830 873.5,829.4 866.4,826.3 894.4,826.9" fill="#be616e" stroke="#be616e" stroke-width="0.35" stroke-linejoin="round"/><polygon points="894.4,826.9 866.4,826.3 867.7,820.4 889.6,820.8" fill="#ffeeea" stroke="#ffeeea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="918.8,525.9 897.7,527 867.7,820.4 889.6,820.8" fill="url(#cai-rib-10-top)" stroke="#ffe9e3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="918.8,525.9 889.6,820.8 867.7,820.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-24"><polygon points="657.9,540.7 658.3,513.2 342.5,538.1 340,565.4" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="334.6,559.3 337.2,532 332.5,525 329.9,552.4" fill="#a5518e" stroke="#a5518e" stroke-width="0.35" stroke-linejoin="round"/><polygon points="653.7,506.9 337.2,532 332.5,525 650.8,499.7" fill="url(#cai-rib-24-sideR)" stroke="url(#cai-rib-24-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="329.9,552.4 332.5,525 335.5,525.4 333.5,546.8" fill="#fce7ee" stroke="#fce7ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="650.8,499.7 332.5,525 335.5,525.4 649.9,500.4" fill="url(#cai-rib-24-chamR)" stroke="url(#cai-rib-24-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="653.3,534.4 334.6,559.3 329.9,552.4 650.4,527.3" fill="url(#cai-rib-24-sideL)" stroke="url(#cai-rib-24-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="650.4,527.3 329.9,552.4 333.5,546.8 649.6,522" fill="url(#cai-rib-24-chamL)" stroke="url(#cai-rib-24-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="649.6,522 649.9,500.4 335.5,525.4 333.5,546.8" fill="url(#cai-rib-24-top)" stroke="#fbdfe9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="649.6,522 333.5,546.8 335.5,525.4" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-11"><polygon points="917.6,547 890.7,544.7 824.6,828.6 852.2,833.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="886.8,538.7 820.4,823 813.6,819.3 880.6,533.5" fill="url(#cai-rib-11-sideR)" stroke="url(#cai-rib-11-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="880.6,533.5 813.6,819.3 815.6,813.7 881.6,532.1" fill="url(#cai-rib-11-chamR)" stroke="url(#cai-rib-11-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="913.7,541 848,827.5 841.3,823.7 907.6,535.8" fill="url(#cai-rib-11-sideL)" stroke="url(#cai-rib-11-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="907.6,535.8 841.3,823.7 837.2,817.1 902.7,533.9" fill="url(#cai-rib-11-chamL)" stroke="url(#cai-rib-11-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="848,827.5 820.4,823 813.6,819.3 841.3,823.7" fill="#bd606f" stroke="#bd606f" stroke-width="0.35" stroke-linejoin="round"/><polygon points="841.3,823.7 813.6,819.3 815.6,813.7 837.2,817.1" fill="#ffeee9" stroke="#ffeee9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="902.7,533.9 881.6,532.1 815.6,813.7 837.2,817.1" fill="url(#cai-rib-11-top)" stroke="#ffe8e2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="902.7,533.9 837.2,817.1 815.6,813.7" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-12"><polygon points="899.4,555.1 873,549.1 773.7,818 800.4,826.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="869,543 769.3,812.4 762.9,808.1 863.4,537.4" fill="url(#cai-rib-12-sideR)" stroke="url(#cai-rib-12-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="863.4,537.4 762.9,808.1 765.5,802.9 864.5,536.3" fill="url(#cai-rib-12-chamR)" stroke="url(#cai-rib-12-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="895.5,549 796,820.5 789.7,816.3 890,543.4" fill="url(#cai-rib-12-sideL)" stroke="url(#cai-rib-12-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="890,543.4 789.7,816.3 786.5,809.2 885.3,540.9" fill="url(#cai-rib-12-chamL)" stroke="url(#cai-rib-12-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="796,820.5 769.3,812.4 762.9,808.1 789.7,816.3" fill="#bc5d70" stroke="#bc5d70" stroke-width="0.35" stroke-linejoin="round"/><polygon points="789.7,816.3 762.9,808.1 765.5,802.9 786.5,809.2" fill="#ffede9" stroke="#ffede9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="885.3,540.9 864.5,536.3 765.5,802.9 786.5,809.2" fill="url(#cai-rib-12-top)" stroke="#ffe8e2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="885.3,540.9 786.5,809.2 765.5,802.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-23"><polygon points="674.3,549.4 672,521.9 364.5,570.1 364.6,597.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="359.3,591.6 359.2,564.1 354.4,557.4 354.4,585" fill="#a7528a" stroke="#a7528a" stroke-width="0.35" stroke-linejoin="round"/><polygon points="667.4,515.7 359.2,564.1 354.4,557.4 664.4,508.6" fill="url(#cai-rib-23-sideR)" stroke="url(#cai-rib-23-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="354.4,585 354.4,557.4 357.7,557.5 357.7,579.1" fill="#fce8ed" stroke="#fce8ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="664.4,508.6 354.4,557.4 357.7,557.5 663.7,509.4" fill="url(#cai-rib-23-chamR)" stroke="url(#cai-rib-23-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="669.6,543.1 359.3,591.6 354.4,585 666.7,536.2" fill="url(#cai-rib-23-sideL)" stroke="url(#cai-rib-23-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="666.7,536.2 354.4,585 357.7,579.1 665.5,530.9" fill="url(#cai-rib-23-chamL)" stroke="url(#cai-rib-23-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="665.5,530.9 663.7,509.4 357.7,557.5 357.7,579.1" fill="url(#cai-rib-23-top)" stroke="#fbe0e8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="665.5,530.9 357.7,579.1 357.7,557.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-13"><polygon points="880,561.9 854.6,552.3 725.2,803.9 750.5,815.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="850.5,546.3 720.6,798.3 714.6,793.6 845.4,540.3" fill="url(#cai-rib-13-sideR)" stroke="url(#cai-rib-13-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="845.4,540.3 714.6,793.6 717.8,788.9 846.6,539.4" fill="url(#cai-rib-13-chamR)" stroke="url(#cai-rib-13-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="876,555.8 746,810 740.1,805.3 871,549.9" fill="url(#cai-rib-13-sideL)" stroke="url(#cai-rib-13-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="871,549.9 740.1,805.3 737.7,798 866.6,546.9" fill="url(#cai-rib-13-chamL)" stroke="url(#cai-rib-13-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="746,810 720.6,798.3 714.6,793.6 740.1,805.3" fill="#bb5b70" stroke="#bb5b70" stroke-width="0.35" stroke-linejoin="round"/><polygon points="740.1,805.3 714.6,793.6 717.8,788.9 737.7,798" fill="#ffede9" stroke="#ffede9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="866.6,546.9 846.6,539.4 717.8,788.9 737.7,798" fill="url(#cai-rib-13-top)" stroke="#ffe6e1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="866.6,546.9 737.7,798 717.8,788.9" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-22"><polygon points="692,556.9 687.1,529.8 390.1,600.5 392.9,627.9" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="682.6,523.6 384.8,594.4 379.9,588 679.5,516.6" fill="url(#cai-rib-22-sideR)" stroke="url(#cai-rib-22-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="387.6,621.9 384.8,594.4 379.9,588 382.7,615.6" fill="#a95287" stroke="#a95287" stroke-width="0.35" stroke-linejoin="round"/><polygon points="679.5,516.6 379.9,588 383.5,587.8 679,517.4" fill="url(#cai-rib-22-chamR)" stroke="url(#cai-rib-22-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="687.4,550.7 387.6,621.9 382.7,615.6 684.4,543.9" fill="url(#cai-rib-22-sideL)" stroke="url(#cai-rib-22-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="382.7,615.6 379.9,588 383.5,587.8 385.6,609.4" fill="#fde8ed" stroke="#fde8ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="684.4,543.9 382.7,615.6 385.6,609.4 682.8,538.7" fill="url(#cai-rib-22-chamL)" stroke="url(#cai-rib-22-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="682.8,538.7 679,517.4 383.5,587.8 385.6,609.4" fill="url(#cai-rib-22-top)" stroke="#fce0e6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="682.8,538.7 385.6,609.4 383.5,587.8" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-14"><polygon points="859.6,567.3 835.6,554.4 679.3,787.3 702.9,802.2" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="831.5,548.3 674.7,781.6 669,776.7 826.9,542.1" fill="url(#cai-rib-14-sideR)" stroke="url(#cai-rib-14-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="826.9,542.1 669,776.7 672.6,772.5 828,541.6" fill="url(#cai-rib-14-chamR)" stroke="url(#cai-rib-14-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="855.5,561.2 698.3,796.5 692.7,791.6 851,555" fill="url(#cai-rib-14-sideL)" stroke="url(#cai-rib-14-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="851,555 692.7,791.6 691.1,784.1 846.9,551.7" fill="url(#cai-rib-14-chamL)" stroke="url(#cai-rib-14-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="698.3,796.5 674.7,781.6 669,776.7 692.7,791.6" fill="#ba5971" stroke="#ba5971" stroke-width="0.35" stroke-linejoin="round"/><polygon points="692.7,791.6 669,776.7 672.6,772.5 691.1,784.1" fill="#ffece8" stroke="#ffece8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="846.9,551.7 828,541.6 672.6,772.5 691.1,784.1" fill="url(#cai-rib-14-top)" stroke="#ffe6e0" stroke-width="0.55" stroke-linejoin="round"/><polyline points="846.9,551.7 691.1,784.1 672.6,772.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-21"><polygon points="711,563.2 703.5,536.7 418.8,629 424.3,656.1" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="699,530.5 413.5,623 408.6,616.8 695.8,523.7" fill="url(#cai-rib-21-sideR)" stroke="url(#cai-rib-21-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="419,650.2 413.5,623 408.6,616.8 414.1,644.1" fill="#ac5383" stroke="#ac5383" stroke-width="0.35" stroke-linejoin="round"/><polygon points="695.8,523.7 408.6,616.8 412.4,616.3 695.6,524.5" fill="url(#cai-rib-21-chamR)" stroke="url(#cai-rib-21-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="706.5,557 419,650.2 414.1,644.1 703.3,550.3" fill="url(#cai-rib-21-sideL)" stroke="url(#cai-rib-21-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="414.1,644.1 408.6,616.8 412.4,616.3 416.7,637.6" fill="#fde9ec" stroke="#fde9ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="703.3,550.3 414.1,644.1 416.7,637.6 701.5,545.3" fill="url(#cai-rib-21-chamL)" stroke="url(#cai-rib-21-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="701.5,545.3 695.6,524.5 412.4,616.3 416.7,637.6" fill="url(#cai-rib-21-top)" stroke="#fde1e5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="701.5,545.3 416.7,637.6 412.4,616.3" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-15"><polygon points="838.5,571.2 816.3,555.3 636,768.7 657.5,786.5" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="812.1,549.2 631.2,763 625.8,757.8 807.8,542.9" fill="url(#cai-rib-15-sideR)" stroke="url(#cai-rib-15-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="807.8,542.9 625.8,757.8 629.8,754.2 808.9,542.6" fill="url(#cai-rib-15-chamR)" stroke="url(#cai-rib-15-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="834.3,565.1 652.7,780.8 647.4,775.7 830.2,558.8" fill="url(#cai-rib-15-sideL)" stroke="url(#cai-rib-15-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.2,558.8 647.4,775.7 646.6,768.1 826.4,555.1" fill="url(#cai-rib-15-chamL)" stroke="url(#cai-rib-15-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="652.7,780.8 631.2,763 625.8,757.8 647.4,775.7" fill="#b95772" stroke="#b95772" stroke-width="0.35" stroke-linejoin="round"/><polygon points="647.4,775.7 625.8,757.8 629.8,754.2 646.6,768.1" fill="#ffebe7" stroke="#ffebe7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="826.4,555.1 808.9,542.6 629.8,754.2 646.6,768.1" fill="url(#cai-rib-15-top)" stroke="#ffe5df" stroke-width="0.55" stroke-linejoin="round"/><polyline points="826.4,555.1 646.6,768.1 629.8,754.2" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-20"><polygon points="731.1,568.2 720.9,542.6 450,655.9 458.3,682.3" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="716.4,536.4 444.9,649.9 439.9,643.9 713.1,529.7" fill="url(#cai-rib-20-sideR)" stroke="url(#cai-rib-20-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="453.1,676.4 444.9,649.9 439.9,643.9 448.2,670.5" fill="#ae5380" stroke="#ae5380" stroke-width="0.35" stroke-linejoin="round"/><polygon points="713.1,529.7 439.9,643.9 443.9,643 713.2,530.4" fill="url(#cai-rib-20-chamR)" stroke="url(#cai-rib-20-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="726.6,562 453.1,676.4 448.2,670.5 723.3,555.5" fill="url(#cai-rib-20-sideL)" stroke="url(#cai-rib-20-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="448.2,670.5 439.9,643.9 443.9,643 450.4,663.8" fill="#fee9eb" stroke="#fee9eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="723.3,555.5 448.2,670.5 450.4,663.8 721.2,550.5" fill="url(#cai-rib-20-chamL)" stroke="url(#cai-rib-20-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="721.2,550.5 713.2,530.4 443.9,643 450.4,663.8" fill="url(#cai-rib-20-top)" stroke="#fde2e4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="721.2,550.5 450.4,663.8 443.9,643" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-16"><polygon points="816.9,573.7 796.8,555.1 595,748.7 614.1,769" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="792.5,549 590.1,742.9 584.9,737.6 788.6,542.5" fill="url(#cai-rib-16-sideR)" stroke="url(#cai-rib-16-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="788.6,542.5 584.9,737.6 589,734.5 789.5,542.5" fill="url(#cai-rib-16-chamR)" stroke="url(#cai-rib-16-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="812.7,567.5 609.2,763.2 604.1,758 808.8,561.2" fill="url(#cai-rib-16-sideL)" stroke="url(#cai-rib-16-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="808.8,561.2 604.1,758 604,750.4 805.4,557.1" fill="url(#cai-rib-16-chamL)" stroke="url(#cai-rib-16-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="609.2,763.2 590.1,742.9 584.9,737.6 604.1,758" fill="#b85573" stroke="#b85573" stroke-width="0.35" stroke-linejoin="round"/><polygon points="604.1,758 584.9,737.6 589,734.5 604,750.4" fill="#ffebe7" stroke="#ffebe7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="805.4,557.1 789.5,542.5 589,734.5 604,750.4" fill="url(#cai-rib-16-top)" stroke="#ffe4df" stroke-width="0.55" stroke-linejoin="round"/><polyline points="805.4,557.1 604,750.4 589,734.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-19"><polygon points="751.9,571.8 739.1,547.4 483.4,681.1 494.5,706.6" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="734.7,541.2 478.3,675.2 473.4,669.4 731.3,534.6" fill="url(#cai-rib-19-sideR)" stroke="url(#cai-rib-19-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="731.3,534.6 473.4,669.4 477.5,668 731.7,535.2" fill="url(#cai-rib-19-chamR)" stroke="url(#cai-rib-19-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="747.5,565.6 489.4,700.7 484.5,695 744.2,559.1" fill="url(#cai-rib-19-sideL)" stroke="url(#cai-rib-19-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="489.4,700.7 478.3,675.2 473.4,669.4 484.5,695" fill="#b1537d" stroke="#b1537d" stroke-width="0.35" stroke-linejoin="round"/><polygon points="744.2,559.1 484.5,695 486.2,688 741.7,554.4" fill="url(#cai-rib-19-chamL)" stroke="url(#cai-rib-19-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="484.5,695 473.4,669.4 477.5,668 486.2,688" fill="#fee9e9" stroke="#fee9e9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="741.7,554.4 731.7,535.2 477.5,668 486.2,688" fill="url(#cai-rib-19-top)" stroke="#fee2e2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="741.7,554.4 486.2,688 477.5,668" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-17"><polygon points="795.1,574.6 777.3,553.7 555.9,727.4 572.5,749.8" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="772.9,547.5 551,721.6 545.9,716.1 769.3,541.1" fill="url(#cai-rib-17-sideR)" stroke="url(#cai-rib-17-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="769.3,541.1 545.9,716.1 550.1,713.6 770,541.3" fill="url(#cai-rib-17-chamR)" stroke="url(#cai-rib-17-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="790.8,568.4 567.6,744 562.5,738.6 787.2,562" fill="url(#cai-rib-17-sideL)" stroke="url(#cai-rib-17-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="567.6,744 551,721.6 545.9,716.1 562.5,738.6" fill="#b65476" stroke="#b65476" stroke-width="0.35" stroke-linejoin="round"/><polygon points="787.2,562 562.5,738.6 563.1,731.2 784.1,557.7" fill="url(#cai-rib-17-chamL)" stroke="url(#cai-rib-17-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="562.5,738.6 545.9,716.1 550.1,713.6 563.1,731.2" fill="#ffeae8" stroke="#ffeae8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="784.1,557.7 770,541.3 550.1,713.6 563.1,731.2" fill="url(#cai-rib-17-top)" stroke="#fee3e0" stroke-width="0.55" stroke-linejoin="round"/><polyline points="784.1,557.7 563.1,731.2 550.1,713.6" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="cai-rib-18"><polygon points="773.3,573.9 758,551.1 518.8,704.9 532.6,729" fill="#1f0d33" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="753.6,545 513.8,699 508.8,693.4 750.1,538.4" fill="url(#cai-rib-18-sideR)" stroke="url(#cai-rib-18-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="750.1,538.4 508.8,693.4 513,691.5 750.7,538.8" fill="url(#cai-rib-18-chamR)" stroke="url(#cai-rib-18-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="769,567.8 527.6,723.2 522.6,717.6 765.5,561.3" fill="url(#cai-rib-18-sideL)" stroke="url(#cai-rib-18-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="527.6,723.2 513.8,699 508.8,693.4 522.6,717.6" fill="#b35479" stroke="#b35479" stroke-width="0.35" stroke-linejoin="round"/><polygon points="765.5,561.3 522.6,717.6 523.9,710.4 762.7,556.7" fill="url(#cai-rib-18-chamL)" stroke="url(#cai-rib-18-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="522.6,717.6 508.8,693.4 513,691.5 523.9,710.4" fill="#feeae9" stroke="#feeae9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="762.7,556.7 750.7,538.8 513,691.5 523.9,710.4" fill="url(#cai-rib-18-top)" stroke="#fee3e1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="762.7,556.7 523.9,710.4 513,691.5" fill="none" stroke="#ffffff" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+  </g>
+</svg>

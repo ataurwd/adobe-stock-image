@@ -1,53 +1,31 @@
-# Professional SVG Visual Asset Studio
+# Professional SVG & EPS Visual Asset Studio
 
-A comprehensive, production-ready library of **original, pure mathematical & editorial SVG visual assets** engineered for SaaS platforms, technology landing pages, enterprise dashboards, education portals, fintech, healthcare, e-commerce, and modern brand identities.
+A comprehensive, production-ready library of **47 original, pure mathematical & editorial SVG and EPS vector assets** organized into a clean, modular folder hierarchy.
 
 ---
 
-## 1. Directory & Asset Library Structure
+## 1. Clean Workspace Folder Structure
+
+All loose root artworks have been organized into categorized folders inside `assets/` (containing `.svg` and `.eps` pairs) and `eps-collection/` (containing categorized `.eps` vector files):
 
 ```text
 ├── assets/
-│   ├── abstract/
-│   │   ├── parametric-serenity-ribbon.svg
-│   │   └── harmonic-convergence-rings.svg
-│   ├── geometric/
-│   │   ├── architectural-prism-pavilion.svg
-│   │   └── isometric-modular-matrix.svg
-│   ├── human-illustrations/
-│   │   ├── team-product-collaboration.svg
-│   │   └── remote-global-connection.svg
-│   ├── saas/
-│   │   ├── workflow-automation-pipeline.svg
-│   │   └── unified-workspace-dashboard.svg
-│   ├── technology/
-│   │   ├── ai-neural-orchestration.svg
-│   │   └── cloud-security-shield-vault.svg
-│   ├── education/
-│   │   ├── interactive-digital-learning.svg
-│   │   └── knowledge-growth-constellation.svg
-│   ├── business/
-│   │   ├── financial-clarity-analytics.svg
-│   │   └── strategic-growth-trajectory.svg
-│   ├── healthcare/
-│   │   ├── telemedicine-patient-care.svg
-│   │   └── mindful-wellness-harmony.svg
-│   ├── ecommerce/
-│   │   ├── curated-shopping-experience.svg
-│   │   └── omnichannel-customer-delight.svg
-│   ├── backgrounds/
-│   │   ├── hero-mesh-architectural-grid.svg
-│   │   └── section-wave-transition-divider.svg
-│   └── website-components/
-│       ├── empty-state-no-projects.svg
-│       └── state-milestone-completed.svg
-├── architectural-3d-svgs/
-│   ├── 01-velvet-rose-amphitheater.svg
-│   ├── 02-cerulean-porcelain-wave.svg
-│   ├── 03-travertine-gold-arch.svg
-│   ├── 04-emerald-jade-vortex.svg
-│   └── 05-crimson-amethyst-infinity.svg
-├── preview.html
+│   ├── architectural-3d-studio/      (5 Studio 3D Architectural Sculptures — SVG & EPS)
+│   ├── parametric-3d-sculptures/     (7 Parametric 3D Sculptures moved from root — SVG & EPS)
+│   ├── abstract/                     (3 Abstract Parametric & Toroidal Artworks — SVG & EPS)
+│   ├── geometric/                    (3 Isometric & Fibonacci Geometric Artworks — SVG & EPS)
+│   ├── human-illustrations/          (4 Editorial Human-Centered Illustrations — SVG & EPS)
+│   ├── saas/                         (3 SaaS Dashboard, Workflow & API Graphics — SVG & EPS)
+│   ├── technology/                   (3 AI Core, Cloud Security & Data Lake Graphics — SVG & EPS)
+│   ├── education/                    (3 EdTech, Knowledge & Digital Classroom Graphics — SVG & EPS)
+│   ├── business/                     (3 Fintech Analytics, Strategy & Payments Graphics — SVG & EPS)
+│   ├── healthcare/                   (3 Telemedicine, Wellness & Biotech Graphics — SVG & EPS)
+│   ├── ecommerce/                    (3 Storefront, Customer Delight & Funnel Graphics — SVG & EPS)
+│   ├── backgrounds/                  (3 Hero Mesh, Dark Constellation & Wave Dividers — SVG & EPS)
+│   └── website-components/           (4 Empty State, Success, Error & Onboarding UI States — SVG & EPS)
+├── eps-collection/                   (All 47 standalone .eps files organized into matching 13 category folders)
+├── architectural-3d-svgs/            (Dedicated studio folder with its own preview.html)
+├── preview.html                      (Master Interactive Studio for all 47 SVG + EPS assets)
 └── README.md
 ```
 
@@ -69,14 +47,3 @@ A comprehensive, production-ready library of **original, pure mathematical & edi
 | **Accent** | Soft Pink | `#F9A8D4` |
 | **Accent** | Warm Yellow | `#FACC15` |
 | **Accent** | Charcoal | `#1F2937` |
-
----
-
-## 3. Interactive Preview Studio (`preview.html`)
-
-Open `preview.html` in any modern browser to:
-- **Filter by Industry & Category** across all 12 categories.
-- **Switch Canvas Surfaces** between Light (`#F8FAFC`), Dark (`#0B132B`), and Deep Navy (`#14213D`).
-- **Test Aspect Ratios** (`4:3`, `16:9`, `1:1`).
-- **Compare Side-by-Side** in the Light/Dark modal inspector.
-- **Copy Raw SVG Markup** or **Download Standalone `.svg` Files** with a single click.

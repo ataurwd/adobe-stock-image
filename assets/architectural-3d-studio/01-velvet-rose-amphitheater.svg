@@ -1,0 +1,1620 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf0ee"/>
+      <stop offset="42%" stop-color="#f3e2ec"/>
+      <stop offset="76%" stop-color="#e5d8ee"/>
+      <stop offset="100%" stop-color="#d4c7e6"/>
+    </linearGradient>
+    <radialGradient id="keyLightGlow" cx="28%" cy="24%" r="58%">
+      <stop offset="0%" stop-color="#fff9f7" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#fbe6eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f3e2ec" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cycloramaFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dfd2ea" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#d2c3e2" stop-opacity="0.65"/>
+      <stop offset="75%" stop-color="#bfb0d6" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#ab9bc7" stop-opacity="1"/>
+    </linearGradient>
+    
+    <filter id="plankAoBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="floorShadowBlur" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="contactShadowBlur" x="-25%" y="-35%" width="150%" height="170%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="ambientGlowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+    <filter id="studioGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="17" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.5   0 0 0 0 0.48   0 0 0 0 0.52  0 0 0 0.032 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="overlay" in="SourceGraphic" in2="coloredNoise" result="blended"/>
+      <feComposite in="blended" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <linearGradient id="vr-outer-0-top" gradientUnits="userSpaceOnUse" x1="556.6" y1="440" x2="356.3" y2="366.4">
+      <stop offset="0%" stop-color="#a86e8a"/>
+      <stop offset="35%" stop-color="#ce96ad"/>
+      <stop offset="75%" stop-color="#e4b2c4"/>
+      <stop offset="100%" stop-color="#f3d0dc"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-0-sideL" gradientUnits="userSpaceOnUse" x1="557.2" y1="440.4" x2="359.1" y2="367.6">
+      <stop offset="0%" stop-color="#7e78b0"/>
+      <stop offset="100%" stop-color="#9a94c8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-0-sideR" gradientUnits="userSpaceOnUse" x1="565" y1="418.1" x2="365.5" y2="344.6">
+      <stop offset="0%" stop-color="#655f96"/>
+      <stop offset="100%" stop-color="#837db5"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-0-chamL" gradientUnits="userSpaceOnUse" x1="553.8" y1="448.6" x2="354.6" y2="375.5">
+      <stop offset="0%" stop-color="#f6d5df"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-0-chamR" gradientUnits="userSpaceOnUse" x1="561.6" y1="426.2" x2="361" y2="352.4">
+      <stop offset="0%" stop-color="#b8a8d4"/>
+      <stop offset="100%" stop-color="#cdbfe6"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-1-top" gradientUnits="userSpaceOnUse" x1="553.8" y1="454.2" x2="338.5" y2="413.9">
+      <stop offset="0%" stop-color="#aa6f8b"/>
+      <stop offset="35%" stop-color="#cf97ae"/>
+      <stop offset="75%" stop-color="#e5b4c5"/>
+      <stop offset="100%" stop-color="#f4d1dd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-1-sideL" gradientUnits="userSpaceOnUse" x1="554.2" y1="452.7" x2="341.3" y2="412.7">
+      <stop offset="0%" stop-color="#7f79b1"/>
+      <stop offset="100%" stop-color="#9b95c9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-1-sideR" gradientUnits="userSpaceOnUse" x1="558.3" y1="430.6" x2="343.6" y2="390.1">
+      <stop offset="0%" stop-color="#666097"/>
+      <stop offset="100%" stop-color="#847eb6"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-1-chamL" gradientUnits="userSpaceOnUse" x1="552.3" y1="462.2" x2="338.3" y2="422.2">
+      <stop offset="0%" stop-color="#f6d6e0"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-1-chamR" gradientUnits="userSpaceOnUse" x1="556.4" y1="440.1" x2="340.6" y2="399.5">
+      <stop offset="0%" stop-color="#b9a9d5"/>
+      <stop offset="100%" stop-color="#cec0e7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-2-top" gradientUnits="userSpaceOnUse" x1="554.8" y1="467" x2="328.9" y2="458.9">
+      <stop offset="0%" stop-color="#ab718c"/>
+      <stop offset="35%" stop-color="#d199af"/>
+      <stop offset="75%" stop-color="#e6b5c6"/>
+      <stop offset="100%" stop-color="#f4d2dd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-2-sideL" gradientUnits="userSpaceOnUse" x1="554.4" y1="464.8" x2="331" y2="456.7">
+      <stop offset="0%" stop-color="#817bb2"/>
+      <stop offset="100%" stop-color="#9d97ca"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-2-sideR" gradientUnits="userSpaceOnUse" x1="555.7" y1="442.8" x2="330.2" y2="434.3">
+      <stop offset="0%" stop-color="#676198"/>
+      <stop offset="100%" stop-color="#857fb7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-2-chamL" gradientUnits="userSpaceOnUse" x1="554.3" y1="474.8" x2="329.7" y2="466.8">
+      <stop offset="0%" stop-color="#f6d6e0"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-2-chamR" gradientUnits="userSpaceOnUse" x1="555.5" y1="452.8" x2="328.9" y2="444.4">
+      <stop offset="0%" stop-color="#baaad5"/>
+      <stop offset="100%" stop-color="#cfc1e7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-3-top" gradientUnits="userSpaceOnUse" x1="559.1" y1="479" x2="326.5" y2="504">
+      <stop offset="0%" stop-color="#ad728e"/>
+      <stop offset="35%" stop-color="#d29ab0"/>
+      <stop offset="75%" stop-color="#e7b7c7"/>
+      <stop offset="100%" stop-color="#f5d4de"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-3-sideL" gradientUnits="userSpaceOnUse" x1="557.9" y1="477.2" x2="327.9" y2="501.9">
+      <stop offset="0%" stop-color="#827cb3"/>
+      <stop offset="100%" stop-color="#9e98cb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-3-sideR" gradientUnits="userSpaceOnUse" x1="556.3" y1="454.9" x2="324.2" y2="479.4">
+      <stop offset="0%" stop-color="#686299"/>
+      <stop offset="100%" stop-color="#8680b8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-3-chamL" gradientUnits="userSpaceOnUse" x1="559.4" y1="487" x2="328.2" y2="512">
+      <stop offset="0%" stop-color="#f7d7e1"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-3-chamR" gradientUnits="userSpaceOnUse" x1="557.9" y1="464.7" x2="324.6" y2="489.5">
+      <stop offset="0%" stop-color="#bbabd6"/>
+      <stop offset="100%" stop-color="#d0c2e8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-4-top" gradientUnits="userSpaceOnUse" x1="566.3" y1="490" x2="331.6" y2="549.6">
+      <stop offset="0%" stop-color="#ae748f"/>
+      <stop offset="35%" stop-color="#d39bb1"/>
+      <stop offset="75%" stop-color="#e8b8c9"/>
+      <stop offset="100%" stop-color="#f5d5df"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-4-sideL" gradientUnits="userSpaceOnUse" x1="564.5" y1="489.6" x2="332.4" y2="548.5">
+      <stop offset="0%" stop-color="#837db4"/>
+      <stop offset="100%" stop-color="#9f99cc"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-4-sideR" gradientUnits="userSpaceOnUse" x1="560" y1="466.7" x2="325.7" y2="525.7">
+      <stop offset="0%" stop-color="#69639a"/>
+      <stop offset="100%" stop-color="#8882b9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-4-chamL" gradientUnits="userSpaceOnUse" x1="567.6" y1="498.6" x2="334.3" y2="558">
+      <stop offset="0%" stop-color="#f7d8e1"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-4-chamR" gradientUnits="userSpaceOnUse" x1="563.1" y1="475.6" x2="327.6" y2="535.1">
+      <stop offset="0%" stop-color="#bcacd7"/>
+      <stop offset="100%" stop-color="#d0c3e8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-5-top" gradientUnits="userSpaceOnUse" x1="576.1" y1="499.6" x2="344.3" y2="595.3">
+      <stop offset="0%" stop-color="#b07590"/>
+      <stop offset="35%" stop-color="#d59cb2"/>
+      <stop offset="75%" stop-color="#e9baca"/>
+      <stop offset="100%" stop-color="#f6d6e0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-5-sideL" gradientUnits="userSpaceOnUse" x1="574.5" y1="501.7" x2="345.3" y2="596.4">
+      <stop offset="0%" stop-color="#847eb6"/>
+      <stop offset="100%" stop-color="#a09bcd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-5-sideR" gradientUnits="userSpaceOnUse" x1="566.3" y1="478.1" x2="335.2" y2="573.1">
+      <stop offset="0%" stop-color="#6a649b"/>
+      <stop offset="100%" stop-color="#8983ba"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-5-chamL" gradientUnits="userSpaceOnUse" x1="578.8" y1="509" x2="348.4" y2="604.5">
+      <stop offset="0%" stop-color="#f7d8e2"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-5-chamR" gradientUnits="userSpaceOnUse" x1="570.6" y1="485.4" x2="338.2" y2="581">
+      <stop offset="0%" stop-color="#bdadd8"/>
+      <stop offset="100%" stop-color="#d1c4e9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-25-top" gradientUnits="userSpaceOnUse" x1="830.6" y1="383.9" x2="1229.6" y2="234.8">
+      <stop offset="0%" stop-color="#cf94ab"/>
+      <stop offset="35%" stop-color="#eebecc"/>
+      <stop offset="75%" stop-color="#fadae1"/>
+      <stop offset="100%" stop-color="#feefee"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-25-sideL" gradientUnits="userSpaceOnUse" x1="825.4" y1="381.4" x2="1220.3" y2="233.9">
+      <stop offset="0%" stop-color="#9e98cc"/>
+      <stop offset="100%" stop-color="#bab5e2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-25-sideR" gradientUnits="userSpaceOnUse" x1="836.8" y1="405.6" x2="1233.6" y2="256.6">
+      <stop offset="0%" stop-color="#7d77ae"/>
+      <stop offset="100%" stop-color="#a09ad0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-25-chamL" gradientUnits="userSpaceOnUse" x1="825" y1="374.1" x2="1222.3" y2="225.9">
+      <stop offset="0%" stop-color="#fce6ec"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-25-chamR" gradientUnits="userSpaceOnUse" x1="836.5" y1="398.4" x2="1235.7" y2="248.8">
+      <stop offset="0%" stop-color="#cfc1e6"/>
+      <stop offset="100%" stop-color="#e2d7f3"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-24-top" gradientUnits="userSpaceOnUse" x1="832.8" y1="396.7" x2="1242.1" y2="301.5">
+      <stop offset="0%" stop-color="#cd93a9"/>
+      <stop offset="35%" stop-color="#edbcca"/>
+      <stop offset="75%" stop-color="#f9d8df"/>
+      <stop offset="100%" stop-color="#feeded"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-24-sideL" gradientUnits="userSpaceOnUse" x1="829" y1="395" x2="1234" y2="301">
+      <stop offset="0%" stop-color="#9d97cb"/>
+      <stop offset="100%" stop-color="#b9b4e1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-24-sideR" gradientUnits="userSpaceOnUse" x1="836.9" y1="419.6" x2="1244.3" y2="324.4">
+      <stop offset="0%" stop-color="#7c76ad"/>
+      <stop offset="100%" stop-color="#9f99cf"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-24-chamL" gradientUnits="userSpaceOnUse" x1="828.9" y1="386.9" x2="1236.2" y2="292.5">
+      <stop offset="0%" stop-color="#fce5ec"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-24-chamR" gradientUnits="userSpaceOnUse" x1="836.8" y1="411.6" x2="1246.6" y2="316">
+      <stop offset="0%" stop-color="#cec0e5"/>
+      <stop offset="100%" stop-color="#e1d6f3"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-6-top" gradientUnits="userSpaceOnUse" x1="587.9" y1="507.5" x2="365.2" y2="640.7">
+      <stop offset="0%" stop-color="#b27691"/>
+      <stop offset="35%" stop-color="#d69eb3"/>
+      <stop offset="75%" stop-color="#eabccb"/>
+      <stop offset="100%" stop-color="#f7d7e0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-6-sideL" gradientUnits="userSpaceOnUse" x1="588" y1="513.1" x2="367.7" y2="645">
+      <stop offset="0%" stop-color="#8680b7"/>
+      <stop offset="100%" stop-color="#a29cce"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-6-sideR" gradientUnits="userSpaceOnUse" x1="575.3" y1="489.1" x2="353.4" y2="621.3">
+      <stop offset="0%" stop-color="#6b659c"/>
+      <stop offset="100%" stop-color="#8a84bb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-6-chamL" gradientUnits="userSpaceOnUse" x1="592.8" y1="517.9" x2="371.2" y2="650.8">
+      <stop offset="0%" stop-color="#f7d9e2"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-6-chamR" gradientUnits="userSpaceOnUse" x1="580" y1="493.9" x2="356.8" y2="626.9">
+      <stop offset="0%" stop-color="#bdaed8"/>
+      <stop offset="100%" stop-color="#d2c5e9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-23-top" gradientUnits="userSpaceOnUse" x1="832.9" y1="410.1" x2="1244.8" y2="368.2">
+      <stop offset="0%" stop-color="#cc91a8"/>
+      <stop offset="35%" stop-color="#ebb9c8"/>
+      <stop offset="75%" stop-color="#f8d6de"/>
+      <stop offset="100%" stop-color="#feecec"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-23-sideL" gradientUnits="userSpaceOnUse" x1="830.2" y1="409" x2="1237.6" y2="367.6">
+      <stop offset="0%" stop-color="#9b95ca"/>
+      <stop offset="100%" stop-color="#b7b2e0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-23-sideR" gradientUnits="userSpaceOnUse" x1="834.5" y1="433.8" x2="1244.8" y2="391.7">
+      <stop offset="0%" stop-color="#7b75ac"/>
+      <stop offset="100%" stop-color="#9e98ce"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-23-chamL" gradientUnits="userSpaceOnUse" x1="830.7" y1="400.5" x2="1240.4" y2="358.9">
+      <stop offset="0%" stop-color="#fce4eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-23-chamR" gradientUnits="userSpaceOnUse" x1="834.9" y1="425.3" x2="1247.6" y2="383">
+      <stop offset="0%" stop-color="#cdbfe4"/>
+      <stop offset="100%" stop-color="#e0d5f2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-7-top" gradientUnits="userSpaceOnUse" x1="601.2" y1="513.5" x2="394.5" y2="684.9">
+      <stop offset="0%" stop-color="#b37892"/>
+      <stop offset="35%" stop-color="#d79fb4"/>
+      <stop offset="75%" stop-color="#ebbdcc"/>
+      <stop offset="100%" stop-color="#f7d8e1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-7-sideL" gradientUnits="userSpaceOnUse" x1="605" y1="523" x2="400.6" y2="692.9">
+      <stop offset="0%" stop-color="#8781b8"/>
+      <stop offset="100%" stop-color="#a39dcf"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-7-sideR" gradientUnits="userSpaceOnUse" x1="587.1" y1="500" x2="381.4" y2="669.8">
+      <stop offset="0%" stop-color="#6c669d"/>
+      <stop offset="100%" stop-color="#8b85bd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-7-chamL" gradientUnits="userSpaceOnUse" x1="609" y1="524.6" x2="403.3" y2="695.6">
+      <stop offset="0%" stop-color="#f8dae3"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-7-chamR" gradientUnits="userSpaceOnUse" x1="591" y1="501.4" x2="384" y2="672.4">
+      <stop offset="0%" stop-color="#beafd9"/>
+      <stop offset="100%" stop-color="#d3c6ea"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-22-top" gradientUnits="userSpaceOnUse" x1="830.7" y1="424.1" x2="1238" y2="434">
+      <stop offset="0%" stop-color="#cb8fa7"/>
+      <stop offset="35%" stop-color="#eab7c6"/>
+      <stop offset="75%" stop-color="#f7d4dc"/>
+      <stop offset="100%" stop-color="#fdebeb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-22-sideL" gradientUnits="userSpaceOnUse" x1="829" y1="423.1" x2="1231.7" y2="432.9">
+      <stop offset="0%" stop-color="#9a94c9"/>
+      <stop offset="100%" stop-color="#b6b1df"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-22-sideR" gradientUnits="userSpaceOnUse" x1="829.6" y1="448" x2="1235.3" y2="457.6">
+      <stop offset="0%" stop-color="#7a74ab"/>
+      <stop offset="100%" stop-color="#9d97cd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-22-chamL" gradientUnits="userSpaceOnUse" x1="830.1" y1="414.4" x2="1235.1" y2="424.4">
+      <stop offset="0%" stop-color="#fbe4eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-22-chamR" gradientUnits="userSpaceOnUse" x1="830.7" y1="439.4" x2="1238.7" y2="449.2">
+      <stop offset="0%" stop-color="#ccbee3"/>
+      <stop offset="100%" stop-color="#e0d4f2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-21-top" gradientUnits="userSpaceOnUse" x1="826.1" y1="438.4" x2="1221.8" y2="498.6">
+      <stop offset="0%" stop-color="#c98da5"/>
+      <stop offset="35%" stop-color="#e9b5c5"/>
+      <stop offset="75%" stop-color="#f7d2db"/>
+      <stop offset="100%" stop-color="#fde9ea"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-21-sideL" gradientUnits="userSpaceOnUse" x1="825.4" y1="436.8" x2="1216.6" y2="496.4">
+      <stop offset="0%" stop-color="#9993c8"/>
+      <stop offset="100%" stop-color="#b5b0de"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-21-sideR" gradientUnits="userSpaceOnUse" x1="822.2" y1="461.8" x2="1216.3" y2="521.8">
+      <stop offset="0%" stop-color="#7973aa"/>
+      <stop offset="100%" stop-color="#9b95cc"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-21-chamL" gradientUnits="userSpaceOnUse" x1="827.2" y1="428.5" x2="1220.6" y2="488.4">
+      <stop offset="0%" stop-color="#fbe3ea"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-21-chamR" gradientUnits="userSpaceOnUse" x1="824" y1="453.6" x2="1220.4" y2="513.9">
+      <stop offset="0%" stop-color="#cbbde3"/>
+      <stop offset="100%" stop-color="#dfd3f1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-8-top" gradientUnits="userSpaceOnUse" x1="615.6" y1="517.9" x2="433" y2="727">
+      <stop offset="0%" stop-color="#b57994"/>
+      <stop offset="35%" stop-color="#d9a0b5"/>
+      <stop offset="75%" stop-color="#ecbfcd"/>
+      <stop offset="100%" stop-color="#f8dae2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-8-sideL" gradientUnits="userSpaceOnUse" x1="624.8" y1="530.2" x2="444.3" y2="737.7">
+      <stop offset="0%" stop-color="#8882b9"/>
+      <stop offset="100%" stop-color="#a49fd0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-8-sideR" gradientUnits="userSpaceOnUse" x1="602" y1="510.5" x2="420.7" y2="717.5">
+      <stop offset="0%" stop-color="#6d679e"/>
+      <stop offset="100%" stop-color="#8c86be"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-8-chamL" gradientUnits="userSpaceOnUse" x1="626.5" y1="528.4" x2="444.7" y2="737.3">
+      <stop offset="0%" stop-color="#f8dae3"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-8-chamR" gradientUnits="userSpaceOnUse" x1="603.6" y1="508.6" x2="421" y2="717">
+      <stop offset="0%" stop-color="#bfb0da"/>
+      <stop offset="100%" stop-color="#d4c7ea"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-20-top" gradientUnits="userSpaceOnUse" x1="819" y1="452.6" x2="1196.1" y2="561.3">
+      <stop offset="0%" stop-color="#c88ca4"/>
+      <stop offset="35%" stop-color="#e8b3c3"/>
+      <stop offset="75%" stop-color="#f6d0da"/>
+      <stop offset="100%" stop-color="#fde8e9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-20-sideL" gradientUnits="userSpaceOnUse" x1="819.6" y1="449.9" x2="1192.5" y2="557.4">
+      <stop offset="0%" stop-color="#9892c6"/>
+      <stop offset="100%" stop-color="#b4aedd"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-20-sideR" gradientUnits="userSpaceOnUse" x1="812.5" y1="475.1" x2="1187.9" y2="583.3">
+      <stop offset="0%" stop-color="#7872a9"/>
+      <stop offset="100%" stop-color="#9a94cb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-20-chamL" gradientUnits="userSpaceOnUse" x1="821.9" y1="442.4" x2="1196.9" y2="550.6">
+      <stop offset="0%" stop-color="#fbe2ea"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-20-chamR" gradientUnits="userSpaceOnUse" x1="814.7" y1="467.7" x2="1192.4" y2="576.5">
+      <stop offset="0%" stop-color="#cabce2"/>
+      <stop offset="100%" stop-color="#ded2f1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-9-top" gradientUnits="userSpaceOnUse" x1="631" y1="521.4" x2="481.5" y2="766">
+      <stop offset="0%" stop-color="#b77b95"/>
+      <stop offset="35%" stop-color="#daa1b5"/>
+      <stop offset="75%" stop-color="#eec0ce"/>
+      <stop offset="100%" stop-color="#f8dbe2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-9-sideL" gradientUnits="userSpaceOnUse" x1="645.9" y1="533.8" x2="498.1" y2="776.9">
+      <stop offset="0%" stop-color="#8a84ba"/>
+      <stop offset="100%" stop-color="#a6a0d1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-9-sideR" gradientUnits="userSpaceOnUse" x1="620" y1="519.5" x2="471.8" y2="761.6">
+      <stop offset="0%" stop-color="#6e689f"/>
+      <stop offset="100%" stop-color="#8d87bf"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-9-chamL" gradientUnits="userSpaceOnUse" x1="644.5" y1="529.9" x2="495.6" y2="774.5">
+      <stop offset="0%" stop-color="#f8dbe4"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-9-chamR" gradientUnits="userSpaceOnUse" x1="618.5" y1="515.5" x2="469.1" y2="759.1">
+      <stop offset="0%" stop-color="#c0b1da"/>
+      <stop offset="100%" stop-color="#d5c8eb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-19-top" gradientUnits="userSpaceOnUse" x1="809.3" y1="466.6" x2="1160.9" y2="621.4">
+      <stop offset="0%" stop-color="#c68aa2"/>
+      <stop offset="35%" stop-color="#e7b1c2"/>
+      <stop offset="75%" stop-color="#f5cfd9"/>
+      <stop offset="100%" stop-color="#fde7e8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-19-sideL" gradientUnits="userSpaceOnUse" x1="811.9" y1="462.4" x2="1159.6" y2="615.4">
+      <stop offset="0%" stop-color="#9690c5"/>
+      <stop offset="100%" stop-color="#b2addc"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-19-sideR" gradientUnits="userSpaceOnUse" x1="800.5" y1="487.3" x2="1150.2" y2="641.4">
+      <stop offset="0%" stop-color="#7771a8"/>
+      <stop offset="100%" stop-color="#9993ca"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-19-chamL" gradientUnits="userSpaceOnUse" x1="814.2" y1="456.1" x2="1164.1" y2="610.1">
+      <stop offset="0%" stop-color="#fbe2e9"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-19-chamR" gradientUnits="userSpaceOnUse" x1="802.8" y1="481.1" x2="1154.8" y2="636.2">
+      <stop offset="0%" stop-color="#c9bbe1"/>
+      <stop offset="100%" stop-color="#ddd1f0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-10-top" gradientUnits="userSpaceOnUse" x1="647.8" y1="524.1" x2="540.5" y2="799.8">
+      <stop offset="0%" stop-color="#b87c96"/>
+      <stop offset="35%" stop-color="#dba3b6"/>
+      <stop offset="75%" stop-color="#efc2cf"/>
+      <stop offset="100%" stop-color="#f9dce3"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-10-sideL" gradientUnits="userSpaceOnUse" x1="667" y1="534.2" x2="561" y2="808.4">
+      <stop offset="0%" stop-color="#8b85bb"/>
+      <stop offset="100%" stop-color="#a7a1d2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-10-sideR" gradientUnits="userSpaceOnUse" x1="640" y1="526" x2="533.5" y2="798.8">
+      <stop offset="0%" stop-color="#6f69a0"/>
+      <stop offset="100%" stop-color="#8f89c0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-10-chamL" gradientUnits="userSpaceOnUse" x1="662.9" y1="529.6" x2="556" y2="805.6">
+      <stop offset="0%" stop-color="#f8dce4"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-10-chamR" gradientUnits="userSpaceOnUse" x1="635.6" y1="521.4" x2="528.3" y2="795.9">
+      <stop offset="0%" stop-color="#c1b2db"/>
+      <stop offset="100%" stop-color="#d5c9eb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-18-top" gradientUnits="userSpaceOnUse" x1="796.9" y1="480" x2="1116" y2="677.8">
+      <stop offset="0%" stop-color="#c588a1"/>
+      <stop offset="35%" stop-color="#e5afc0"/>
+      <stop offset="75%" stop-color="#f5cdd8"/>
+      <stop offset="100%" stop-color="#fce6e8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-18-sideL" gradientUnits="userSpaceOnUse" x1="802.3" y1="474.1" x2="1117.9" y2="669.6">
+      <stop offset="0%" stop-color="#958fc4"/>
+      <stop offset="100%" stop-color="#b1acdb"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-18-sideR" gradientUnits="userSpaceOnUse" x1="786.6" y1="498.2" x2="1103.5" y2="694.9">
+      <stop offset="0%" stop-color="#7670a7"/>
+      <stop offset="100%" stop-color="#9892c8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-18-chamL" gradientUnits="userSpaceOnUse" x1="804.2" y1="469.4" x2="1121.9" y2="666.2">
+      <stop offset="0%" stop-color="#fae1e9"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-18-chamR" gradientUnits="userSpaceOnUse" x1="788.4" y1="493.6" x2="1107.5" y2="691.6">
+      <stop offset="0%" stop-color="#c8bae1"/>
+      <stop offset="100%" stop-color="#dcd0f0"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-11-top" gradientUnits="userSpaceOnUse" x1="666.2" y1="525.6" x2="609.3" y2="825.6">
+      <stop offset="0%" stop-color="#ba7d97"/>
+      <stop offset="35%" stop-color="#dda4b7"/>
+      <stop offset="75%" stop-color="#f0c3d1"/>
+      <stop offset="100%" stop-color="#f9dde4"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-11-sideL" gradientUnits="userSpaceOnUse" x1="687.9" y1="532" x2="632" y2="830.5">
+      <stop offset="0%" stop-color="#8c86bc"/>
+      <stop offset="100%" stop-color="#a8a3d3"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-11-sideR" gradientUnits="userSpaceOnUse" x1="660.5" y1="529.5" x2="604" y2="826.3">
+      <stop offset="0%" stop-color="#706aa1"/>
+      <stop offset="100%" stop-color="#908ac1"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-11-chamL" gradientUnits="userSpaceOnUse" x1="681.9" y1="528.1" x2="625.5" y2="828.4">
+      <stop offset="0%" stop-color="#f9dce5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-11-chamR" gradientUnits="userSpaceOnUse" x1="654.4" y1="525.6" x2="597.3" y2="824.2">
+      <stop offset="0%" stop-color="#c2b3dc"/>
+      <stop offset="100%" stop-color="#d6c9ec"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-17-top" gradientUnits="userSpaceOnUse" x1="782" y1="492.4" x2="1061.3" y2="729">
+      <stop offset="0%" stop-color="#c3879f"/>
+      <stop offset="35%" stop-color="#e4aebf"/>
+      <stop offset="75%" stop-color="#f4ccd7"/>
+      <stop offset="100%" stop-color="#fce5e7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-17-sideL" gradientUnits="userSpaceOnUse" x1="791" y1="485.1" x2="1067.5" y2="719.1">
+      <stop offset="0%" stop-color="#948ec3"/>
+      <stop offset="100%" stop-color="#b0aada"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-17-sideR" gradientUnits="userSpaceOnUse" x1="771.3" y1="507.6" x2="1048.2" y2="742.6">
+      <stop offset="0%" stop-color="#756fa6"/>
+      <stop offset="100%" stop-color="#9791c7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-17-chamL" gradientUnits="userSpaceOnUse" x1="791.7" y1="482" x2="1070.2" y2="717.6">
+      <stop offset="0%" stop-color="#fae0e8"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-17-chamR" gradientUnits="userSpaceOnUse" x1="771.9" y1="504.7" x2="1050.8" y2="741.3">
+      <stop offset="0%" stop-color="#c8b9e0"/>
+      <stop offset="100%" stop-color="#dbcfef"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-16-top" gradientUnits="userSpaceOnUse" x1="764.9" y1="503.3" x2="997.4" y2="773.3">
+      <stop offset="0%" stop-color="#c2859e"/>
+      <stop offset="35%" stop-color="#e3acbe"/>
+      <stop offset="75%" stop-color="#f3cbd6"/>
+      <stop offset="100%" stop-color="#fbe3e7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-16-sideL" gradientUnits="userSpaceOnUse" x1="777.9" y1="495.4" x2="1008.4" y2="762.6">
+      <stop offset="0%" stop-color="#928cc2"/>
+      <stop offset="100%" stop-color="#aea9d9"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-16-sideR" gradientUnits="userSpaceOnUse" x1="754.9" y1="515.2" x2="985" y2="783">
+      <stop offset="0%" stop-color="#746ea5"/>
+      <stop offset="100%" stop-color="#9690c6"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-16-chamL" gradientUnits="userSpaceOnUse" x1="776.9" y1="493.8" x2="1009" y2="762.9">
+      <stop offset="0%" stop-color="#fae0e7"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-16-chamR" gradientUnits="userSpaceOnUse" x1="753.7" y1="513.7" x2="985.4" y2="783.4">
+      <stop offset="0%" stop-color="#c7b8df"/>
+      <stop offset="100%" stop-color="#dbceee"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-12-top" gradientUnits="userSpaceOnUse" x1="685.7" y1="525.4" x2="685.6" y2="840.6">
+      <stop offset="0%" stop-color="#bb7f98"/>
+      <stop offset="35%" stop-color="#dea5b8"/>
+      <stop offset="75%" stop-color="#f0c5d2"/>
+      <stop offset="100%" stop-color="#fadee4"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-12-sideL" gradientUnits="userSpaceOnUse" x1="708.3" y1="527.7" x2="708.9" y2="841.1">
+      <stop offset="0%" stop-color="#8d87bd"/>
+      <stop offset="100%" stop-color="#a9a4d4"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-12-sideR" gradientUnits="userSpaceOnUse" x1="680.9" y1="530.3" x2="680.6" y2="842.2">
+      <stop offset="0%" stop-color="#716ba2"/>
+      <stop offset="100%" stop-color="#918bc2"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-12-chamL" gradientUnits="userSpaceOnUse" x1="701.7" y1="525" x2="702" y2="840.4">
+      <stop offset="0%" stop-color="#f9dde5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-12-chamR" gradientUnits="userSpaceOnUse" x1="674.1" y1="527.6" x2="673.6" y2="841.4">
+      <stop offset="0%" stop-color="#c3b4dc"/>
+      <stop offset="100%" stop-color="#d7caec"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-15-top" gradientUnits="userSpaceOnUse" x1="746.1" y1="512.2" x2="925.3" y2="808.3">
+      <stop offset="0%" stop-color="#c0839c"/>
+      <stop offset="35%" stop-color="#e2aabc"/>
+      <stop offset="75%" stop-color="#f3c9d5"/>
+      <stop offset="100%" stop-color="#fbe2e6"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-15-sideL" gradientUnits="userSpaceOnUse" x1="763" y1="505.1" x2="941.1" y2="798.5">
+      <stop offset="0%" stop-color="#918bc1"/>
+      <stop offset="100%" stop-color="#ada8d8"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-15-sideR" gradientUnits="userSpaceOnUse" x1="737.6" y1="521.3" x2="914.8" y2="814.6">
+      <stop offset="0%" stop-color="#736da4"/>
+      <stop offset="100%" stop-color="#948ec5"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-15-chamL" gradientUnits="userSpaceOnUse" x1="759.9" y1="504.3" x2="939.2" y2="799.8">
+      <stop offset="0%" stop-color="#fadfe7"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-15-chamR" gradientUnits="userSpaceOnUse" x1="734.4" y1="520.6" x2="912.8" y2="816">
+      <stop offset="0%" stop-color="#c6b7df"/>
+      <stop offset="100%" stop-color="#dacdee"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-13-top" gradientUnits="userSpaceOnUse" x1="705.9" y1="523.3" x2="766.2" y2="843">
+      <stop offset="0%" stop-color="#bd809a"/>
+      <stop offset="35%" stop-color="#dfa6b9"/>
+      <stop offset="75%" stop-color="#f1c6d3"/>
+      <stop offset="100%" stop-color="#fae0e5"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-13-sideL" gradientUnits="userSpaceOnUse" x1="727.8" y1="521.6" x2="788.4" y2="839.2">
+      <stop offset="0%" stop-color="#8f89bf"/>
+      <stop offset="100%" stop-color="#aba5d6"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-13-sideR" gradientUnits="userSpaceOnUse" x1="700.6" y1="529" x2="760.1" y2="845.4">
+      <stop offset="0%" stop-color="#716ba2"/>
+      <stop offset="100%" stop-color="#928cc3"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-13-chamL" gradientUnits="userSpaceOnUse" x1="721.6" y1="520" x2="782.4" y2="839.8">
+      <stop offset="0%" stop-color="#f9dee6"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-13-chamR" gradientUnits="userSpaceOnUse" x1="694.3" y1="527.5" x2="753.9" y2="845.9">
+      <stop offset="0%" stop-color="#c4b5dd"/>
+      <stop offset="100%" stop-color="#d8cbed"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-14-top" gradientUnits="userSpaceOnUse" x1="726.2" y1="518.9" x2="847.3" y2="832.1">
+      <stop offset="0%" stop-color="#bf829b"/>
+      <stop offset="35%" stop-color="#e0a8bb"/>
+      <stop offset="75%" stop-color="#f2c8d4"/>
+      <stop offset="100%" stop-color="#fbe1e5"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-14-sideL" gradientUnits="userSpaceOnUse" x1="746.2" y1="514" x2="867" y2="824.7">
+      <stop offset="0%" stop-color="#908ac0"/>
+      <stop offset="100%" stop-color="#aca6d7"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-14-sideR" gradientUnits="userSpaceOnUse" x1="719.6" y1="525.9" x2="839.1" y2="835.9">
+      <stop offset="0%" stop-color="#726ca3"/>
+      <stop offset="100%" stop-color="#938dc4"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-14-chamL" gradientUnits="userSpaceOnUse" x1="741.3" y1="513.2" x2="862.7" y2="826">
+      <stop offset="0%" stop-color="#f9dee6"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-outer-14-chamR" gradientUnits="userSpaceOnUse" x1="714.5" y1="525.2" x2="834.7" y2="837.2">
+      <stop offset="0%" stop-color="#c5b6de"/>
+      <stop offset="100%" stop-color="#d9cced"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-0-top" gradientUnits="userSpaceOnUse" x1="579.9" y1="446" x2="436.2" y2="387.7">
+      <stop offset="0%" stop-color="#ac718d"/>
+      <stop offset="35%" stop-color="#d199af"/>
+      <stop offset="75%" stop-color="#e6b6c7"/>
+      <stop offset="100%" stop-color="#f4d3de"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-0-sideL" gradientUnits="userSpaceOnUse" x1="580" y1="446.6" x2="437.8" y2="388.9">
+      <stop offset="0%" stop-color="#7e78b0"/>
+      <stop offset="100%" stop-color="#9a94c8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-0-sideR" gradientUnits="userSpaceOnUse" x1="588.5" y1="425.4" x2="445.4" y2="367.1">
+      <stop offset="0%" stop-color="#655f96"/>
+      <stop offset="100%" stop-color="#837db5"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-0-chamL" gradientUnits="userSpaceOnUse" x1="576.7" y1="454.3" x2="433.7" y2="396.2">
+      <stop offset="0%" stop-color="#f7d7e0"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-0-chamR" gradientUnits="userSpaceOnUse" x1="585.2" y1="432.9" x2="441.3" y2="374.4">
+      <stop offset="0%" stop-color="#baaad6"/>
+      <stop offset="100%" stop-color="#cfc1e7"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-1-top" gradientUnits="userSpaceOnUse" x1="578.2" y1="457.4" x2="422.1" y2="425">
+      <stop offset="0%" stop-color="#ad738e"/>
+      <stop offset="35%" stop-color="#d29ab0"/>
+      <stop offset="75%" stop-color="#e8b7c8"/>
+      <stop offset="100%" stop-color="#f5d4de"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-1-sideL" gradientUnits="userSpaceOnUse" x1="578.3" y1="455.8" x2="423.8" y2="423.8">
+      <stop offset="0%" stop-color="#7f79b1"/>
+      <stop offset="100%" stop-color="#9b95c9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-1-sideR" gradientUnits="userSpaceOnUse" x1="582.9" y1="434.8" x2="427.2" y2="402.3">
+      <stop offset="0%" stop-color="#666097"/>
+      <stop offset="100%" stop-color="#847eb6"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-1-chamL" gradientUnits="userSpaceOnUse" x1="576.5" y1="465" x2="421.2" y2="432.8">
+      <stop offset="0%" stop-color="#f7d7e1"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-1-chamR" gradientUnits="userSpaceOnUse" x1="581.1" y1="443.9" x2="424.6" y2="411.3">
+      <stop offset="0%" stop-color="#bbabd6"/>
+      <stop offset="100%" stop-color="#d0c2e8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-2-top" gradientUnits="userSpaceOnUse" x1="579.9" y1="467.4" x2="415.2" y2="460.4">
+      <stop offset="0%" stop-color="#af748f"/>
+      <stop offset="35%" stop-color="#d49cb1"/>
+      <stop offset="75%" stop-color="#e9b9c9"/>
+      <stop offset="100%" stop-color="#f6d5df"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-2-sideL" gradientUnits="userSpaceOnUse" x1="579.2" y1="465.1" x2="416.2" y2="458.1">
+      <stop offset="0%" stop-color="#817bb2"/>
+      <stop offset="100%" stop-color="#9d97ca"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-2-sideR" gradientUnits="userSpaceOnUse" x1="580.8" y1="444.1" x2="416.4" y2="436.8">
+      <stop offset="0%" stop-color="#676198"/>
+      <stop offset="100%" stop-color="#8680b7"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-2-chamL" gradientUnits="userSpaceOnUse" x1="579.2" y1="474.8" x2="415.3" y2="467.9">
+      <stop offset="0%" stop-color="#f7d8e1"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-2-chamR" gradientUnits="userSpaceOnUse" x1="580.8" y1="453.8" x2="415.6" y2="446.6">
+      <stop offset="0%" stop-color="#bcacd7"/>
+      <stop offset="100%" stop-color="#d1c3e8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-3-top" gradientUnits="userSpaceOnUse" x1="584.5" y1="476.6" x2="414.6" y2="495.7">
+      <stop offset="0%" stop-color="#b17691"/>
+      <stop offset="35%" stop-color="#d59db2"/>
+      <stop offset="75%" stop-color="#eabbca"/>
+      <stop offset="100%" stop-color="#f6d7e0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-3-sideL" gradientUnits="userSpaceOnUse" x1="582.8" y1="474.8" x2="414.7" y2="493.7">
+      <stop offset="0%" stop-color="#827cb4"/>
+      <stop offset="100%" stop-color="#9e98cb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-3-sideR" gradientUnits="userSpaceOnUse" x1="581.6" y1="453.4" x2="412" y2="472.2">
+      <stop offset="0%" stop-color="#686299"/>
+      <stop offset="100%" stop-color="#8781b9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-3-chamL" gradientUnits="userSpaceOnUse" x1="584.6" y1="484.3" x2="415.6" y2="503.3">
+      <stop offset="0%" stop-color="#f7d9e2"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-3-chamR" gradientUnits="userSpaceOnUse" x1="583.3" y1="462.9" x2="412.9" y2="481.9">
+      <stop offset="0%" stop-color="#bdadd8"/>
+      <stop offset="100%" stop-color="#d2c4e9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-4-top" gradientUnits="userSpaceOnUse" x1="591.5" y1="484.8" x2="420.3" y2="531.3">
+      <stop offset="0%" stop-color="#b37792"/>
+      <stop offset="35%" stop-color="#d79eb3"/>
+      <stop offset="75%" stop-color="#ebbccc"/>
+      <stop offset="100%" stop-color="#f7d8e1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-4-sideL" gradientUnits="userSpaceOnUse" x1="589.3" y1="484.6" x2="420" y2="530.6">
+      <stop offset="0%" stop-color="#847eb5"/>
+      <stop offset="100%" stop-color="#a09acd"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-4-sideR" gradientUnits="userSpaceOnUse" x1="584.9" y1="462.6" x2="414.1" y2="508.6">
+      <stop offset="0%" stop-color="#69639a"/>
+      <stop offset="100%" stop-color="#8882ba"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-4-chamL" gradientUnits="userSpaceOnUse" x1="592.7" y1="493.1" x2="422.5" y2="539.4">
+      <stop offset="0%" stop-color="#f8d9e2"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-4-chamR" gradientUnits="userSpaceOnUse" x1="588.2" y1="471" x2="416.6" y2="517.5">
+      <stop offset="0%" stop-color="#beafd9"/>
+      <stop offset="100%" stop-color="#d3c5e9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-5-top" gradientUnits="userSpaceOnUse" x1="600.7" y1="491.5" x2="432.7" y2="566.8">
+      <stop offset="0%" stop-color="#b47993"/>
+      <stop offset="35%" stop-color="#d8a0b4"/>
+      <stop offset="75%" stop-color="#ecbecd"/>
+      <stop offset="100%" stop-color="#f8d9e1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-5-sideL" gradientUnits="userSpaceOnUse" x1="599" y1="494.2" x2="432.7" y2="568.6">
+      <stop offset="0%" stop-color="#857fb6"/>
+      <stop offset="100%" stop-color="#a19bce"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-5-sideR" gradientUnits="userSpaceOnUse" x1="590.6" y1="471.4" x2="423" y2="546.1">
+      <stop offset="0%" stop-color="#6a649b"/>
+      <stop offset="100%" stop-color="#8983bb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-5-chamL" gradientUnits="userSpaceOnUse" x1="603.5" y1="500.8" x2="436.4" y2="575.8">
+      <stop offset="0%" stop-color="#f8dae3"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-5-chamR" gradientUnits="userSpaceOnUse" x1="595.1" y1="478" x2="426.6" y2="553.1">
+      <stop offset="0%" stop-color="#bfb0d9"/>
+      <stop offset="100%" stop-color="#d4c6ea"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-23-top" gradientUnits="userSpaceOnUse" x1="805" y1="393.6" x2="1102.2" y2="293.8">
+      <stop offset="0%" stop-color="#d298ae"/>
+      <stop offset="35%" stop-color="#f1c5d1"/>
+      <stop offset="75%" stop-color="#fbdfe4"/>
+      <stop offset="100%" stop-color="#fff2f1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-23-sideL" gradientUnits="userSpaceOnUse" x1="800.5" y1="391.5" x2="1094.8" y2="292.8">
+      <stop offset="0%" stop-color="#9e98cc"/>
+      <stop offset="100%" stop-color="#bab5e2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-23-sideR" gradientUnits="userSpaceOnUse" x1="810.4" y1="414.7" x2="1106.2" y2="315">
+      <stop offset="0%" stop-color="#7d77ae"/>
+      <stop offset="100%" stop-color="#a09ad0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-23-chamL" gradientUnits="userSpaceOnUse" x1="800.1" y1="384.2" x2="1096.1" y2="285.1">
+      <stop offset="0%" stop-color="#fde7ed"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-23-chamR" gradientUnits="userSpaceOnUse" x1="810.1" y1="407.6" x2="1107.5" y2="307.4">
+      <stop offset="0%" stop-color="#d1c3e7"/>
+      <stop offset="100%" stop-color="#e4d9f4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-6-top" gradientUnits="userSpaceOnUse" x1="611.4" y1="496.6" x2="451.9" y2="601.5">
+      <stop offset="0%" stop-color="#b67a95"/>
+      <stop offset="35%" stop-color="#daa1b5"/>
+      <stop offset="75%" stop-color="#edc0ce"/>
+      <stop offset="100%" stop-color="#f8dbe2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-6-sideL" gradientUnits="userSpaceOnUse" x1="612" y1="503.1" x2="454.2" y2="607.1">
+      <stop offset="0%" stop-color="#8680b7"/>
+      <stop offset="100%" stop-color="#a29dcf"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-6-sideR" gradientUnits="userSpaceOnUse" x1="598.6" y1="480.2" x2="439.7" y2="584.3">
+      <stop offset="0%" stop-color="#6b659c"/>
+      <stop offset="100%" stop-color="#8b85bc"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-6-chamL" gradientUnits="userSpaceOnUse" x1="616.6" y1="506.8" x2="458" y2="611.5">
+      <stop offset="0%" stop-color="#f8dbe4"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-6-chamR" gradientUnits="userSpaceOnUse" x1="603.2" y1="483.9" x2="443.4" y2="588.7">
+      <stop offset="0%" stop-color="#c0b1da"/>
+      <stop offset="100%" stop-color="#d4c7eb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-22-top" gradientUnits="userSpaceOnUse" x1="805.2" y1="404.6" x2="1108.3" y2="348.1">
+      <stop offset="0%" stop-color="#d196ad"/>
+      <stop offset="35%" stop-color="#f0c2ce"/>
+      <stop offset="75%" stop-color="#fadde3"/>
+      <stop offset="100%" stop-color="#fef0f0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-22-sideL" gradientUnits="userSpaceOnUse" x1="802.1" y1="403.4" x2="1102" y2="347.5">
+      <stop offset="0%" stop-color="#9d97cb"/>
+      <stop offset="100%" stop-color="#b9b4e1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-22-sideR" gradientUnits="userSpaceOnUse" x1="808.3" y1="427" x2="1110.1" y2="370.3">
+      <stop offset="0%" stop-color="#7c76ad"/>
+      <stop offset="100%" stop-color="#9f99cf"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-22-chamL" gradientUnits="userSpaceOnUse" x1="802.1" y1="395.4" x2="1103.7" y2="339.3">
+      <stop offset="0%" stop-color="#fce7ed"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-22-chamR" gradientUnits="userSpaceOnUse" x1="808.3" y1="419" x2="1111.8" y2="362.1">
+      <stop offset="0%" stop-color="#d0c2e6"/>
+      <stop offset="100%" stop-color="#e3d8f4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-7-top" gradientUnits="userSpaceOnUse" x1="623.1" y1="499.9" x2="478.4" y2="634.9">
+      <stop offset="0%" stop-color="#b87c96"/>
+      <stop offset="35%" stop-color="#dba2b6"/>
+      <stop offset="75%" stop-color="#eec2cf"/>
+      <stop offset="100%" stop-color="#f9dce3"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-7-sideL" gradientUnits="userSpaceOnUse" x1="628.2" y1="510.3" x2="485" y2="644.2">
+      <stop offset="0%" stop-color="#8882b9"/>
+      <stop offset="100%" stop-color="#a49ed0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-7-sideR" gradientUnits="userSpaceOnUse" x1="609.3" y1="489.2" x2="465.4" y2="623">
+      <stop offset="0%" stop-color="#6c669d"/>
+      <stop offset="100%" stop-color="#8c86bd"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-7-chamL" gradientUnits="userSpaceOnUse" x1="631.5" y1="510.5" x2="487.5" y2="645.2">
+      <stop offset="0%" stop-color="#f8dce4"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-7-chamR" gradientUnits="userSpaceOnUse" x1="612.5" y1="489.2" x2="467.7" y2="623.9">
+      <stop offset="0%" stop-color="#c1b2db"/>
+      <stop offset="100%" stop-color="#d5c8eb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-21-top" gradientUnits="userSpaceOnUse" x1="803.6" y1="416.3" x2="1105.9" y2="401.9">
+      <stop offset="0%" stop-color="#cf94ab"/>
+      <stop offset="35%" stop-color="#eebfcc"/>
+      <stop offset="75%" stop-color="#fadbe1"/>
+      <stop offset="100%" stop-color="#feefef"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-21-sideL" gradientUnits="userSpaceOnUse" x1="801.5" y1="415.5" x2="1100.7" y2="401.3">
+      <stop offset="0%" stop-color="#9b95ca"/>
+      <stop offset="100%" stop-color="#b7b2e0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-21-sideR" gradientUnits="userSpaceOnUse" x1="804" y1="439.2" x2="1105.2" y2="424.6">
+      <stop offset="0%" stop-color="#7b75ac"/>
+      <stop offset="100%" stop-color="#9d97ce"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-21-chamL" gradientUnits="userSpaceOnUse" x1="802.2" y1="407.1" x2="1102.9" y2="392.9">
+      <stop offset="0%" stop-color="#fce6ec"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-21-chamR" gradientUnits="userSpaceOnUse" x1="804.6" y1="430.9" x2="1107.5" y2="416.3">
+      <stop offset="0%" stop-color="#cfc1e6"/>
+      <stop offset="100%" stop-color="#e2d7f3"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-20-top" gradientUnits="userSpaceOnUse" x1="799.9" y1="428.4" x2="1095.4" y2="454.9">
+      <stop offset="0%" stop-color="#cd93a9"/>
+      <stop offset="35%" stop-color="#edbcca"/>
+      <stop offset="75%" stop-color="#f9d8df"/>
+      <stop offset="100%" stop-color="#feeded"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-20-sideL" gradientUnits="userSpaceOnUse" x1="798.9" y1="427.4" x2="1091.1" y2="453.6">
+      <stop offset="0%" stop-color="#9a94c8"/>
+      <stop offset="100%" stop-color="#b6b1df"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-20-sideR" gradientUnits="userSpaceOnUse" x1="797.5" y1="451.2" x2="1091.9" y2="477.5">
+      <stop offset="0%" stop-color="#7a74ab"/>
+      <stop offset="100%" stop-color="#9c96cc"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-20-chamL" gradientUnits="userSpaceOnUse" x1="800.2" y1="419.1" x2="1094.1" y2="445.5">
+      <stop offset="0%" stop-color="#fce5ec"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-20-chamR" gradientUnits="userSpaceOnUse" x1="798.8" y1="443" x2="1094.9" y2="469.5">
+      <stop offset="0%" stop-color="#cec0e5"/>
+      <stop offset="100%" stop-color="#e1d6f3"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-8-top" gradientUnits="userSpaceOnUse" x1="635.3" y1="502" x2="512.6" y2="666.2">
+      <stop offset="0%" stop-color="#ba7d97"/>
+      <stop offset="35%" stop-color="#dda4b7"/>
+      <stop offset="75%" stop-color="#f0c3d1"/>
+      <stop offset="100%" stop-color="#f9dde4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-8-sideL" gradientUnits="userSpaceOnUse" x1="646.5" y1="514.4" x2="525.1" y2="677.4">
+      <stop offset="0%" stop-color="#8983ba"/>
+      <stop offset="100%" stop-color="#a59fd1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-8-sideR" gradientUnits="userSpaceOnUse" x1="623.2" y1="497.7" x2="501.4" y2="660.3">
+      <stop offset="0%" stop-color="#6d679e"/>
+      <stop offset="100%" stop-color="#8d87be"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-8-chamL" gradientUnits="userSpaceOnUse" x1="646.9" y1="511.4" x2="524.7" y2="675.4">
+      <stop offset="0%" stop-color="#f9dce5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-8-chamR" gradientUnits="userSpaceOnUse" x1="623.5" y1="494.6" x2="500.8" y2="658.2">
+      <stop offset="0%" stop-color="#c2b3dc"/>
+      <stop offset="100%" stop-color="#d6c9ec"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-19-top" gradientUnits="userSpaceOnUse" x1="794.1" y1="440.6" x2="1076.8" y2="506.4">
+      <stop offset="0%" stop-color="#cc91a8"/>
+      <stop offset="35%" stop-color="#ebb9c7"/>
+      <stop offset="75%" stop-color="#f8d6de"/>
+      <stop offset="100%" stop-color="#feecec"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-19-sideL" gradientUnits="userSpaceOnUse" x1="794.2" y1="438.8" x2="1073.8" y2="503.8">
+      <stop offset="0%" stop-color="#9892c7"/>
+      <stop offset="100%" stop-color="#b4afdd"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-19-sideR" gradientUnits="userSpaceOnUse" x1="788.9" y1="462.7" x2="1070.4" y2="528.1">
+      <stop offset="0%" stop-color="#7973aa"/>
+      <stop offset="100%" stop-color="#9b95cb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-19-chamL" gradientUnits="userSpaceOnUse" x1="796.2" y1="431.1" x2="1077.4" y2="496.6">
+      <stop offset="0%" stop-color="#fce4eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-19-chamR" gradientUnits="userSpaceOnUse" x1="790.8" y1="455.1" x2="1074" y2="521">
+      <stop offset="0%" stop-color="#cdbfe4"/>
+      <stop offset="100%" stop-color="#e0d5f2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-9-top" gradientUnits="userSpaceOnUse" x1="648.6" y1="503.7" x2="555.7" y2="694.4">
+      <stop offset="0%" stop-color="#bc7f98"/>
+      <stop offset="35%" stop-color="#dea5b8"/>
+      <stop offset="75%" stop-color="#f0c5d2"/>
+      <stop offset="100%" stop-color="#fadfe4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-9-sideL" gradientUnits="userSpaceOnUse" x1="665.2" y1="514.8" x2="573.3" y2="704.4">
+      <stop offset="0%" stop-color="#8b85bb"/>
+      <stop offset="100%" stop-color="#a7a1d2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-9-sideR" gradientUnits="userSpaceOnUse" x1="639.8" y1="504.4" x2="547.6" y2="693.1">
+      <stop offset="0%" stop-color="#6e689f"/>
+      <stop offset="100%" stop-color="#8e88c0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-9-chamL" gradientUnits="userSpaceOnUse" x1="662.4" y1="510.4" x2="569.8" y2="701.1">
+      <stop offset="0%" stop-color="#f9dde5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-9-chamR" gradientUnits="userSpaceOnUse" x1="636.8" y1="499.9" x2="543.9" y2="689.7">
+      <stop offset="0%" stop-color="#c3b4dc"/>
+      <stop offset="100%" stop-color="#d7caec"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-18-top" gradientUnits="userSpaceOnUse" x1="786" y1="452.9" x2="1050" y2="555.9">
+      <stop offset="0%" stop-color="#ca8fa6"/>
+      <stop offset="35%" stop-color="#eab6c6"/>
+      <stop offset="75%" stop-color="#f7d3dc"/>
+      <stop offset="100%" stop-color="#fdebeb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-18-sideL" gradientUnits="userSpaceOnUse" x1="787.9" y1="449.5" x2="1049" y2="551.4">
+      <stop offset="0%" stop-color="#9791c6"/>
+      <stop offset="100%" stop-color="#b3aedc"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-18-sideR" gradientUnits="userSpaceOnUse" x1="778.3" y1="473.3" x2="1041" y2="575.9">
+      <stop offset="0%" stop-color="#7872a9"/>
+      <stop offset="100%" stop-color="#9a94ca"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-18-chamL" gradientUnits="userSpaceOnUse" x1="790.1" y1="443" x2="1052.8" y2="545.5">
+      <stop offset="0%" stop-color="#fbe4eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-18-chamR" gradientUnits="userSpaceOnUse" x1="780.5" y1="466.9" x2="1044.7" y2="570.1">
+      <stop offset="0%" stop-color="#ccbee3"/>
+      <stop offset="100%" stop-color="#dfd4f2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-17-top" gradientUnits="userSpaceOnUse" x1="775.6" y1="464.7" x2="1014.8" y2="602.5">
+      <stop offset="0%" stop-color="#c98da5"/>
+      <stop offset="35%" stop-color="#e9b4c4"/>
+      <stop offset="75%" stop-color="#f7d1da"/>
+      <stop offset="100%" stop-color="#fde9ea"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-17-sideL" gradientUnits="userSpaceOnUse" x1="780.1" y1="459.6" x2="1016.8" y2="595.8">
+      <stop offset="0%" stop-color="#9690c5"/>
+      <stop offset="100%" stop-color="#b2acdb"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-17-sideR" gradientUnits="userSpaceOnUse" x1="766" y1="482.8" x2="1003.8" y2="619.9">
+      <stop offset="0%" stop-color="#7771a8"/>
+      <stop offset="100%" stop-color="#9892c9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-17-chamL" gradientUnits="userSpaceOnUse" x1="782" y1="454.6" x2="1020.2" y2="591.7">
+      <stop offset="0%" stop-color="#fbe3ea"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-17-chamR" gradientUnits="userSpaceOnUse" x1="767.9" y1="478" x2="1007.2" y2="615.9">
+      <stop offset="0%" stop-color="#cbbce3"/>
+      <stop offset="100%" stop-color="#dfd3f1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-10-top" gradientUnits="userSpaceOnUse" x1="663.4" y1="504.9" x2="607.7" y2="717.1">
+      <stop offset="0%" stop-color="#bd819a"/>
+      <stop offset="35%" stop-color="#dfa7ba"/>
+      <stop offset="75%" stop-color="#f1c7d3"/>
+      <stop offset="100%" stop-color="#fae0e5"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-10-sideL" gradientUnits="userSpaceOnUse" x1="683.5" y1="512.6" x2="628.6" y2="723.7">
+      <stop offset="0%" stop-color="#8c86bc"/>
+      <stop offset="100%" stop-color="#a8a2d3"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-10-sideR" gradientUnits="userSpaceOnUse" x1="657.4" y1="508.3" x2="602.1" y2="718.3">
+      <stop offset="0%" stop-color="#6f69a0"/>
+      <stop offset="100%" stop-color="#908ac1"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-10-chamL" gradientUnits="userSpaceOnUse" x1="678.3" y1="508.4" x2="622.9" y2="720.8">
+      <stop offset="0%" stop-color="#f9dee6"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-10-chamR" gradientUnits="userSpaceOnUse" x1="652" y1="504.1" x2="596.2" y2="715.3">
+      <stop offset="0%" stop-color="#c4b5dd"/>
+      <stop offset="100%" stop-color="#d8cbed"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-16-top" gradientUnits="userSpaceOnUse" x1="762.8" y1="475.8" x2="971.2" y2="644.9">
+      <stop offset="0%" stop-color="#c78ba3"/>
+      <stop offset="35%" stop-color="#e7b2c3"/>
+      <stop offset="75%" stop-color="#f6d0d9"/>
+      <stop offset="100%" stop-color="#fde8e9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-16-sideL" gradientUnits="userSpaceOnUse" x1="770.8" y1="469.1" x2="977.2" y2="636.3">
+      <stop offset="0%" stop-color="#948ec3"/>
+      <stop offset="100%" stop-color="#b0abda"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-16-sideR" gradientUnits="userSpaceOnUse" x1="752.6" y1="490.8" x2="959.4" y2="658.8">
+      <stop offset="0%" stop-color="#7670a7"/>
+      <stop offset="100%" stop-color="#9791c8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-16-chamL" gradientUnits="userSpaceOnUse" x1="771.7" y1="465.9" x2="979.5" y2="634.2">
+      <stop offset="0%" stop-color="#fbe2e9"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-16-chamR" gradientUnits="userSpaceOnUse" x1="753.3" y1="487.7" x2="961.5" y2="656.8">
+      <stop offset="0%" stop-color="#cabbe2"/>
+      <stop offset="100%" stop-color="#ded2f0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-11-top" gradientUnits="userSpaceOnUse" x1="679.6" y1="504.8" x2="667.2" y2="731.6">
+      <stop offset="0%" stop-color="#bf829b"/>
+      <stop offset="35%" stop-color="#e1a9bb"/>
+      <stop offset="75%" stop-color="#f2c8d4"/>
+      <stop offset="100%" stop-color="#fbe1e6"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-11-sideL" gradientUnits="userSpaceOnUse" x1="701.1" y1="508.3" x2="689.3" y2="733.9">
+      <stop offset="0%" stop-color="#8d87bd"/>
+      <stop offset="100%" stop-color="#a9a4d4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-11-sideR" gradientUnits="userSpaceOnUse" x1="675" y1="509.4" x2="662.6" y2="733.9">
+      <stop offset="0%" stop-color="#706aa1"/>
+      <stop offset="100%" stop-color="#918bc2"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-11-chamL" gradientUnits="userSpaceOnUse" x1="694.8" y1="505.2" x2="682.8" y2="732.1">
+      <stop offset="0%" stop-color="#fadfe7"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-11-chamR" gradientUnits="userSpaceOnUse" x1="668.5" y1="506.4" x2="655.9" y2="732.2">
+      <stop offset="0%" stop-color="#c5b6de"/>
+      <stop offset="100%" stop-color="#d9cdee"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-15-top" gradientUnits="userSpaceOnUse" x1="747.9" y1="485.6" x2="919.5" y2="681.3">
+      <stop offset="0%" stop-color="#c589a1"/>
+      <stop offset="35%" stop-color="#e6b0c1"/>
+      <stop offset="75%" stop-color="#f5ced8"/>
+      <stop offset="100%" stop-color="#fce6e8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-15-sideL" gradientUnits="userSpaceOnUse" x1="760.1" y1="478.1" x2="930.3" y2="672">
+      <stop offset="0%" stop-color="#938dc2"/>
+      <stop offset="100%" stop-color="#afaad9"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-15-sideR" gradientUnits="userSpaceOnUse" x1="738.3" y1="497.2" x2="908.3" y2="691.4">
+      <stop offset="0%" stop-color="#756fa6"/>
+      <stop offset="100%" stop-color="#9690c7"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-15-chamL" gradientUnits="userSpaceOnUse" x1="759.2" y1="476.5" x2="930.5" y2="671.6">
+      <stop offset="0%" stop-color="#fbe1e9"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-15-chamR" gradientUnits="userSpaceOnUse" x1="737.2" y1="495.6" x2="908.3" y2="691.2">
+      <stop offset="0%" stop-color="#c9bae1"/>
+      <stop offset="100%" stop-color="#ddd1f0"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-12-top" gradientUnits="userSpaceOnUse" x1="696.7" y1="503.1" x2="731.5" y2="735.7">
+      <stop offset="0%" stop-color="#c1849d"/>
+      <stop offset="35%" stop-color="#e2abbd"/>
+      <stop offset="75%" stop-color="#f3cad5"/>
+      <stop offset="100%" stop-color="#fbe2e6"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-12-sideL" gradientUnits="userSpaceOnUse" x1="718" y1="502.3" x2="753.1" y2="733.5">
+      <stop offset="0%" stop-color="#8f89bf"/>
+      <stop offset="100%" stop-color="#aba5d6"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-12-sideR" gradientUnits="userSpaceOnUse" x1="692" y1="508.5" x2="726.3" y2="738.8">
+      <stop offset="0%" stop-color="#726ca3"/>
+      <stop offset="100%" stop-color="#928cc3"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-12-chamL" gradientUnits="userSpaceOnUse" x1="711.8" y1="500.5" x2="746.9" y2="733.2">
+      <stop offset="0%" stop-color="#fadfe7"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-12-chamR" gradientUnits="userSpaceOnUse" x1="685.6" y1="506.8" x2="720" y2="738.5">
+      <stop offset="0%" stop-color="#c6b7df"/>
+      <stop offset="100%" stop-color="#daceee"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-14-top" gradientUnits="userSpaceOnUse" x1="731.5" y1="493.5" x2="860.8" y2="709.8">
+      <stop offset="0%" stop-color="#c488a0"/>
+      <stop offset="35%" stop-color="#e5afc0"/>
+      <stop offset="75%" stop-color="#f4cdd7"/>
+      <stop offset="100%" stop-color="#fce5e8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-14-sideL" gradientUnits="userSpaceOnUse" x1="747.7" y1="486.9" x2="876.3" y2="701.3">
+      <stop offset="0%" stop-color="#918bc1"/>
+      <stop offset="100%" stop-color="#ada8d8"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-14-sideR" gradientUnits="userSpaceOnUse" x1="723.5" y1="502.2" x2="851.5" y2="716.5">
+      <stop offset="0%" stop-color="#746ea5"/>
+      <stop offset="100%" stop-color="#958fc5"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-14-chamL" gradientUnits="userSpaceOnUse" x1="744.7" y1="486.1" x2="874.1" y2="701.9">
+      <stop offset="0%" stop-color="#fae1e8"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-14-chamR" gradientUnits="userSpaceOnUse" x1="720.3" y1="501.5" x2="849" y2="717.2">
+      <stop offset="0%" stop-color="#c8b9e0"/>
+      <stop offset="100%" stop-color="#dcd0ef"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-13-top" gradientUnits="userSpaceOnUse" x1="714.1" y1="499.4" x2="797.2" y2="728.4">
+      <stop offset="0%" stop-color="#c2869e"/>
+      <stop offset="35%" stop-color="#e3adbe"/>
+      <stop offset="75%" stop-color="#f4cbd6"/>
+      <stop offset="100%" stop-color="#fce4e7"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-13-sideL" gradientUnits="userSpaceOnUse" x1="733.6" y1="495.1" x2="816.5" y2="722.3">
+      <stop offset="0%" stop-color="#908ac0"/>
+      <stop offset="100%" stop-color="#aca7d7"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-13-sideR" gradientUnits="userSpaceOnUse" x1="708.1" y1="506" x2="790.2" y2="732.7">
+      <stop offset="0%" stop-color="#736da4"/>
+      <stop offset="100%" stop-color="#938dc4"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-13-chamL" gradientUnits="userSpaceOnUse" x1="728.6" y1="494.2" x2="811.9" y2="722.9">
+      <stop offset="0%" stop-color="#fae0e8"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-mid-13-chamR" gradientUnits="userSpaceOnUse" x1="703" y1="505.2" x2="785.4" y2="733.4">
+      <stop offset="0%" stop-color="#c7b8e0"/>
+      <stop offset="100%" stop-color="#dbcfef"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-0-top" gradientUnits="userSpaceOnUse" x1="602.7" y1="453.2" x2="509.9" y2="411.8">
+      <stop offset="0%" stop-color="#af748f"/>
+      <stop offset="35%" stop-color="#d49cb1"/>
+      <stop offset="75%" stop-color="#e9b9c9"/>
+      <stop offset="100%" stop-color="#f6d5df"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-0-sideL" gradientUnits="userSpaceOnUse" x1="602.2" y1="454.1" x2="510.4" y2="413.1">
+      <stop offset="0%" stop-color="#7e78b0"/>
+      <stop offset="100%" stop-color="#9a94c8"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-0-sideR" gradientUnits="userSpaceOnUse" x1="611" y1="434.8" x2="518.6" y2="393.4">
+      <stop offset="0%" stop-color="#655f96"/>
+      <stop offset="100%" stop-color="#837db5"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-0-chamL" gradientUnits="userSpaceOnUse" x1="599.2" y1="460.8" x2="506.9" y2="419.6">
+      <stop offset="0%" stop-color="#f7d8e1"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-0-chamR" gradientUnits="userSpaceOnUse" x1="608" y1="441.3" x2="515.1" y2="399.8">
+      <stop offset="0%" stop-color="#bcacd7"/>
+      <stop offset="100%" stop-color="#d1c3e8"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-1-top" gradientUnits="userSpaceOnUse" x1="603.1" y1="462.9" x2="499.3" y2="444.1">
+      <stop offset="0%" stop-color="#b27691"/>
+      <stop offset="35%" stop-color="#d69eb3"/>
+      <stop offset="75%" stop-color="#eabccb"/>
+      <stop offset="100%" stop-color="#f7d7e0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-1-sideL" gradientUnits="userSpaceOnUse" x1="602.7" y1="461.2" x2="499.9" y2="442.6">
+      <stop offset="0%" stop-color="#807ab2"/>
+      <stop offset="100%" stop-color="#9c96ca"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-1-sideR" gradientUnits="userSpaceOnUse" x1="606.8" y1="442.1" x2="503.2" y2="423.3">
+      <stop offset="0%" stop-color="#666097"/>
+      <stop offset="100%" stop-color="#857fb7"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-1-chamL" gradientUnits="userSpaceOnUse" x1="601.5" y1="469.7" x2="498.2" y2="451.1">
+      <stop offset="0%" stop-color="#f7d9e2"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-1-chamR" gradientUnits="userSpaceOnUse" x1="605.5" y1="450.5" x2="501.5" y2="431.7">
+      <stop offset="0%" stop-color="#beaed8"/>
+      <stop offset="100%" stop-color="#d2c5e9"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-2-top" gradientUnits="userSpaceOnUse" x1="607.5" y1="470.8" x2="497" y2="474.7">
+      <stop offset="0%" stop-color="#b47993"/>
+      <stop offset="35%" stop-color="#d89fb4"/>
+      <stop offset="75%" stop-color="#ecbecd"/>
+      <stop offset="100%" stop-color="#f8d9e1"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-2-sideL" gradientUnits="userSpaceOnUse" x1="606" y1="468.8" x2="496.6" y2="472.6">
+      <stop offset="0%" stop-color="#827cb3"/>
+      <stop offset="100%" stop-color="#9e98cb"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-2-sideR" gradientUnits="userSpaceOnUse" x1="606.4" y1="449.5" x2="496.2" y2="453.2">
+      <stop offset="0%" stop-color="#686299"/>
+      <stop offset="100%" stop-color="#8680b8"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-2-chamL" gradientUnits="userSpaceOnUse" x1="606.9" y1="477.7" x2="497.1" y2="481.5">
+      <stop offset="0%" stop-color="#f8dae3"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-2-chamR" gradientUnits="userSpaceOnUse" x1="607.4" y1="458.4" x2="496.7" y2="462.1">
+      <stop offset="0%" stop-color="#bfafd9"/>
+      <stop offset="100%" stop-color="#d3c6ea"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-3-top" gradientUnits="userSpaceOnUse" x1="614.9" y1="477.4" x2="502.2" y2="505.1">
+      <stop offset="0%" stop-color="#b77b95"/>
+      <stop offset="35%" stop-color="#daa1b5"/>
+      <stop offset="75%" stop-color="#edc0ce"/>
+      <stop offset="100%" stop-color="#f8dbe2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-3-sideL" gradientUnits="userSpaceOnUse" x1="612.6" y1="476.9" x2="501" y2="504.4">
+      <stop offset="0%" stop-color="#847eb5"/>
+      <stop offset="100%" stop-color="#a09acd"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-3-sideR" gradientUnits="userSpaceOnUse" x1="609.3" y1="456.9" x2="496.8" y2="484.4">
+      <stop offset="0%" stop-color="#69639a"/>
+      <stop offset="100%" stop-color="#8882ba"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-3-chamL" gradientUnits="userSpaceOnUse" x1="615.6" y1="484.8" x2="503.5" y2="512.5">
+      <stop offset="0%" stop-color="#f8dbe4"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-3-chamR" gradientUnits="userSpaceOnUse" x1="612.3" y1="464.8" x2="499.3" y2="492.5">
+      <stop offset="0%" stop-color="#c0b1da"/>
+      <stop offset="100%" stop-color="#d5c8eb"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-4-top" gradientUnits="userSpaceOnUse" x1="624.7" y1="481.9" x2="515.1" y2="535.1">
+      <stop offset="0%" stop-color="#b97d96"/>
+      <stop offset="35%" stop-color="#dca3b7"/>
+      <stop offset="75%" stop-color="#efc3d0"/>
+      <stop offset="100%" stop-color="#f9dde3"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-4-sideL" gradientUnits="userSpaceOnUse" x1="623.1" y1="485.1" x2="514.6" y2="537.8">
+      <stop offset="0%" stop-color="#8680b7"/>
+      <stop offset="100%" stop-color="#a29cce"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-4-sideR" gradientUnits="userSpaceOnUse" x1="614.8" y1="464.2" x2="505.5" y2="517">
+      <stop offset="0%" stop-color="#6b659c"/>
+      <stop offset="100%" stop-color="#8a84bb"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-4-chamL" gradientUnits="userSpaceOnUse" x1="627.5" y1="490.6" x2="518.4" y2="543.7">
+      <stop offset="0%" stop-color="#f9dce5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-4-chamR" gradientUnits="userSpaceOnUse" x1="619.2" y1="469.7" x2="509.4" y2="522.8">
+      <stop offset="0%" stop-color="#c2b2db"/>
+      <stop offset="100%" stop-color="#d6c9ec"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-17-top" gradientUnits="userSpaceOnUse" x1="778.3" y1="402.1" x2="977.5" y2="342.6">
+      <stop offset="0%" stop-color="#d49ab0"/>
+      <stop offset="35%" stop-color="#f3c8d3"/>
+      <stop offset="75%" stop-color="#fce2e6"/>
+      <stop offset="100%" stop-color="#fff3f2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-17-sideL" gradientUnits="userSpaceOnUse" x1="774.7" y1="400.4" x2="972" y2="341.5">
+      <stop offset="0%" stop-color="#9e98cc"/>
+      <stop offset="100%" stop-color="#bab5e2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-17-sideR" gradientUnits="userSpaceOnUse" x1="782.9" y1="421.7" x2="981.1" y2="362.2">
+      <stop offset="0%" stop-color="#7d77ae"/>
+      <stop offset="100%" stop-color="#a09ad0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-17-chamL" gradientUnits="userSpaceOnUse" x1="774.4" y1="393.6" x2="972.7" y2="334.5">
+      <stop offset="0%" stop-color="#fde8ee"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-17-chamR" gradientUnits="userSpaceOnUse" x1="782.5" y1="415" x2="981.9" y2="355.2">
+      <stop offset="0%" stop-color="#d2c4e8"/>
+      <stop offset="100%" stop-color="#e5daf5"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-5-top" gradientUnits="userSpaceOnUse" x1="635.9" y1="484.1" x2="536" y2="563.7">
+      <stop offset="0%" stop-color="#bb7f98"/>
+      <stop offset="35%" stop-color="#dea5b8"/>
+      <stop offset="75%" stop-color="#f0c5d2"/>
+      <stop offset="100%" stop-color="#fadee4"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-5-sideL" gradientUnits="userSpaceOnUse" x1="638.3" y1="492.3" x2="539.3" y2="571.3">
+      <stop offset="0%" stop-color="#8781b8"/>
+      <stop offset="100%" stop-color="#a39ed0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-5-sideR" gradientUnits="userSpaceOnUse" x1="623.4" y1="471.9" x2="523.8" y2="550.9">
+      <stop offset="0%" stop-color="#6c669d"/>
+      <stop offset="100%" stop-color="#8c86bd"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-5-chamL" gradientUnits="userSpaceOnUse" x1="642.2" y1="493.8" x2="542.7" y2="573.3">
+      <stop offset="0%" stop-color="#f9dde5"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-5-chamR" gradientUnits="userSpaceOnUse" x1="627.2" y1="473.3" x2="527.2" y2="552.9">
+      <stop offset="0%" stop-color="#c3b4dc"/>
+      <stop offset="100%" stop-color="#d7caec"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-16-top" gradientUnits="userSpaceOnUse" x1="775.9" y1="413.2" x2="977.4" y2="392.3">
+      <stop offset="0%" stop-color="#d499b0"/>
+      <stop offset="35%" stop-color="#f3c7d2"/>
+      <stop offset="75%" stop-color="#fce1e5"/>
+      <stop offset="100%" stop-color="#fff3f2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-16-sideL" gradientUnits="userSpaceOnUse" x1="773.9" y1="412.4" x2="973.4" y2="391.7">
+      <stop offset="0%" stop-color="#9c96ca"/>
+      <stop offset="100%" stop-color="#b8b3e0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-16-sideR" gradientUnits="userSpaceOnUse" x1="777.4" y1="434" x2="978.2" y2="412.9">
+      <stop offset="0%" stop-color="#7c76ad"/>
+      <stop offset="100%" stop-color="#9e98ce"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-16-chamL" gradientUnits="userSpaceOnUse" x1="774.1" y1="404.9" x2="974.6" y2="384.1">
+      <stop offset="0%" stop-color="#fde8ee"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-16-chamR" gradientUnits="userSpaceOnUse" x1="777.7" y1="426.5" x2="979.5" y2="405.4">
+      <stop offset="0%" stop-color="#d2c4e8"/>
+      <stop offset="100%" stop-color="#e5daf5"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-15-top" gradientUnits="userSpaceOnUse" x1="771.4" y1="425" x2="967.5" y2="441">
+      <stop offset="0%" stop-color="#d197ad"/>
+      <stop offset="35%" stop-color="#f0c3cf"/>
+      <stop offset="75%" stop-color="#fbdee3"/>
+      <stop offset="100%" stop-color="#fff1f0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-15-sideL" gradientUnits="userSpaceOnUse" x1="770.4" y1="424.2" x2="964.7" y2="440">
+      <stop offset="0%" stop-color="#9a94c9"/>
+      <stop offset="100%" stop-color="#b6b1df"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-15-sideR" gradientUnits="userSpaceOnUse" x1="769.3" y1="445.9" x2="964.9" y2="461.7">
+      <stop offset="0%" stop-color="#7a74ab"/>
+      <stop offset="100%" stop-color="#9d97cd"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-15-chamL" gradientUnits="userSpaceOnUse" x1="771.6" y1="416.6" x2="966.8" y2="432.6">
+      <stop offset="0%" stop-color="#fde7ed"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-15-chamR" gradientUnits="userSpaceOnUse" x1="770.4" y1="438.3" x2="967" y2="454.3">
+      <stop offset="0%" stop-color="#d0c2e7"/>
+      <stop offset="100%" stop-color="#e3d8f4"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-6-top" gradientUnits="userSpaceOnUse" x1="647.5" y1="484.4" x2="565.3" y2="590.2">
+      <stop offset="0%" stop-color="#be819a"/>
+      <stop offset="35%" stop-color="#e0a7ba"/>
+      <stop offset="75%" stop-color="#f1c7d3"/>
+      <stop offset="100%" stop-color="#fae0e5"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-6-sideL" gradientUnits="userSpaceOnUse" x1="657" y1="495.8" x2="575.6" y2="600.9">
+      <stop offset="0%" stop-color="#8983ba"/>
+      <stop offset="100%" stop-color="#a5a0d1"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-6-sideR" gradientUnits="userSpaceOnUse" x1="636.1" y1="480.1" x2="554.4" y2="584.9">
+      <stop offset="0%" stop-color="#6d679e"/>
+      <stop offset="100%" stop-color="#8d87bf"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-6-chamL" gradientUnits="userSpaceOnUse" x1="657.8" y1="493.2" x2="575.9" y2="598.9">
+      <stop offset="0%" stop-color="#f9dee6"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-6-chamR" gradientUnits="userSpaceOnUse" x1="636.7" y1="477.4" x2="554.5" y2="582.8">
+      <stop offset="0%" stop-color="#c4b5dd"/>
+      <stop offset="100%" stop-color="#d8cced"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-14-top" gradientUnits="userSpaceOnUse" x1="764.2" y1="437.2" x2="947.9" y2="488.1">
+      <stop offset="0%" stop-color="#cf94ab"/>
+      <stop offset="35%" stop-color="#eebfcc"/>
+      <stop offset="75%" stop-color="#fadbe1"/>
+      <stop offset="100%" stop-color="#feefef"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-14-sideL" gradientUnits="userSpaceOnUse" x1="764.8" y1="435.2" x2="946.7" y2="485.5">
+      <stop offset="0%" stop-color="#9892c7"/>
+      <stop offset="100%" stop-color="#b4afdd"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-14-sideR" gradientUnits="userSpaceOnUse" x1="758.8" y1="457" x2="941.8" y2="507.6">
+      <stop offset="0%" stop-color="#7973aa"/>
+      <stop offset="100%" stop-color="#9b95cb"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-14-chamL" gradientUnits="userSpaceOnUse" x1="766.6" y1="428.5" x2="949.5" y2="479.1">
+      <stop offset="0%" stop-color="#fce6ec"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-14-chamR" gradientUnits="userSpaceOnUse" x1="760.6" y1="450.3" x2="944.6" y2="501.2">
+      <stop offset="0%" stop-color="#cfc1e6"/>
+      <stop offset="100%" stop-color="#e2d7f3"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-7-top" gradientUnits="userSpaceOnUse" x1="660.1" y1="484.6" x2="604.7" y2="613.4">
+      <stop offset="0%" stop-color="#c0839c"/>
+      <stop offset="35%" stop-color="#e1aabc"/>
+      <stop offset="75%" stop-color="#f2c9d4"/>
+      <stop offset="100%" stop-color="#fbe2e6"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-7-sideL" gradientUnits="userSpaceOnUse" x1="676.1" y1="494.2" x2="621.4" y2="622.4">
+      <stop offset="0%" stop-color="#8b85bc"/>
+      <stop offset="100%" stop-color="#a7a2d3"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-7-sideR" gradientUnits="userSpaceOnUse" x1="652.7" y1="486.1" x2="597.7" y2="613.8">
+      <stop offset="0%" stop-color="#6f69a0"/>
+      <stop offset="100%" stop-color="#8f89c0"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-7-chamL" gradientUnits="userSpaceOnUse" x1="672.9" y1="490" x2="617.8" y2="618.9">
+      <stop offset="0%" stop-color="#fadfe7"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-7-chamR" gradientUnits="userSpaceOnUse" x1="649.3" y1="481.9" x2="594" y2="610.2">
+      <stop offset="0%" stop-color="#c6b7de"/>
+      <stop offset="100%" stop-color="#dacdee"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-13-top" gradientUnits="userSpaceOnUse" x1="754.2" y1="449.3" x2="918.4" y2="532.3">
+      <stop offset="0%" stop-color="#cd92a9"/>
+      <stop offset="35%" stop-color="#ecbbc9"/>
+      <stop offset="75%" stop-color="#f9d7df"/>
+      <stop offset="100%" stop-color="#feeded"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-13-sideL" gradientUnits="userSpaceOnUse" x1="757.5" y1="445.3" x2="920.1" y2="527.5">
+      <stop offset="0%" stop-color="#9690c5"/>
+      <stop offset="100%" stop-color="#b2addc"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-13-sideR" gradientUnits="userSpaceOnUse" x1="746.1" y1="466.7" x2="909.4" y2="549.3">
+      <stop offset="0%" stop-color="#7771a8"/>
+      <stop offset="100%" stop-color="#9993ca"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-13-chamL" gradientUnits="userSpaceOnUse" x1="759.3" y1="440.2" x2="922.9" y2="522.8">
+      <stop offset="0%" stop-color="#fce5eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-13-chamR" gradientUnits="userSpaceOnUse" x1="747.9" y1="461.7" x2="912.2" y2="544.8">
+      <stop offset="0%" stop-color="#cebfe5"/>
+      <stop offset="100%" stop-color="#e1d5f2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-8-top" gradientUnits="userSpaceOnUse" x1="674.8" y1="484.3" x2="654.8" y2="629.8">
+      <stop offset="0%" stop-color="#c2869e"/>
+      <stop offset="35%" stop-color="#e3acbe"/>
+      <stop offset="75%" stop-color="#f3cbd6"/>
+      <stop offset="100%" stop-color="#fce4e7"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-8-sideL" gradientUnits="userSpaceOnUse" x1="694.1" y1="489.1" x2="674.5" y2="634">
+      <stop offset="0%" stop-color="#8d87bd"/>
+      <stop offset="100%" stop-color="#a9a4d4"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-8-sideR" gradientUnits="userSpaceOnUse" x1="670.2" y1="488.3" x2="650.4" y2="632.5">
+      <stop offset="0%" stop-color="#706aa1"/>
+      <stop offset="100%" stop-color="#918bc2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-8-chamL" gradientUnits="userSpaceOnUse" x1="688.6" y1="485.7" x2="668.8" y2="631.4">
+      <stop offset="0%" stop-color="#fae0e8"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-8-chamR" gradientUnits="userSpaceOnUse" x1="664.6" y1="484.9" x2="644.6" y2="629.9">
+      <stop offset="0%" stop-color="#c7b8df"/>
+      <stop offset="100%" stop-color="#dbcfef"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-12-top" gradientUnits="userSpaceOnUse" x1="741.3" y1="460.8" x2="878.7" y2="572.1">
+      <stop offset="0%" stop-color="#cb8fa7"/>
+      <stop offset="35%" stop-color="#eab7c6"/>
+      <stop offset="75%" stop-color="#f8d4dc"/>
+      <stop offset="100%" stop-color="#feebeb"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-12-sideL" gradientUnits="userSpaceOnUse" x1="748.7" y1="454.7" x2="884.9" y2="565">
+      <stop offset="0%" stop-color="#958fc4"/>
+      <stop offset="100%" stop-color="#b1abda"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-12-sideR" gradientUnits="userSpaceOnUse" x1="732" y1="474.5" x2="868.5" y2="585.2">
+      <stop offset="0%" stop-color="#7670a7"/>
+      <stop offset="100%" stop-color="#9791c8"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-12-chamL" gradientUnits="userSpaceOnUse" x1="749.4" y1="451.8" x2="886.5" y2="562.7">
+      <stop offset="0%" stop-color="#fbe4eb"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-12-chamR" gradientUnits="userSpaceOnUse" x1="732.6" y1="471.7" x2="869.9" y2="583">
+      <stop offset="0%" stop-color="#ccbee4"/>
+      <stop offset="100%" stop-color="#e0d4f2"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-9-top" gradientUnits="userSpaceOnUse" x1="691.2" y1="482.3" x2="712.5" y2="634.9">
+      <stop offset="0%" stop-color="#c488a0"/>
+      <stop offset="35%" stop-color="#e5afc0"/>
+      <stop offset="75%" stop-color="#f5cdd7"/>
+      <stop offset="100%" stop-color="#fce5e8"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-9-sideL" gradientUnits="userSpaceOnUse" x1="710.7" y1="481.9" x2="732.1" y2="633.6">
+      <stop offset="0%" stop-color="#8f89bf"/>
+      <stop offset="100%" stop-color="#aba5d6"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-9-sideR" gradientUnits="userSpaceOnUse" x1="687" y1="487.3" x2="708" y2="638.5">
+      <stop offset="0%" stop-color="#726ca3"/>
+      <stop offset="100%" stop-color="#928cc3"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-9-chamL" gradientUnits="userSpaceOnUse" x1="705" y1="480.1" x2="726.5" y2="632.8">
+      <stop offset="0%" stop-color="#fae1e8"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-9-chamR" gradientUnits="userSpaceOnUse" x1="681.2" y1="485.6" x2="702.2" y2="637.7">
+      <stop offset="0%" stop-color="#c8bae1"/>
+      <stop offset="100%" stop-color="#dcd0ef"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-11-top" gradientUnits="userSpaceOnUse" x1="725.7" y1="470.6" x2="829.3" y2="604.6">
+      <stop offset="0%" stop-color="#c98da5"/>
+      <stop offset="35%" stop-color="#e9b4c4"/>
+      <stop offset="75%" stop-color="#f7d1da"/>
+      <stop offset="100%" stop-color="#fde9ea"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-11-sideL" gradientUnits="userSpaceOnUse" x1="738.2" y1="464" x2="841.1" y2="596.8">
+      <stop offset="0%" stop-color="#938dc2"/>
+      <stop offset="100%" stop-color="#afa9d9"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-11-sideR" gradientUnits="userSpaceOnUse" x1="717.5" y1="480.3" x2="820.2" y2="613.2">
+      <stop offset="0%" stop-color="#756fa6"/>
+      <stop offset="100%" stop-color="#9690c6"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-11-chamL" gradientUnits="userSpaceOnUse" x1="736.7" y1="462.8" x2="840.2" y2="596.5">
+      <stop offset="0%" stop-color="#fbe3ea"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-11-chamR" gradientUnits="userSpaceOnUse" x1="715.8" y1="479.2" x2="819.1" y2="612.9">
+      <stop offset="0%" stop-color="#cbbce3"/>
+      <stop offset="100%" stop-color="#dfd3f1"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-10-top" gradientUnits="userSpaceOnUse" x1="708.6" y1="477.9" x2="772.5" y2="626.4">
+      <stop offset="0%" stop-color="#c68ba2"/>
+      <stop offset="35%" stop-color="#e7b2c2"/>
+      <stop offset="75%" stop-color="#f6cfd9"/>
+      <stop offset="100%" stop-color="#fde7e9"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-10-sideL" gradientUnits="userSpaceOnUse" x1="725.6" y1="473.2" x2="789.3" y2="620.7">
+      <stop offset="0%" stop-color="#918bc0"/>
+      <stop offset="100%" stop-color="#ada7d7"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-10-sideR" gradientUnits="userSpaceOnUse" x1="702.6" y1="484.4" x2="765.9" y2="631.6">
+      <stop offset="0%" stop-color="#736da4"/>
+      <stop offset="100%" stop-color="#948ec5"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-10-chamL" gradientUnits="userSpaceOnUse" x1="721.5" y1="472.5" x2="785.5" y2="620.8">
+      <stop offset="0%" stop-color="#fbe2e9"/>
+      <stop offset="100%" stop-color="#fff8fa"/>
+    </linearGradient>
+    <linearGradient id="vr-inner-10-chamR" gradientUnits="userSpaceOnUse" x1="698.4" y1="483.8" x2="762" y2="631.8">
+      <stop offset="0%" stop-color="#cabbe2"/>
+      <stop offset="100%" stop-color="#ddd1f0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Studio Cyclorama -->
+  <rect width="1600" height="900" fill="url(#bgSky)"/>
+  <rect width="1600" height="900" fill="url(#keyLightGlow)"/>
+  <rect x="0" y="640" width="1600" height="260" fill="url(#cycloramaFloor)"/>
+
+  <!-- Grounded Multi-Layer Studio Contact Shadows (directly under resting bottom planks) -->
+  <g id="floor-shadows">
+    <ellipse cx="695" cy="785" rx="430" ry="38" fill="#48325c" opacity="0.34" filter="url(#floorShadowBlur)"/>
+    <ellipse cx="650" cy="782" rx="260" ry="18" fill="#2e1b42" opacity="0.42" filter="url(#contactShadowBlur)"/>
+    <ellipse cx="960" cy="765" rx="190" ry="22" fill="#594070" opacity="0.18" filter="url(#floorShadowBlur)"/>
+  </g>
+
+  <!-- Main 3-Tier Chamfered Rose-Quartz Helical Sculpture -->
+  <g id="sculpture-velvet-rose" filter="url(#studioGrain)">
+    <g id="vr-outer-0"><polygon points="552.8,447.2 560.6,425 361.5,351.7 355.2,374.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="557.2,440.4 359.1,367.6 354.6,375.5 553.8,448.6" fill="url(#vr-outer-0-sideL)" stroke="url(#vr-outer-0-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="553.8,448.6 354.6,375.5 358.4,377.1 553.6,448.8" fill="url(#vr-outer-0-chamL)" stroke="url(#vr-outer-0-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="565,418.1 365.5,344.6 361,352.4 561.6,426.2" fill="url(#vr-outer-0-sideR)" stroke="url(#vr-outer-0-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="359.1,367.6 365.5,344.6 361,352.4 354.6,375.5" fill="#9b95ca" stroke="#9b95ca" stroke-width="0.35" stroke-linejoin="round"/><polygon points="561.6,426.2 361,352.4 363.4,359.1 559.7,431.3" fill="url(#vr-outer-0-chamR)" stroke="url(#vr-outer-0-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="354.6,375.5 361,352.4 363.4,359.1 358.4,377.1" fill="#fae0e8" stroke="#fae0e8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="553.6,448.8 559.7,431.3 363.4,359.1 358.4,377.1" fill="url(#vr-outer-0-top)" stroke="#f7d8e2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="553.6,448.8 358.4,377.1 363.4,359.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-1"><polygon points="549.8,459.5 553.9,437.5 339.7,397.2 337.4,419.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="554.2,452.7 341.3,412.7 338.3,422.2 552.3,462.2" fill="url(#vr-outer-1-sideL)" stroke="url(#vr-outer-1-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="552.3,462.2 338.3,422.2 342.4,423.6 552.2,462.8" fill="url(#vr-outer-1-chamL)" stroke="url(#vr-outer-1-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="558.3,430.6 343.6,390.1 340.6,399.5 556.4,440.1" fill="url(#vr-outer-1-sideR)" stroke="url(#vr-outer-1-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="341.3,412.7 343.6,390.1 340.6,399.5 338.3,422.2" fill="#9c96cb" stroke="#9c96cb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="556.4,440.1 340.6,399.5 344.2,405.9 555.4,445.6" fill="url(#vr-outer-1-chamR)" stroke="url(#vr-outer-1-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="338.3,422.2 340.6,399.5 344.2,405.9 342.4,423.6" fill="#fae1e8" stroke="#fae1e8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="552.2,462.8 555.4,445.6 344.2,405.9 342.4,423.6" fill="url(#vr-outer-1-top)" stroke="#f7d9e3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="552.2,462.8 342.4,423.6 344.2,405.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-2"><polygon points="550.1,471.7 551.3,449.7 326.3,441.3 327.1,463.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="554.4,464.8 331,456.7 329.7,466.8 554.3,474.8" fill="url(#vr-outer-2-sideL)" stroke="url(#vr-outer-2-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="554.3,474.8 329.7,466.8 334.1,467.8 554.4,475.6" fill="url(#vr-outer-2-chamL)" stroke="url(#vr-outer-2-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="555.7,442.8 330.2,434.3 328.9,444.4 555.5,452.8" fill="url(#vr-outer-2-sideR)" stroke="url(#vr-outer-2-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="331,456.7 330.2,434.3 328.9,444.4 329.7,466.8" fill="#9d97cc" stroke="#9d97cc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="555.5,452.8 328.9,444.4 333.5,450.3 555.3,458.4" fill="url(#vr-outer-2-chamR)" stroke="url(#vr-outer-2-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="329.7,466.8 328.9,444.4 333.5,450.3 334.1,467.8" fill="#fae1e9" stroke="#fae1e9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="554.4,475.6 555.3,458.4 333.5,450.3 334.1,467.8" fill="url(#vr-outer-2-top)" stroke="#f8dae3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="554.4,475.6 334.1,467.8 333.5,450.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-3"><polygon points="553.5,484 551.9,461.8 320.3,486.4 323.9,508.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="557.9,477.2 327.9,501.9 328.2,512 559.4,487" fill="url(#vr-outer-3-sideL)" stroke="url(#vr-outer-3-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="559.4,487 328.2,512 332.9,512.2 559.7,487.7" fill="url(#vr-outer-3-chamL)" stroke="url(#vr-outer-3-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="556.3,454.9 324.2,479.4 324.6,489.5 557.9,464.7" fill="url(#vr-outer-3-sideR)" stroke="url(#vr-outer-3-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="327.9,501.9 324.2,479.4 324.6,489.5 328.2,512" fill="#9e98cc" stroke="#9e98cc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="557.9,464.7 324.6,489.5 330.1,494.7 558.5,470.3" fill="url(#vr-outer-3-chamR)" stroke="url(#vr-outer-3-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="328.2,512 324.6,489.5 330.1,494.7 332.9,512.2" fill="#fbe2e9" stroke="#fbe2e9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="559.7,487.7 558.5,470.3 330.1,494.7 332.9,512.2" fill="url(#vr-outer-3-top)" stroke="#f8dbe4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="559.7,487.7 332.9,512.2 330.1,494.7" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-4"><polygon points="560.1,496.4 555.5,473.6 321.8,532.6 328.4,555.3" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="564.5,489.6 332.4,548.5 334.3,558 567.6,498.6" fill="url(#vr-outer-4-sideL)" stroke="url(#vr-outer-4-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="567.6,498.6 334.3,558 339,557.3 568.1,498.9" fill="url(#vr-outer-4-chamL)" stroke="url(#vr-outer-4-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="560,466.7 325.7,525.7 327.6,535.1 563.1,475.6" fill="url(#vr-outer-4-sideR)" stroke="url(#vr-outer-4-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="563.1,475.6 327.6,535.1 333.8,539.4 564.5,481" fill="url(#vr-outer-4-chamR)" stroke="url(#vr-outer-4-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="332.4,548.5 325.7,525.7 327.6,535.1 334.3,558" fill="#9f99cd" stroke="#9f99cd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="334.3,558 327.6,535.1 333.8,539.4 339,557.3" fill="#fbe3ea" stroke="#fbe3ea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="568.1,498.9 564.5,481 333.8,539.4 339,557.3" fill="url(#vr-outer-4-top)" stroke="#f8dbe5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="568.1,498.9 339,557.3 333.8,539.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-5"><polygon points="570.1,508.5 561.9,485 331.2,579.9 341.3,603.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="574.5,501.7 345.3,596.4 348.4,604.5 578.8,509" fill="url(#vr-outer-5-sideL)" stroke="url(#vr-outer-5-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="578.8,509 348.4,604.5 352.9,602.5 579.3,508.8" fill="url(#vr-outer-5-chamL)" stroke="url(#vr-outer-5-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="566.3,478.1 335.2,573.1 338.2,581 570.6,485.4" fill="url(#vr-outer-5-sideR)" stroke="url(#vr-outer-5-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="570.6,485.4 338.2,581 345,584.2 572.9,490.3" fill="url(#vr-outer-5-chamR)" stroke="url(#vr-outer-5-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="345.3,596.4 335.2,573.1 338.2,581 348.4,604.5" fill="#a09ace" stroke="#a09ace" stroke-width="0.35" stroke-linejoin="round"/><polygon points="348.4,604.5 338.2,581 345,584.2 352.9,602.5" fill="#fbe3ea" stroke="#fbe3ea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="579.3,508.8 572.9,490.3 345,584.2 352.9,602.5" fill="url(#vr-outer-5-top)" stroke="#f8dce5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="579.3,508.8 352.9,602.5 345,584.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-25"><polygon points="820.4,388.5 831.7,412.7 1227.8,263.9 1214.5,241.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1220.3,233.9 1233.6,256.6 1235.7,248.8 1222.3,225.9" fill="#b5afdd" stroke="#b5afdd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1222.3,225.9 1235.7,248.8 1230.7,245.3 1220.2,227.4" fill="#fef0f3" stroke="#fef0f3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="825.4,381.4 1220.3,233.9 1222.3,225.9 825,374.1" fill="url(#vr-outer-25-sideL)" stroke="url(#vr-outer-25-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="836.8,405.6 1233.6,256.6 1235.7,248.8 836.5,398.4" fill="url(#vr-outer-25-sideR)" stroke="url(#vr-outer-25-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="825,374.1 1222.3,225.9 1220.2,227.4 826.1,374.4" fill="url(#vr-outer-25-chamL)" stroke="url(#vr-outer-25-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="836.5,398.4 1235.7,248.8 1230.7,245.3 835.1,393.5" fill="url(#vr-outer-25-chamR)" stroke="url(#vr-outer-25-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="826.1,374.4 835.1,393.5 1230.7,245.3 1220.2,227.4" fill="url(#vr-outer-25-top)" stroke="#feedf2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="826.1,374.4 1220.2,227.4 1230.7,245.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-24"><polygon points="824,402.1 831.8,426.7 1238.4,331.6 1228.1,308.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1234,301 1244.3,324.4 1246.6,316 1236.2,292.5" fill="#b3addd" stroke="#b3addd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1236.2,292.5 1246.6,316 1241.7,311.8 1233.6,293.4" fill="#feeff3" stroke="#feeff3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="829,395 1234,301 1236.2,292.5 828.9,386.9" fill="url(#vr-outer-24-sideL)" stroke="url(#vr-outer-24-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="828.9,386.9 1236.2,292.5 1233.6,293.4 829.7,387" fill="url(#vr-outer-24-chamL)" stroke="url(#vr-outer-24-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="836.9,419.6 1244.3,324.4 1246.6,316 836.8,411.6" fill="url(#vr-outer-24-sideR)" stroke="url(#vr-outer-24-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="836.8,411.6 1246.6,316 1241.7,311.8 835.9,406.3" fill="url(#vr-outer-24-chamR)" stroke="url(#vr-outer-24-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="829.7,387 835.9,406.3 1241.7,311.8 1233.6,293.4" fill="url(#vr-outer-24-top)" stroke="#feecf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="829.7,387 1233.6,293.4 1241.7,311.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-6"><polygon points="583.5,519.9 570.8,496 349.3,628 363.6,651.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="588,513.1 367.7,645 371.2,650.8 592.8,517.9" fill="url(#vr-outer-6-sideL)" stroke="url(#vr-outer-6-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="592.8,517.9 371.2,650.8 375.1,647.4 592.9,516.8" fill="url(#vr-outer-6-chamL)" stroke="url(#vr-outer-6-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="575.3,489.1 353.4,621.3 356.8,626.9 580,493.9" fill="url(#vr-outer-6-sideR)" stroke="url(#vr-outer-6-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="580,493.9 356.8,626.9 363.9,628.8 582.9,498" fill="url(#vr-outer-6-chamR)" stroke="url(#vr-outer-6-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="371.2,650.8 356.8,626.9 363.9,628.8 375.1,647.4" fill="#fbe4eb" stroke="#fbe4eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="592.9,516.8 582.9,498 363.9,628.8 375.1,647.4" fill="url(#vr-outer-6-top)" stroke="#f9dde6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="592.9,516.8 375.1,647.4 363.9,628.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-23"><polygon points="825.2,416.1 829.4,440.9 1238.8,398.7 1231.7,374.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1237.6,367.6 1244.8,391.7 1247.6,383 1240.4,358.9" fill="#b2acdc" stroke="#b2acdc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.2,409 1237.6,367.6 1240.4,358.9 830.7,400.5" fill="url(#vr-outer-23-sideL)" stroke="url(#vr-outer-23-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1240.4,358.9 1247.6,383 1243,378.1 1237.4,359.2" fill="#feeff3" stroke="#feeff3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.7,400.5 1240.4,358.9 1237.4,359.2 831.3,400.4" fill="url(#vr-outer-23-chamL)" stroke="url(#vr-outer-23-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="834.5,433.8 1244.8,391.7 1247.6,383 834.9,425.3" fill="url(#vr-outer-23-sideR)" stroke="url(#vr-outer-23-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="834.9,425.3 1247.6,383 1243,378.1 834.6,419.9" fill="url(#vr-outer-23-chamR)" stroke="url(#vr-outer-23-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="831.3,400.4 834.6,419.9 1243,378.1 1237.4,359.2" fill="url(#vr-outer-23-top)" stroke="#fdebf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="831.3,400.4 1237.4,359.2 1243,378.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-7"><polygon points="600.5,529.8 582.6,506.9 377.2,676.5 396.4,699.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="605,523 400.6,692.9 403.3,695.6 609,524.6" fill="url(#vr-outer-7-sideL)" stroke="url(#vr-outer-7-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="587.1,500 381.4,669.8 384,672.4 591,501.4" fill="url(#vr-outer-7-sideR)" stroke="url(#vr-outer-7-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="609,524.6 403.3,695.6 406,690.7 608.3,522.5" fill="url(#vr-outer-7-chamL)" stroke="url(#vr-outer-7-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="591,501.4 384,672.4 390.9,672.6 594.2,504.4" fill="url(#vr-outer-7-chamR)" stroke="url(#vr-outer-7-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="400.6,692.9 381.4,669.8 384,672.4 403.3,695.6" fill="#a29ccf" stroke="#a29ccf" stroke-width="0.35" stroke-linejoin="round"/><polygon points="403.3,695.6 384,672.4 390.9,672.6 406,690.7" fill="#fbe4eb" stroke="#fbe4eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="608.3,522.5 594.2,504.4 390.9,672.6 406,690.7" fill="url(#vr-outer-7-top)" stroke="#f9dee6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="608.3,522.5 406,690.7 390.9,672.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-22"><polygon points="824,430.1 824.5,455 1229.4,464.6 1225.8,439.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1231.7,432.9 1235.3,457.6 1238.7,449.2 1235.1,424.4" fill="#b1abdb" stroke="#b1abdb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="829,423.1 1231.7,432.9 1235.1,424.4 830.1,414.4" fill="url(#vr-outer-22-sideL)" stroke="url(#vr-outer-22-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1235.1,424.4 1238.7,449.2 1234.7,443.6 1231.8,424.3" fill="#feeef2" stroke="#feeef2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.1,414.4 1235.1,424.4 1231.8,424.3 830.5,414.4" fill="url(#vr-outer-22-chamL)" stroke="url(#vr-outer-22-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="829.6,448 1235.3,457.6 1238.7,449.2 830.7,439.4" fill="url(#vr-outer-22-sideR)" stroke="url(#vr-outer-22-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.7,439.4 1238.7,449.2 1234.7,443.6 831,433.9" fill="url(#vr-outer-22-chamR)" stroke="url(#vr-outer-22-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="830.5,414.4 831,433.9 1234.7,443.6 1231.8,424.3" fill="url(#vr-outer-22-top)" stroke="#fdebf0" stroke-width="0.55" stroke-linejoin="round"/><polyline points="830.5,414.4 1231.8,424.3 1234.7,443.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-21"><polygon points="820.4,443.8 817.1,468.9 1210.4,528.6 1210.6,503.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="825.4,436.8 1216.6,496.4 1220.6,488.4 827.2,428.5" fill="url(#vr-outer-21-sideL)" stroke="url(#vr-outer-21-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1216.6,496.4 1216.3,521.8 1220.4,513.9 1220.6,488.4" fill="#b0aada" stroke="#b0aada" stroke-width="0.35" stroke-linejoin="round"/><polygon points="827.2,428.5 1220.6,488.4 1217.1,488 827.4,428.6" fill="url(#vr-outer-21-chamL)" stroke="url(#vr-outer-21-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="822.2,461.8 1216.3,521.8 1220.4,513.9 824,453.6" fill="url(#vr-outer-21-sideR)" stroke="url(#vr-outer-21-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1220.6,488.4 1220.4,513.9 1216.9,507.9 1217.1,488" fill="#feedf2" stroke="#feedf2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="824,453.6 1220.4,513.9 1216.9,507.9 824.9,448.2" fill="url(#vr-outer-21-chamR)" stroke="url(#vr-outer-21-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="827.4,428.6 824.9,448.2 1216.9,507.9 1217.1,488" fill="url(#vr-outer-21-top)" stroke="#fdeaef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="827.4,428.6 1217.1,488 1216.9,507.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-8"><polygon points="620.2,537 597.5,517.3 416.4,724.1 439.9,744.3" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="624.8,530.2 444.3,737.7 444.7,737.3 626.5,528.4" fill="url(#vr-outer-8-sideL)" stroke="url(#vr-outer-8-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="602,510.5 420.7,717.5 421,717 603.6,508.6" fill="url(#vr-outer-8-sideR)" stroke="url(#vr-outer-8-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="626.5,528.4 444.7,737.3 445.6,731.1 624.5,525.7" fill="url(#vr-outer-8-chamL)" stroke="url(#vr-outer-8-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.6,508.6 421,717 427.1,715.2 606.6,510.1" fill="url(#vr-outer-8-chamR)" stroke="url(#vr-outer-8-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="444.3,737.7 420.7,717.5 421,717 444.7,737.3" fill="#a39dd0" stroke="#a39dd0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="444.7,737.3 421,717 427.1,715.2 445.6,731.1" fill="#fbe5ec" stroke="#fbe5ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="624.5,525.7 606.6,510.1 427.1,715.2 445.6,731.1" fill="url(#vr-outer-8-top)" stroke="#f9dfe7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="624.5,525.7 445.6,731.1 427.1,715.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-20"><polygon points="814.6,457 807.4,482.1 1182,590.1 1186.5,564.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="819.6,449.9 1192.5,557.4 1196.9,550.6 821.9,442.4" fill="url(#vr-outer-20-sideL)" stroke="url(#vr-outer-20-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1192.5,557.4 1187.9,583.3 1192.4,576.5 1196.9,550.6" fill="#afa9d9" stroke="#afa9d9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="821.9,442.4 1196.9,550.6 1193.2,549.9 821.8,442.8" fill="url(#vr-outer-20-chamL)" stroke="url(#vr-outer-20-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="812.5,475.1 1187.9,583.3 1192.4,576.5 814.7,467.7" fill="url(#vr-outer-20-sideR)" stroke="url(#vr-outer-20-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1196.9,550.6 1192.4,576.5 1189.6,570.2 1193.2,549.9" fill="#feedf1" stroke="#feedf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="814.7,467.7 1192.4,576.5 1189.6,570.2 816.2,462.5" fill="url(#vr-outer-20-chamR)" stroke="url(#vr-outer-20-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="821.8,442.8 816.2,462.5 1189.6,570.2 1193.2,549.9" fill="url(#vr-outer-20-top)" stroke="#fde9ef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="821.8,442.8 1193.2,549.9 1189.6,570.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-9"><polygon points="641.2,540.7 615.4,526.4 467.3,768.1 493.6,783.4" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="620,519.5 471.8,761.6 469.1,759.1 618.5,515.5" fill="url(#vr-outer-9-sideR)" stroke="url(#vr-outer-9-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="645.9,533.8 498.1,776.9 495.6,774.5 644.5,529.9" fill="url(#vr-outer-9-sideL)" stroke="url(#vr-outer-9-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="618.5,515.5 469.1,759.1 473.8,755.6 620.8,515.8" fill="url(#vr-outer-9-chamR)" stroke="url(#vr-outer-9-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="644.5,529.9 495.6,774.5 494.5,767.6 641.1,527" fill="url(#vr-outer-9-chamL)" stroke="url(#vr-outer-9-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="498.1,776.9 471.8,761.6 469.1,759.1 495.6,774.5" fill="#a49ed1" stroke="#a49ed1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="495.6,774.5 469.1,759.1 473.8,755.6 494.5,767.6" fill="#fce6ec" stroke="#fce6ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="641.1,527 620.8,515.8 473.8,755.6 494.5,767.6" fill="url(#vr-outer-9-top)" stroke="#fae0e8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="641.1,527 494.5,767.6 473.8,755.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-19"><polygon points="806.8,469.4 795.5,494.3 1144.3,648.1 1153.7,622.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="811.9,462.4 1159.6,615.4 1164.1,610.1 814.2,456.1" fill="url(#vr-outer-19-sideL)" stroke="url(#vr-outer-19-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="800.5,487.3 1150.2,641.4 1154.8,636.2 802.8,481.1" fill="url(#vr-outer-19-sideR)" stroke="url(#vr-outer-19-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="814.2,456.1 1164.1,610.1 1160,609.2 813.7,456.9" fill="url(#vr-outer-19-chamL)" stroke="url(#vr-outer-19-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1159.6,615.4 1150.2,641.4 1154.8,636.2 1164.1,610.1" fill="#aea8d9" stroke="#aea8d9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.8,481.1 1154.8,636.2 1152.7,629.6 804.8,476.4" fill="url(#vr-outer-19-chamR)" stroke="url(#vr-outer-19-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1164.1,610.1 1154.8,636.2 1152.7,629.6 1160,609.2" fill="#fdecf1" stroke="#fdecf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="813.7,456.9 804.8,476.4 1152.7,629.6 1160,609.2" fill="url(#vr-outer-19-top)" stroke="#fce8ee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="813.7,456.9 1160,609.2 1152.7,629.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-10"><polygon points="662.3,541 635.3,532.8 529,805.2 556.4,814.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="640,526 533.5,798.8 528.3,795.9 635.6,521.4" fill="url(#vr-outer-10-sideR)" stroke="url(#vr-outer-10-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="667,534.2 561,808.4 556,805.6 662.9,529.6" fill="url(#vr-outer-10-sideL)" stroke="url(#vr-outer-10-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="635.6,521.4 528.3,795.9 531.6,791.2 637.2,520.9" fill="url(#vr-outer-10-chamR)" stroke="url(#vr-outer-10-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="662.9,529.6 556,805.6 553.2,798.8 658.5,527.3" fill="url(#vr-outer-10-chamL)" stroke="url(#vr-outer-10-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="561,808.4 533.5,798.8 528.3,795.9 556,805.6" fill="#a59fd2" stroke="#a59fd2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="556,805.6 528.3,795.9 531.6,791.2 553.2,798.8" fill="#fce6ed" stroke="#fce6ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="658.5,527.3 637.2,520.9 531.6,791.2 553.2,798.8" fill="url(#vr-outer-10-top)" stroke="#fae0e8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="658.5,527.3 553.2,798.8 531.6,791.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-18"><polygon points="797.2,481.1 781.6,505.2 1097.7,701.5 1112.1,676.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="802.3,474.1 1117.9,669.6 1121.9,666.2 804.2,469.4" fill="url(#vr-outer-18-sideL)" stroke="url(#vr-outer-18-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="786.6,498.2 1103.5,694.9 1107.5,691.6 788.4,493.6" fill="url(#vr-outer-18-sideR)" stroke="url(#vr-outer-18-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="804.2,469.4 1121.9,666.2 1117.4,665.2 803,470.5" fill="url(#vr-outer-18-chamL)" stroke="url(#vr-outer-18-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1117.9,669.6 1103.5,694.9 1107.5,691.6 1121.9,666.2" fill="#ada7d8" stroke="#ada7d8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="788.4,493.6 1107.5,691.6 1106.1,685.1 790.7,489.5" fill="url(#vr-outer-18-chamR)" stroke="url(#vr-outer-18-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1121.9,666.2 1107.5,691.6 1106.1,685.1 1117.4,665.2" fill="#fdebf0" stroke="#fdebf0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="803,470.5 790.7,489.5 1106.1,685.1 1117.4,665.2" fill="url(#vr-outer-18-top)" stroke="#fce7ed" stroke-width="0.55" stroke-linejoin="round"/><polyline points="803,470.5 1117.4,665.2 1106.1,685.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-11"><polygon points="683.1,538.9 655.8,536.3 599.3,832.7 627.2,836.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="660.5,529.5 604,826.3 597.3,824.2 654.4,525.6" fill="url(#vr-outer-11-sideR)" stroke="url(#vr-outer-11-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="687.9,532 632,830.5 625.5,828.4 681.9,528.1" fill="url(#vr-outer-11-sideL)" stroke="url(#vr-outer-11-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="654.4,525.6 597.3,824.2 599.2,818.9 655.5,524.6" fill="url(#vr-outer-11-chamR)" stroke="url(#vr-outer-11-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="681.9,528.1 625.5,828.4 621.2,822.2 677,526.5" fill="url(#vr-outer-11-chamL)" stroke="url(#vr-outer-11-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="632,830.5 604,826.3 597.3,824.2 625.5,828.4" fill="#a6a0d3" stroke="#a6a0d3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="625.5,828.4 597.3,824.2 599.2,818.9 621.2,822.2" fill="#fce7ed" stroke="#fce7ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="677,526.5 655.5,524.6 599.2,818.9 621.2,822.2" fill="url(#vr-outer-11-top)" stroke="#fae1e9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="677,526.5 621.2,822.2 599.2,818.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-17"><polygon points="786,492 766.3,514.5 1042.5,749.1 1061.8,725.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="791,485.1 1067.5,719.1 1070.2,717.6 791.7,482" fill="url(#vr-outer-17-sideL)" stroke="url(#vr-outer-17-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="771.3,507.6 1048.2,742.6 1050.8,741.3 771.9,504.7" fill="url(#vr-outer-17-sideR)" stroke="url(#vr-outer-17-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="791.7,482 1070.2,717.6 1065.1,716.5 789.8,483.5" fill="url(#vr-outer-17-chamL)" stroke="url(#vr-outer-17-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="771.9,504.7 1050.8,741.3 1049.9,735 774.3,501.2" fill="url(#vr-outer-17-chamR)" stroke="url(#vr-outer-17-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1067.5,719.1 1048.2,742.6 1050.8,741.3 1070.2,717.6" fill="#aca6d7" stroke="#aca6d7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1070.2,717.6 1050.8,741.3 1049.9,735 1065.1,716.5" fill="#fdebf0" stroke="#fdebf0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="789.8,483.5 774.3,501.2 1049.9,735 1065.1,716.5" fill="url(#vr-outer-17-top)" stroke="#fce6ed" stroke-width="0.55" stroke-linejoin="round"/><polyline points="789.8,483.5 1065.1,716.5 1049.9,735" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-16"><polygon points="772.9,502.4 749.9,522.1 979.4,789.4 1002.8,769.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="777.9,495.4 1008.4,762.6 1009,762.9 776.9,493.8" fill="url(#vr-outer-16-sideL)" stroke="url(#vr-outer-16-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="754.9,515.2 985,783 985.4,783.4 753.7,513.7" fill="url(#vr-outer-16-sideR)" stroke="url(#vr-outer-16-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="776.9,493.8 1009,762.9 1003.3,761.4 774,495.5" fill="url(#vr-outer-16-chamL)" stroke="url(#vr-outer-16-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="753.7,513.7 985.4,783.4 984.9,777.4 755.9,511.1" fill="url(#vr-outer-16-chamR)" stroke="url(#vr-outer-16-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1008.4,762.6 985,783 985.4,783.4 1009,762.9" fill="#aba5d6" stroke="#aba5d6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1009,762.9 985.4,783.4 984.9,777.4 1003.3,761.4" fill="#fdeaef" stroke="#fdeaef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="774,495.5 755.9,511.1 984.9,777.4 1003.3,761.4" fill="url(#vr-outer-16-top)" stroke="#fce6ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="774,495.5 1003.3,761.4 984.9,777.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-12"><polygon points="703.4,534.6 676.1,537.2 675.6,848.5 703.9,847.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="680.9,530.3 680.6,842.2 673.6,841.4 674.1,527.6" fill="url(#vr-outer-12-sideR)" stroke="url(#vr-outer-12-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="708.3,527.7 708.9,841.1 702,840.4 701.7,525" fill="url(#vr-outer-12-sideL)" stroke="url(#vr-outer-12-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="674.1,527.6 673.6,841.4 674.5,835.9 675,526.5" fill="url(#vr-outer-12-chamR)" stroke="url(#vr-outer-12-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="701.7,525 702,840.4 696.7,835.1 696.5,524.4" fill="url(#vr-outer-12-chamL)" stroke="url(#vr-outer-12-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="708.9,841.1 680.6,842.2 673.6,841.4 702,840.4" fill="#a7a1d3" stroke="#a7a1d3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="702,840.4 673.6,841.4 674.5,835.9 696.7,835.1" fill="#fce8ed" stroke="#fce8ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="696.5,524.4 675,526.5 674.5,835.9 696.7,835.1" fill="url(#vr-outer-12-top)" stroke="#fae2ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="696.5,524.4 696.7,835.1 674.5,835.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-15"><polygon points="758,512.1 732.7,528.2 909.4,821 935.6,804.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="737.6,521.3 914.8,814.6 912.8,816 734.4,520.6" fill="url(#vr-outer-15-sideR)" stroke="url(#vr-outer-15-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="763,505.1 941.1,798.5 939.2,799.8 759.9,504.3" fill="url(#vr-outer-15-sideL)" stroke="url(#vr-outer-15-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="734.4,520.6 912.8,816 912.4,810.3 736.1,518.6" fill="url(#vr-outer-15-chamR)" stroke="url(#vr-outer-15-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="759.9,504.3 939.2,799.8 933.1,797.6 756.1,505.9" fill="url(#vr-outer-15-chamL)" stroke="url(#vr-outer-15-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="941.1,798.5 914.8,814.6 912.8,816 939.2,799.8" fill="#aaa4d6" stroke="#aaa4d6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="939.2,799.8 912.8,816 912.4,810.3 933.1,797.6" fill="#fdeaef" stroke="#fdeaef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="756.1,505.9 736.1,518.6 912.4,810.3 933.1,797.6" fill="url(#vr-outer-15-top)" stroke="#fbe5ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="756.1,505.9 933.1,797.6 912.4,810.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-13"><polygon points="722.9,528.5 695.8,535.8 755,851.7 783.2,845.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="700.6,529 760.1,845.4 753.9,845.9 694.3,527.5" fill="url(#vr-outer-13-sideR)" stroke="url(#vr-outer-13-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="727.8,521.6 788.4,839.2 782.4,839.8 721.6,520" fill="url(#vr-outer-13-sideL)" stroke="url(#vr-outer-13-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="694.3,527.5 753.9,845.9 754.1,840.4 695.2,526.2" fill="url(#vr-outer-13-chamR)" stroke="url(#vr-outer-13-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="721.6,520 782.4,839.8 776.4,835.6 716.6,520.4" fill="url(#vr-outer-13-chamL)" stroke="url(#vr-outer-13-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="788.4,839.2 760.1,845.4 753.9,845.9 782.4,839.8" fill="#a8a2d4" stroke="#a8a2d4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="782.4,839.8 753.9,845.9 754.1,840.4 776.4,835.6" fill="#fce8ee" stroke="#fce8ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="716.6,520.4 695.2,526.2 754.1,840.4 776.4,835.6" fill="url(#vr-outer-13-top)" stroke="#fbe3ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="716.6,520.4 776.4,835.6 754.1,840.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-outer-14"><polygon points="741.3,520.9 714.7,532.8 833.8,842.2 861.6,831.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="719.6,525.9 839.1,835.9 834.7,837.2 714.5,525.2" fill="url(#vr-outer-14-sideR)" stroke="url(#vr-outer-14-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="746.2,514 867,824.7 862.7,826 741.3,513.2" fill="url(#vr-outer-14-sideL)" stroke="url(#vr-outer-14-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="714.5,525.2 834.7,837.2 834.5,831.7 715.8,523.6" fill="url(#vr-outer-14-chamR)" stroke="url(#vr-outer-14-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="741.3,513.2 862.7,826 856.4,822.9 736.7,514.2" fill="url(#vr-outer-14-chamL)" stroke="url(#vr-outer-14-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="867,824.7 839.1,835.9 834.7,837.2 862.7,826" fill="#a9a3d5" stroke="#a9a3d5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="862.7,826 834.7,837.2 834.5,831.7 856.4,822.9" fill="#fce9ee" stroke="#fce9ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="736.7,514.2 715.8,523.6 834.5,831.7 856.4,822.9" fill="url(#vr-outer-14-top)" stroke="#fbe4eb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="736.7,514.2 856.4,822.9 834.5,831.7" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-0"><polygon points="575.5,453.6 584,432.4 441.2,374.3 433.7,396" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="580,446.6 437.8,388.9 433.7,396.2 576.7,454.3" fill="url(#vr-mid-0-sideL)" stroke="url(#vr-mid-0-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="576.7,454.3 433.7,396.2 437.5,397.9 576.6,454.3" fill="url(#vr-mid-0-chamL)" stroke="url(#vr-mid-0-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="588.5,425.4 445.4,367.1 441.3,374.4 585.2,432.9" fill="url(#vr-mid-0-sideR)" stroke="url(#vr-mid-0-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="437.8,388.9 445.4,367.1 441.3,374.4 433.7,396.2" fill="#9d97cc" stroke="#9d97cc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="585.2,432.9 441.3,374.4 443.4,380.8 583.2,437.7" fill="url(#vr-mid-0-chamR)" stroke="url(#vr-mid-0-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="433.7,396.2 441.3,374.4 443.4,380.8 437.5,397.9" fill="#fae1e9" stroke="#fae1e9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="576.6,454.3 583.2,437.7 443.4,380.8 437.5,397.9" fill="url(#vr-mid-0-top)" stroke="#f8dae3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="576.6,454.3 437.5,397.9 443.4,380.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-1"><polygon points="573.8,462.8 578.4,441.8 423.1,409.5 419.7,430.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="578.3,455.8 423.8,423.8 421.2,432.8 576.5,465" fill="url(#vr-mid-1-sideL)" stroke="url(#vr-mid-1-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="576.5,465 421.2,432.8 425.3,434.3 576.4,465.6" fill="url(#vr-mid-1-chamL)" stroke="url(#vr-mid-1-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="582.9,434.8 427.2,402.3 424.6,411.3 581.1,443.9" fill="url(#vr-mid-1-sideR)" stroke="url(#vr-mid-1-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="423.8,423.8 427.2,402.3 424.6,411.3 421.2,432.8" fill="#9e98cd" stroke="#9e98cd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="581.1,443.9 424.6,411.3 428,417.5 580,449.1" fill="url(#vr-mid-1-chamR)" stroke="url(#vr-mid-1-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="421.2,432.8 424.6,411.3 428,417.5 425.3,434.3" fill="#fbe2ea" stroke="#fbe2ea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="576.4,465.6 580,449.1 428,417.5 425.3,434.3" fill="url(#vr-mid-1-top)" stroke="#f8dbe4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="576.4,465.6 425.3,434.3 428,417.5" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-2"><polygon points="574.7,472.1 576.3,451.2 412.2,444 412,465.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="579.2,465.1 416.2,458.1 415.3,467.9 579.2,474.8" fill="url(#vr-mid-2-sideL)" stroke="url(#vr-mid-2-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="579.2,474.8 415.3,467.9 419.7,468.8 579.3,475.6" fill="url(#vr-mid-2-chamL)" stroke="url(#vr-mid-2-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="580.8,444.1 416.4,436.8 415.6,446.6 580.8,453.8" fill="url(#vr-mid-2-sideR)" stroke="url(#vr-mid-2-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="416.2,458.1 416.4,436.8 415.6,446.6 415.3,467.9" fill="#a09acd" stroke="#a09acd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="580.8,453.8 415.6,446.6 419.9,452.2 580.6,459.2" fill="url(#vr-mid-2-chamR)" stroke="url(#vr-mid-2-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="415.3,467.9 415.6,446.6 419.9,452.2 419.7,468.8" fill="#fbe3ea" stroke="#fbe3ea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="579.3,475.6 580.6,459.2 419.9,452.2 419.7,468.8" fill="url(#vr-mid-2-top)" stroke="#f8dce5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="579.3,475.6 419.7,468.8 419.9,452.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-3"><polygon points="578.3,481.8 577,460.5 407.8,479.3 410.5,500.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="582.8,474.8 414.7,493.7 415.6,503.3 584.6,484.3" fill="url(#vr-mid-3-sideL)" stroke="url(#vr-mid-3-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="584.6,484.3 415.6,503.3 420.3,503.6 585,485" fill="url(#vr-mid-3-chamL)" stroke="url(#vr-mid-3-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="581.6,453.4 412,472.2 412.9,481.9 583.3,462.9" fill="url(#vr-mid-3-sideR)" stroke="url(#vr-mid-3-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="414.7,493.7 412,472.2 412.9,481.9 415.6,503.3" fill="#a19bce" stroke="#a19bce" stroke-width="0.35" stroke-linejoin="round"/><polygon points="583.3,462.9 412.9,481.9 418.2,486.8 584,468.3" fill="url(#vr-mid-3-chamR)" stroke="url(#vr-mid-3-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="415.6,503.3 412.9,481.9 418.2,486.8 420.3,503.6" fill="#fbe4eb" stroke="#fbe4eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="585,485 584,468.3 418.2,486.8 420.3,503.6" fill="url(#vr-mid-3-top)" stroke="#f9dde6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="585,485 420.3,503.6 418.2,486.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-4"><polygon points="584.8,491.5 580.3,469.7 409.8,515.7 415.7,537.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="589.3,484.6 420,530.6 422.5,539.4 592.7,493.1" fill="url(#vr-mid-4-sideL)" stroke="url(#vr-mid-4-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="592.7,493.1 422.5,539.4 427.1,538.6 593.3,493.4" fill="url(#vr-mid-4-chamL)" stroke="url(#vr-mid-4-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="584.9,462.6 414.1,508.6 416.6,517.5 588.2,471" fill="url(#vr-mid-4-sideR)" stroke="url(#vr-mid-4-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="420,530.6 414.1,508.6 416.6,517.5 422.5,539.4" fill="#a29ccf" stroke="#a29ccf" stroke-width="0.35" stroke-linejoin="round"/><polygon points="588.2,471 416.6,517.5 422.6,521.5 589.8,476.2" fill="url(#vr-mid-4-chamR)" stroke="url(#vr-mid-4-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="422.5,539.4 416.6,517.5 422.6,521.5 427.1,538.6" fill="#fbe4eb" stroke="#fbe4eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="593.3,493.4 589.8,476.2 422.6,521.5 427.1,538.6" fill="url(#vr-mid-4-top)" stroke="#f9dee6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="593.3,493.4 427.1,538.6 422.6,521.5" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-5"><polygon points="594.4,501.1 586,478.5 418.7,553.1 428.4,575.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="599,494.2 432.7,568.6 436.4,575.8 603.5,500.8" fill="url(#vr-mid-5-sideL)" stroke="url(#vr-mid-5-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.5,500.8 436.4,575.8 440.8,573.6 604,500.4" fill="url(#vr-mid-5-chamL)" stroke="url(#vr-mid-5-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="590.6,471.4 423,546.1 426.6,553.1 595.1,478" fill="url(#vr-mid-5-sideR)" stroke="url(#vr-mid-5-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="595.1,478 426.6,553.1 433.2,556 597.4,482.6" fill="url(#vr-mid-5-chamR)" stroke="url(#vr-mid-5-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="432.7,568.6 423,546.1 426.6,553.1 436.4,575.8" fill="#a39dd0" stroke="#a39dd0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="436.4,575.8 426.6,553.1 433.2,556 440.8,573.6" fill="#fbe5ec" stroke="#fbe5ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="604,500.4 597.4,482.6 433.2,556 440.8,573.6" fill="url(#vr-mid-5-top)" stroke="#f9dfe7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="604,500.4 440.8,573.6 433.2,556" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-23"><polygon points="795.5,398.7 805.3,421.9 1100.5,322.3 1089.1,300.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1094.8,292.8 1106.2,315 1107.5,307.4 1096.1,285.1" fill="#b7b1df" stroke="#b7b1df" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1096.1,285.1 1107.5,307.4 1102.6,303.9 1093.6,286.5" fill="#fff1f4" stroke="#fff1f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="800.5,391.5 1094.8,292.8 1096.1,285.1 800.1,384.2" fill="url(#vr-mid-23-sideL)" stroke="url(#vr-mid-23-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="810.4,414.7 1106.2,315 1107.5,307.4 810.1,407.6" fill="url(#vr-mid-23-sideR)" stroke="url(#vr-mid-23-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="800.1,384.2 1096.1,285.1 1093.6,286.5 801.1,384.5" fill="url(#vr-mid-23-chamL)" stroke="url(#vr-mid-23-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="810.1,407.6 1107.5,307.4 1102.6,303.9 808.9,402.7" fill="url(#vr-mid-23-chamR)" stroke="url(#vr-mid-23-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="801.1,384.5 808.9,402.7 1102.6,303.9 1093.6,286.5" fill="url(#vr-mid-23-top)" stroke="#ffeff3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="801.1,384.5 1093.6,286.5 1102.6,303.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-6"><polygon points="607.3,510.1 594,487.3 435.3,591.3 449.8,614" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="612,503.1 454.2,607.1 458,611.5 616.6,506.8" fill="url(#vr-mid-6-sideL)" stroke="url(#vr-mid-6-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="598.6,480.2 439.7,584.3 443.4,588.7 603.2,483.9" fill="url(#vr-mid-6-sideR)" stroke="url(#vr-mid-6-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="616.6,506.8 458,611.5 461.5,607.8 616.7,505.5" fill="url(#vr-mid-6-chamL)" stroke="url(#vr-mid-6-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="603.2,483.9 443.4,588.7 450.2,590 606.2,487.6" fill="url(#vr-mid-6-chamR)" stroke="url(#vr-mid-6-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="454.2,607.1 439.7,584.3 443.4,588.7 458,611.5" fill="#a49ed1" stroke="#a49ed1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="458,611.5 443.4,588.7 450.2,590 461.5,607.8" fill="#fce6ec" stroke="#fce6ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="616.7,505.5 606.2,487.6 450.2,590 461.5,607.8" fill="url(#vr-mid-6-top)" stroke="#f9dfe8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="616.7,505.5 461.5,607.8 450.2,590" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-22"><polygon points="797,410.6 803.2,434.2 1104.3,377.5 1096.3,354.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1102,347.5 1110.1,370.3 1111.8,362.1 1103.7,339.3" fill="#b6b0de" stroke="#b6b0de" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.1,403.4 1102,347.5 1103.7,339.3 802.1,395.4" fill="url(#vr-mid-22-sideL)" stroke="url(#vr-mid-22-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1103.7,339.3 1111.8,362.1 1107.1,357.8 1100.7,340" fill="#fff1f4" stroke="#fff1f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.1,395.4 1103.7,339.3 1100.7,340 802.8,395.4" fill="url(#vr-mid-22-chamL)" stroke="url(#vr-mid-22-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="808.3,427 1110.1,370.3 1111.8,362.1 808.3,419" fill="url(#vr-mid-22-sideR)" stroke="url(#vr-mid-22-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="808.3,419 1111.8,362.1 1107.1,357.8 807.6,413.8" fill="url(#vr-mid-22-chamR)" stroke="url(#vr-mid-22-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.8,395.4 807.6,413.8 1107.1,357.8 1100.7,340" fill="url(#vr-mid-22-top)" stroke="#feeef3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="802.8,395.4 1100.7,340 1107.1,357.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-7"><polygon points="623.5,517.3 604.6,496.2 461,629.9 480.6,651" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="628.2,510.3 485,644.2 487.5,645.2 631.5,510.5" fill="url(#vr-mid-7-sideL)" stroke="url(#vr-mid-7-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="609.3,489.2 465.4,623 467.7,623.9 612.5,489.2" fill="url(#vr-mid-7-sideR)" stroke="url(#vr-mid-7-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="631.5,510.5 487.5,645.2 489.6,640 630.5,508.2" fill="url(#vr-mid-7-chamL)" stroke="url(#vr-mid-7-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="612.5,489.2 467.7,623.9 474.1,623.2 615.6,491.5" fill="url(#vr-mid-7-chamR)" stroke="url(#vr-mid-7-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="485,644.2 465.4,623 467.7,623.9 487.5,645.2" fill="#a59fd2" stroke="#a59fd2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="487.5,645.2 467.7,623.9 474.1,623.2 489.6,640" fill="#fce6ed" stroke="#fce6ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="630.5,508.2 615.6,491.5 474.1,623.2 489.6,640" fill="url(#vr-mid-7-top)" stroke="#fae0e8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="630.5,508.2 489.6,640 474.1,623.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-21"><polygon points="796.4,422.7 798.9,446.4 1099.4,431.8 1094.9,408.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="1100.7,401.3 1105.2,424.6 1107.5,416.3 1102.9,392.9" fill="#b5afdd" stroke="#b5afdd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="801.5,415.5 1100.7,401.3 1102.9,392.9 802.2,407.1" fill="url(#vr-mid-21-sideL)" stroke="url(#vr-mid-21-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1102.9,392.9 1107.5,416.3 1103.2,411.3 1099.6,393" fill="#fef0f3" stroke="#fef0f3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.2,407.1 1102.9,392.9 1099.6,393 802.6,407" fill="url(#vr-mid-21-chamL)" stroke="url(#vr-mid-21-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="804,439.2 1105.2,424.6 1107.5,416.3 804.6,430.9" fill="url(#vr-mid-21-sideR)" stroke="url(#vr-mid-21-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="804.6,430.9 1107.5,416.3 1103.2,411.3 804.5,425.6" fill="url(#vr-mid-21-chamR)" stroke="url(#vr-mid-21-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="802.6,407 804.5,425.6 1103.2,411.3 1099.6,393" fill="url(#vr-mid-21-top)" stroke="#feedf2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="802.6,407 1099.6,393 1103.2,411.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-20"><polygon points="793.8,434.5 792.4,458.4 1086.1,484.6 1085.4,460.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="798.9,427.4 1091.1,453.6 1094.1,445.5 800.2,419.1" fill="url(#vr-mid-20-sideL)" stroke="url(#vr-mid-20-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1091.1,453.6 1091.9,477.5 1094.9,469.5 1094.1,445.5" fill="#b4aedd" stroke="#b4aedd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="800.2,419.1 1094.1,445.5 1090.6,445.2 800.5,419.1" fill="url(#vr-mid-20-chamL)" stroke="url(#vr-mid-20-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1094.1,445.5 1094.9,469.5 1091.2,463.9 1090.6,445.2" fill="#feeff3" stroke="#feeff3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="797.5,451.2 1091.9,477.5 1094.9,469.5 798.8,443" fill="url(#vr-mid-20-sideR)" stroke="url(#vr-mid-20-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="798.8,443 1094.9,469.5 1091.2,463.9 799.4,437.7" fill="url(#vr-mid-20-chamR)" stroke="url(#vr-mid-20-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="800.5,419.1 799.4,437.7 1091.2,463.9 1090.6,445.2" fill="url(#vr-mid-20-top)" stroke="#feecf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="800.5,419.1 1090.6,445.2 1091.2,463.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-8"><polygon points="641.8,521.4 618.5,504.8 496.9,667.1 520.6,684.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="623.2,497.7 501.4,660.3 500.8,658.2 623.5,494.6" fill="url(#vr-mid-8-sideR)" stroke="url(#vr-mid-8-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="646.5,514.4 525.1,677.4 524.7,675.4 646.9,511.4" fill="url(#vr-mid-8-sideL)" stroke="url(#vr-mid-8-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="623.5,494.6 500.8,658.2 506.2,655.6 626.1,495.5" fill="url(#vr-mid-8-chamR)" stroke="url(#vr-mid-8-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="646.9,511.4 524.7,675.4 524.8,669.1 644.5,508.6" fill="url(#vr-mid-8-chamL)" stroke="url(#vr-mid-8-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="525.1,677.4 501.4,660.3 500.8,658.2 524.7,675.4" fill="#a6a0d2" stroke="#a6a0d2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="524.7,675.4 500.8,658.2 506.2,655.6 524.8,669.1" fill="#fce7ed" stroke="#fce7ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="644.5,508.6 626.1,495.5 506.2,655.6 524.8,669.1" fill="url(#vr-mid-8-top)" stroke="#fae1e9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="644.5,508.6 524.8,669.1 506.2,655.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-19"><polygon points="789.1,445.9 783.8,469.9 1064.6,535.2 1068.1,510.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="794.2,438.8 1073.8,503.8 1077.4,496.6 796.2,431.1" fill="url(#vr-mid-19-sideL)" stroke="url(#vr-mid-19-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1073.8,503.8 1070.4,528.1 1074,521 1077.4,496.6" fill="#b2acdc" stroke="#b2acdc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="796.2,431.1 1077.4,496.6 1073.6,495.9 796.2,431.3" fill="url(#vr-mid-19-chamL)" stroke="url(#vr-mid-19-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="788.9,462.7 1070.4,528.1 1074,521 790.8,455.1" fill="url(#vr-mid-19-sideR)" stroke="url(#vr-mid-19-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1077.4,496.6 1074,521 1071,514.9 1073.6,495.9" fill="#feeff2" stroke="#feeff2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="790.8,455.1 1074,521 1071,514.9 792,450" fill="url(#vr-mid-19-chamR)" stroke="url(#vr-mid-19-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="796.2,431.3 792,450 1071,514.9 1073.6,495.9" fill="url(#vr-mid-19-top)" stroke="#fdebf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="796.2,431.3 1073.6,495.9 1071,514.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-9"><polygon points="660.4,521.9 635,511.5 542.9,699.9 568.6,711.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="639.8,504.4 547.6,693.1 543.9,689.7 636.8,499.9" fill="url(#vr-mid-9-sideR)" stroke="url(#vr-mid-9-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="665.2,514.8 573.3,704.4 569.8,701.1 662.4,510.4" fill="url(#vr-mid-9-sideL)" stroke="url(#vr-mid-9-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="636.8,499.9 543.9,689.7 547.7,685.6 638.6,499.7" fill="url(#vr-mid-9-chamR)" stroke="url(#vr-mid-9-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="662.4,510.4 569.8,701.1 567.9,694.5 658.6,507.8" fill="url(#vr-mid-9-chamL)" stroke="url(#vr-mid-9-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="573.3,704.4 547.6,693.1 543.9,689.7 569.8,701.1" fill="#a7a1d3" stroke="#a7a1d3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="569.8,701.1 543.9,689.7 547.7,685.6 567.9,694.5" fill="#fce8ee" stroke="#fce8ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="658.6,507.8 638.6,499.7 547.7,685.6 567.9,694.5" fill="url(#vr-mid-9-top)" stroke="#fae2ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="658.6,507.8 567.9,694.5 547.7,685.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-18"><polygon points="782.8,456.7 773.2,480.5 1035.2,582.9 1043.3,558.4" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="787.9,449.5 1049,551.4 1052.8,545.5 790.1,443" fill="url(#vr-mid-18-sideL)" stroke="url(#vr-mid-18-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1049,551.4 1041,575.9 1044.7,570.1 1052.8,545.5" fill="#b1abdb" stroke="#b1abdb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="778.3,473.3 1041,575.9 1044.7,570.1 780.5,466.9" fill="url(#vr-mid-18-sideR)" stroke="url(#vr-mid-18-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="790.1,443 1052.8,545.5 1048.8,544.6 789.8,443.5" fill="url(#vr-mid-18-chamL)" stroke="url(#vr-mid-18-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1052.8,545.5 1044.7,570.1 1042.5,563.8 1048.8,544.6" fill="#feeef2" stroke="#feeef2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="780.5,466.9 1044.7,570.1 1042.5,563.8 782.2,462.2" fill="url(#vr-mid-18-chamR)" stroke="url(#vr-mid-18-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="789.8,443.5 782.2,462.2 1042.5,563.8 1048.8,544.6" fill="url(#vr-mid-18-top)" stroke="#fdeaf0" stroke-width="0.55" stroke-linejoin="round"/><polyline points="789.8,443.5 1048.8,544.6 1042.5,563.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-17"><polygon points="775,466.8 761,489.9 998.1,626.7 1011.1,602.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="780.1,459.6 1016.8,595.8 1020.2,591.7 782,454.6" fill="url(#vr-mid-17-sideL)" stroke="url(#vr-mid-17-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="766,482.8 1003.8,619.9 1007.2,615.9 767.9,478" fill="url(#vr-mid-17-sideR)" stroke="url(#vr-mid-17-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="782,454.6 1020.2,591.7 1015.8,590.7 781.1,455.6" fill="url(#vr-mid-17-chamL)" stroke="url(#vr-mid-17-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1016.8,595.8 1003.8,619.9 1007.2,615.9 1020.2,591.7" fill="#b0aada" stroke="#b0aada" stroke-width="0.35" stroke-linejoin="round"/><polygon points="767.9,478 1007.2,615.9 1005.6,609.6 770,473.8" fill="url(#vr-mid-17-chamR)" stroke="url(#vr-mid-17-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="1020.2,591.7 1007.2,615.9 1005.6,609.6 1015.8,590.7" fill="#feedf1" stroke="#feedf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="781.1,455.6 770,473.8 1005.6,609.6 1015.8,590.7" fill="url(#vr-mid-17-top)" stroke="#fdeaef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="781.1,455.6 1015.8,590.7 1005.6,609.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-10"><polygon points="678.6,519.6 652.6,515.3 597.3,725.1 623.7,730.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="657.4,508.3 602.1,718.3 596.2,715.3 652,504.1" fill="url(#vr-mid-10-sideR)" stroke="url(#vr-mid-10-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="683.5,512.6 628.6,723.7 622.9,720.8 678.3,508.4" fill="url(#vr-mid-10-sideL)" stroke="url(#vr-mid-10-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="652,504.1 596.2,715.3 598.5,710.4 653.2,503.2" fill="url(#vr-mid-10-chamR)" stroke="url(#vr-mid-10-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="678.3,508.4 622.9,720.8 619.3,714.6 673.7,506.5" fill="url(#vr-mid-10-chamL)" stroke="url(#vr-mid-10-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="628.6,723.7 602.1,718.3 596.2,715.3 622.9,720.8" fill="#a8a2d4" stroke="#a8a2d4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="622.9,720.8 596.2,715.3 598.5,710.4 619.3,714.6" fill="#fce8ee" stroke="#fce8ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="673.7,506.5 653.2,503.2 598.5,710.4 619.3,714.6" fill="url(#vr-mid-10-top)" stroke="#fbe3ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="673.7,506.5 619.3,714.6 598.5,710.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-16"><polygon points="765.8,476.2 747.5,497.9 953.8,665.6 971.6,643.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="770.8,469.1 977.2,636.3 979.5,634.2 771.7,465.9" fill="url(#vr-mid-16-sideL)" stroke="url(#vr-mid-16-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="752.6,490.8 959.4,658.8 961.5,656.8 753.3,487.7" fill="url(#vr-mid-16-sideR)" stroke="url(#vr-mid-16-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="771.7,465.9 979.5,634.2 974.5,633.1 769.9,467.2" fill="url(#vr-mid-16-chamL)" stroke="url(#vr-mid-16-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="977.2,636.3 959.4,658.8 961.5,656.8 979.5,634.2" fill="#afa9d9" stroke="#afa9d9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="753.3,487.7 961.5,656.8 960.5,650.7 755.6,484.3" fill="url(#vr-mid-16-chamR)" stroke="url(#vr-mid-16-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="979.5,634.2 961.5,656.8 960.5,650.7 974.5,633.1" fill="#fdecf1" stroke="#fdecf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="769.9,467.2 755.6,484.3 960.5,650.7 974.5,633.1" fill="url(#vr-mid-16-top)" stroke="#fde9ee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="769.9,467.2 974.5,633.1 960.5,650.7" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-11"><polygon points="696.2,515.4 670.1,516.5 657.7,740.6 684.3,740.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="675,509.4 662.6,733.9 655.9,732.2 668.5,506.4" fill="url(#vr-mid-11-sideR)" stroke="url(#vr-mid-11-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="701.1,508.3 689.3,733.9 682.8,732.1 694.8,505.2" fill="url(#vr-mid-11-sideL)" stroke="url(#vr-mid-11-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="668.5,506.4 655.9,732.2 657,726.9 669.3,505.3" fill="url(#vr-mid-11-chamR)" stroke="url(#vr-mid-11-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="694.8,505.2 682.8,732.1 678,726.8 689.9,504.3" fill="url(#vr-mid-11-chamL)" stroke="url(#vr-mid-11-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="689.3,733.9 662.6,733.9 655.9,732.2 682.8,732.1" fill="#aaa4d5" stroke="#aaa4d5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="682.8,732.1 655.9,732.2 657,726.9 678,726.8" fill="#fde9ef" stroke="#fde9ef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="689.9,504.3 669.3,505.3 657,726.9 678,726.8" fill="url(#vr-mid-11-top)" stroke="#fbe4eb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="689.9,504.3 678,726.8 657,726.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-15"><polygon points="755.1,485.3 733.3,504.3 902.8,698.1 924.8,678.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="760.1,478.1 930.3,672 930.5,671.6 759.2,476.5" fill="url(#vr-mid-15-sideL)" stroke="url(#vr-mid-15-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="738.3,497.2 908.3,691.4 908.3,691.2 737.2,495.6" fill="url(#vr-mid-15-sideR)" stroke="url(#vr-mid-15-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="759.2,476.5 930.5,671.6 925,670.1 756.5,478.1" fill="url(#vr-mid-15-chamL)" stroke="url(#vr-mid-15-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="737.2,495.6 908.3,691.2 907.7,685.4 739.3,493" fill="url(#vr-mid-15-chamR)" stroke="url(#vr-mid-15-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="930.3,672 908.3,691.4 908.3,691.2 930.5,671.6" fill="#aea8d8" stroke="#aea8d8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="930.5,671.6 908.3,691.2 907.7,685.4 925,670.1" fill="#fdecf1" stroke="#fdecf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="756.5,478.1 739.3,493 907.7,685.4 925,670.1" fill="url(#vr-mid-15-top)" stroke="#fce8ee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="756.5,478.1 925,670.1 907.7,685.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-12"><polygon points="713,509.4 687.1,515.6 721.2,745.4 747.9,740.2" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="692,508.5 726.3,738.8 720,738.5 685.6,506.8" fill="url(#vr-mid-12-sideR)" stroke="url(#vr-mid-12-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="718,502.3 753.1,733.5 746.9,733.2 711.8,500.5" fill="url(#vr-mid-12-sideL)" stroke="url(#vr-mid-12-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="685.6,506.8 720,738.5 720.3,733.1 686.5,505.5" fill="url(#vr-mid-12-chamR)" stroke="url(#vr-mid-12-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="711.8,500.5 746.9,733.2 741.3,728.9 706.9,500.7" fill="url(#vr-mid-12-chamL)" stroke="url(#vr-mid-12-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="753.1,733.5 726.3,738.8 720,738.5 746.9,733.2" fill="#aba5d6" stroke="#aba5d6" stroke-width="0.35" stroke-linejoin="round"/><polygon points="746.9,733.2 720,738.5 720.3,733.1 741.3,728.9" fill="#fdeaef" stroke="#fdeaef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="706.9,500.7 686.5,505.5 720.3,733.1 741.3,728.9" fill="url(#vr-mid-12-top)" stroke="#fbe5ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="706.9,500.7 741.3,728.9 720.3,733.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-14"><polygon points="742.7,494 718.6,509.3 846.1,723.2 870.9,708" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="723.5,502.2 851.5,716.5 849,717.2 720.3,501.5" fill="url(#vr-mid-14-sideR)" stroke="url(#vr-mid-14-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="747.7,486.9 876.3,701.3 874.1,701.9 744.7,486.1" fill="url(#vr-mid-14-sideL)" stroke="url(#vr-mid-14-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="720.3,501.5 849,717.2 848.6,711.7 721.9,499.6" fill="url(#vr-mid-14-chamR)" stroke="url(#vr-mid-14-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="744.7,486.1 874.1,701.9 868.1,699.7 741,487.5" fill="url(#vr-mid-14-chamL)" stroke="url(#vr-mid-14-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="876.3,701.3 851.5,716.5 849,717.2 874.1,701.9" fill="#ada7d8" stroke="#ada7d8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="874.1,701.9 849,717.2 848.6,711.7 868.1,699.7" fill="#fdebf0" stroke="#fdebf0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="741,487.5 721.9,499.6 848.6,711.7 868.1,699.7" fill="url(#vr-mid-14-top)" stroke="#fce7ed" stroke-width="0.55" stroke-linejoin="round"/><polyline points="741,487.5 868.1,699.7 848.6,711.7" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-mid-13"><polygon points="728.6,502.2 703.2,513 784.9,739.4 811.1,729.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="708.1,506 790.2,732.7 785.4,733.4 703,505.2" fill="url(#vr-mid-13-sideR)" stroke="url(#vr-mid-13-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="733.6,495.1 816.5,722.3 811.9,722.9 728.6,494.2" fill="url(#vr-mid-13-sideL)" stroke="url(#vr-mid-13-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="703,505.2 785.4,733.4 785.2,727.9 704.2,503.7" fill="url(#vr-mid-13-chamR)" stroke="url(#vr-mid-13-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="728.6,494.2 811.9,722.9 805.9,719.8 724.2,495.1" fill="url(#vr-mid-13-chamL)" stroke="url(#vr-mid-13-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="816.5,722.3 790.2,732.7 785.4,733.4 811.9,722.9" fill="#aca6d7" stroke="#aca6d7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="811.9,722.9 785.4,733.4 785.2,727.9 805.9,719.8" fill="#fdeaf0" stroke="#fdeaf0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="724.2,495.1 704.2,503.7 785.2,727.9 805.9,719.8" fill="url(#vr-mid-13-top)" stroke="#fce6ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="724.2,495.1 805.9,719.8 785.2,727.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-0"><polygon points="597.7,461.2 606.3,441.9 514.2,400.7 506,420.3" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="602.2,454.1 510.4,413.1 506.9,419.6 599.2,460.8" fill="url(#vr-inner-0-sideL)" stroke="url(#vr-inner-0-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="599.2,460.8 506.9,419.6 510.5,421.1 599.3,460.8" fill="url(#vr-inner-0-chamL)" stroke="url(#vr-inner-0-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="510.4,413.1 518.6,393.4 515.1,399.8 506.9,419.6" fill="#a09ace" stroke="#a09ace" stroke-width="0.35" stroke-linejoin="round"/><polygon points="611,434.8 518.6,393.4 515.1,399.8 608,441.3" fill="url(#vr-inner-0-sideR)" stroke="url(#vr-inner-0-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="608,441.3 515.1,399.8 516.9,405.7 606.1,445.6" fill="url(#vr-inner-0-chamR)" stroke="url(#vr-inner-0-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="506.9,419.6 515.1,399.8 516.9,405.7 510.5,421.1" fill="#fbe3ea" stroke="#fbe3ea" stroke-width="0.35" stroke-linejoin="round"/><polygon points="599.3,460.8 606.1,445.6 516.9,405.7 510.5,421.1" fill="url(#vr-inner-0-top)" stroke="#f8dce5" stroke-width="0.55" stroke-linejoin="round"/><polyline points="599.3,460.8 510.5,421.1 516.9,405.7" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-1"><polygon points="598.1,468.3 602.1,449.3 498.8,430.5 495.5,449.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="602.7,461.2 499.9,442.6 498.2,451.1 601.5,469.7" fill="url(#vr-inner-1-sideL)" stroke="url(#vr-inner-1-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="601.5,469.7 498.2,451.1 502.1,452.4 601.6,470.3" fill="url(#vr-inner-1-chamL)" stroke="url(#vr-inner-1-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.8,442.1 503.2,423.3 501.5,431.7 605.5,450.5" fill="url(#vr-inner-1-sideR)" stroke="url(#vr-inner-1-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="499.9,442.6 503.2,423.3 501.5,431.7 498.2,451.1" fill="#a19bcf" stroke="#a19bcf" stroke-width="0.35" stroke-linejoin="round"/><polygon points="605.5,450.5 501.5,431.7 504.7,437.3 604.7,455.4" fill="url(#vr-inner-1-chamR)" stroke="url(#vr-inner-1-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="498.2,451.1 501.5,431.7 504.7,437.3 502.1,452.4" fill="#fbe4eb" stroke="#fbe4eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="601.6,470.3 604.7,455.4 504.7,437.3 502.1,452.4" fill="url(#vr-inner-1-top)" stroke="#f9dde6" stroke-width="0.55" stroke-linejoin="round"/><polyline points="601.6,470.3 502.1,452.4 504.7,437.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-2"><polygon points="601.3,475.9 601.7,456.8 491.8,460.5 492.2,479.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="606,468.8 496.6,472.6 497.1,481.5 606.9,477.7" fill="url(#vr-inner-2-sideL)" stroke="url(#vr-inner-2-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.9,477.7 497.1,481.5 501.4,482.1 607.3,478.4" fill="url(#vr-inner-2-chamL)" stroke="url(#vr-inner-2-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="606.4,449.5 496.2,453.2 496.7,462.1 607.4,458.4" fill="url(#vr-inner-2-sideR)" stroke="url(#vr-inner-2-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="496.6,472.6 496.2,453.2 496.7,462.1 497.1,481.5" fill="#a39dd0" stroke="#a39dd0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.4,458.4 496.7,462.1 501.1,466.9 607.6,463.3" fill="url(#vr-inner-2-chamR)" stroke="url(#vr-inner-2-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="497.1,481.5 496.7,462.1 501.1,466.9 501.4,482.1" fill="#fbe5eb" stroke="#fbe5eb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="607.3,478.4 607.6,463.3 501.1,466.9 501.4,482.1" fill="url(#vr-inner-2-top)" stroke="#f9dee7" stroke-width="0.55" stroke-linejoin="round"/><polyline points="607.3,478.4 501.4,482.1 501.1,466.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-3"><polygon points="607.9,484.1 604.5,464.2 492.3,491.7 496.5,511.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="612.6,476.9 501,504.4 503.5,512.5 615.6,484.8" fill="url(#vr-inner-3-sideL)" stroke="url(#vr-inner-3-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="615.6,484.8 503.5,512.5 508,511.9 616.2,485.2" fill="url(#vr-inner-3-chamL)" stroke="url(#vr-inner-3-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="609.3,456.9 496.8,484.4 499.3,492.5 612.3,464.8" fill="url(#vr-inner-3-sideR)" stroke="url(#vr-inner-3-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="501,504.4 496.8,484.4 499.3,492.5 503.5,512.5" fill="#a49ed1" stroke="#a49ed1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="612.3,464.8 499.3,492.5 504.7,496.3 613.6,469.5" fill="url(#vr-inner-3-chamR)" stroke="url(#vr-inner-3-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="503.5,512.5 499.3,492.5 504.7,496.3 508,511.9" fill="#fce6ec" stroke="#fce6ec" stroke-width="0.35" stroke-linejoin="round"/><polygon points="616.2,485.2 613.6,469.5 504.7,496.3 508,511.9" fill="url(#vr-inner-3-top)" stroke="#fae0e8" stroke-width="0.55" stroke-linejoin="round"/><polyline points="616.2,485.2 508,511.9 504.7,496.3" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-4"><polygon points="618.4,492.3 610.1,471.5 501,524.2 510,544.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="623.1,485.1 514.6,537.8 518.4,543.7 627.5,490.6" fill="url(#vr-inner-4-sideL)" stroke="url(#vr-inner-4-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="627.5,490.6 518.4,543.7 522.5,541.4 628,490.1" fill="url(#vr-inner-4-chamL)" stroke="url(#vr-inner-4-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="614.8,464.2 505.5,517 509.4,522.8 619.2,469.7" fill="url(#vr-inner-4-sideR)" stroke="url(#vr-inner-4-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="514.6,537.8 505.5,517 509.4,522.8 518.4,543.7" fill="#a6a0d2" stroke="#a6a0d2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="619.2,469.7 509.4,522.8 515.4,525.1 621.5,473.7" fill="url(#vr-inner-4-chamR)" stroke="url(#vr-inner-4-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="518.4,543.7 509.4,522.8 515.4,525.1 522.5,541.4" fill="#fce7ed" stroke="#fce7ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="628,490.1 621.5,473.7 515.4,525.1 522.5,541.4" fill="url(#vr-inner-4-top)" stroke="#fae1e9" stroke-width="0.55" stroke-linejoin="round"/><polyline points="628,490.1 522.5,541.4 515.4,525.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-17"><polygon points="769.6,407.8 777.7,429.1 975.6,369.6 966.5,348.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="972,341.5 981.1,362.2 981.9,355.2 972.7,334.5" fill="#b8b2e0" stroke="#b8b2e0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="774.7,400.4 972,341.5 972.7,334.5 774.4,393.6" fill="url(#vr-inner-17-sideL)" stroke="url(#vr-inner-17-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="972.7,334.5 981.9,355.2 977.2,351.9 970,335.7" fill="#fff2f5" stroke="#fff2f5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="782.9,421.7 981.1,362.2 981.9,355.2 782.5,415" fill="url(#vr-inner-17-sideR)" stroke="url(#vr-inner-17-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="774.4,393.6 972.7,334.5 970,335.7 775.1,393.8" fill="url(#vr-inner-17-chamL)" stroke="url(#vr-inner-17-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="782.5,415 981.9,355.2 977.2,351.9 781.5,410.5" fill="url(#vr-inner-17-chamR)" stroke="url(#vr-inner-17-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="775.1,393.8 781.5,410.5 977.2,351.9 970,335.7" fill="url(#vr-inner-17-top)" stroke="#fff0f4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="775.1,393.8 970,335.7 977.2,351.9" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-5"><polygon points="633.4,499.4 618.6,479.2 519.2,558.1 534.6,578.4" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="638.3,492.3 539.3,571.3 542.7,573.3 642.2,493.8" fill="url(#vr-inner-5-sideL)" stroke="url(#vr-inner-5-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="623.4,471.9 523.8,550.9 527.2,552.9 627.2,473.3" fill="url(#vr-inner-5-sideR)" stroke="url(#vr-inner-5-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="642.2,493.8 542.7,573.3 545.4,569.1 641.8,492.1" fill="url(#vr-inner-5-chamL)" stroke="url(#vr-inner-5-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="627.2,473.3 527.2,552.9 533.3,553.1 630.1,476.1" fill="url(#vr-inner-5-chamR)" stroke="url(#vr-inner-5-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="539.3,571.3 523.8,550.9 527.2,552.9 542.7,573.3" fill="#a7a1d3" stroke="#a7a1d3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="542.7,573.3 527.2,552.9 533.3,553.1 545.4,569.1" fill="#fce8ed" stroke="#fce8ed" stroke-width="0.35" stroke-linejoin="round"/><polygon points="641.8,492.1 630.1,476.1 533.3,553.1 545.4,569.1" fill="url(#vr-inner-5-top)" stroke="#fae2ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="641.8,492.1 545.4,569.1 533.3,553.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-16"><polygon points="768.7,419.8 772.2,441.3 972.6,420.2 967.8,399" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="973.4,391.7 978.2,412.9 979.5,405.4 974.6,384.1" fill="#b8b2e0" stroke="#b8b2e0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="773.9,412.4 973.4,391.7 974.6,384.1 774.1,404.9" fill="url(#vr-inner-16-sideL)" stroke="url(#vr-inner-16-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="974.6,384.1 979.5,405.4 975.2,401.1 971.5,384.4" fill="#fff2f5" stroke="#fff2f5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="774.1,404.9 974.6,384.1 971.5,384.4 774.6,404.8" fill="url(#vr-inner-16-chamL)" stroke="url(#vr-inner-16-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="777.4,434 978.2,412.9 979.5,405.4 777.7,426.5" fill="url(#vr-inner-16-sideR)" stroke="url(#vr-inner-16-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="777.7,426.5 979.5,405.4 975.2,401.1 777.3,421.7" fill="url(#vr-inner-16-chamR)" stroke="url(#vr-inner-16-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="774.6,404.8 777.3,421.7 975.2,401.1 971.5,384.4" fill="url(#vr-inner-16-top)" stroke="#fff0f4" stroke-width="0.55" stroke-linejoin="round"/><polyline points="774.6,404.8 971.5,384.4 975.2,401.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-15"><polygon points="765.3,431.5 764.2,453.2 959.3,469 959.1,447.3" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="770.4,424.2 964.7,440 966.8,432.6 771.6,416.6" fill="url(#vr-inner-15-sideL)" stroke="url(#vr-inner-15-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="964.7,440 964.9,461.7 967,454.3 966.8,432.6" fill="#b6b0df" stroke="#b6b0df" stroke-width="0.35" stroke-linejoin="round"/><polygon points="771.6,416.6 966.8,432.6 963.3,432.2 771.8,416.6" fill="url(#vr-inner-15-chamL)" stroke="url(#vr-inner-15-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="769.3,445.9 964.9,461.7 967,454.3 770.4,438.3" fill="url(#vr-inner-15-sideR)" stroke="url(#vr-inner-15-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="966.8,432.6 967,454.3 963.5,449.2 963.3,432.2" fill="#fff1f4" stroke="#fff1f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="770.4,438.3 967,454.3 963.5,449.2 770.9,433.6" fill="url(#vr-inner-15-chamR)" stroke="url(#vr-inner-15-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="771.8,416.6 770.9,433.6 963.5,449.2 963.3,432.2" fill="url(#vr-inner-15-top)" stroke="#feeef3" stroke-width="0.55" stroke-linejoin="round"/><polyline points="771.8,416.6 963.3,432.2 963.5,449.2" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-6"><polygon points="652.1,503 631.3,487.3 549.7,592 570.8,607.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="636.1,480.1 554.4,584.9 554.5,582.8 636.7,477.4" fill="url(#vr-inner-6-sideR)" stroke="url(#vr-inner-6-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="657,495.8 575.6,600.9 575.9,598.9 657.8,493.2" fill="url(#vr-inner-6-sideL)" stroke="url(#vr-inner-6-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="636.7,477.4 554.5,582.8 559.6,580.5 639.2,478.3" fill="url(#vr-inner-6-chamR)" stroke="url(#vr-inner-6-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="657.8,493.2 575.9,598.9 576.2,593.1 655.7,490.6" fill="url(#vr-inner-6-chamL)" stroke="url(#vr-inner-6-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="575.6,600.9 554.4,584.9 554.5,582.8 575.9,598.9" fill="#a9a3d4" stroke="#a9a3d4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="575.9,598.9 554.5,582.8 559.6,580.5 576.2,593.1" fill="#fce8ee" stroke="#fce8ee" stroke-width="0.35" stroke-linejoin="round"/><polygon points="655.7,490.6 639.2,478.3 559.6,580.5 576.2,593.1" fill="url(#vr-inner-6-top)" stroke="#fbe3ea" stroke-width="0.55" stroke-linejoin="round"/><polyline points="655.7,490.6 576.2,593.1 559.6,580.5" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-14"><polygon points="759.7,442.5 753.6,464.3 936.2,514.8 941.2,492.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="764.8,435.2 946.7,485.5 949.5,479.1 766.6,428.5" fill="url(#vr-inner-14-sideL)" stroke="url(#vr-inner-14-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="946.7,485.5 941.8,507.6 944.6,501.2 949.5,479.1" fill="#b5afdd" stroke="#b5afdd" stroke-width="0.35" stroke-linejoin="round"/><polygon points="766.6,428.5 949.5,479.1 945.8,478.3 766.6,428.7" fill="url(#vr-inner-14-chamL)" stroke="url(#vr-inner-14-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="758.8,457 941.8,507.6 944.6,501.2 760.6,450.3" fill="url(#vr-inner-14-sideR)" stroke="url(#vr-inner-14-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="949.5,479.1 944.6,501.2 941.9,495.6 945.8,478.3" fill="#fef0f4" stroke="#fef0f4" stroke-width="0.35" stroke-linejoin="round"/><polygon points="760.6,450.3 944.6,501.2 941.9,495.6 761.8,445.8" fill="url(#vr-inner-14-chamR)" stroke="url(#vr-inner-14-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="766.6,428.7 761.8,445.8 941.9,495.6 945.8,478.3" fill="url(#vr-inner-14-top)" stroke="#feedf2" stroke-width="0.55" stroke-linejoin="round"/><polyline points="766.6,428.7 945.8,478.3 941.9,495.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-7"><polygon points="671.2,501.4 647.8,493.4 592.9,620.9 616.5,629.5" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="652.7,486.1 597.7,613.8 594,610.2 649.3,481.9" fill="url(#vr-inner-7-sideR)" stroke="url(#vr-inner-7-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="676.1,494.2 621.4,622.4 617.8,618.9 672.9,490" fill="url(#vr-inner-7-sideL)" stroke="url(#vr-inner-7-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="649.3,481.9 594,610.2 597.1,606.1 650.9,481.4" fill="url(#vr-inner-7-chamR)" stroke="url(#vr-inner-7-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="672.9,490 617.8,618.9 615.7,612.9 669.3,487.7" fill="url(#vr-inner-7-chamL)" stroke="url(#vr-inner-7-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="621.4,622.4 597.7,613.8 594,610.2 617.8,618.9" fill="#aaa4d5" stroke="#aaa4d5" stroke-width="0.35" stroke-linejoin="round"/><polygon points="617.8,618.9 594,610.2 597.1,606.1 615.7,612.9" fill="#fde9ef" stroke="#fde9ef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="669.3,487.7 650.9,481.4 597.1,606.1 615.7,612.9" fill="url(#vr-inner-7-top)" stroke="#fbe5eb" stroke-width="0.55" stroke-linejoin="round"/><polyline points="669.3,487.7 615.7,612.9 597.1,606.1" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-13"><polygon points="752.3,452.7 740.9,474 903.9,556.5 914.5,534.6" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="757.5,445.3 920.1,527.5 922.9,522.8 759.3,440.2" fill="url(#vr-inner-13-sideL)" stroke="url(#vr-inner-13-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="920.1,527.5 909.4,549.3 912.2,544.8 922.9,522.8" fill="#b3addc" stroke="#b3addc" stroke-width="0.35" stroke-linejoin="round"/><polygon points="746.1,466.7 909.4,549.3 912.2,544.8 747.9,461.7" fill="url(#vr-inner-13-sideR)" stroke="url(#vr-inner-13-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="759.3,440.2 922.9,522.8 918.8,521.9 758.7,441" fill="url(#vr-inner-13-chamL)" stroke="url(#vr-inner-13-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="747.9,461.7 912.2,544.8 910.4,539 749.7,457.7" fill="url(#vr-inner-13-chamR)" stroke="url(#vr-inner-13-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="922.9,522.8 912.2,544.8 910.4,539 918.8,521.9" fill="#feeff3" stroke="#feeff3" stroke-width="0.35" stroke-linejoin="round"/><polygon points="758.7,441 749.7,457.7 910.4,539 918.8,521.9" fill="url(#vr-inner-13-top)" stroke="#feecf1" stroke-width="0.55" stroke-linejoin="round"/><polyline points="758.7,441 918.8,521.9 910.4,539" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-8"><polygon points="689.1,496.4 665.3,495.5 645.4,639.5 669.5,641" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="670.2,488.3 650.4,632.5 644.6,629.9 664.6,484.9" fill="url(#vr-inner-8-sideR)" stroke="url(#vr-inner-8-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="694.1,489.1 674.5,634 668.8,631.4 688.6,485.7" fill="url(#vr-inner-8-sideL)" stroke="url(#vr-inner-8-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="664.6,484.9 644.6,629.9 646,625 665.4,484" fill="url(#vr-inner-8-chamR)" stroke="url(#vr-inner-8-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="688.6,485.7 668.8,631.4 664.9,626.2 684.2,484.6" fill="url(#vr-inner-8-chamL)" stroke="url(#vr-inner-8-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="674.5,634 650.4,632.5 644.6,629.9 668.8,631.4" fill="#aca6d7" stroke="#aca6d7" stroke-width="0.35" stroke-linejoin="round"/><polygon points="668.8,631.4 644.6,629.9 646,625 664.9,626.2" fill="#fdeaef" stroke="#fdeaef" stroke-width="0.35" stroke-linejoin="round"/><polygon points="684.2,484.6 665.4,484 646,625 664.9,626.2" fill="url(#vr-inner-8-top)" stroke="#fce6ec" stroke-width="0.55" stroke-linejoin="round"/><polyline points="684.2,484.6 664.9,626.2 646,625" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-12"><polygon points="743.6,462.1 726.9,481.8 863,592.3 879.4,572.1" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="748.7,454.7 884.9,565 886.5,562.7 749.4,451.8" fill="url(#vr-inner-12-sideL)" stroke="url(#vr-inner-12-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="732,474.5 868.5,585.2 869.9,583 732.6,471.7" fill="url(#vr-inner-12-sideR)" stroke="url(#vr-inner-12-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="884.9,565 868.5,585.2 869.9,583 886.5,562.7" fill="#b2acdb" stroke="#b2acdb" stroke-width="0.35" stroke-linejoin="round"/><polygon points="749.4,451.8 886.5,562.7 881.8,561.5 747.8,453" fill="url(#vr-inner-12-chamL)" stroke="url(#vr-inner-12-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="732.6,471.7 869.9,583 868.9,577.4 734.7,468.6" fill="url(#vr-inner-12-chamR)" stroke="url(#vr-inner-12-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="886.5,562.7 869.9,583 868.9,577.4 881.8,561.5" fill="#feeef2" stroke="#feeef2" stroke-width="0.35" stroke-linejoin="round"/><polygon points="747.8,453 734.7,468.6 868.9,577.4 881.8,561.5" fill="url(#vr-inner-12-top)" stroke="#fdebf0" stroke-width="0.55" stroke-linejoin="round"/><polyline points="747.8,453 881.8,561.5 868.9,577.4" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-9"><polygon points="705.6,489.2 682,494.6 702.9,645.5 727,640.7" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="687,487.3 708,638.5 702.2,637.7 681.2,485.6" fill="url(#vr-inner-9-sideR)" stroke="url(#vr-inner-9-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="710.7,481.9 732.1,633.6 726.5,632.8 705,480.1" fill="url(#vr-inner-9-sideL)" stroke="url(#vr-inner-9-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="681.2,485.6 702.2,637.7 702.5,632.6 681.9,484.5" fill="url(#vr-inner-9-chamR)" stroke="url(#vr-inner-9-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="705,480.1 726.5,632.8 721.4,628.8 700.5,480.2" fill="url(#vr-inner-9-chamL)" stroke="url(#vr-inner-9-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="732.1,633.6 708,638.5 702.2,637.7 726.5,632.8" fill="#ada7d8" stroke="#ada7d8" stroke-width="0.35" stroke-linejoin="round"/><polygon points="726.5,632.8 702.2,637.7 702.5,632.6 721.4,628.8" fill="#fdebf0" stroke="#fdebf0" stroke-width="0.35" stroke-linejoin="round"/><polygon points="700.5,480.2 681.9,484.5 702.5,632.6 721.4,628.8" fill="url(#vr-inner-9-top)" stroke="#fce7ed" stroke-width="0.55" stroke-linejoin="round"/><polyline points="700.5,480.2 721.4,628.8 702.5,632.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-11"><polygon points="733.1,471.3 712.4,487.6 814.8,620.3 835.7,603.9" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="717.5,480.3 820.2,613.2 819.1,612.9 715.8,479.2" fill="url(#vr-inner-11-sideR)" stroke="url(#vr-inner-11-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="738.2,464 841.1,596.8 840.2,596.5 736.7,462.8" fill="url(#vr-inner-11-sideL)" stroke="url(#vr-inner-11-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="841.1,596.8 820.2,613.2 819.1,612.9 840.2,596.5" fill="#b0aada" stroke="#b0aada" stroke-width="0.35" stroke-linejoin="round"/><polygon points="715.8,479.2 819.1,612.9 818.4,607.6 717.5,477" fill="url(#vr-inner-11-chamR)" stroke="url(#vr-inner-11-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="736.7,462.8 840.2,596.5 834.9,594.8 733.9,464.2" fill="url(#vr-inner-11-chamL)" stroke="url(#vr-inner-11-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="840.2,596.5 819.1,612.9 818.4,607.6 834.9,594.8" fill="#feedf1" stroke="#feedf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="733.9,464.2 717.5,477 818.4,607.6 834.9,594.8" fill="url(#vr-inner-11-top)" stroke="#fdeaef" stroke-width="0.55" stroke-linejoin="round"/><polyline points="733.9,464.2 834.9,594.8 818.4,607.6" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+    <g id="vr-inner-10"><polygon points="720.5,480.6 697.6,491.7 760.7,638.7 784,627.8" fill="#362142" fill-opacity="0.2" filter="url(#plankAoBlur)"/><polygon points="702.6,484.4 765.9,631.6 762,631.8 698.4,483.8" fill="url(#vr-inner-10-sideR)" stroke="url(#vr-inner-10-sideR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="725.6,473.2 789.3,620.7 785.5,620.8 721.5,472.5" fill="url(#vr-inner-10-sideL)" stroke="url(#vr-inner-10-sideL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="698.4,483.8 762,631.8 761.6,626.8 699.6,482.3" fill="url(#vr-inner-10-chamR)" stroke="url(#vr-inner-10-chamR)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="721.5,472.5 785.5,620.8 780,618.1 717.6,473.5" fill="url(#vr-inner-10-chamL)" stroke="url(#vr-inner-10-chamL)" stroke-width="0.35" stroke-linejoin="round"/><polygon points="789.3,620.7 765.9,631.6 762,631.8 785.5,620.8" fill="#afa9d9" stroke="#afa9d9" stroke-width="0.35" stroke-linejoin="round"/><polygon points="785.5,620.8 762,631.8 761.6,626.8 780,618.1" fill="#fdecf1" stroke="#fdecf1" stroke-width="0.35" stroke-linejoin="round"/><polygon points="717.6,473.5 699.6,482.3 761.6,626.8 780,618.1" fill="url(#vr-inner-10-top)" stroke="#fce8ee" stroke-width="0.55" stroke-linejoin="round"/><polyline points="717.6,473.5 780,618.1 761.6,626.8" fill="none" stroke="#fffafb" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/></g>
+  </g>
+</svg>

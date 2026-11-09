@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+<radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#e3edf9"/><stop offset="1" stop-color="#a9c3e8"/></radialGradient>
+<radialGradient id="fd"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><ellipse cx="800" cy="845" rx="560" ry="40" fill="url(#fd)"/></mask>
+<filter id="bl" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="16"/></filter>
+<filter id="ds" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dy="16" stdDeviation="14" flood-color="#1c3a78" flood-opacity=".2"/></filter>
+<clipPath id="cp"><rect width="1600" height="900"/></clipPath>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g mask="url(#m)"><ellipse cx="800" cy="845" rx="420" ry="26" fill="#1c3a78" opacity=".28" filter="url(#bl)"/></g>
+<g id="f" filter="url(#ds)"/>
+</g>
+<script><![CDATA[
+const N=170,NS="http://www.w3.org/2000/svg",F=document.getElementById("f"),D=document.querySelector("defs");
+const P=Math.PI,hx=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16));
+const mx=(a,b,k)=>a.map((v,i)=>v+(b[i]-v)*k);
+const hex=c=>"#"+c.map(v=>Math.max(0,Math.min(255,v|0)).toString(16).padStart(2,"0")).join("");
+const ST=[[0,"#9be8c8"],[.28,"#2fae9c"],[.55,"#3f6fd8"],[.78,"#6a8cf0"],[1,"#58c9cf"]].map(([t,c])=>[t,hx(c)]);
+const pal=t=>{for(let i=0;i<4;i++){const[a,c]=ST[i],[b,d]=ST[i+1];if(t<=b)return mx(c,d,(t-a)/(b-a))}return ST[4][1]};
+const add=(a,b)=>a.map((v,i)=>v+b[i]),sub=(a,b)=>a.map((v,i)=>v-b[i]),mul=(a,k)=>a.map(v=>v*k);
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+const crs=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+const nrm=a=>mul(a,1/Math.hypot(...a));
+const yw=-28*P/180,pt=14*P/180,DC=1900;
+const r0=([x,y,z])=>{[x,z]=[x*Math.cos(yw)+z*Math.sin(yw),-x*Math.sin(yw)+z*Math.cos(yw)];[y,z]=[y*Math.cos(pt)-z*Math.sin(pt),y*Math.sin(pt)+z*Math.cos(pt)];return[x,y,z]};
+const vw=p=>{const q=r0(p);return[q[0],q[1],q[2]+DC]},pj=p=>[p[0]*DC/p[2],-p[1]*DC/p[2]];
+const C=t=>[1150*(t-.5),240*Math.sin(2*P*t+.5),380*Math.cos(1.5*P*t)],TL=nrm([-.5,.8,-.4]);
+const FC=[["+T",[[0,1,0],[1,1,0],[1,1,1],[0,1,1]]],["-T",[[0,0,0],[1,0,0],[1,0,1],[0,0,1]]],["+E",[[0,0,1],[1,0,1],[1,1,1],[0,1,1]]],["-E",[[0,0,0],[1,0,0],[1,1,0],[0,1,0]]],["tip",[[1,0,0],[1,1,0],[1,1,1],[1,0,1]]]];
+const fins=[];
+for(let i=0;i<N;i++){
+ const t=i/(N-1),c=C(t),T=nrm(sub(C(Math.min(1,t+.001)),C(Math.max(0,t-.001)))),Nn=nrm(crs(T,[0,1,0])),B=crs(T,Nn),ph=2*P*1.15*t+.2;
+ const d=add(mul(Nn,Math.cos(ph)),mul(B,Math.sin(ph))),E=nrm(crs(T,d)),L=110+310*(.5+.5*Math.sin(2*P*.9*t-1.2));
+ const sp=Math.hypot(...sub(C(Math.min(1,t+1/N)),c))||8,w=sp*.35,h=7.5,K={};
+ for(const s of[0,1])for(const a of[0,1])for(const b of[0,1])K[[s,a,b]]=vw(add(add(add(c,mul(d,L*s)),mul(T,w*(2*a-1))),mul(E,h*(2*b-1))));
+ const NR={"+T":T,"-T":mul(T,-1),"+E":E,"-E":mul(E,-1),tip:d},fa=[];
+ for(const[k,ix]of FC){const p=ix.map(j=>K[j]),ce=mul(add(add(p[0],p[1]),add(p[2],p[3])),.25),n=r0(NR[k]);
+  if(dot(n,ce)>=0)continue;fa.push([k,p.map(pj),Math.max(0,dot(n,TL))])}
+ fins.push({t,z:(vw(c)[2]+vw(add(c,mul(d,L)))[2])/2,fa,ax:[pj(vw(c)),pj(vw(add(c,mul(d,L))))]});
+}
+const A=fins.flatMap(f=>f.fa.flatMap(x=>x[1])),xs=A.map(p=>p[0]),ys=A.map(p=>p[1]);
+const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+const s=Math.min(1360/(x1-x0),660/(y1-y0)),ox=800-s*(x0+x1)/2,oy=440-s*(y0+y1)/2;
+const X=p=>(p[0]*s+ox).toFixed(1)+","+(p[1]*s+oy).toFixed(1);
+const zs=fins.map(f=>f.z),z0=Math.min(...zs),z1=Math.max(...zs),FOG=hx("#b4c9ea"),DK=hx("#0b1d4a"),WH=[255,255,255];
+const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+fins.map((f,i)=>[f,i]).sort((a,b)=>b[0].z-a[0].z).forEach(([f,i])=>{
+ const base=mx(pal(f.t),FOG,.28*(f.z-z0)/(z1-z0)),[a,b]=f.ax;
+ const g=el("linearGradient",{id:"g"+i,gradientUnits:"userSpaceOnUse",x1:a[0]*s+ox,y1:a[1]*s+oy,x2:b[0]*s+ox,y2:b[1]*s+oy},D);
+ el("stop",{offset:0,"stop-color":hex(mx(base,DK,.18))},g);el("stop",{offset:1,"stop-color":hex(mx(base,WH,.22))},g);
+ const G=el("g",{},F);
+ for(const[k,pts,d]of f.fa){const q=pts.map(X).join(" ");
+  if(k=="tip")el("polygon",{points:q,fill:hex(mx(base,DK,.38)),stroke:hex(mx(base,WH,.55)),"stroke-width":.7,"stroke-opacity":.6},G);
+  else{el("polygon",{points:q,fill:"url(#g"+i+")"},G);
+   el("polygon",{points:q,fill:d<.5?"#0b1d4a":"#fff",opacity:d<.5?(.5-d)*.6:(d-.5)*.55},G)}}
+});
+]]></script>
+</svg>

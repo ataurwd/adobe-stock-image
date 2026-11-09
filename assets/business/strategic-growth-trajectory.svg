@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+
+  <!-- Target Horizon Sunburst -->
+  <circle cx="880" cy="250" r="190" fill="#FACC15" opacity="0.22"/>
+  <circle cx="880" cy="250" r="120" fill="#FF735C" opacity="0.22"/>
+  <circle cx="880" cy="250" r="56" fill="#FF735C" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="880" cy="250" r="22" fill="#FFFFFF"/>
+
+  <!-- Sweeping 3D Architectural Trajectory Bridge -->
+  <g filter="url(#softDropShadow)">
+    <path d="M 140 720 Q 480 680 865 265 L 925 305 Q 540 740 200 760 Z" fill="#2563EB"/>
+    <path d="M 200 760 Q 540 740 925 305 L 925 345 Q 545 780 200 790 Z" fill="#14213D"/>
+  </g>
+
+  <!-- Milestone Flag Nodes Along Trajectory -->
+  <g filter="url(#cardShadow)">
+    <circle cx="420" cy="645" r="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="5"/>
+    <rect x="350" y="555" width="140" height="58" rx="14" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+    <text x="420" y="590" text-anchor="middle" fill="#14213D" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Q1 Foundation</text>
+
+    <circle cx="650" cy="495" r="22" fill="#FFFFFF" stroke="#10B981" stroke-width="5"/>
+    <rect x="575" y="400" width="150" height="58" rx="14" fill="#14213D"/>
+    <text x="650" y="435" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Q3 Scale-Up</text>
+  </g>
+
+  <!-- Strategic Leader Figure -->
+  <g transform="translate(245, 495) scale(1.38, 1.38)">
+    <!-- Torso Shadow & Blazer/Sweater -->
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#14213D"/>
+    <!-- Collar / Inner Shirt Accent -->
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#FF735C"/>
+    <!-- Neck -->
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#F4B89A"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <!-- Head -->
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#F4B89A"/>
+    <!-- Facial Details (Minimal Editorial Style) -->
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <!-- Modern Sculpted Hair -->
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#14213D"/>
+    <circle cx="-18" cy="-8" r="10" fill="#14213D"/>
+    <!-- Expressive Reaching Arm -->
+    <path d="M 28 58 C 56 64, 78 44, 102 22" fill="none" stroke="#14213D" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="106" cy="18" r="9" fill="#F4B89A"/>
+    <path d="M -32 60 C -52 84, -44 114, -18 118" fill="none" stroke="#14213D" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-14" cy="118" r="8.5" fill="#F4B89A"/>
+  </g>
+</svg>

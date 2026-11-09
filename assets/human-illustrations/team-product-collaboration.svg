@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft Ambient Studio Aura -->
+  <ellipse cx="600" cy="460" rx="490" ry="320" fill="#DBEAFE" opacity="0.5"/>
+  <circle cx="920" cy="230" r="110" fill="#FACC15" opacity="0.16"/>
+
+  <!-- Central Floating Interactive Design & Architecture Board -->
+  <g id="collaboration-board" filter="url(#softDropShadow)">
+    <rect x="310" y="140" width="580" height="390" rx="24" fill="url(#boardGrad)" stroke="#93C5FD" stroke-width="2.5"/>
+    <!-- Window Header -->
+    <rect x="310" y="140" width="580" height="52" rx="24" fill="#14213D"/>
+    <rect x="310" y="168" width="580" height="24" fill="#14213D"/>
+    <circle cx="344" cy="166" r="7" fill="#FF735C"/>
+    <circle cx="368" cy="166" r="7" fill="#FACC15"/>
+    <circle cx="392" cy="166" r="7" fill="#10B981"/>
+    <rect x="480" y="158" width="240" height="16" rx="8" fill="#1F2937"/>
+
+    <!-- UI Component Wireframes Inside Board -->
+    <rect x="346" y="220" width="230" height="145" rx="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+    <path d="M 368 325 C 405 275, 440 310, 480 258 C 510 225, 535 265, 555 242" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="480" cy="258" r="6" fill="#FF735C" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="555" cy="242" r="6" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Modular Design System Cards -->
+    <rect x="602" y="220" width="252" height="66" rx="12" fill="#F8FAFC" stroke="#93C5FD" stroke-width="1.5"/>
+    <circle cx="636" cy="253" r="16" fill="#10B981"/>
+    <path d="M 630 253 L 635 258 L 644 248" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="668" y="240" width="120" height="10" rx="5" fill="#14213D"/>
+    <rect x="668" y="258" width="84" height="8" rx="4" fill="#93C5FD"/>
+
+    <rect x="602" y="300" width="252" height="66" rx="12" fill="#F8FAFC" stroke="#93C5FD" stroke-width="1.5"/>
+    <circle cx="636" cy="333" r="16" fill="#FF735C"/>
+    <rect x="668" y="320" width="140" height="10" rx="5" fill="#14213D"/>
+    <rect x="668" y="338" width="95" height="8" rx="4" fill="#93C5FD"/>
+
+    <!-- Bottom Architecture Flow Bar -->
+    <rect x="346" y="390" width="508" height="108" rx="14" fill="#14213D"/>
+    <rect x="374" y="418" width="120" height="52" rx="10" fill="#2563EB"/>
+    <rect x="540" y="418" width="120" height="52" rx="10" fill="#A78BFA"/>
+    <rect x="706" y="418" width="120" height="52" rx="10" fill="#10B981"/>
+    <path d="M 494 444 L 540 444 M 660 444 L 706 444" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- Floating Live Cursor Badges -->
+  <g filter="url(#cardShadow)">
+    <rect x="210" y="250" width="125" height="44" rx="22" fill="#FF735C"/>
+    <text x="272" y="277" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">UX Flow +24%</text>
+    <rect x="865" y="290" width="135" height="44" rx="22" fill="#10B981"/>
+    <text x="932" y="317" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">API Ready ✓</text>
+  </g>
+
+  <!-- Left Collaborator (Product Designer) -->
+  <g transform="translate(245, 545) scale(1.35, 1.35)">
+    <!-- Torso Shadow & Blazer/Sweater -->
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#2563EB"/>
+    <!-- Collar / Inner Shirt Accent -->
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#FF735C"/>
+    <!-- Neck -->
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#F2B596"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <!-- Head -->
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#F2B596"/>
+    <!-- Facial Details (Minimal Editorial Style) -->
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <!-- Modern Sculpted Hair -->
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#14213D"/>
+    <circle cx="-18" cy="-8" r="10" fill="#14213D"/>
+    <!-- Expressive Reaching Arm -->
+    <path d="M 28 58 C 56 64, 78 44, 102 22" fill="none" stroke="#2563EB" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="106" cy="18" r="9" fill="#F2B596"/>
+    <path d="M -32 60 C -52 84, -44 114, -18 118" fill="none" stroke="#2563EB" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-14" cy="118" r="8.5" fill="#F2B596"/>
+  </g>
+
+  <!-- Right Collaborator (Lead Engineer) -->
+  <g transform="translate(955, 545) scale(-1.35, 1.35)">
+    <!-- Torso Shadow & Blazer/Sweater -->
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#14213D"/>
+    <!-- Collar / Inner Shirt Accent -->
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#10B981"/>
+    <!-- Neck -->
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#D9916E"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <!-- Head -->
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#D9916E"/>
+    <!-- Facial Details (Minimal Editorial Style) -->
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <!-- Modern Sculpted Hair -->
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#1F2937"/>
+    <circle cx="-18" cy="-8" r="10" fill="#1F2937"/>
+    <!-- Expressive Reaching Arm -->
+    <path d="M 28 58 C 56 64, 78 44, 102 22" fill="none" stroke="#14213D" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="106" cy="18" r="9" fill="#D9916E"/>
+    <path d="M -32 60 C -52 84, -44 114, -18 118" fill="none" stroke="#14213D" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-14" cy="118" r="8.5" fill="#D9916E"/>
+  </g>
+
+  <!-- Foreground Desk / Grounding Line -->
+  <rect x="140" y="725" width="920" height="16" rx="8" fill="#14213D"/>
+</svg>

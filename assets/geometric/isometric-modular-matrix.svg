@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+    <radialGradient id="isoSphereCoral" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#FF735C"/>
+      <stop offset="100%" stop-color="#14213D"/>
+    </radialGradient>
+    <radialGradient id="isoSphereEmerald" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#14213D"/>
+    </radialGradient>
+  </defs>
+  <g id="isometric-matrix" filter="url(#softDropShadow)">
+    <g>
+      <!-- Top Face -->
+      <polygon points="600,300 981,520 600,740 219,520" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="219,520 600,740 600,764 219,544" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="981,520 600,740 600,764 981,544" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="600,285 664.1,322 600,359 535.9,322" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="535.9,322 600,359 600,414 535.9,377" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="664.1,322 600,359 600,414 664.1,377" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="516.9,293 580.9,330 516.9,367 452.8,330" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="452.8,330 516.9,367 516.9,462 452.8,425" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="580.9,330 516.9,367 516.9,462 580.9,425" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="433.7,296 497.8,333 433.7,370 369.6,333" fill="#93C5FD" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="369.6,333 433.7,370 433.7,510 369.6,473" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="497.8,333 433.7,370 433.7,510 497.8,473" fill="#14213D" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="350.6,404 414.7,441 350.6,478 286.5,441" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="286.5,441 350.6,478 350.6,558 286.5,521" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="414.7,441 350.6,478 350.6,558 414.7,521" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="683.1,303 747.2,340 683.1,377 619.1,340" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="619.1,340 683.1,377 683.1,462 619.1,425" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="747.2,340 683.1,377 683.1,462 747.2,425" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="600,251 664.1,288 600,325 535.9,288" fill="#EDE9FE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="535.9,288 600,325 600,510 535.9,473" fill="#A78BFA" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="664.1,288 600,325 600,510 664.1,473" fill="#6D28D9" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="516.9,244 580.9,281 516.9,318 452.8,281" fill="#FFD8D0" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="452.8,281 516.9,318 516.9,558 452.8,521" fill="#FF735C" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="580.9,281 516.9,318 516.9,558 580.9,521" fill="#C84B37" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="433.7,412 497.8,449 433.7,486 369.6,449" fill="#93C5FD" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="369.6,449 433.7,486 433.7,606 369.6,569" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="497.8,449 433.7,486 433.7,606 497.8,569" fill="#14213D" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="766.3,376 830.4,413 766.3,450 702.2,413" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="702.2,413 766.3,450 766.3,510 702.2,473" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="830.4,413 766.3,450 766.3,510 830.4,473" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="683.1,349 747.2,386 683.1,423 619.1,386" fill="#93C5FD" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="619.1,386 683.1,423 683.1,558 619.1,521" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="747.2,386 683.1,423 683.1,558 747.2,521" fill="#14213D" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="600,367 664.1,404 600,441 535.9,404" fill="#D1FAE5" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="535.9,404 600,441 600,606 535.9,569" fill="#10B981" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="664.1,404 600,441 600,606 664.1,569" fill="#047857" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="516.9,485 580.9,522 516.9,559 452.8,522" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="452.8,522 516.9,559 516.9,654 452.8,617" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="580.9,522 516.9,559 516.9,654 580.9,617" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="849.4,444 913.5,481 849.4,518 785.3,481" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="785.3,481 849.4,518 849.4,558 785.3,521" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="913.5,481 849.4,518 849.4,558 913.5,521" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="766.3,457 830.4,494 766.3,531 702.2,494" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="702.2,494 766.3,531 766.3,606 702.2,569" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="830.4,494 766.3,531 766.3,606 830.4,569" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="683.1,475 747.2,512 683.1,549 619.1,512" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="619.1,512 683.1,549 683.1,654 619.1,617" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="747.2,512 683.1,549 683.1,654 747.2,617" fill="#2563EB" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <!-- Top Face -->
+      <polygon points="600,563 664.1,600 600,637 535.9,600" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <polygon points="535.9,600 600,637 600,702 535.9,665" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <polygon points="664.1,600 600,637 600,702 664.1,665" fill="#93C5FD" stroke="#FFFFFF" stroke-width="0.6" stroke-linejoin="round"/>
+    </g>
+    <!-- Connecting Data Arcs & Floating Nodes -->
+    <path d="M 516.9 226 Q 640 120 600 344" fill="none" stroke="#2563EB" stroke-width="3" stroke-dasharray="6 6"/>
+    <circle cx="516.9" cy="226" r="22" fill="url(#isoSphereCoral)"/>
+    <circle cx="600" cy="344" r="18" fill="url(#isoSphereEmerald)"/>
+  </g>
+</svg>

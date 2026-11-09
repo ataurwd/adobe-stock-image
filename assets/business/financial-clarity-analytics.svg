@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="600" cy="480" rx="490" ry="300" fill="#DBEAFE" opacity="0.42"/>
+
+  <!-- 3D Ascending Financial Columns -->
+  <g filter="url(#softDropShadow)">
+    <g>
+      <!-- Front Face -->
+      <rect x="220" y="540" width="78" height="190" rx="4" fill="#93C5FD"/>
+      <!-- Top Bevel Face -->
+      <polygon points="220,540 244,522 322,522 298,540" fill="#DBEAFE"/>
+      <!-- Right Extruded Side -->
+      <polygon points="298,540 322,522 322,712 298,730" fill="#2563EB"/>
+    </g>
+    <g>
+      <!-- Front Face -->
+      <rect x="360" y="460" width="78" height="270" rx="4" fill="#2563EB"/>
+      <!-- Top Bevel Face -->
+      <polygon points="360,460 384,442 462,442 438,460" fill="#DBEAFE"/>
+      <!-- Right Extruded Side -->
+      <polygon points="438,460 462,442 462,712 438,730" fill="#14213D"/>
+    </g>
+    <g>
+      <!-- Front Face -->
+      <rect x="500" y="380" width="78" height="350" rx="4" fill="#A78BFA"/>
+      <!-- Top Bevel Face -->
+      <polygon points="500,380 524,362 602,362 578,380" fill="#EDE9FE"/>
+      <!-- Right Extruded Side -->
+      <polygon points="578,380 602,362 602,712 578,730" fill="#5B21B6"/>
+    </g>
+    <g>
+      <!-- Front Face -->
+      <rect x="640" y="290" width="78" height="440" rx="4" fill="#FF735C"/>
+      <!-- Top Bevel Face -->
+      <polygon points="640,290 664,272 742,272 718,290" fill="#FFE4E0"/>
+      <!-- Right Extruded Side -->
+      <polygon points="718,290 742,272 742,712 718,730" fill="#B91C1C"/>
+    </g>
+    <g>
+      <!-- Front Face -->
+      <rect x="780" y="190" width="78" height="540" rx="4" fill="#10B981"/>
+      <!-- Top Bevel Face -->
+      <polygon points="780,190 804,172 882,172 858,190" fill="#D1FAE5"/>
+      <!-- Right Extruded Side -->
+      <polygon points="858,190 882,172 882,712 858,730" fill="#065F46"/>
+    </g>
+    <!-- Base Platform -->
+    <polygon points="150,730 200,695 1030,695 980,730" fill="#14213D"/>
+    <rect x="150" y="730" width="830" height="22" rx="6" fill="#0B132B"/>
+  </g>
+
+  <!-- Sweeping Predictive Growth Ribbon -->
+  <g filter="url(#cardShadow)">
+    <path d="M 190 530 C 340 500, 490 380, 660 280 C 760 220, 860 155, 955 125" fill="none" stroke="#FACC15" stroke-width="10" stroke-linecap="round"/>
+    <polygon points="975,118 935,112 952,148" fill="#FACC15"/>
+  </g>
+
+  <!-- Floating Executive KPI Glass Card -->
+  <g filter="url(#softDropShadow)">
+    <rect x="180" y="150" width="330" height="175" rx="22" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+    <circle cx="232" cy="206" r="24" fill="#10B981"/>
+    <path d="M 222 206 L 230 214 L 244 198" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="272" y="202" fill="#1F2937" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Net ARR Growth</text>
+    <text x="272" y="232" fill="#14213D" font-family="system-ui, sans-serif" font-size="28" font-weight="800">+184.6%</text>
+    <rect x="210" y="266" width="260" height="12" rx="6" fill="#DBEAFE"/>
+    <rect x="210" y="266" width="215" height="12" rx="6" fill="#2563EB"/>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="620" cy="470" rx="480" ry="310" fill="#DBEAFE" opacity="0.48"/>
+
+  <!-- Ascending 3D Skill Mastery Staircase -->
+  <g filter="url(#softDropShadow)">
+    <rect x="580" y="590" width="140" height="55" rx="12" fill="#93C5FD"/>
+    <rect x="690" y="510" width="150" height="55" rx="12" fill="#2563EB"/>
+    <rect x="800" y="430" width="160" height="55" rx="12" fill="#14213D"/>
+    <rect x="910" y="350" width="170" height="55" rx="12" fill="#FF735C"/>
+    <!-- Trophy / Mastery Star on Top Step -->
+    <circle cx="995" cy="275" r="46" fill="#FACC15" stroke="#FFFFFF" stroke-width="4"/>
+    <polygon points="995,245 1004,264 1025,267 1010,281 1014,302 995,292 976,302 980,281 965,267 986,264" fill="#14213D"/>
+  </g>
+
+  <!-- Interactive Video Course & Code Module Cards -->
+  <g filter="url(#softDropShadow)">
+    <rect x="440" y="160" width="380" height="240" rx="22" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <rect x="466" y="186" width="328" height="145" rx="14" fill="#14213D"/>
+    <circle cx="630" cy="258" r="32" fill="#FF735C"/>
+    <polygon points="622,244 622,272 646,258" fill="#FFFFFF"/>
+    <!-- Course Progress Bar -->
+    <rect x="466" y="352" width="328" height="14" rx="7" fill="#DBEAFE"/>
+    <rect x="466" y="352" width="245" height="14" rx="7" fill="#10B981"/>
+  </g>
+
+  <!-- Engaged Student at Modern Desk -->
+  <g transform="translate(290, 490) scale(1.4, 1.4)">
+    <!-- Torso Shadow & Blazer/Sweater -->
+    <path d="M -46 135 C -44 65, -28 42, 0 42 C 28 42, 46 65, 48 135 Z" fill="#2563EB"/>
+    <!-- Collar / Inner Shirt Accent -->
+    <path d="M -14 43 L 0 72 L 14 43 Z" fill="#FFFFFF"/>
+    <path d="M -6 56 L 0 92 L 6 56 Z" fill="#FACC15"/>
+    <!-- Neck -->
+    <rect x="-9" y="20" width="18" height="28" rx="9" fill="#F4B89A"/>
+    <path d="M -9 34 Q 0 42 9 32 L 9 42 L -9 42 Z" fill="#D99879" opacity="0.55"/>
+    <!-- Head -->
+    <ellipse cx="2" cy="4" rx="23" ry="26" fill="#F4B89A"/>
+    <!-- Facial Details (Minimal Editorial Style) -->
+    <circle cx="11" cy="2" r="2.2" fill="#14213D"/>
+    <path d="M 7 -5 Q 12 -8 16 -5" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 14 4 L 16 10 L 12 11" fill="none" stroke="#C98667" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6 16 Q 11 20 16 16" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"/>
+    <!-- Modern Sculpted Hair -->
+    <path d="M -21 8 C -25 -16, -8 -28, 12 -24 C 26 -22, 30 -8, 22 -2 C 14 -10, -2 -10, -10 2 C -14 8, -16 14, -21 8 Z" fill="#14213D"/>
+    <circle cx="-18" cy="-8" r="10" fill="#14213D"/>
+    <!-- Balanced Workspace Arms -->
+    <path d="M 26 58 C 48 78, 62 94, 82 92" fill="none" stroke="#2563EB" stroke-width="19" stroke-linecap="round"/>
+    <circle cx="86" cy="92" r="8.5" fill="#F4B89A"/>
+    <path d="M -28 60 C -14 86, 12 96, 44 95" fill="none" stroke="#2256c8" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="48" cy="95" r="8" fill="#F4B89A"/>
+  </g>
+
+  <!-- Laptop & Desk -->
+  <g filter="url(#cardShadow)">
+    <polygon points="380,625 510,625 535,545 405,545" fill="#14213D" stroke="#93C5FD" stroke-width="2"/>
+    <circle cx="460" cy="585" r="9" fill="#FACC15"/>
+    <rect x="330" y="625" width="200" height="14" rx="7" fill="#1F2937"/>
+    <rect x="140" y="675" width="920" height="18" rx="9" fill="#14213D"/>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    
+    <filter id="softDropShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#14213D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-12%" y="-10%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="ambientGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+    <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#14213D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Subtle Background Grid -->
+  <g stroke="#93C5FD" stroke-opacity="0.28" stroke-width="1">
+    <line x1="120" y1="220" x2="1080" y2="220"/>
+    <line x1="120" y1="450" x2="1080" y2="450"/>
+    <line x1="120" y1="680" x2="1080" y2="680"/>
+    <line x1="300" y1="140" x2="300" y2="760"/>
+    <line x1="600" y1="140" x2="600" y2="760"/>
+    <line x1="900" y1="140" x2="900" y2="760"/>
+  </g>
+
+  <!-- Bezier Automation Conduits -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 320 260 C 440 260, 450 450, 560 450" stroke="#2563EB" stroke-width="6"/>
+    <path d="M 320 450 L 560 450" stroke="#A78BFA" stroke-width="6"/>
+    <path d="M 320 640 C 440 640, 450 450, 560 450" stroke="#FF735C" stroke-width="6"/>
+
+    <path d="M 640 450 C 750 450, 760 240, 860 240" stroke="#10B981" stroke-width="6"/>
+    <path d="M 640 450 L 860 450" stroke="#2563EB" stroke-width="6"/>
+    <path d="M 640 450 C 750 450, 760 660, 860 660" stroke="#FACC15" stroke-width="6"/>
+  </g>
+
+  <!-- Left Trigger Nodes -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="205" width="210" height="110" rx="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+    <circle cx="158" cy="260" r="24" fill="#DBEAFE"/>
+    <path d="M 148 260 L 156 268 L 170 252" fill="none" stroke="#2563EB" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="196" y="242" width="96" height="12" rx="6" fill="#14213D"/>
+    <rect x="196" y="264" width="68" height="10" rx="5" fill="#93C5FD"/>
+
+    <rect x="110" y="395" width="210" height="110" rx="20" fill="#FFFFFF" stroke="#A78BFA" stroke-width="2.5"/>
+    <circle cx="158" cy="450" r="24" fill="#EDE9FE"/>
+    <circle cx="158" cy="450" r="10" fill="#A78BFA"/>
+    <rect x="196" y="432" width="96" height="12" rx="6" fill="#14213D"/>
+    <rect x="196" y="454" width="76" height="10" rx="5" fill="#93C5FD"/>
+
+    <rect x="110" y="585" width="210" height="110" rx="20" fill="#FFFFFF" stroke="#FF735C" stroke-width="2.5"/>
+    <circle cx="158" cy="640" r="24" fill="#FFE4E0"/>
+    <path d="M 158 628 L 158 644 L 168 644" fill="none" stroke="#FF735C" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="196" y="622" width="96" height="12" rx="6" fill="#14213D"/>
+    <rect x="196" y="644" width="64" height="10" rx="5" fill="#93C5FD"/>
+  </g>
+
+  <!-- Central 3D Orchestration Core -->
+  <g filter="url(#softDropShadow)">
+    <circle cx="600" cy="450" r="112" fill="#DBEAFE"/>
+    <circle cx="600" cy="450" r="88" fill="url(#hubGrad)" stroke="#FFFFFF" stroke-width="5"/>
+    <!-- Geometric Gear / Star Polygon Inside Hub -->
+    <polygon points="600,392 616,426 654,432 626,458 634,496 600,478 566,496 574,458 546,432 584,426" fill="#FACC15"/>
+    <circle cx="600" cy="450" r="20" fill="#14213D"/>
+  </g>
+
+  <!-- Right Automated Output Cards -->
+  <g filter="url(#softDropShadow)">
+    <rect x="860" y="175" width="240" height="130" rx="22" fill="#14213D" stroke="#10B981" stroke-width="3"/>
+    <rect x="888" y="202" width="84" height="26" rx="13" fill="#10B981"/>
+    <text x="930" y="220" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DEPLOYED</text>
+    <rect x="888" y="244" width="165" height="12" rx="6" fill="#FFFFFF"/>
+    <rect x="888" y="266" width="115" height="10" rx="5" fill="#93C5FD"/>
+
+    <rect x="860" y="385" width="240" height="130" rx="22" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <rect x="888" y="412" width="84" height="26" rx="13" fill="#2563EB"/>
+    <text x="930" y="430" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">SYNCED</text>
+    <rect x="888" y="454" width="165" height="12" rx="6" fill="#14213D"/>
+    <rect x="888" y="476" width="125" height="10" rx="5" fill="#93C5FD"/>
+
+    <rect x="860" y="595" width="240" height="130" rx="22" fill="#FFFFFF" stroke="#FACC15" stroke-width="3"/>
+    <rect x="888" y="622" width="96" height="26" rx="13" fill="#FACC15"/>
+    <text x="936" y="640" text-anchor="middle" fill="#14213D" font-family="system-ui, sans-serif" font-size="12" font-weight="700">OPTIMIZED</text>
+    <rect x="888" y="664" width="165" height="12" rx="6" fill="#14213D"/>
+    <rect x="888" y="686" width="110" height="10" rx="5" fill="#93C5FD"/>
+  </g>
+</svg>
